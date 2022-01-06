@@ -1,8 +1,4 @@
 class StaticPagesController < ApplicationController
-  layout 'application_static'
-
-  skip_after_action :verify_authorized
-
   def landing; end
 
   def comprendre_mes_mesures; end

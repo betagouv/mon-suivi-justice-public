@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'static_pages#landing'
 
+  get '/stats' => redirect('https://infogram.com/column-stacked-chart-1h7z2l8www5rg6o?live', status: 302), as: :stats
+
   scope controller: :static_pages do
     get :landing
     get :comprendre_ma_peine
