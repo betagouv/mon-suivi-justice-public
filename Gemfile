@@ -6,9 +6,6 @@ ruby "3.1.0"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", github: "rails/rails", branch: "7-0-stable"
 
-# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem "sprockets-rails"
-
 gem "webpacker", "~> 5.4"
 
 # Use postgresql as the database for Active Record

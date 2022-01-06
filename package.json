@@ -17,9 +17,18 @@
     "webpack-cli": "^3.3.12"
   },
   "scripts": {
-    "build:css": "sass ./app/assets/stylesheets/application.sass.scss ./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "jest"
   },
   "devDependencies": {
+    "standard": "^16.0.4",
     "webpack-dev-server": "^3"
+  },
+  "standard": {
+    "parser": "@babel/eslint-parser",
+    "env": [
+      "jest"
+    ]
   }
 }

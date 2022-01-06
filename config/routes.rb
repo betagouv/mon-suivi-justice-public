@@ -2,11 +2,11 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root 'static_pages#landing'
+  root 'pages#landing'
 
   get '/stats' => redirect('https://infogram.com/column-stacked-chart-1h7z2l8www5rg6o?live', status: 302), as: :stats
 
-  scope controller: :static_pages do
+  scope controller: :pages do
     get :landing
     get :comprendre_ma_peine
     get :regles_essentielles

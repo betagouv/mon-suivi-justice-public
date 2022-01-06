@@ -29,6 +29,5 @@ module MonSuiviJusticePublic
     # in config/environments, which are processed later.
     #
     # config.time_zone = "Central Time (US & Canada)"
-    config.assets.paths << Rails.root.join("app", "assets", "fonts")
   end
 end

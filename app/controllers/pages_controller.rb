@@ -1,4 +1,4 @@
-class StaticPagesController < ApplicationController
+class PagesController < ApplicationController
   def landing; end
 
   def comprendre_mes_mesures; end
