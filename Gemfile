@@ -9,6 +9,9 @@ gem "rails", github: "rails/rails", branch: "7-0-stable"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+gem "cssbundling-rails"
+gem "jsbundling-rails"
+
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
