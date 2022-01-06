@@ -6,7 +6,6 @@
     "yarn": "1.22.x"
   },
   "dependencies": {
-    "@gouvfr/dsfr": "^1.2.1",
     "@popperjs/core": "^2.11.2",
     "sass": "^1.46.0"
   },

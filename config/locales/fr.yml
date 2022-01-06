@@ -1,0 +1,405 @@
+fr:
+  activerecord:
+    models:
+      user: "Agent"
+      convict: "PPSMJ"
+      appointment: "Rendez-vous"
+      appointment_type: "Type de rendez-vous"
+      place: "Lieu"
+      slot:  "Créneau"
+      agenda: "Agenda"
+      organization: "Service"
+
+    attributes:
+      convict:
+        name: "Nom"
+        first_name: "Prénom"
+        last_name: "Nom"
+        phone: "Téléphone portable"
+        no_phone: "Ne possède pas de téléphone portable"
+        refused_phone: "Refuse de donner son numéro"
+        prosecutor_number: Numéro de parquet
+        appi_uuid: "N° dossier APPI"
+      user:
+        name: "Nom"
+        first_name: "Prénom"
+        last_name: "Nom"
+        role: "Rôle"
+        organization: "Service"
+        user_roles:
+          admin: "Administrateur central"
+          local_admin: "Administrateur local"
+          prosecutor: "Magistrat du parquet"
+          jap: "JAP"
+          secretary_court: "Secrétariat commun"
+          secretary_spip: "Secrétariat SPIP"
+          dir_greff_bex: "Directeur de greffe BEX"
+          bex: "BEX"
+          greff_co: "Greffe correctionnel"
+          dir_greff_sap: "Directeur de greffe SAP"
+          greff_sap: "Greffe SAP"
+          dpip: "DPIP"
+          cpip: "CPIP"
+          educator: "Educateur"
+          psychologist: "Psychologue"
+          overseer: "Surveillant"
+      appointment:
+        date: "Date"
+        slot: "Créneau"
+        phone: "Téléphone"
+        origin_department: "Service d'origine de la convocation"
+        origin_departments:
+          bex: "BEX"
+          gref_co: "Greffe co"
+          pr: "PR"
+      appointment_type:
+        name: "Nom"
+      notification_type:
+        template: "Template"
+        reminder_period: "Délai avant le rdv"
+        notification_type_roles:
+          summon: convocation
+          reminder: rappel
+          cancelation: annulation
+          no_show: rdv manqué
+          reschedule: replanifier
+      slot_type:
+        appointment_type: "Type de RDV"
+        agenda: "Agenda"
+        week_day: Jour
+        starting_time: Heure
+        duration: Durée
+        capacity: Capacité
+      place:
+        name: "Nom"
+        adress: "Adresse"
+        phone: "Téléphone"
+      slot:
+        place: "Lieu"
+        date: "Date"
+        starting_time: "Heure"
+        available: "Disponible"
+        duration: Durée
+        capacity: Capacité
+      agenda:
+        name: Nom
+      organization:
+        name: Nom
+
+    state_machines:
+      states:
+        waiting: "En attente"
+        booked: "Planifié"
+        canceled: "Annulé"
+        fulfiled: "Honoré"
+        no_show: "Manqué"
+        excused: "Excusé"
+      events:
+        book: "Plannifier"
+
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "Email manquant"
+            password:
+              blank: "manquant"
+            first_name:
+              blank: "Prénom manquant"
+            last_name:
+              blank: "Nom manquant"
+            password_confirmation:
+              confirmation: "ne correspond pas au premier mot de passe saisi"
+        convict:
+          attributes:
+            phone:
+              blank: "Numéro de téléphone manquant"
+              mobile: "Numéro de téléphone portable requis"
+            first_name:
+              blank: "Prénom manquant"
+            last_name:
+              blank: "Nom manquant"
+              confirmation: "Ne correspond pas au premier mot de passe saisi"
+        place:
+          attributes:
+            name:
+              blank: "Nom manquant"
+            adress:
+              blank: "Adresse manquante"
+        appointment:
+          attributes:
+            place:
+              required: "Lieu manquant"
+            date:
+              blank: "Date manquante"
+
+  login_sub_title: "Espace agents"
+  login_tutorial: "Votre mot de passe doit contenir au moins une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial présent dans la liste suivante :"
+  login_tutorial_special: "! @ # $ % ^ & * ( ) _ + - = [ ] { } | '"
+  login_password_error: "Mot de passe invalide"
+
+  header_title: "Mon Suivi Justice"
+  back_to_public_site: "Retour sur le site public"
+
+  "yes": "Oui"
+  "no": "Non"
+  "true": "Oui"
+  "false": "Non"
+
+  edit: "Modifier"
+  archive: "Archiver"
+  archived: "(archivé)"
+  unarchive: "Désarchiver"
+  delete: "Supprimer"
+  submit: "Enregistrer"
+  cancel: "Annuler"
+  reschedule: "Replanifier"
+  search: "Recherche"
+  filter: "Filtrer"
+  see: "Voir"
+  add: "Ajouter"
+  see_infos: "Voir les infos"
+  see_details: "Voir infos du rdv"
+  see_profile: "Voir profil"
+  basic_confirmation: "Êtes-vous sûr(e)?"
+  my_profile: "Mon profil"
+  log_out: "Déconnexion"
+  print_button: "Imprimer"
+  contact: "Contacter l'équipe"
+
+  monday: lundi
+  tuesday: mardi
+  wednesday: mercredi
+  thursday: jeudi
+  friday: vendredi
+
+  support_modal_title: Support
+  support_modal_text: "Pour toute demande, vous pouvez écrire à l'équipe de Mon Suivi Justice à l'adresse suivante:"
+  support_modal_warning: "Quelques recommandations :"
+  support_modal_bug: "Pour signaler un bug, merci de décrire avec précision les dernières actions qui ont menée au bug. Une capture d'écran du problème est également très utile."
+  support_modal_evolution: "Pour demander une évolution, n'hésitez pas à entrer dans les détails. Dites-nous quel est votre poste et quelle partie du processus vous souhaitez changer."
+  support_modal_thanks: "Merci de nous aider à améliorer Mon Suivi Justice."
+
+  home_find_convict: "Trouver une PPSMJ :"
+  home_new_appointment: "Prendre RDV"
+  home_new_convict: "Nouvelle PPSMJ"
+  home_bex_jap: "Sortie d'audience JAP"
+  home_bex_spip: "Sortie d'audience SPIP"
+  home_today_appointments: "RDV du jour"
+
+  home_stats_title: "Stats"
+  home_stats_recorded: "Total RDV enregistrés"
+  home_stats_passed_no_canceled: "RDV passés hors annulation"
+  home_stats_future_booked: "RDV futurs"
+  home_stats_fulfiled: "RDV réussis"
+  home_stats_no_show: "RDV manqués"
+  home_stats_excused: "RDV excusés"
+  home_stats_canceled: "RDV annulés"
+  home_stats_passed_booked: "RDV passés non-renseignés"
+  home_stats_data_missing: "% RDV non-renseignés"
+  home_stats_convicts: "Total PPSMJ enregistrées"
+  home_stats_users: "Total agents utilisateurs"
+  home_stats_notifications: "Total SMS envoyés"
+
+  new_user_title: "Nouvel Agent"
+  send_invitation: "Envoyer invitation"
+  show_user_title: "Mes informations"
+  edit_user_title: "Modifier informations"
+
+  new_organization_title: "Nouveau service"
+  edit_organization_title: "Modifier le service"
+  edit_organization_department_title: "Département(s) rattaché(s)"
+  edit_organization_jurisdiction_title: "Juridiction(s) rattachée(s)"
+  edit_organization_department: "Département"
+  edit_organization_jurisdiction: "Juridiction"
+  edit_organization_jap_modal: "Texte de la liste des agendas JAP"
+
+  new_convict_title: "Nouvelle PPSMJ"
+  new_first_appointment_title: "Créneaux disponibles"
+  new_convict_submit: "sans prendre RDV"
+  new_convict_first_appointment: "et prendre RDV"
+  new_convict_duplicate_warning: "Une PPSMJ existe déjà avec ce nom et prénom. Êtes-vous sur(e) de vouloir continuer ?"
+  edit_convict_title: "Modifier PPSMJ"
+  edit_convict_department_title: "Département(s) de la PPSMJ"
+  edit_convict_jurisdiction_title: "Juridiction(s) de la PPSMJ"
+  edit_convict_submit: "Enregistrer"
+  search_convict_placeholder: "Saisir un nom ou un prénom"
+  show_convict: Profil
+  show_convict_title: "Profil PPSMJ"
+  show_convict_archived: Archivé
+  show_convict_history_title: Historique
+  show_convict_new_appointment: Prendre rendez-vous
+  show_convict_next_appointment: "%{date} à %{time} au %{place}"
+  show-convict-next-appointments-title1: "Prochain rendez-vous :"
+  show-convict-next-appointments-title2: "Prochains rendez-vous :"
+  show-convict-fulfilment-prompt: "Est-ce-que %{name} s'est présenté(e) au %{place} le %{date} à %{time} ?"
+  show-convict-fulfilment-send-sms: "Voulez-vous envoyer un SMS à la PPSMJ ?"
+  show-convict-fulfilment-sms-content: "Texte du SMS :"
+  show-convict-fulfilment-excused: "Excusé(e)"
+  edit_convict_department: "Département"
+  edit_convict_jurisdiction: "Juridiction"
+  archive_convict_confirmation: "Cette PPSMJ restera accessible pendant 6 mois avant d'être définitivement supprimée."
+
+  show_history_book_appointment_title: "Nouveau RDV"
+  show_history_book_appointment: "%{name} a été convoqué(e) au %{place} le %{date} à %{time}."
+  show_history_cancel_appointment_title: "RDV annulé"
+  show_history_cancel_appointment: "Le rendez-vous au %{place} le %{date} à %{time} a été annulé."
+  show_history_fulfil_appointment_title: "RDV honoré"
+  show_history_fulfil_appointment: "%{name} s'est bien présenté(e) à son rendez-vous au %{place} le %{date} à %{time}."
+  show_history_miss_appointment_title: "RDV manqué"
+  show_history_miss_appointment: "%{name} ne s'est pas présenté(e) à son rendez-vous au %{place} le %{date} à %{time}."
+  show_history_excuse_appointment_title: "RDV excusé"
+  show_history_excuse_appointment: "%{name} ne s'est pas présenté(e) à son rendez-vous au %{place} le %{date} à %{time}, mais a présenté une justification valide."
+
+  show_history_send_now_summon_notification_title: "SMS envoyé (convocation)"
+  show_history_send_now_summon_notification: "[Texte du SMS] %{content}"
+  show_history_receive_summon_notification_title: "SMS reçu (convocation)"
+  show_history_receive_summon_notification: "Le SMS de convocation a bien été reçu par %{name}."
+  show_history_failed_send_summon_notification_title: "Echec du SMS (convocation)"
+  show_history_failed_send_summon_notification: "Le SMS de convocation n'a pas été reçu par %{name}."
+  show_history_send_then_reminder_notification_title: "SMS envoyé (rappel)"
+  show_history_send_then_reminder_notification: "[Texte du SMS] %{content}"
+  show_history_receive_reminder_notification_title: "SMS reçu (rappel)"
+  show_history_receive_reminder_notification: "Le SMS de rappel a bien été reçu par %{name}."
+  show_history_failed_send_reminder_notification_title: "Echec du SMS (rappel)"
+  show_history_failed_send_reminder_notification: "Le SMS de rappel n'a pas été reçu par %{name}."
+  show_history_send_now_cancelation_notification_title: "SMS envoyé (annulation)"
+  show_history_send_now_cancelation_notification: "[Texte du SMS] %{content}"
+  show_history_receive_cancelation_notification_title: "SMS reçu (annulation)"
+  show_history_receive_cancelation_notification: "Le SMS d'annulation a bien été reçu par %{name}."
+  show_history_failed_send_cancelation_notification_title: "Echec du SMS (annulation)"
+  show_history_failed_send_cancelation_notification: "Le SMS d'annulation n'a pas été reçu par %{name}."
+  show_history_send_now_no_show_notification_title: "SMS envoyé (rdv manqué)"
+  show_history_send_now_no_show_notification: "[Texte du SMS] %{content}"
+  show_history_send_now_reschedule_notification_title: "SMS envoyé (rdv replanifié)"
+  show_history_send_now_reschedule_notification: "[Texte du SMS] %{content}"
+
+  show_history_reschedule_appointment_title: "RDV replanifié"
+  show_history_reschedule_appointment: "Le RDV a été replanifié."
+
+  appointment_place: "Lieu de RDV"
+  appointment_date: "Date"
+  appointment_starting_time: "Heure"
+  appointment_state: "Statut"
+  appointment_origin_department: "Service d'origine"
+  new_appointment_title: "Nouveau rendez-vous"
+  new-appointment-place: "Lieu de rendez-vous :"
+  new-appointment-available-slots: Créneaux disponibles
+  new-appointment-no-slot: "Pas de créneau disponible"
+  new-appointment-no-place: "Vous n'avez accès à aucun lieu proposant ce type de RDV"
+  new_appointment_reload: "Recharger"
+  search-appointment-placeholder: "Saisir une date : dd/mm/yyyy"
+  index-appointment-agenda-filter: "Agenda"
+  today_appointments_place_filter: "Lieu de RDV"
+  no_appointment_today: "Pas de rendez-vous prévu aujourd'hui"
+  new-appointment-help: "Sélectionnez un lieu de RDV pour afficher les créneaux disponibles."
+  new-appointment-warning: "En cliquant sur \"Enregistrer\", vous générez l'envoi d'un SMS de rappel 48h avant le rendez-vous (si un numéro de téléphone a été donné)."
+  new-appointment-confirmation-warning: "Voulez-vous également envoyer immédiatement un SMS de confirmation à la PPSMJ pour ce rendez-vous ?."
+  new-appointment-bex-warning: "Attention, le créneau de 9h est réservé aux DDSE."
+  show_appointment_title: "Infos rendez-vous"
+  cancel_appointment_warning: "En annulant le RDV, vous envoyez un SMS d'annulation à la PPSMJ, et vous annulez le SMS de rappel prévu. Êtes-vous sûr.e ?"
+  appointment-reschedule-title: 'Replanifier un rendez-vous'
+  new-appointment-jap-agendas: "Liste agendas JAP"
+
+  bex_jap_appointments_link: "Agenda RDV JAP"
+  bex_jap_agendas_title: "Agenda RDV JAP pour le vendredi"
+  bex_jap_agenda_header_hour: Heure
+  bex_jap_agenda_header_last_name: Nom
+  bex_jap_agenda_header_first_name: Prénom
+  bex_jap_agenda_header_prosecutor: Numéro parquet
+  bex_jap_agenda_header_origin: "Service d'origine"
+
+  bex_spip_appointments_link: "Agenda RDV SPIP"
+  bex_spip_appointments_title: "Agenda RDV SPIP pour"
+
+  today_agendas_title: "RDV prévus pour le"
+  today_agendas_title_part2: "au"
+
+  edit_appointment_type_title: Modifier Type de RDV
+  edit_appointment_type_notifications: Notifications
+  edit_appointment_type_slots: Créneaux récurrents
+  edit_appointment_type_add_slot: Ajouter créneau
+  edit_appointment_type_slot_type_duration: "Durée (minutes)"
+
+  new_place_title: "Nouveau Lieu"
+  new_place_submit: "Enregistrer"
+  edit_place_title: "Modifier Lieu"
+  edit_place_agendas: Agendas
+  edit_place_add_agenda: Ajouter agenda
+  edit_place_appointment_types: Types de rdv possibles
+  edit_place_update_agenda: "Enregistrer"
+  edit_place_slot_types_agenda: "Créneaux récurrents"
+  edit_place_delete_agenda: "Supprimer"
+  delete_place_confirmation: "Attention, en supprimant ce lieu, vous supprimez tous les créneaux associés et les rendez-vous programmés."
+
+  index_slot_types_title: "Créneaux récurrents"
+  index_slot_types_title_place: "%{place} : %{agenda}"
+  index_slot_types_warning: "Les modifications sur cette page seront répercutées pour la prise de rdv dans un délai de 24h."
+  index_slot_types_back_link: "Retour %{place}"
+  index_slot_types_update: "Enregistrer"
+  index_slot_types_delete: "Supprimer"
+  index_slot_types_create: "Ajouter"
+
+  slot_types_batch_opening: "Premier créneau"
+  slot_types_batch_closing: "Dernier créneau"
+  slot_types_batch_interval: "Intervale (min)"
+  slot_types_batch_capacity: "Capacité"
+  slot_types_batch_duration: "Durée (min)"
+  slot_types_batch_interval_placeholder: "ex: 15"
+  slot_types_batch_capacity_placeholder: "ex: 6"
+  slot_types_batch_duration_placeholder: "ex: 30"
+  slot_types_batch_submit: "Tout créer"
+  slot_types_batch_deletion: "Tout supprimer"
+  slot_type_delete_confirmation: "Supprimer un créneau récurrent supprimera également tous les créneaux associés, sauf si un rdv a déjà été pris sur ce créneau. Êtes-vous sûr(e)?"
+
+  new_slot_type_title: "Nouveau Créneau Récurent"
+  new_slot_type_submit: "Enregistrer"
+  edit_slot_type_title: "Modifier"
+  delete_slot_type_confirmation: "Attention, en supprimant ce créneau récurent, vous supprimez tous les créneaux associés."
+
+  new_slot_title: "Nouveau Créneau"
+  new_slot_submit: "Enregistrer"
+  index_slot_place_filter: "Lieu de RDV"
+
+  errors:
+    non_authorized: "Vous n'êtes pas autorisé à effectuer cette action"
+
+  sidebar:
+    home: "Accueil"
+    convicts: "PPSMJ"
+    appointments: "Rendez-vous"
+    appointment_types: "Types de RDV"
+    places: "Lieux"
+    slots: "Créneaux"
+    slot_types: 'Créneaux récurrents'
+    users: "Agents"
+    organizations: "Services"
+    guides: "Documentation"
+
+  simple_form:
+    options:
+      notification_types:
+        reminder_period:
+          one_day: "24h"
+          two_days: "48h"
+      appointment:
+        origin_department:
+          bex: "Agents du BEX"
+          gref_co: "Greffe correctionnel"
+          pr: "Parquet de l'exécution"
+      convict:
+        title:
+          male: "M."
+          female: "Mme"
+      slot_type:
+        week_day:
+          monday: Lundi
+          tuesday: Mardi
+          wednesday: Mercredi
+          thursday: Jeudi
+          friday: Vendredi
+
+  views:
+    pagination:
+      truncate: '...'

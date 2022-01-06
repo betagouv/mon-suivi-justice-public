@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@gouvfr/dsfr@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@gouvfr/dsfr/-/dsfr-1.2.1.tgz#68383192c24d521cf247992b11d891fb78d8f2f3"
-  integrity sha512-vnpeX+fZnW2KLl2PrcjHpUhOuO7twT9h3gwZvJLgVl+IosM4/Jesx5QMZAhsLl85Cq57mKhSjTnw8EZglLanUg==
-
 "@popperjs/core@^2.11.2":
   version "2.11.2"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.2.tgz#830beaec4b4091a9e9398ac50f865ddea52186b9"
