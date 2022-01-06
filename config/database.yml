@@ -83,5 +83,3 @@ test:
 production:
   <<: *default
   database: mon_suivi_justice_public_production
-  username: mon_suivi_justice_public
-  password: <%= ENV["MON_SUIVI_JUSTICE_PUBLIC_DATABASE_PASSWORD"] %>
