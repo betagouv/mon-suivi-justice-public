@@ -1,0 +1,39 @@
+name: CI
+on:
+  push:
+
+jobs:
+  lint-rb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.0
+          bundler-cache: true
+      - name: StandardRB Linter
+        run: bundle exec standardrb
+
+  lint-js:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.13.1
+          cache: yarn
+      - name: Install npm packages
+        run: yarn
+      - name: StandardJS Linter
+        run: yarn lint
+
+  static-code-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Brakeman Static Code Analysis
+        uses: devmasx/brakeman-linter-action@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

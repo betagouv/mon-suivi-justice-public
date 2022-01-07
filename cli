@@ -2,7 +2,7 @@
 
 # use this script with this command : $ ./cli
 
-require 'thor'
+require "thor"
 
 class CLI < Thor
   include Thor::Actions
@@ -20,77 +20,77 @@ class CLI < Thor
       # list.sort! { |a, b| a[0] <=> b[0] }
 
       # Add this line to remove the help-command itself from the output
-      list.reject! { |l| l[0].split[1] == 'help' }
+      list.reject! { |l| l[0].split[1] == "help" }
 
-      shell.say 'Commands:'
+      shell.say "Commands:"
       shell.say
 
-      staging_commands = list.select { |a| a[0].include? 'staging' }
-      production_commands = list.select { |a| a[0].include? 'prod' }
+      staging_commands = list.select { |a| a[0].include? "staging" }
+      production_commands = list.select { |a| a[0].include? "prod" }
 
-      shell.say 'Staging'
+      shell.say "Staging"
       shell.print_table(staging_commands, indent: 2, truncate: true)
       shell.say
 
-      shell.say 'Production'
+      shell.say "Production"
       shell.print_table(production_commands, indent: 2, truncate: true)
       shell.say
     end
   end
 
-  desc 'deploy_staging', 'deploy staging from develop'
+  desc "deploy_staging", "deploy staging from develop"
   def deploy_staging
-    run('git push scalingo develop:master')
-    run('scalingo -a mon-suivi-justice-public-staging run rails db:migrate')
+    run("git push scalingo develop:master")
+    run("scalingo -a mon-suivi-justice-public-staging run rails db:migrate")
 
     say
-    say 'Staging deployed'
+    say "Staging deployed"
     say
   end
 
-  desc 'console_staging', 'launch MSJ staging rails console'
+  desc "console_staging", "launch MSJ staging rails console"
   def console_staging
-    run('scalingo -a mon-suivi-justice-public-staging run rails console')
+    run("scalingo -a mon-suivi-justice-public-staging run rails console")
   end
 
-  desc 'bash_staging', 'launch bash on MSJ staging'
+  desc "bash_staging", "launch bash on MSJ staging"
   def bash_staging
-    run('scalingo -a mon-suivi-justice-public-staging run bash')
+    run("scalingo -a mon-suivi-justice-public-staging run bash")
   end
 
-  desc 'logs_staging', 'streams MSJ staging logs'
+  desc "logs_staging", "streams MSJ staging logs"
   def logs_staging
-    run('scalingo -a mon-suivi-justice-public-staging logs -f')
+    run("scalingo -a mon-suivi-justice-public-staging logs -f")
   end
 
-  desc 'migrations_staging', 'launch migrations on MSJ staging'
+  desc "migrations_staging", "launch migrations on MSJ staging"
   def migrations_staging
-    run('scalingo -a mon-suivi-justice-public-staging run rails db:migrate')
+    run("scalingo -a mon-suivi-justice-public-staging run rails db:migrate")
   end
 
-  desc 'deploy_prod', 'launch bin/deploy-prod script'
+  desc "deploy_prod", "launch bin/deploy-prod script"
   def deploy_prod
-    run('bin/deploy-prod')
+    run("bin/deploy-prod")
   end
 
-  desc 'console_prod', 'launch MSJ production rails console'
+  desc "console_prod", "launch MSJ production rails console"
   def console_prod
-    run('scalingo -a mon-suivi-justice-public-prod --region osc-secnum-fr1 run rails console')
+    run("scalingo -a mon-suivi-justice-public-prod --region osc-secnum-fr1 run rails console")
   end
 
-  desc 'bash_prod', 'launch bash on MSJ prod'
+  desc "bash_prod", "launch bash on MSJ prod"
   def bash_prod
-    run('scalingo -a mon-suivi-justice-public-prod --region osc-secnum-fr1 run bash')
+    run("scalingo -a mon-suivi-justice-public-prod --region osc-secnum-fr1 run bash")
   end
 
-  desc 'logs_prod', 'streams MSJ production logs'
+  desc "logs_prod", "streams MSJ production logs"
   def logs_prod
-    run('scalingo -a mon-suivi-justice-public-prod --region osc-secnum-fr1 logs -f')
+    run("scalingo -a mon-suivi-justice-public-prod --region osc-secnum-fr1 logs -f")
   end
 
-  desc 'migrations_prod', 'launch migrations on MSJ production'
+  desc "migrations_prod", "launch migrations on MSJ production"
   def migrations_prod
-    run('scalingo -a mon-suivi-justice-public-prod --region osc-secnum-fr1 run rails db:migrate')
+    run("scalingo -a mon-suivi-justice-public-prod --region osc-secnum-fr1 run rails db:migrate")
   end
 end
 
