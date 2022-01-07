@@ -49,6 +49,8 @@ group :development, :test do
 
   gem "brakeman", "~> 5.2"
   gem "standard", "~> 1.6"
+
+  gem "rspec-rails", "~> 5.0"
 end
 
 group :development do
