@@ -39,6 +39,7 @@
 .static-infos-page-header-category {
   font-size: 16px;
   text-transform: uppercase;
+  color: $msj-white-text;
 
   @media (min-width: $msj-small-breakpoint) {
     font-size: 18px;
@@ -47,6 +48,7 @@
 
 .static-infos-page-header-title {
   font-size: 36px;
+  color: $msj-white-text;
 
   @media (min-width: $msj-small-breakpoint) {
     font-size: 48px;
