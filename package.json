@@ -12,6 +12,7 @@
     "@hotwired/turbo-rails": "^7.1.0",
     "@popperjs/core": "^2.11.2",
     "@rails/webpacker": "5.4.3",
+    "autoprefixer": "^10.4.2",
     "sass": "^1.46.0",
     "sass-loader": "^10.2.0",
     "webpack": "^4.46.0",
@@ -19,17 +20,14 @@
   },
   "scripts": {
     "lint": "standard",
-    "lint:fix": "standard --fix",
-    "test": "jest"
+    "lint:fix": "standard --fix"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.5",
     "standard": "^16.0.4",
     "webpack-dev-server": "^3"
   },
   "standard": {
-    "parser": "@babel/eslint-parser",
-    "env": [
-      "jest"
-    ]
+    "parser": "@babel/eslint-parser"
   }
 }
