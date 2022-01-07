@@ -14,6 +14,9 @@ gem "pg", "~> 1.2"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.5"
 
+# Needed by Spina
+gem 'sprockets-rails', '~> 3.4', '>= 3.4.2'
+
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails", "~> 1.0"
 
