@@ -69,9 +69,5 @@ jobs:
           bundler-cache: true
       - name: Setup test database
         run: bin/rails db:test:prepare
-        env:
-          DATABASE_URL: "postgres://postgres:postgres@localhost:5432"
       - name: Run tests
         run: bundle exec rspec
-        env:
-          DATABASE_URL: "postgres://postgres:postgres@localhost:5432"
