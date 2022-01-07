@@ -68,7 +68,7 @@ jobs:
           ruby-version: 3.1.0
           bundler-cache: true
       - name: Setup test database
-        run: bin/rails db:test:prepare
+        run: bin/rails db:create db:schema:load db:migrate RAILS_ENV=test
         env:
           DATABASE_URL: "postgres://postgres:postgres@localhost:5432"
           MSJ_DB_USER: msj
