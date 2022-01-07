@@ -37,3 +37,41 @@ jobs:
         uses: devmasx/brakeman-linter-action@v1.0.0
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  test-rb:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:13
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - "5432:5432"
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Node environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.13.1
+          cache: yarn
+      - name: Install Node dependencies
+        run: yarn
+      - name: Set up Ruby environment
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.0
+          bundler-cache: true
+      - name: Setup test database
+        run: bin/rails db:test:prepare
+        env:
+          DATABASE_URL: "postgres://postgres:postgres@localhost:5432"
+      - name: Run tests
+        run: bundle exec rspec
+        env:
+          DATABASE_URL: "postgres://postgres:postgres@localhost:5432"
