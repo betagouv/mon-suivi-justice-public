@@ -70,14 +70,14 @@ jobs:
       - name: Setup test database
         run: bin/rails db:test:prepare
         env:
-          DATABASE_URL: localhost
+          DATABASE_URL: "postgres://postgres:postgres@localhost:5432"
           MSJ_DB_USER: msj
           MSJ_DB_PASSWORD: msj
           MSJ_DB_NAME: msj_test
       - name: Run tests
         run: bundle exec rspec
         env:
-          DATABASE_URL: localhost
+          DATABASE_URL: "postgres://postgres:postgres@localhost:5432"
           MSJ_DB_USER: msj
           MSJ_DB_PASSWORD: msj
           MSJ_DB_NAME: msj_test
