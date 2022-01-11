@@ -1,6 +1,4 @@
 import '@hotwired/turbo-rails'
-import 'trix'
-import 'trix/dist/trix.css'
 import '@rails/actiontext'
 
 import 'controllers'
