@@ -1,0 +1,14 @@
+{
+  "landing": {
+    "card1_text": "Vous êtes convoqué au Tribunal ou au SPIP",
+    "card1_button_head": "Préparer",
+    "card1_button_sub": "mon rendez-vous",
+    "card2_text": "Vous cherchez des informations sur votre peine et ses aménagements",
+    "card2_button_head": "Comprendre",
+    "card2_button_sub": "ma peine",
+    "card3_text": "Suivi par un SPIP, vous cherchez comment réussir au mieux votre probation",
+    "card3_button_head": "Investir",
+    "card3_button_sub": "ma réinsertion",
+    "home_subtext": "Mon Suivi Justice vous accompagne dans l'exécution de votre suivi judiciaire. Il vous rappelle par SMS vos rendez-vous avec la Justice* et vous aide à mieux comprendre ce qui est attendu de vous."
+  }
+}

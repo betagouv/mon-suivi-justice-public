@@ -21,9 +21,16 @@ Spina::Theme.register do |theme|
   # - Option
   # - Repeater
   theme.parts = [
-    {name: "text", title: "Body", part_type: "Spina::Parts::Multiline"},
-    {name: "text3", title: "Body3", part_type: "Spina::Parts::Text"},
-    {name: "text2", title: "Body2", part_type: "Spina::Parts::MultiLine"}
+    {name: "card1_text", title: "Texte Bloc 1", part_type: "Spina::Parts::Line"},
+    {name: "card1_button_head", title: "Titre gras button bloc 1", part_type: "Spina::Parts::Line"},
+    {name: "card1_button_sub", title: "Sous titre button bloc 1", part_type: "Spina::Parts::Line"},
+    {name: "card2_text", title: "Texte Bloc 2", part_type: "Spina::Parts::Line"},
+    {name: "card2_button_head", title: "Titre gras button bloc 2", part_type: "Spina::Parts::Line"},
+    {name: "card2_button_sub", title: "Sous titre button bloc 2", part_type: "Spina::Parts::Line"},
+    {name: "card3_text", title: "Texte Bloc 3", part_type: "Spina::Parts::Line"},
+    {name: "card3_button_head", title: "Titre gras button bloc 3", part_type: "Spina::Parts::Line"},
+    {name: "card3_button_sub", title: "Sous titre button bloc 3", part_type: "Spina::Parts::Line"},
+    {name: "home_subtext", title: "Texte de présentation", part_type: "Spina::Parts::Line"}
   ]
 
   # View templates
@@ -31,16 +38,14 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
-    {name: "homepage", title: "Homepage", parts: %w[text text2 text3]},
-    {name: "landing", title: "Landing", parts: %w[text2]}
+    {name: "landing", title: "Landing", parts: %w[card1_text card1_button_head card1_button_sub card2_text card2_button_head card2_button_sub card3_text card3_button_head card3_button_sub home_subtext]}
   ]
 
   # Custom pages
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
-    {name: "homepage", title: "Homepage", deletable: false, view_template: "homepage"},
-    {name: "landing", title: "Show", view_template: "landing"}
+    {name: "landing", title: "Page d'accueil", view_template: "landing"}
   ]
 
   # Navigations (optional)

@@ -222,7 +222,6 @@
 .presentation-text-container {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
 }
 
 .presentation-picto {
@@ -232,7 +231,7 @@
   @media (min-width: $msj-medium-breakpoint) {
     margin-top: 0;
     margin-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     margin-right: 30px;
   }
 }
