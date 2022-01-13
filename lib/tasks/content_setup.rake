@@ -46,7 +46,8 @@ def page_parts(page)
     correct_seed_part = seed_parts.find { |p| p["name"].to_s == part[:name].to_s }
 
     { name: part.dig(:name), type: part.dig(:part_type),
-      title: part.dig(:title), content: correct_seed_part["content"] }
+      title: part.dig(:title), content: correct_seed_part["content"],
+      content_attributes: correct_seed_part["content_attributes"]}
   end
 end
 

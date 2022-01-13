@@ -22,6 +22,9 @@ Spina::Theme.register do |theme|
   # - Repeater
   theme.parts = [
     {name: "footer_text", title: "Texte de pied de page", part_type: "Spina::Parts::Line"},
+    {name: "main_title", title: "Title de la page", part_type: "Spina::Parts::Line"},
+    {name: "main_description", title: "Texte de présentation", part_type: "Spina::Parts::Line"},
+    {name: "main_rich_description", title: "Texte de présentation", part_type: "Spina::Parts::Text"},
     {name: "card1_text", title: "Texte Bloc 1", part_type: "Spina::Parts::Line"},
     {name: "card1_button_head", title: "Titre gras button bloc 1", part_type: "Spina::Parts::Line"},
     {name: "card1_button_sub", title: "Sous titre button bloc 1", part_type: "Spina::Parts::Line"},
@@ -31,7 +34,9 @@ Spina::Theme.register do |theme|
     {name: "card3_text", title: "Texte Bloc 3", part_type: "Spina::Parts::Line"},
     {name: "card3_button_head", title: "Titre gras button bloc 3", part_type: "Spina::Parts::Line"},
     {name: "card3_button_sub", title: "Sous titre button bloc 3", part_type: "Spina::Parts::Line"},
-    {name: "home_subtext", title: "Texte de présentation", part_type: "Spina::Parts::Line"}
+    {name: "collapse_title", title: "Titre", part_type: "Spina::Parts::Line"},
+    {name: "collapse_rich_content", title: "Contenu", part_type: "Spina::Parts::Text"},
+    {name: "rich_collapse", title: "Contenu déroulable", parts: %w(collapse_title collapse_rich_content), part_type: "Spina::Parts::Repeater" }
   ]
 
   # View templates
@@ -39,14 +44,16 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
-    {name: "landing", title: "Landing", parts: %w[card1_text card1_button_head card1_button_sub card2_text card2_button_head card2_button_sub card3_text card3_button_head card3_button_sub home_subtext]}
+    {name: "landing", title: "Landing", parts: %w[card1_text card1_button_head card1_button_sub card2_text card2_button_head card2_button_sub card3_text card3_button_head card3_button_sub main_description]},
+    {name: "amenagements_de_peine", title: "Aménagements de peine", parts: %w[main_title main_rich_description rich_collapse]}
   ]
 
   # Custom pages
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
-    {name: "landing", title: "Page d'accueil", view_template: "landing"}
+    {name: "landing", title: "Page d'accueil", view_template: "landing"},
+    {name: "amenagements_de_peine", title: "Aménagements de peine", view_template: "amenagements_de_peine"}
   ]
 
   # Navigations (optional)
