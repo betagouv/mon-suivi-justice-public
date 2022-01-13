@@ -22,21 +22,28 @@ Spina::Theme.register do |theme|
   # - Repeater
   theme.parts = [
     {name: "footer_text", title: "Texte de pied de page", part_type: "Spina::Parts::Line"},
-    {name: "main_title", title: "Title de la page", part_type: "Spina::Parts::Line"},
+    {name: "main_title", title: "Titre de la page", part_type: "Spina::Parts::Line"},
     {name: "main_description", title: "Texte de présentation", part_type: "Spina::Parts::Line"},
     {name: "main_rich_description", title: "Texte de présentation", part_type: "Spina::Parts::Text"},
+    {name: "first_subtitle", title: "Premier sous-titre de la page", part_type: "Spina::Parts::Line"},
+    {name: "secondary_subtitle", title: "Second sous-titre de la page", part_type: "Spina::Parts::Line"},
+    {name: "card_title", title: "Titre du Bloc", part_type: "Spina::Parts::Line"},
+    {name: "card1_title", title: "Titre Bloc 1", part_type: "Spina::Parts::Line"},
     {name: "card1_text", title: "Texte Bloc 1", part_type: "Spina::Parts::Line"},
     {name: "card1_button_head", title: "Titre gras button bloc 1", part_type: "Spina::Parts::Line"},
     {name: "card1_button_sub", title: "Sous titre button bloc 1", part_type: "Spina::Parts::Line"},
+    {name: "card2_title", title: "Titre Bloc 2", part_type: "Spina::Parts::Line"},
     {name: "card2_text", title: "Texte Bloc 2", part_type: "Spina::Parts::Line"},
     {name: "card2_button_head", title: "Titre gras button bloc 2", part_type: "Spina::Parts::Line"},
     {name: "card2_button_sub", title: "Sous titre button bloc 2", part_type: "Spina::Parts::Line"},
+    {name: "card3_title", title: "Titre Bloc 3", part_type: "Spina::Parts::Line"},
     {name: "card3_text", title: "Texte Bloc 3", part_type: "Spina::Parts::Line"},
     {name: "card3_button_head", title: "Titre gras button bloc 3", part_type: "Spina::Parts::Line"},
     {name: "card3_button_sub", title: "Sous titre button bloc 3", part_type: "Spina::Parts::Line"},
     {name: "collapse_title", title: "Titre", part_type: "Spina::Parts::Line"},
     {name: "collapse_rich_content", title: "Contenu", part_type: "Spina::Parts::Text"},
-    {name: "rich_collapse", title: "Contenu déroulable", parts: %w(collapse_title collapse_rich_content), part_type: "Spina::Parts::Repeater" }
+    {name: "rich_collapse", title: "Contenu déroulable", parts: %w(collapse_title collapse_rich_content), part_type: "Spina::Parts::Repeater" },
+    {name: "basic_card", title: "Bloc", parts: %w(card_title), part_type: "Spina::Parts::Repeater" }
   ]
 
   # View templates
@@ -45,7 +52,8 @@ Spina::Theme.register do |theme|
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
     {name: "landing", title: "Landing", parts: %w[card1_text card1_button_head card1_button_sub card2_text card2_button_head card2_button_sub card3_text card3_button_head card3_button_sub main_description]},
-    {name: "amenagements_de_peine", title: "Aménagements de peine", parts: %w[main_title main_rich_description rich_collapse]}
+    {name: "amenagements_de_peine", title: "Aménagements de peine", parts: %w[main_title main_rich_description rich_collapse]},
+    {name: "comprendre_ma_peine", title: "Comprendre ma peine", parts: %w[main_title main_description first_subtitle card1_title card1_text card2_title card2_text secondary_subtitle basic_card]}
   ]
 
   # Custom pages
@@ -53,7 +61,8 @@ Spina::Theme.register do |theme|
   # By naming them you can reference them in your code.
   theme.custom_pages = [
     {name: "landing", title: "Page d'accueil", view_template: "landing"},
-    {name: "amenagements_de_peine", title: "Aménagements de peine", view_template: "amenagements_de_peine"}
+    {name: "amenagements_de_peine", title: "Aménagements de peine", view_template: "amenagements_de_peine"},
+    {name: "comprendre_ma_peine", title: "Comprendre ma peine", view_template: "comprendre_ma_peine"}
   ]
 
   # Navigations (optional)
