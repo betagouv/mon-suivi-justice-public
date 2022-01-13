@@ -53,7 +53,8 @@ Spina::Theme.register do |theme|
   theme.view_templates = [
     {name: "landing", title: "Landing", parts: %w[card1_text card1_button_head card1_button_sub card2_text card2_button_head card2_button_sub card3_text card3_button_head card3_button_sub main_description]},
     {name: "amenagements_de_peine", title: "Aménagements de peine", parts: %w[main_title main_rich_description rich_collapse]},
-    {name: "comprendre_ma_peine", title: "Comprendre ma peine", parts: %w[main_title main_description first_subtitle card1_title card1_text card2_title card2_text secondary_subtitle basic_card]}
+    {name: "comprendre_ma_peine", title: "Comprendre ma peine", parts: %w[main_title main_description first_subtitle card1_title card1_text card2_title card2_text secondary_subtitle basic_card]},
+    {name: "donnees_personnelles", title: "Données personnelles", parts: %w[main_title main_rich_description]}
   ]
 
   # Custom pages
@@ -62,7 +63,8 @@ Spina::Theme.register do |theme|
   theme.custom_pages = [
     {name: "landing", title: "Page d'accueil", view_template: "landing"},
     {name: "amenagements_de_peine", title: "Aménagements de peine", view_template: "amenagements_de_peine"},
-    {name: "comprendre_ma_peine", title: "Comprendre ma peine", view_template: "comprendre_ma_peine"}
+    {name: "comprendre_ma_peine", title: "Comprendre ma peine", view_template: "comprendre_ma_peine"},
+    {name: "donnees_personnelles", title: "Données personnelles", view_template: "donnees_personnelles"}
   ]
 
   # Navigations (optional)
