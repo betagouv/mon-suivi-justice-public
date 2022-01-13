@@ -1,4 +1,3 @@
-import './amenagements'
 import './obligations'
 import './preparer'
 import './stage'
