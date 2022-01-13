@@ -6,7 +6,7 @@
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
   theme.name = "default"
-  theme.title = "Default theme"
+  theme.title = "Thème par défaut"
 
   # Parts
   # Define all editable parts you want to use in your view templates
@@ -21,6 +21,7 @@ Spina::Theme.register do |theme|
   # - Option
   # - Repeater
   theme.parts = [
+    {name: "footer_text", title: "Texte de pied de page", part_type: "Spina::Parts::Line"},
     {name: "card1_text", title: "Texte Bloc 1", part_type: "Spina::Parts::Line"},
     {name: "card1_button_head", title: "Titre gras button bloc 1", part_type: "Spina::Parts::Line"},
     {name: "card1_button_sub", title: "Sous titre button bloc 1", part_type: "Spina::Parts::Line"},
@@ -51,14 +52,12 @@ Spina::Theme.register do |theme|
   # Navigations (optional)
   # If your project has multiple navigations, it can be useful to configure multiple
   # navigations.
-  theme.navigations = [
-    {name: "main", label: "Main navigation"}
-  ]
+  theme.navigations = []
 
   # Layout parts (optional)
   # You can create global content that doesn't belong to one specific page. We call these layout parts.
   # You only have to reference the name of the parts you want to have here.
-  theme.layout_parts = []
+  theme.layout_parts = ["footer_text"]
 
   # Resources (optional)
   # Think of resources as a collection of pages. They are managed separately in Spina

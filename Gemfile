@@ -30,6 +30,8 @@ gem "rails-i18n", "~> 7.0"
 
 gem "spina", "~> 2.7"
 
+gem 'highline', '~> 2.0', '>= 2.0.3'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
