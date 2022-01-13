@@ -27,6 +27,7 @@ Spina::Theme.register do |theme|
     {name: "main_rich_description", title: "Texte de présentation", part_type: "Spina::Parts::Text"},
     {name: "first_subtitle", title: "Premier sous-titre de la page", part_type: "Spina::Parts::Line"},
     {name: "secondary_subtitle", title: "Second sous-titre de la page", part_type: "Spina::Parts::Line"},
+    {name: "button_text", title: "Titre du Button", part_type: "Spina::Parts::Line"},
     {name: "card_title", title: "Titre du Bloc", part_type: "Spina::Parts::Line"},
     {name: "card1_title", title: "Titre Bloc 1", part_type: "Spina::Parts::Line"},
     {name: "card1_text", title: "Texte Bloc 1", part_type: "Spina::Parts::Line"},
@@ -54,7 +55,8 @@ Spina::Theme.register do |theme|
     {name: "landing", title: "Landing", parts: %w[card1_text card1_button_head card1_button_sub card2_text card2_button_head card2_button_sub card3_text card3_button_head card3_button_sub main_description]},
     {name: "amenagements_de_peine", title: "Aménagements de peine", parts: %w[main_title main_rich_description rich_collapse]},
     {name: "comprendre_ma_peine", title: "Comprendre ma peine", parts: %w[main_title main_description first_subtitle card1_title card1_text card2_title card2_text secondary_subtitle basic_card]},
-    {name: "donnees_personnelles", title: "Données personnelles", parts: %w[main_title main_rich_description]}
+    {name: "donnees_personnelles", title: "Données personnelles", parts: %w[main_title main_rich_description]},
+    {name: "ma_reinsertion", title: "Investir ma réinsertion", parts: %w[main_title main_description main_rich_description button_text]}
   ]
 
   # Custom pages
@@ -64,7 +66,8 @@ Spina::Theme.register do |theme|
     {name: "landing", title: "Page d'accueil", view_template: "landing"},
     {name: "amenagements_de_peine", title: "Aménagements de peine", view_template: "amenagements_de_peine"},
     {name: "comprendre_ma_peine", title: "Comprendre ma peine", view_template: "comprendre_ma_peine"},
-    {name: "donnees_personnelles", title: "Données personnelles", view_template: "donnees_personnelles"}
+    {name: "donnees_personnelles", title: "Données personnelles", view_template: "donnees_personnelles"},
+    {name: "ma_reinsertion", title: "Investir ma réinsertion", view_template: "ma_reinsertion"}
   ]
 
   # Navigations (optional)
