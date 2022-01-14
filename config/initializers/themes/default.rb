@@ -62,7 +62,8 @@ Spina::Theme.register do |theme|
     {name: "comprendre_ma_peine", title: "Comprendre ma peine", parts: %w[main_title main_description first_subtitle card1_title card1_text card2_title card2_text secondary_subtitle basic_card]},
     {name: "donnees_personnelles", title: "Données personnelles", parts: %w[main_title main_rich_description]},
     {name: "ma_reinsertion", title: "Investir ma réinsertion", parts: %w[main_title subtitle main_rich_description button_text]},
-    {name: "obligations_personnelles", title: "Obligations personnelles", parts: %w[category main_title subtitle main_description rich_collapse]}
+    {name: "obligations_personnelles", title: "Obligations personnelles", parts: %w[category main_title subtitle main_description rich_collapse]},
+    {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", parts: %w[main_title subtitle main_rich_description basic_card]}
   ]
 
   # Custom pages
@@ -74,7 +75,8 @@ Spina::Theme.register do |theme|
     {name: "comprendre_ma_peine", title: "Comprendre ma peine", view_template: "comprendre_ma_peine"},
     {name: "donnees_personnelles", title: "Données personnelles", view_template: "donnees_personnelles"},
     {name: "ma_reinsertion", title: "Investir ma réinsertion", view_template: "ma_reinsertion"},
-    {name: "obligations_personnelles", title: "Obligations personnelles", view_template: "obligations_personnelles"}
+    {name: "obligations_personnelles", title: "Obligations personnelles", view_template: "obligations_personnelles"},
+    {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", view_template: "preparer_mon_rdv"}
   ]
 
   # Navigations (optional)
