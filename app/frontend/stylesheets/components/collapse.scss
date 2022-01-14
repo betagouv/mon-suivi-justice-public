@@ -1,0 +1,24 @@
+.collapse-trigger {
+  border: 2px solid $msj-orange;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  max-width: 850px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: $msj-clear-background;
+  padding: 10px 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapse-menu-picto {
+  &:before { font-size: 24px; }
+}
+
+.collapse-picto-active { display: flex; }
+.collapse-picto-inactive { display: none; }

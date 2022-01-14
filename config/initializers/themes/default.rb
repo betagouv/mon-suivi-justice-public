@@ -45,7 +45,9 @@ Spina::Theme.register do |theme|
     {name: "card3_button_sub", title: "Sous titre button bloc 3", part_type: "Spina::Parts::Line"},
     {name: "collapse_title", title: "Titre", part_type: "Spina::Parts::Line"},
     {name: "collapse_rich_content", title: "Contenu", part_type: "Spina::Parts::Text"},
-    {name: "rich_collapse", title: "Contenu déroulable", parts: %w(collapse_title collapse_rich_content), part_type: "Spina::Parts::Repeater" },
+    {name: "collapse_rich_content_alert", title: "Encart rouge", part_type: "Spina::Parts::Text" },
+    {name: "collapse_rich_content_good_practice", title: "Encart vert", part_type: "Spina::Parts::Text" },
+    {name: "rich_collapse", title: "Contenu déroulant", parts: %w(collapse_title collapse_rich_content collapse_rich_content_alert collapse_rich_content_good_practice), part_type: "Spina::Parts::Repeater" },
     {name: "basic_card", title: "Bloc", parts: %w(card_title), part_type: "Spina::Parts::Repeater" }
   ]
 

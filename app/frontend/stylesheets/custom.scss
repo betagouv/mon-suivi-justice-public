@@ -176,12 +176,6 @@
   margin: auto;
 }
 
-.static-dropdown-trigger {
-  display: flex;
-  cursor: pointer;
-  font-weight: bold;
-}
-
 .static-dropdown-picto {
   &:before {
     font-size: 28px;
@@ -191,9 +185,6 @@
     }
   }
 }
-
-.static-dropdown-picto-active { display: flex; }
-.static-dropdown-picto-inactive { display: none; }
 
 .static-card {
   border: 2px solid $msj-border;
@@ -211,6 +202,8 @@
 }
 
 .static-important-card {
+  display: flex;
+  align-items: center;
   padding: 20px;
   border-color: $msj-red;
   background-color: lighten($msj-red, 30%);
@@ -219,8 +212,19 @@
     padding: 20px 30px;
   }
 }
+
+.static-important-exclamation-triangle {
+  font-size: 50px;
+  margin-right: 40px;
+  margin-left: 10px;
+  color: $msj-red;
+  display: flex;
+  align-items: center;
+}
+
 .static-good-practice-card {
   display: flex;
+  align-items: center;
   padding: 20px;
   border-color: $msj-green;
   background-color: lighten(palegreen, 15%);
