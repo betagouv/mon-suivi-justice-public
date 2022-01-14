@@ -1,0 +1,101 @@
+{
+  "comprendre_ma_peine": [
+    {
+      "name": "main_title",
+      "content": "Comprendre ma peine"
+    },
+    {
+      "name": "main_description",
+      "content": "Vous avez été condamné à une mesure judiciaire en milieu ouvert ? Vous trouverez dans cet espace toutes les informations pour comprendre votre condamnation et ce qui est attendu de vous."
+    },
+    {
+      "name": "first_subtitle",
+      "content": "Ce que vous devez principalement retenir"
+    },
+    {
+      "name": "card1_title",
+      "content": "Les règles essentielles"
+    },
+    {
+      "name": "card1_text",
+      "content": "Découvrir les 6 régles essentielles pour réussir son suivi"
+    },
+    {
+      "name": "card2_title",
+      "content": "Mes obligations personnelles"
+    },
+    {
+      "name": "card2_text",
+      "content": "Découvrir les règles qui s'appliquent spécifiquement à vous"
+    },
+    {
+      "name": "secondary_subtitle",
+      "content": "Je suis condamné à :"
+    },
+    {
+      "name": "basic_card",
+      "content_attributes": [
+        {
+          "name": "basic_card",
+          "title": "Bloc",
+          "parts_attributes": [
+            {
+              "name": "card_title",
+              "title": "Titre du Bloc",
+              "content": "Un sursis probatoire",
+              "type": "Spina::Parts::Line"
+            }
+          ]
+        },
+        {
+          "name": "basic_card",
+          "title": "Bloc",
+          "parts_attributes": [
+            {
+              "name": "card_title",
+              "title": "Titre du Bloc",
+              "content": "Un travail d'intérêt général",
+              "type": "Spina::Parts::Line"
+            }
+          ]
+        },
+        {
+          "name": "basic_card",
+          "title": "Bloc",
+          "parts_attributes": [
+            {
+              "name": "card_title",
+              "title": "Titre du Bloc",
+              "content": "Un suivi socio-judiciaire",
+              "type": "Spina::Parts::Line"
+            }
+          ]
+        },
+        {
+          "name": "basic_card",
+          "title": "Bloc",
+          "parts_attributes": [
+            {
+              "name": "card_title",
+              "title": "Titre du Bloc",
+              "content": "Un stage",
+              "type": "Spina::Parts::Line"
+            }
+          ]
+        },
+        {
+          "name": "basic_card",
+          "title": "Bloc",
+          "parts_attributes": [
+            {
+              "name": "card_title",
+              "title": "Titre du Bloc",
+              "content": "Un aménagement de peine",
+              "type": "Spina::Parts::Line"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

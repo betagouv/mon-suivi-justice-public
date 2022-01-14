@@ -30,17 +30,14 @@ def theme
   @theme ||= Spina::Theme.find_by_name("default")
 end
 
-def content
-  @content ||= JSON.parse(File.read("lib/tasks/assets/site-content.json"))
-end
-
 def page_params(page)
   { fr_content_attributes: page_parts(page) }
 end
 
 # Merge the seed_parts (from the json seed file) with the parts from the theme
 def page_parts(page)
-  seed_parts = content.dig("pages", page.name)
+  seed_parts =
+    JSON.parse(File.read("lib/tasks/site_content_seed/#{page.name}.json")).dig(page.name)
 
   page_theme_parts(page).map do |part|
     correct_seed_part = seed_parts.find { |p| p["name"].to_s == part[:name].to_s }
@@ -62,7 +59,7 @@ end
 
 
 def layout_parts
-  seed_parts = content.dig("layout")
+  seed_parts = JSON.parse(File.read("lib/tasks/site_content_seed/layout.json")).dig("layout")
 
   layout_theme_parts.map do |part|
     correct_seed_part = seed_parts.find { |p| p["name"].to_s == part[:name].to_s }

@@ -22,6 +22,7 @@ Spina::Theme.register do |theme|
   # - Repeater
   theme.parts = [
     {name: "footer_text", title: "Texte de pied de page", part_type: "Spina::Parts::Line"},
+    {name: "category", title: "Catégorie de la page", part_type: "Spina::Parts::Line"},
     {name: "main_title", title: "Titre de la page", part_type: "Spina::Parts::Line"},
     {name: "subtitle", title: "Sous-titre de la page", part_type: "Spina::Parts::Line"},
     {name: "main_description", title: "Texte de présentation", part_type: "Spina::Parts::Line"},
