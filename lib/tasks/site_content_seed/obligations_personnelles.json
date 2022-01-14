@@ -1,0 +1,833 @@
+[
+  {
+    "name": "category",
+    "content": "Comprendre ma peine"
+  },
+  {
+    "name": "main_title",
+    "content": "Mes obligations personnelles"
+  },
+  {
+    "name": "subtitle",
+    "content": "Découvrir les règles qui s'appliquent spécifiquement à vous"
+  },
+  {
+    "name": "main_description",
+    "content": "Selon votre situation et l’infraction commise, vous pouvez être soumis à plusieurs obligations spécialement imposées par le juge."
+  },
+  {
+    "name": "rich_collapse",
+    "content_attributes": [
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "1. Travailler ou suivre une formation",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>1° Exercer une activité professionnelle ou suivre un enseignement ou une formation professionnelle.<br><br><h4>Ce que ça veut dire</h4>Vous devez apporter les justificatifs d’une activité professionnelle légale : emploi, formation, cursus scolaire...<br><br>Bonne pratique: pensez à garder tous vos justificatifs (fiches de paie, contrat de travail, attestation de formation, relevés de courses, factures...)",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "2. Déclarer une adresse",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>2° Établir sa résidence en un lieu déterminé.<br><br><h4>Ce que ça veut dire</h4>Vous devez avoir une adresse permettant de recevoir des courriers et des convocations avec accusé-réception.<br><br>Tous les courriers qui vous sont adressés sont censés être reçus. A vous de signaler tout changement d’adresse.<br><br>Le SPIP peut vous apporter de l’aide en cas de difficulté sur ce point. N’hésitez pas à en parler à votre CPIP.<br><br>Bonne pratique : préciser par exemple, chez Monsieur ou Madame XXX si votre nom n’est pas sur la boîte aux lettres.<br><br>Bonne pratique : pensez aussi à donner votre numéro de téléphone portable pour bénéficier du rappel de convocation par SMS et être appelé directement en cas de difficulté avec votre courrier.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "3. Reçevoir des soins",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>3° Se soumettre à des mesures d'examen médical, de traitement ou de soins, même sous le régime de l'hospitalisation. Ces mesures peuvent consister en l'injonction thérapeutique prévue par les articles L. 3413-1 à L. 3413-4 du code de la santé publique, lorsqu'il apparaît que le condamné fait usage de stupéfiants ou fait une consommation habituelle et excessive de boissons alcooliques.<br><br><h4>Ce que ça veut dire</h4>Vous devez apporter les justificatifs des soins que vous avez engagés.<br><br>Il vous appartient de déterminer, avec votre médecin et/ou votre CPIP, les soins qui sont adaptés à votre situation.<br><br>Par exemple: soins psychologiques, soins en addictologie (alcool, drogue, jeu...)",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "4. Participer aux charges familiales",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>4° Justifier qu'il contribue aux charges familiales ou acquitte régulièrement les pensions alimentaires dont il est débiteur.<br><br><h4>Ce que ça veut dire</h4>Vous devez apporter les justificatifs des paiements effectués.<br><br>Les paiements sont fixés à la hauteur de vos ressources financières. Parlez-en avec votre CPIP.<br><br>Bonne pratique: pensez à garder tous vos justificatifs (mandats cash, relevés bancaires...)",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "5. Réparer les dommages causés",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>5° Réparer en tout ou partie, en fonction de ses facultés contributives, les dommages causés par l'infraction, même en l'absence de décision sur l'action civile.<br><br><h4>Ce que ça veut dire</h4>Vous devez apporter les justificatifs des paiements effectués.<br><br>Les paiements sont fixés à la hauteur de vos ressources financières. Parlez-en avec votre CPIP.<br><br>Bonne pratique: pensez à garder tous vos justificatifs (mandats cash, relevés bancaires...)",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "6. Payer ses amendes",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>6° Justifier qu'il acquitte en fonction de ses facultés contributives les sommes dues au Trésor public à la suite de la condamnation.<br><br><h4>Ce que ça veut dire</h4>Vous devez apporter les justificatifs des paiements effectués.<br><br>Les paiements sont fixés à la hauteur de vos ressources financières. Parlez-en avec votre CPIP.<br><br>Bonne pratique: pensez à garder tous vos justificatifs (mandats cash, relevés bancaires...)",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "7. Ne pas conduire certains véhicules",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>7° S'abstenir de conduire certains véhicules déterminés par les catégories de permis prévues par le code de la route ou de conduire un véhicule qui ne soit pas équipé, par un professionnel agréé ou par construction, d'un dispositif homologué d'antidémarrage par éthylotest électronique.<br><br><h4>Ce que ça veut dire</h4>Le non-respect de cette interdiction, même pour une courte durée, une courte distance ou pour une urgence, peut entraîner des sanctions.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "7bis. Passer le permis de conduire",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>7° bis Sous réserve de son accord, s'inscrire et se présenter aux épreuves du permis de conduire, le cas échéant après avoir suivi des leçons de conduite.<br><br><h4>Ce que ça veut dire</h4>Le SPIP peut vous orienter vers des auto-écoles sociales ou des organismes vous permettant de vous aider à financer le permis de conduire. N’hésitez pas à en parler à votre CPIP.<br><br>Vous devez apporter les justificatifs de votre inscription et/ou du passage des épreuves.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "8. Ne pas travailler dans un certain domaine",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>8° Ne pas se livrer à l'activité dans l'exercice ou à l'occasion de l'exercice de laquelle l'infraction a été commise ou ne pas exercer une activité impliquant un contact habituel avec des mineurs.<br><br><h4>Ce que ça veut dire</h4>Si vous êtes concerné par cette interdiction, vous n’avez pas le droit de travailler dans un domaine identique à celui pour lequel vous avez été condamné (ex : vous avez escroqué un particulier sur la vente d’une voiture, vous ne pouvez pas travailler chez un concessionnaire).<br><br>Si vous êtes concerné par cette interdiction, vous ne pouvez pas être en contact avec des mineurs dans le cadre d’une activité professionnelle (ex : éducateur sportif, cantinier, etc...).<br><br>Le non-respect de cette interdiction, même pour une courte durée, peut entraîner des sanctions. En cas de doute, parlez-en à votre CPIP.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "9. Ne pas fréquenter certains lieux",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>9° S'abstenir de paraître en tout lieu, toute catégorie de lieux ou toute zone spécialement désignés.<br><br><h4>Ce que ça veut dire</h4>Vous avez l’interdiction de fréquenter certains lieux, catégories de lieux ou zones qui ont été désignés par la juridiction de condamnation.<br><br>L’interdiction peut concerner une adresse exacte, une rue, un quartier, un département, une région...<br><br>Le non-respect de cette interdiction, même pour une courte durée, même une fois, peut entraîner des sanctions.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "10. Ne pas participer à des jeux d'argent",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>10° Ne pas engager de paris, notamment dans les organismes de paris mutuels, et ne pas prendre part à des jeux d'argent et de hasard.<br><br><h4>Ce que ça veut dire</h4>Vous avez l’interdiction de faire des paris, jeux d’argent ou de hasard (PMU, sites de paris sportifs, casinos, jeux à gratter...)<br><br>Le non-respect de cette interdiction, même pour une courte durée, même une fois, peut entraîner des sanctions.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "11. Ne pas entrer dans un bar",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>11° Ne pas fréquenter les débits de boissons.<br><br><h4>Ce que ça veut dire</h4>Vous avez l’interdiction de fréquenter tout établissement qui sert des boissons: bars, pubs...<br><br>Le non-respect de cette interdiction, même pour une courte durée, même une fois, peut entraîner des sanctions.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "12. Ne pas contacter certains condamnés",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>12° Ne pas fréquenter certains condamnés, notamment les auteurs ou complices de l'infraction.<br><br><h4>Ce que ça veut dire</h4>Vous avez l’interdiction d’entrer en contact avec les auteurs ou les complices de votre infraction, par tout moyen et quelle qu’en soit la raison.<br><br>Le non-respect de cette interdiction, même pour une courte durée, même une fois, peut entraîner des sanctions.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "13. Ne pas contacter les victimes",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>13° S'abstenir d'entrer en relation avec certaines personnes, dont la victime, ou certaines catégories de personnes, et notamment des mineurs, à l'exception, le cas échéant, de ceux désignés par la juridiction.<br><br><h4>Ce que ça veut dire</h4>Vous avez l’interdiction d’entrer en contact avec la victime, même par un intermédiaire, quel que soit le moyen utilisé (appel, SMS, réseaux sociaux...).<br><br>Le non-respect de cette interdiction, même pour une courte durée, même une fois, peut entraîner des sanctions.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "14. Ne pas posséder d'arme",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>14° Ne pas détenir ou porter une arme.<br><br><h4>Ce que ça veut dire</h4>Le non-respect de cette interdiction, même pour une courte durée, même une fois, peut entraîner des sanctions.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "15. Faire un stage",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>15° Accomplir à ses frais un des stages prévus à l'article 131-5-1 du présent code.<br><br><h4>Ce que ça veut dire</h4>Le type de stage dépend du motif de votre condamnation.<br><br>La mise en place de ce stage sera organisée avec votre CPIP référent.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "16. Ne pas communiquer sur son infraction",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>16° S'abstenir de diffuser tout ouvrage ou œuvre audiovisuelle dont il serait l'auteur ou le coauteur et qui porterait, en tout ou partie, sur l'infraction commise et s'abstenir de toute intervention publique relative à cette infraction.<br><br><h4>Ce que ça veut dire</h4>Le non-respect de cette interdiction, même pour une courte durée, même une fois, peut entraîner des sanctions.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "17. Respecter les décisions sur la garde des enfants",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>17° Remettre ses enfants entre les mains de ceux auxquels la garde a été confiée par décision de justice.<br><br><h4>Ce que ça veut dire</h4>Le non-respect de cette interdiction, même pour une courte durée, même une fois, peut entraîner des sanctions.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "18. Ne pas se rendre au domicile conjugal",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>18° En cas d'infraction commise soit contre son conjoint, son concubin ou son partenaire lié par un pacte civil de solidarité, soit contre ses enfants ou ceux de son conjoint, concubin ou partenaire, résider hors du domicile ou de la résidence du couple et, le cas échéant, s'abstenir de paraître dans ce domicile ou cette résidence ou aux abords immédiats de celui-ci, ainsi que, si nécessaire, faire l'objet d'une prise en charge sanitaire, sociale ou psychologique.<br><br><h4>Ce que ça veut dire</h4>Le non-respect de cette interdiction, même pour une courte durée, même une fois, peut entraîner des sanctions.<br><br>En cas de difficulté liée au respect de cette interdiction (logement, soins), parlez-en à votre CPIP. Il pourra vous accompagner.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "18bis. Ne pas s'approcher de son ex-conjoint",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>18° bis Respecter l'interdiction de se rapprocher d'une victime de violences commises au sein du couple prévue à l'article 132-45-1 du présent code contrôlée par un dispositif électronique mobile anti-rapprochement.<br><br><h4>Ce que ça veut dire</h4>Si vous êtes porteur d’un bracelet anti-rapprochement (BAR), vous ne devez pas vous rapprocher de la victime protégée par ce dispositif.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "19. Demander l'autorisation en cas de déplacement à l'étranger",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>19° Obtenir l'autorisation préalable du juge de l'application des peines pour tout déplacement à l'étranger.<br><br><h4>Ce que ça veut dire</h4>Vous devez demander l’autorisation du JAP pour tout déplacement à l’étranger (même en Europe). Vous devez attendre l’autorisation écrite avant de quitter le territoire français.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "20. Se faire accompagner dans une structure spécialisée",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>20° Respecter les conditions d'une prise en charge sanitaire, sociale, éducative ou psychologique, destinée à permettre sa réinsertion et l'acquisition des valeurs de la citoyenneté ; cette prise en charge peut, le cas échéant, intervenir au sein d'un établissement d'accueil adapté dans lequel le condamné est tenu de résider.<br><br><h4>Ce que ça veut dire</h4>Ce type de prise en charge est mis en place et organisé avec votre CPIP référent.<br><br>Elle implique un suivi par une partenaire désigné par la Justice, qui vous accompagnera dans votre réinsertion au sein de la société.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "21. Effectuer un travail d'intérêt général",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>21° L'obligation d'accomplir un travail d'intérêt général, selon les modalités prévues à l'article 131-8 ; le condamné doit en ce cas se soumettre à l'examen médical prévu au dernier alinéa de l'article 131-22.<br><br><h4>Ce que ça veut dire</h4>La mise en place de ce travail d’intérêt général (TIG) sera discutée avec votre CPIP référent.<br><br>Il existe de nombreux postes: individuels ou collectifs, près de votre résidence ou un peu plus éloigné, en semaine, en soirée, le weekend...",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "22. Me soigner dans le cadre d'un suivi socio-judiciaire",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>22° L'injonction de soins, dans les conditions prévues aux articles L. 3711-1 à L. 3711-5 du code de la santé publique, si la personne a été condamnée pour un délit pour lequel le suivi socio-judiciaire est encouru et qu'une expertise médicale a conclu qu'elle était susceptible de faire l'objet d'un traitement.<br><br><h4>Ce que ça veut dire</h4>Avec votre peine de suivi socio-judiciaire, vous êtes soumis à une injonction de soin.<br><br>Vous avez un interlocuteur supplémentaire: un médecin coordonnateur, qui fait l’intermédiaire entre la Justice et le soin.<br><br>Si vous arrêtez ou refusez le traitement, le médecin informe le JAP ou le CPIP.<br><br>Cet arrêt ou ce refus constitue un manquement qui peut entraîner des sanctions.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "23. Remettre un bien confisqué",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>23° L'obligation de justifier de la remise d'un bien dont la confiscation a été ordonnée.<br><br><h4>Ce que ça veut dire</h4>Vous devez apporter les justificatifs de la remise du bien confisqué par le tribunal.<br><br>Par exemple, il peut s’agir de votre passeport, d’un véhicule...",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "24. Payer ses impôts",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>24° L'obligation de justifier du paiement régulier des impôts.<br><br><h4>Ce que ça veut dire</h4>Vous devez apporter les justificatifs des paiements effectués auprès du Trésor Public.<br><br>Bonne pratique : pensez à garder tous vos justificatifs (mandats cash, relevés bancaires...)",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "25. Tenir une comptabilité régulière",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h4>Ce qui est écrit sur ma convocation</h4>25° L'obligation de justifier de la tenue d'une comptabilité régulière certifiée par un commissaire aux comptes.<br><br><h4>Ce que ça veut dire</h4>Vous devez apporter les justificatifs de la tenue de cette comptabilité.<br><br>Bonne pratique : pensez à garder tous vos justificatifs (mandats cash, relevés bancaires...)",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      }
+    ]
+  }
+]

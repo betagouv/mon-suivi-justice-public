@@ -1,167 +1,165 @@
-{
-  "amenagements_de_peine": [
-    {
-      "name": "main_title",
-      "content": "Les aménagements de peine"
-    },
-    {
-      "name": "main_rich_description",
-      "content": "<h2>Qu’est-ce que ça signifie ?</h2>L’aménagement de peine est une façon d’exécuter une peine d’emprisonnement ferme, pour les peines inférieures à un an.<br><br>L’aménagement de peine peut être décidé :<br><ul><li>dès la condamnation par le tribunal si vous avez pu justifier à l’audience de votre situation précise</li><li>après la condamnation par le juge d’application des peines si vous vous présentez à votre convocation et justifiez de votre situation précise (“article 723-15 du CPP” ex de convocation à joindre).</li><li>après exécution d’une partie de votre peine en détention. Parlez-en avec votre CPIP référent.</li></ul>L’aménagement de peine peut prendre différentes formes."
-    },
-    {
-      "name": "rich_collapse",
-      "content_attributes": [
-        {
-          "name": "rich_collapse",
-          "title": "Contenu déroulant",
-          "parts_attributes": [
-            {
-              "name": "collapse_title",
-              "title": "Titre",
-              "content": "La détention à domicile sous surveillance électronique (DDSE)",
-              "type": "Spina::Parts::Line"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "<h2>Qu’est-ce que ça signifie ?&nbsp;</h2><div>La détention à domicile sous surveillance électronique (DDSE) est un aménagement de peine qui vous oblige à porter un bracelet électronique à la cheville et qui vous interdit de vous absenter de votre domicile (ou de tout autre lieu désigné), en dehors des horaires fixés par le juge.</div><div>Le lieu et les périodes sont fixés par la juridiction ou par le juge de l’application des peines.</div><div>Si vous êtes hébergé par une autre personne ou si vous n’êtes pas le seul locataire ou propriétaire de votre logement, la ou les personnes concernées doivent donner leur accord pour vous héberger.</div><h2>Combien de temps cette mesure va-t-elle durer ?&nbsp;</h2><div>La durée de la détention à domicile sous surveillance électronique dépend de votre condamnation. Cette mesure peut être prononcée pour l’intégralité de la peine d’emprisonnement ou pour une partie uniquement.</div><div>La durée exacte de la peine d’emprisonnement est indiquée sur votre procès-verbal de notification ou sur votre jugement. Pour connaître la durée exacte prenant en compte les réductions de peine, parlez-en à votre CPIP.</div><h2>Quelles sont mes obligations ?</h2><div>Pendant le délai de la mesure, vous devez demeurer à votre domicile ou tout autre lieu désigné et porter le bracelet électronique permettant de vérifier le respect de cette première obligation.</div><div>Vous êtes autorisé à vous absenter de ce lieu pendant les périodes et les horaires déterminés uniquement pour :</div><ul><li>l’exercice d’une activité professionnelle, la recherche d’un emploi ou tout projet d’insertion ou de réinsertion</li><li>le suivi d’un enseignement, d’un stage, d’une formation</li><li>le suivi d’un traitement médical</li><li>la participation à la vie de famille</li></ul><div>Vous devez également satisfaire les mesures générales de contrôle et les obligations particulières prévues selon votre situation et l’infraction commise.</div><h2>Que se passe-t-il si je respecte cette mesure ?</h2><div>Si vous avez respecté les obligations fixées par le juge, votre peine est terminée à la fin du délai fixé et l’emprisonnement ne sera pas appliqué.</div><h2>Que se passe-t-il si je ne respecte pas cette mesure ?&nbsp;</h2><div>Si vous ne respectez pas une ou plusieurs obligations fixées par le juge ou si vous commettez une nouvelle infraction pendant le délai de votre mesure, le sursis probatoire peut être révoqué en tout ou partie et l’emprisonnement prononcé pourra être mis à exécution en détention.</div><div>La juridiction peut également ordonner votre incarcération provisoire immédiate dans l’attente de vous convoquer au Tribunal.</div><div><br></div>",
-              "type": "Spina::Parts::Text"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "",
-              "type": "Spina::Parts::Text"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "",
-              "type": "Spina::Parts::Text"
-            }
-          ]
-        },
-        {
-          "name": "rich_collapse",
-          "title": "Contenu déroulant",
-          "parts_attributes": [
-            {
-              "name": "collapse_title",
-              "title": "Titre",
-              "content": "Le placement à l’extérieur",
-              "type": "Spina::Parts::Line"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "<h2>Qu’est-ce que ça signifie ?&nbsp;</h2><div>Le placement à l’extérieur est un aménagement de peine qui vous permet d’exercer des activités ou de bénéficier de soins en dehors de l’établissement pénitentiaire, durant les horaires fixés.</div><div>Il peut vous être accordé si vous vous trouvez dans une situation matérielle ou sociale difficile.</div><div>Par exemple : difficulté d’insertion, problèmes de santé et/ou d’addiction.</div><h2>Combien de temps cette mesure va-t-elle durer ?&nbsp;</h2><div>Le placement à l’extérieur peut être prononcé pour l’intégralité de la peine d’emprisonnement ou pour une partie uniquement.</div><div>La durée exacte de la peine d’emprisonnement est indiquée sur votre procès-verbal de notification ou sur votre jugement. Pour connaître la durée exacte prenant en compte les réductions de peine, parlez-en à votre CPIP.</div><h2>Quelles sont mes obligations ?</h2><div>Vous devez exercer les activités prévues par le juge de l’application des peines et/ou faire l’objet d’une prise en charge sanitaire.</div><div>Vous devez également satisfaire les mesures générales de contrôle et les obligations particulières prévues selon votre situation et l’infraction commise.</div><h2>Que se passe-t-il si je respecte cette mesure ?</h2><div>Si vous avez respecté les obligations fixées par le juge, votre peine est terminée à la fin du délai fixé et l’emprisonnement ne sera pas appliqué.</div><h2>Que se passe-t-il si je ne respecte pas cette mesure ?&nbsp;</h2><div>Si vous ne respectez pas une ou plusieurs obligations imposées, le juge de l’application des peines peut retirer la mesure et ordonner votre incarcération.</div><div>Le non-respect des horaires définis par le juge de l’application des peines peut également être considéré comme une évasion et entraîner des poursuites judiciaires.</div><div><br></div>",
-              "type": "Spina::Parts::Text"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "",
-              "type": "Spina::Parts::Text"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "",
-              "type": "Spina::Parts::Text"
-            }
-          ]
-        },
-        {
-          "name": "rich_collapse",
-          "title": "Contenu déroulant",
-          "parts_attributes": [
-            {
-              "name": "collapse_title",
-              "title": "Titre",
-              "content": "La liberté conditionnelle",
-              "type": "Spina::Parts::Line"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "<h2>Qu’est-ce que ça signifie ?&nbsp;</h2><div>La liberté conditionnelle est un aménagement de peine qui permet votre remise en liberté lorsque vous avez déjà effectué la moitié de votre peine d’emprisonnement. La détention provisoire effectuée, c'est-à-dire l’incarcération effectuée dans l’attente du jugement, compte pour calculer la moitié de votre peine.</div><div>Vous n’avez pas besoin d’avoir accompli la moitié de la peine si vous avez plus de 70 ans.</div><h2>Combien de temps cette mesure va-t-elle durer ?&nbsp;</h2><div>La liberté conditionnelle peut être prononcée à la moitié de votre peine d’emprisonnement ou un an avant la fin de votre peine.</div><div>La durée exacte de la peine d’emprisonnement est indiquée sur votre procès-verbal de notification ou sur votre jugement. Pour connaître la date à laquelle vous pouvez bénéficier d’une libération conditionnelle, parlez-en à votre CPIP.</div><h2>Quelles sont mes obligations ?</h2><div>Vous devez justifier de :</div><ul><li>l’exercice d’une activité professionnelle, la recherche d’un emploi ou tout projet d’insertion ou de réinsertion</li><li>le suivi d’un enseignement, d’un stage, d’une formation</li><li>le suivi d’un traitement médical</li><li>la participation à la vie de famille</li></ul><div>Vous devez également satisfaire les mesures générales de contrôle et les obligations particulières prévues selon votre situation et l’infraction commise.</div><h2>Que se passe-t-il si je respecte cette mesure ?</h2><div>Si vous avez respecté les obligations fixées par le juge, votre peine est terminée.</div><h2>Que se passe-t-il si je ne respecte pas cette mesure ?&nbsp;</h2><div>Si vous ne respectez pas une ou plusieurs obligations imposées, le juge de l’application des peines peut retirer la mesure et ordonner votre réincarcération pour le reste de la peine à effectuer.</div><div><br></div>",
-              "type": "Spina::Parts::Text"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "",
-              "type": "Spina::Parts::Text"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "",
-              "type": "Spina::Parts::Text"
-            }
-          ]
-        },
-        {
-          "name": "rich_collapse",
-          "title": "Contenu déroulant",
-          "parts_attributes": [
-            {
-              "name": "collapse_title",
-              "title": "Titre",
-              "content": "Le fractionnement de la peine",
-              "type": "Spina::Parts::Line"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "<h2>Qu’est-ce que ça signifie ?&nbsp;</h2><div>Le fractionnement de la peine vous permet d’effectuer votre peine en plusieurs fois.</div><div>Vous alternez entre des périodes durant lesquelles vous êtes incarcéré et des périodes durant lesquelles vous ne l’êtes pas.</div><div>La durée exacte de la peine d’emprisonnement est indiquée sur votre procès-verbal de notification ou sur votre jugement. Pour connaître la durée exacte et la date de votre fin de peine, parlez-en à votre CPIP.</div><h2>Combien de temps cette mesure va-t-elle durer ?&nbsp;</h2><div>Chaque période d’incarcération ne peut être pas inférieure à 2 jours.</div><div>La durée exacte de la peine d’emprisonnement est indiquée sur votre procès-verbal de notification ou sur votre jugement. Pour connaître la date à laquelle vous pouvez bénéficier d’une libération conditionnelle, parlez-en à votre CPIP.</div><h2>Quelles sont mes obligations ?</h2><div>Le fractionnement doit être effectué dans une période ne dépassant pas 4 ans.</div><div>Vous devez également satisfaire les mesures générales de contrôle et les obligations particulières prévues selon votre situation et l’infraction commise.</div><h2>Que se passe-t-il si je respecte cette mesure ?</h2><div>Si vous avez respecté les obligations fixées par le juge, votre peine est terminée.</div><h2>Que se passe-t-il si je ne respecte pas cette mesure ?&nbsp;</h2><div>Si vous ne respectez pas les périodes d’incarcération prévues ou que vous ne respectez pas vos obligations, le juge de l’application des peines peut retirer la mesure et des poursuites pénales peuvent être engagées pour évasion.</div><div><br></div>",
-              "type": "Spina::Parts::Text"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "",
-              "type": "Spina::Parts::Text"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "",
-              "type": "Spina::Parts::Text"
-            }
-          ]
-        },
-        {
-          "name": "rich_collapse",
-          "title": "Contenu déroulant",
-          "parts_attributes": [
-            {
-              "name": "collapse_title",
-              "title": "Titre",
-              "content": "La suspension de la peine",
-              "type": "Spina::Parts::Line"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "<h2>Qu’est-ce que ça signifie ?&nbsp;</h2><div>La suspension de la peine vous permet de ne pas effectuer votre peine d’emprisonnement immédiatement.</div><div>Elle permet de répondre à un évènement exceptionnel intervenu dans votre vie et nécessitant votre présence.</div><div>Par exemple : un traitement médical, pathologie engageant le pronostic vital etc.</div><h2>Combien de temps cette mesure va-t-elle durer ?&nbsp;</h2><div>La durée exacte de la peine d’emprisonnement est indiquée sur votre procès-verbal de notification ou sur votre jugement.</div><h2>Quelles sont mes obligations ?</h2><div>Vous devez satisfaire les mesures générales de contrôle et les obligations particulières prévues selon votre situation et l’infraction commise.</div><h2>Que se passe-t-il si je respecte cette mesure ?</h2><div>Si vous avez respecté les obligations fixées par le juge, votre peine est terminée.</div><h2>Que se passe-t-il si je ne respecte pas cette mesure ?&nbsp;</h2><div>Si vous ne vous présentez pas aux convocations, ou que vous n’intégrez pas l’établissement pénitentiaire à la fin de la suspension, le juge de l’application des peines peut retirer la mesure et des poursuites pénales peuvent être engagées pour évasion.</div><div><br></div>",
-              "type": "Spina::Parts::Text"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "",
-              "type": "Spina::Parts::Text"
-            },
-            {
-              "name": "collapse_rich_content",
-              "title": "Contenu",
-              "content": "",
-              "type": "Spina::Parts::Text"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "name": "main_title",
+    "content": "Les aménagements de peine"
+  },
+  {
+    "name": "main_rich_description",
+    "content": "<h2>Qu’est-ce que ça signifie ?</h2>L’aménagement de peine est une façon d’exécuter une peine d’emprisonnement ferme, pour les peines inférieures à un an.<br><br>L’aménagement de peine peut être décidé :<br><ul><li>dès la condamnation par le tribunal si vous avez pu justifier à l’audience de votre situation précise</li><li>après la condamnation par le juge d’application des peines si vous vous présentez à votre convocation et justifiez de votre situation précise (“article 723-15 du CPP” ex de convocation à joindre).</li><li>après exécution d’une partie de votre peine en détention. Parlez-en avec votre CPIP référent.</li></ul>L’aménagement de peine peut prendre différentes formes."
+  },
+  {
+    "name": "rich_collapse",
+    "content_attributes": [
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "La détention à domicile sous surveillance électronique (DDSE)",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h2>Qu’est-ce que ça signifie ?&nbsp;</h2><div>La détention à domicile sous surveillance électronique (DDSE) est un aménagement de peine qui vous oblige à porter un bracelet électronique à la cheville et qui vous interdit de vous absenter de votre domicile (ou de tout autre lieu désigné), en dehors des horaires fixés par le juge.</div><div>Le lieu et les périodes sont fixés par la juridiction ou par le juge de l’application des peines.</div><div>Si vous êtes hébergé par une autre personne ou si vous n’êtes pas le seul locataire ou propriétaire de votre logement, la ou les personnes concernées doivent donner leur accord pour vous héberger.</div><h2>Combien de temps cette mesure va-t-elle durer ?&nbsp;</h2><div>La durée de la détention à domicile sous surveillance électronique dépend de votre condamnation. Cette mesure peut être prononcée pour l’intégralité de la peine d’emprisonnement ou pour une partie uniquement.</div><div>La durée exacte de la peine d’emprisonnement est indiquée sur votre procès-verbal de notification ou sur votre jugement. Pour connaître la durée exacte prenant en compte les réductions de peine, parlez-en à votre CPIP.</div><h2>Quelles sont mes obligations ?</h2><div>Pendant le délai de la mesure, vous devez demeurer à votre domicile ou tout autre lieu désigné et porter le bracelet électronique permettant de vérifier le respect de cette première obligation.</div><div>Vous êtes autorisé à vous absenter de ce lieu pendant les périodes et les horaires déterminés uniquement pour :</div><ul><li>l’exercice d’une activité professionnelle, la recherche d’un emploi ou tout projet d’insertion ou de réinsertion</li><li>le suivi d’un enseignement, d’un stage, d’une formation</li><li>le suivi d’un traitement médical</li><li>la participation à la vie de famille</li></ul><div>Vous devez également satisfaire les mesures générales de contrôle et les obligations particulières prévues selon votre situation et l’infraction commise.</div><h2>Que se passe-t-il si je respecte cette mesure ?</h2><div>Si vous avez respecté les obligations fixées par le juge, votre peine est terminée à la fin du délai fixé et l’emprisonnement ne sera pas appliqué.</div><h2>Que se passe-t-il si je ne respecte pas cette mesure ?&nbsp;</h2><div>Si vous ne respectez pas une ou plusieurs obligations fixées par le juge ou si vous commettez une nouvelle infraction pendant le délai de votre mesure, le sursis probatoire peut être révoqué en tout ou partie et l’emprisonnement prononcé pourra être mis à exécution en détention.</div><div>La juridiction peut également ordonner votre incarcération provisoire immédiate dans l’attente de vous convoquer au Tribunal.</div><div><br></div>",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Le placement à l’extérieur",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h2>Qu’est-ce que ça signifie ?&nbsp;</h2><div>Le placement à l’extérieur est un aménagement de peine qui vous permet d’exercer des activités ou de bénéficier de soins en dehors de l’établissement pénitentiaire, durant les horaires fixés.</div><div>Il peut vous être accordé si vous vous trouvez dans une situation matérielle ou sociale difficile.</div><div>Par exemple : difficulté d’insertion, problèmes de santé et/ou d’addiction.</div><h2>Combien de temps cette mesure va-t-elle durer ?&nbsp;</h2><div>Le placement à l’extérieur peut être prononcé pour l’intégralité de la peine d’emprisonnement ou pour une partie uniquement.</div><div>La durée exacte de la peine d’emprisonnement est indiquée sur votre procès-verbal de notification ou sur votre jugement. Pour connaître la durée exacte prenant en compte les réductions de peine, parlez-en à votre CPIP.</div><h2>Quelles sont mes obligations ?</h2><div>Vous devez exercer les activités prévues par le juge de l’application des peines et/ou faire l’objet d’une prise en charge sanitaire.</div><div>Vous devez également satisfaire les mesures générales de contrôle et les obligations particulières prévues selon votre situation et l’infraction commise.</div><h2>Que se passe-t-il si je respecte cette mesure ?</h2><div>Si vous avez respecté les obligations fixées par le juge, votre peine est terminée à la fin du délai fixé et l’emprisonnement ne sera pas appliqué.</div><h2>Que se passe-t-il si je ne respecte pas cette mesure ?&nbsp;</h2><div>Si vous ne respectez pas une ou plusieurs obligations imposées, le juge de l’application des peines peut retirer la mesure et ordonner votre incarcération.</div><div>Le non-respect des horaires définis par le juge de l’application des peines peut également être considéré comme une évasion et entraîner des poursuites judiciaires.</div><div><br></div>",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "La liberté conditionnelle",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h2>Qu’est-ce que ça signifie ?&nbsp;</h2><div>La liberté conditionnelle est un aménagement de peine qui permet votre remise en liberté lorsque vous avez déjà effectué la moitié de votre peine d’emprisonnement. La détention provisoire effectuée, c'est-à-dire l’incarcération effectuée dans l’attente du jugement, compte pour calculer la moitié de votre peine.</div><div>Vous n’avez pas besoin d’avoir accompli la moitié de la peine si vous avez plus de 70 ans.</div><h2>Combien de temps cette mesure va-t-elle durer ?&nbsp;</h2><div>La liberté conditionnelle peut être prononcée à la moitié de votre peine d’emprisonnement ou un an avant la fin de votre peine.</div><div>La durée exacte de la peine d’emprisonnement est indiquée sur votre procès-verbal de notification ou sur votre jugement. Pour connaître la date à laquelle vous pouvez bénéficier d’une libération conditionnelle, parlez-en à votre CPIP.</div><h2>Quelles sont mes obligations ?</h2><div>Vous devez justifier de :</div><ul><li>l’exercice d’une activité professionnelle, la recherche d’un emploi ou tout projet d’insertion ou de réinsertion</li><li>le suivi d’un enseignement, d’un stage, d’une formation</li><li>le suivi d’un traitement médical</li><li>la participation à la vie de famille</li></ul><div>Vous devez également satisfaire les mesures générales de contrôle et les obligations particulières prévues selon votre situation et l’infraction commise.</div><h2>Que se passe-t-il si je respecte cette mesure ?</h2><div>Si vous avez respecté les obligations fixées par le juge, votre peine est terminée.</div><h2>Que se passe-t-il si je ne respecte pas cette mesure ?&nbsp;</h2><div>Si vous ne respectez pas une ou plusieurs obligations imposées, le juge de l’application des peines peut retirer la mesure et ordonner votre réincarcération pour le reste de la peine à effectuer.</div><div><br></div>",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Le fractionnement de la peine",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h2>Qu’est-ce que ça signifie ?&nbsp;</h2><div>Le fractionnement de la peine vous permet d’effectuer votre peine en plusieurs fois.</div><div>Vous alternez entre des périodes durant lesquelles vous êtes incarcéré et des périodes durant lesquelles vous ne l’êtes pas.</div><div>La durée exacte de la peine d’emprisonnement est indiquée sur votre procès-verbal de notification ou sur votre jugement. Pour connaître la durée exacte et la date de votre fin de peine, parlez-en à votre CPIP.</div><h2>Combien de temps cette mesure va-t-elle durer ?&nbsp;</h2><div>Chaque période d’incarcération ne peut être pas inférieure à 2 jours.</div><div>La durée exacte de la peine d’emprisonnement est indiquée sur votre procès-verbal de notification ou sur votre jugement. Pour connaître la date à laquelle vous pouvez bénéficier d’une libération conditionnelle, parlez-en à votre CPIP.</div><h2>Quelles sont mes obligations ?</h2><div>Le fractionnement doit être effectué dans une période ne dépassant pas 4 ans.</div><div>Vous devez également satisfaire les mesures générales de contrôle et les obligations particulières prévues selon votre situation et l’infraction commise.</div><h2>Que se passe-t-il si je respecte cette mesure ?</h2><div>Si vous avez respecté les obligations fixées par le juge, votre peine est terminée.</div><h2>Que se passe-t-il si je ne respecte pas cette mesure ?&nbsp;</h2><div>Si vous ne respectez pas les périodes d’incarcération prévues ou que vous ne respectez pas vos obligations, le juge de l’application des peines peut retirer la mesure et des poursuites pénales peuvent être engagées pour évasion.</div><div><br></div>",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "La suspension de la peine",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h2>Qu’est-ce que ça signifie ?&nbsp;</h2><div>La suspension de la peine vous permet de ne pas effectuer votre peine d’emprisonnement immédiatement.</div><div>Elle permet de répondre à un évènement exceptionnel intervenu dans votre vie et nécessitant votre présence.</div><div>Par exemple : un traitement médical, pathologie engageant le pronostic vital etc.</div><h2>Combien de temps cette mesure va-t-elle durer ?&nbsp;</h2><div>La durée exacte de la peine d’emprisonnement est indiquée sur votre procès-verbal de notification ou sur votre jugement.</div><h2>Quelles sont mes obligations ?</h2><div>Vous devez satisfaire les mesures générales de contrôle et les obligations particulières prévues selon votre situation et l’infraction commise.</div><h2>Que se passe-t-il si je respecte cette mesure ?</h2><div>Si vous avez respecté les obligations fixées par le juge, votre peine est terminée.</div><h2>Que se passe-t-il si je ne respecte pas cette mesure ?&nbsp;</h2><div>Si vous ne vous présentez pas aux convocations, ou que vous n’intégrez pas l’établissement pénitentiaire à la fin de la suspension, le juge de l’application des peines peut retirer la mesure et des poursuites pénales peuvent être engagées pour évasion.</div><div><br></div>",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      }
+    ]
+  }
+]
