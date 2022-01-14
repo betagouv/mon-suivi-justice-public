@@ -1,6 +1,6 @@
 .static-home-links-wrapper {
   padding-bottom: 60px;
-  padding-top: 50px;
+  padding-top: 30px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -250,4 +250,9 @@
   font-size: 12px;
   margin-top: 20px;
   margin-bottom: 0;
+}
+
+.landing-title {
+  color: $msj-blue;
+  text-align: center;
 }

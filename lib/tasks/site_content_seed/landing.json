@@ -1,6 +1,10 @@
 {
   "landing": [
     {
+      "name": "main_title",
+      "content": "Nous vous accompagnons dans votre suivi judiciaire"
+    },
+    {
       "name": "card1_text",
       "content": "Vous êtes convoqué au Tribunal ou au SPIP"
     },
