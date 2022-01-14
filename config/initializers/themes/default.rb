@@ -31,6 +31,7 @@ Spina::Theme.register do |theme|
     {name: "secondary_subtitle", title: "Second sous-titre de la page", part_type: "Spina::Parts::Line"},
     {name: "button_text", title: "Titre du Button", part_type: "Spina::Parts::Line"},
     {name: "card_title", title: "Titre du Bloc", part_type: "Spina::Parts::Line"},
+    {name: "card_link", title: "Lien du Bloc (merci de ne pas rentrer le lien en entier mais seulement l'extension (ex: sursis_probatoire))", part_type: "Spina::Parts::Line"},
     {name: "card1_title", title: "Titre Bloc 1", part_type: "Spina::Parts::Line"},
     {name: "card1_text", title: "Texte Bloc 1", part_type: "Spina::Parts::Line"},
     {name: "card1_button_head", title: "Titre gras button bloc 1", part_type: "Spina::Parts::Line"},
@@ -48,7 +49,7 @@ Spina::Theme.register do |theme|
     {name: "collapse_rich_content_alert", title: "Encart rouge", part_type: "Spina::Parts::Text" },
     {name: "collapse_rich_content_good_practice", title: "Encart vert", part_type: "Spina::Parts::Text" },
     {name: "rich_collapse", title: "Contenu déroulant", parts: %w(collapse_title collapse_rich_content collapse_rich_content_alert collapse_rich_content_good_practice), part_type: "Spina::Parts::Repeater" },
-    {name: "basic_card", title: "Bloc", parts: %w(card_title), part_type: "Spina::Parts::Repeater" }
+    {name: "basic_card", title: "Bloc", parts: %w(card_title card_link), part_type: "Spina::Parts::Repeater" }
   ]
 
   # View templates

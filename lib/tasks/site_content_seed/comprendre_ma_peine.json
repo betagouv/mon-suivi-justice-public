@@ -44,6 +44,12 @@
               "title": "Titre du Bloc",
               "content": "Un sursis probatoire",
               "type": "Spina::Parts::Line"
+            },
+            {
+              "name": "card_link",
+              "title": "Lien du Bloc (merci de ne pas rentrer le lien en entier mais seulement l'extension (ex: sursis_probatoire))",
+              "content": "sursis_probatoire",
+              "type": "Spina::Parts::Line"
             }
           ]
         },
@@ -55,6 +61,12 @@
               "name": "card_title",
               "title": "Titre du Bloc",
               "content": "Un travail d'intérêt général",
+              "type": "Spina::Parts::Line"
+            },
+            {
+              "name": "card_link",
+              "title": "Lien du Bloc (merci de ne pas rentrer le lien en entier mais seulement l'extension (ex: sursis_probatoire))",
+              "content": "travail_interet_general",
               "type": "Spina::Parts::Line"
             }
           ]
@@ -68,6 +80,12 @@
               "title": "Titre du Bloc",
               "content": "Un suivi socio-judiciaire",
               "type": "Spina::Parts::Line"
+            },
+            {
+              "name": "card_link",
+              "title": "Lien du Bloc (merci de ne pas rentrer le lien en entier mais seulement l'extension (ex: sursis_probatoire))",
+              "content": "suivi_socio_judiciaire",
+              "type": "Spina::Parts::Line"
             }
           ]
         },
@@ -80,6 +98,12 @@
               "title": "Titre du Bloc",
               "content": "Un stage",
               "type": "Spina::Parts::Line"
+            },
+            {
+              "name": "card_link",
+              "title": "Lien du Bloc (merci de ne pas rentrer le lien en entier mais seulement l'extension (ex: sursis_probatoire))",
+              "content": "stage",
+              "type": "Spina::Parts::Line"
             }
           ]
         },
@@ -91,6 +115,12 @@
               "name": "card_title",
               "title": "Titre du Bloc",
               "content": "Un aménagement de peine",
+              "type": "Spina::Parts::Line"
+            },
+            {
+              "name": "card_link",
+              "title": "Lien du Bloc (merci de ne pas rentrer le lien en entier mais seulement l'extension (ex: sursis_probatoire))",
+              "content": "amenagements_de_peine",
               "type": "Spina::Parts::Line"
             }
           ]
