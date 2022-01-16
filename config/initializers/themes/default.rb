@@ -63,6 +63,7 @@ Spina::Theme.register do |theme|
     {name: "donnees_personnelles", title: "Données personnelles", parts: %w[main_title main_rich_description]},
     {name: "ma_reinsertion", title: "Investir ma réinsertion", parts: %w[main_title subtitle main_rich_description button_text]},
     {name: "obligations_personnelles", title: "Obligations personnelles", parts: %w[category main_title subtitle main_description rich_collapse]},
+    {name: "regles_essentielles", title: "Les règles essentielles", parts: %w[category main_title subtitle main_description rich_collapse]},
     {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", parts: %w[main_title subtitle main_rich_description basic_card]}
   ]
 
@@ -76,6 +77,7 @@ Spina::Theme.register do |theme|
     {name: "donnees_personnelles", title: "Données personnelles", view_template: "donnees_personnelles"},
     {name: "ma_reinsertion", title: "Investir ma réinsertion", view_template: "ma_reinsertion"},
     {name: "obligations_personnelles", title: "Obligations personnelles", view_template: "obligations_personnelles"},
+    {name: "regles_essentielles", title: "Les règles essentielles", view_template: "regles_essentielles"},
     {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", view_template: "preparer_mon_rdv"}
   ]
 
