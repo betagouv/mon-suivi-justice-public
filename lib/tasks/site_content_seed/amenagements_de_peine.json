@@ -27,14 +27,14 @@
             "type": "Spina::Parts::Text"
           },
           {
-            "name": "collapse_rich_content",
-            "title": "Contenu",
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
             "content": "",
             "type": "Spina::Parts::Text"
           },
           {
-            "name": "collapse_rich_content",
-            "title": "Contenu",
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
             "content": "",
             "type": "Spina::Parts::Text"
           }
@@ -57,14 +57,14 @@
             "type": "Spina::Parts::Text"
           },
           {
-            "name": "collapse_rich_content",
-            "title": "Contenu",
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
             "content": "",
             "type": "Spina::Parts::Text"
           },
           {
-            "name": "collapse_rich_content",
-            "title": "Contenu",
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
             "content": "",
             "type": "Spina::Parts::Text"
           }
@@ -87,14 +87,14 @@
             "type": "Spina::Parts::Text"
           },
           {
-            "name": "collapse_rich_content",
-            "title": "Contenu",
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
             "content": "",
             "type": "Spina::Parts::Text"
           },
           {
-            "name": "collapse_rich_content",
-            "title": "Contenu",
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
             "content": "",
             "type": "Spina::Parts::Text"
           }
@@ -117,14 +117,14 @@
             "type": "Spina::Parts::Text"
           },
           {
-            "name": "collapse_rich_content",
-            "title": "Contenu",
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
             "content": "",
             "type": "Spina::Parts::Text"
           },
           {
-            "name": "collapse_rich_content",
-            "title": "Contenu",
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
             "content": "",
             "type": "Spina::Parts::Text"
           }
@@ -147,14 +147,14 @@
             "type": "Spina::Parts::Text"
           },
           {
-            "name": "collapse_rich_content",
-            "title": "Contenu",
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
             "content": "",
             "type": "Spina::Parts::Text"
           },
           {
-            "name": "collapse_rich_content",
-            "title": "Contenu",
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
             "content": "",
             "type": "Spina::Parts::Text"
           }
