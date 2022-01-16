@@ -1,0 +1,161 @@
+[
+  {
+    "name": "main_title",
+    "content": "Le sursis probatoire"
+  },
+  {
+    "name": "rich_collapse",
+    "content_attributes": [
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Qu’est-ce que ça signifie ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Le sursis probatoire est une peine d’emprisonnement suspendue en partie ou en totalité pendant un délai fixé au moment de votre condamnation. Cette peine reste suspendue si vous respectez les obligations et les interdictions que le juge vous a fixées.<br><br>Le sursis probatoire commence dès votre condamnation si vous étiez présent à l’audience ou dès la notification de vos obligations par le juge d’application des peines.<br><br>Une convocation devant le service pénitentiaire d’insertion et de probation (SPIP) vous est remise à l’issue de l’audience, par le bureau d’exécution des peines (BEX) ou par le greffier. Si vous étiez absent à l’audience, vous recevrez une convocation à l’adresse que vous avez déclarée.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "Attention: il est très important de se présenter dès cette première convocation.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Combien de temps cette mesure va-t-elle durer ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Le sursis probatoire peut être prononcé pour une durée de 1 à 3 ans, mais il peut durer jusqu’à 7 ans en cas de récidive ou de non respect de votre suivi.<br><br>La durée exacte de votre sursis probatoire est indiquée sur votre procès-verbal de notification ou sur votre jugement. En cas de doute, parlez-en avec votre CPIP.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Quelles sont mes obligations ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Pendant le délai de probation, vous devez satisfaire les mesures de contrôle et les obligations particulières prévues selon votre situation et apporter tous les justificatifs permettant de vérifier que vous les respectez. Le juge d’application des peines (JAP) et le SPIP contrôlent le respect des obligations fixées.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Que se passe-t-il si je respecte la mesure ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Si vous avez respecté les obligations fixées par le juge, votre peine est terminée à la fin du délai fixé et l’emprisonnement ne sera pas appliqué.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Que se passe-t-il si je ne respecte pas la mesure ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Si vous ne respectez pas une ou plusieurs obligations fixées par le juge ou si vous commettez une nouvelle infraction pendant le délai de votre mesure, le sursis probatoire peut être révoqué en tout ou partie et l’emprisonnement prononcé pourra être mis à exécution en détention.<br><br>La juridiction peut également ordonner votre incarcération provisoire immédiate dans l’attente de vous convoquer au Tribunal.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      }
+    ]
+  }
+]
