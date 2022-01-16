@@ -1,0 +1,161 @@
+[
+  {
+    "name": "main_title",
+    "content": "Le stage"
+  },
+  {
+    "name": "rich_collapse",
+    "content_attributes": [
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Qu’est-ce que ça signifie ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Le stage est une peine qui consiste en une période de formation au cours de laquelle vous devez suivre un enseignement spécifique.<br><br>Il peut être prononcé soit à la place de l’emprisonnement soit en même temps. Le type de stage dépend du motif de votre condamnation :<br><ul><li>Le stage de citoyenneté</li><li>Le stage de sensibilisation à la sécurité routière</li><li>Le stage de sensibilisation aux dangers de l'usage de produits stupéfiants</li><li>Le stage de responsabilisation pour la prévention et la lutte contre les violences au sein du couple et sexistes</li><li>Le stage de sensibilisation à la lutte contre l'achat d'actes sexuels</li><li>Le stage de la responsabilité parentale</li><li>Le stage de lutte contre le sexisme et de sensibilisation à l'égalité entre les femmes et les hommes</li></ul>",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Combien de temps cette mesure va-t-elle durer ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "La peine de stage ne peut dépasser 1 mois. La durée exacte du stage est indiquée sur votre jugement.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Quelles sont mes obligations ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Le stage doit être effectué dans un délai de 6 mois à compter de la date de condamnation, selon la durée et la nature fixées par le juge. La mise en place de ce stage sera organisée avec votre CPIP référent.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Que se passe-t-il si je respecte la mesure ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "La peine de stage se termine une fois que la durée fixée par le juge a été effectuée.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Que se passe-t-il si je ne respecte pas la mesure ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Si vous n’effectuez pas la peine de stage dans le délai imparti :<br><ul><li>Si une peine avait été prévue lors de l’audience, le juge de l’application des peines peut l’appliquer.</li><li>Si une peine de prison n’avait pas été annoncée lors du jugement, le procureur vous convoque devant le tribunal correctionnel et vous risquez d’être condamné à deux ans de prison et 30.000 euros d’amende.</li></ul>",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      }
+    ]
+  }
+]
