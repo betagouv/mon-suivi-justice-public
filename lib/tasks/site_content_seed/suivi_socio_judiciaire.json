@@ -1,0 +1,161 @@
+[
+  {
+    "name": "main_title",
+    "content": "Le suivi socio-judiciaire"
+  },
+  {
+    "name": "rich_collapse",
+    "content_attributes": [
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Qu’est-ce que ça signifie ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Le suivi socio-judiciaire est une peine qui est obligatoirement prononcée pour des infractions graves, c’est-à-dire à caractère violent et/ou sexuel. Il implique le respect d’obligations destinées à prévenir la récidive.<br><br>Le suivi socio-judiciaire est un suivi à l’extérieur de la prison avec des convocations devant le juge d’application des peines et le service pénitentiaire d’insertion et de probation.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Combien de temps cette mesure va-t-elle durer ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "La durée du suivi socio-judiciaire est liée à l’infraction pour laquelle vous avez été condamné(e) :<br><ul><li>Un maximum de 10 ans pour un délit.</li><li>Un maximum de vingt ans pour un crime.</li><li>Sans limitation de durée pour un crime puni de la réclusion criminelle à perpétuité.</li></ul><br><br>La durée exacte de votre suivi socio-judiciaire est indiquée sur votre procès-verbal de notification ou sur votre jugement.<br><br>En cas de doute, parlez-en avec votre CPIP.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Quelles sont mes obligations ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Tout au long du suivi socio-judiciaire, vous devez satisfaire les mesures de contrôle et les obligations particulières prévues selon votre situation.<br><br>Le juge d’application des peines (JAP) et le SPIP contrôlent le respect des obligations fixées.<br><br>Attention, certaines obligations débutent dès la détention. Il faut vous renseigner auprès de votre CPIP référent.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Que se passe-t-il si je respecte la mesure ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Si vous avez respecté les obligations fixées par le juge, votre suivi socio-judiciaire se termine à la fin du délai fixé.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Que se passe-t-il si je ne respecte pas la mesure ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Si vous ne respectez pas une ou plusieurs obligations fixées par le juge, ou si vous refusez l’injonction de soins, vous risquez une peine d’emprisonnement :<br><ul><li>Un maximum de trois ans pour un délit.</li><li>Un maximum de sept ans pour un crime.</li></ul><br><br>La durée de cette peine vous est obligatoirement notifiée au jour du prononcé du jugement.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      }
+    ]
+  }
+]
