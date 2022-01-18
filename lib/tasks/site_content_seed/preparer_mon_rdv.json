@@ -1,0 +1,91 @@
+[
+  {
+    "name": "main_title",
+    "content": "Préparer mon rendez-vous"
+  },
+  {
+    "name": "main_rich_description",
+    "content": "Vous avez été convoqué au Service d'application des peines (SAP) ou au Service pénitentiaire d'insertion et probation (SPIP). Vous trouverez ici toutes les informations nécessaires au bon déroulement de vos entretiens.<br><br>Comprendre ce qu'est le SPIP en vidéo: <a href=\"https://www.mediatheque.justice.gouv.fr/src-mp4-HD-2021-Dec-8178_3_1638365505_spip_1616_20211103_DEF\">cliquer ici</a></div>"
+  },
+  {
+    "name": "subtitle",
+    "content": "Où avez-vous rendez-vous ?"
+  },
+  {
+    "name": "basic_card",
+    "content_attributes": [
+      {
+        "name": "basic_card",
+        "title": "Bloc",
+        "parts_attributes": [
+          {
+            "name": "card_title",
+            "title": "Titre du Bloc",
+            "content": "SPIP 92",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "card_link",
+            "title": "Lien du Bloc (merci de ne pas rentrer le lien en entier mais seulement l'extension (ex: sursis_probatoire))",
+            "content": "preparer_spip92",
+            "type": "Spina::Parts::Line"
+          }
+        ]
+      },
+      {
+        "name": "basic_card",
+        "title": "Bloc",
+        "parts_attributes": [
+          {
+            "name": "card_title",
+            "title": "Titre du Bloc",
+            "content": "SAP de Nanterre",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "card_link",
+            "title": "Lien du Bloc (merci de ne pas rentrer le lien en entier mais seulement l'extension (ex: sursis_probatoire))",
+            "content": "preparer_sap_nanterre",
+            "type": "Spina::Parts::Line"
+          }
+        ]
+      },
+      {
+        "name": "basic_card",
+        "title": "Bloc",
+        "parts_attributes": [
+          {
+            "name": "card_title",
+            "title": "Titre du Bloc",
+            "content": "SPIP 28",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "card_link",
+            "title": "Lien du Bloc (merci de ne pas rentrer le lien en entier mais seulement l'extension (ex: sursis_probatoire))",
+            "content": "preparer_spip28",
+            "type": "Spina::Parts::Line"
+          }
+        ]
+      },
+      {
+        "name": "basic_card",
+        "title": "Bloc",
+        "parts_attributes": [
+          {
+            "name": "card_title",
+            "title": "Titre du Bloc",
+            "content": "SAP de Chartres",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "card_link",
+            "title": "Lien du Bloc (merci de ne pas rentrer le lien en entier mais seulement l'extension (ex: sursis_probatoire))",
+            "content": "preparer_sap_chartres",
+            "type": "Spina::Parts::Line"
+          }
+        ]
+      }
+    ]
+  }
+]

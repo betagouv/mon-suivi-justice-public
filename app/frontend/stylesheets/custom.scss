@@ -42,6 +42,8 @@
 }
 
 .static-title-orange { color: $msj-orange; }
+.static-title-blue { color: $msj-blue; }
+.static-title-green { color: $msj-green; }
 
 .static-secondary-title {
   font-size: 24px;
@@ -123,24 +125,6 @@
   }
 }
 
-.static-place-intro {
-  font-size: 18px;
-  line-height: 28px;
-  margin: auto;
-  margin-top: 20px;
-
-  @media (min-width: $msj-small-breakpoint) {
-    max-width: 850px;
-    font-size: 20px;
-    margin-top: 20px;
-    line-height: 32px;
-  }
-
-  @media (min-width: $msj-medium-breakpoint) {
-    width: auto;
-  }
-}
-
 .static-content-container {
   max-width: 850px;
   margin: auto;
@@ -176,11 +160,6 @@
   margin: auto;
 }
 
-.static-dropdown-trigger {
-  display: flex;
-  cursor: pointer;
-}
-
 .static-dropdown-picto {
   &:before {
     font-size: 28px;
@@ -191,16 +170,12 @@
   }
 }
 
-.static-dropdown-picto-active { display: flex; }
-.static-dropdown-picto-inactive { display: none; }
-
 .static-card {
   border: 2px solid $msj-border;
   max-width: 500px;
 
   padding: 20px;
-  margin: auto;
-  margin-bottom: 40px;
+  margin: 20px auto;
 
   border-radius: 10px;
 }
@@ -210,6 +185,8 @@
 }
 
 .static-important-card {
+  display: flex;
+  align-items: center;
   padding: 20px;
   border-color: $msj-red;
   background-color: lighten($msj-red, 30%);
@@ -218,8 +195,19 @@
     padding: 20px 30px;
   }
 }
+
+.static-important-exclamation-triangle {
+  font-size: 50px;
+  margin-right: 40px;
+  margin-left: 10px;
+  color: $msj-red;
+  display: flex;
+  align-items: center;
+}
+
 .static-good-practice-card {
   display: flex;
+  align-items: center;
   padding: 20px;
   border-color: $msj-green;
   background-color: lighten(palegreen, 15%);

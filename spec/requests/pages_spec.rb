@@ -3,7 +3,10 @@ require "rails_helper"
 RSpec.describe "Pages", type: :request do
   subject { response }
 
-  before { get path }
+  before do
+    FactoryBot.create(:account)
+    get path
+  end
 
   describe "GET root" do
     let(:path) { root_path }

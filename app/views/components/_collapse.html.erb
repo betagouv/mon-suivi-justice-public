@@ -1,0 +1,32 @@
+<div data-controller="collapse" data-collapse-expanded-value="0">
+  <div class="collapse-trigger collapse-trigger-<%= collapse_style %>" data-action="click->collapse#toggle" data-collapse-target="label">
+    <% if collapse_style == "red" %>
+      <div><%= collapse.content(:collapse_title) %></div>
+    <% end %>
+
+    <span class="fr-fi-arrow-right-s-line collapse-menu-picto-<%= collapse_style %> collapse-picto-active" aria-hidden="true" data-collapse-target="pictoCollapsed"></span>
+    <span class="fr-fi-arrow-down-s-line collapse-menu-picto-<%= collapse_style %> collapse-picto-inactive" aria-hidden="true" data-collapse-target="pictoExpanded"></span>
+
+    <% if collapse_style == "blue" %>
+      <div class="collapse-title-blue"><%= collapse.content(:collapse_title) %></div>
+    <% end %>
+  </div>
+
+  <div class='static-content d-none' data-collapse-target="content">
+    <%= collapse.content.html(:collapse_rich_content) %>
+
+    <% if collapse.content(:collapse_rich_content_good_practice).present? %>
+      <div class="static-card static-good-practice-card">
+        <i class='fa fa-thumbs-up 3x static-good-practice-thumb-up'></i>
+        <p class="static-link-card-intro"><%= collapse.content.html(:collapse_rich_content_good_practice) %></p>
+      </div>
+    <% end %>
+
+    <% if collapse.content(:collapse_rich_content_alert).present? %>
+      <div class="static-card static-important-card">
+        <i class="fa fa-exclamation-triangle 3x static-important-exclamation-triangle"></i>
+        <p class="static-link-card-intro"><%= collapse.content.html(:collapse_rich_content_alert) %></p>
+      </div>
+    <% end %>
+  </div>
+</div>

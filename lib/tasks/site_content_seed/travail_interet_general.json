@@ -1,0 +1,165 @@
+[
+  {
+    "name": "main_title",
+    "content": "Le travail d'intérêt général"
+  },
+  {
+    "name": "main_rich_description",
+    "content": "<div>Pour une présentation plus complète, n'hésitez pas à consulter le site officiel : <a href=\"https://www.travail-interet-general.fr/\">travail-interet-general.fr</a></div>"
+  },
+  {
+    "name": "rich_collapse",
+    "content_attributes": [
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Qu’est-ce que ça signifie ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Le travail d’intérêt général (TIG) est une peine prononcée pour les délits punis d’une peine d’emprisonnement ou pour certaines contraventions.<br><br>C’est un travail réalisé sans rémunération au profit d’une collectivité territoriale, d’un établissement public ou d’une association habilitée.<br><br>Le travail d’intérêt général permet de réparer le dommage ou le risque que vous avez fait subir à la société.<br><br>Le travail d’intérêt général peut prendre trois formes :<ul><li>Le travail d’intérêt général individuel : il est réalisé par une seule personne avec un “tuteur” au sein de la structure désignée. Exemple : un agent du service des sports d’une mairie encadre l’exécution de votre travail.</li><li>Le travail d’intérêt général collectif : il est réalisé par plusieurs personnes au sein d’une même structure, avec un ou plusieurs tuteurs. Exemples : des travaux de désherbage de grande ampleur en forêt, une rénovation de bâtiment etc.</li><li>Le travail d’intérêt général pédagogique : des activités de groupe avec une ou plusieurs personnes en TIG afin d’obtenir un savoir ou une compétence en particulier, souvent en lien avec l’infraction que vous avez commis.Exemples : un module sur l’insertion professionnelle, une sensibilisation à la sécurité routière, une formation citoyenneté etc.</li></ul><br><br>Il permet d’exécuter une peine tout en bénéficiant d’une expérience professionnelle.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Combien de temps cette mesure va-t-elle durer ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Le travail d’intérêt général peut être prononcé pour une durée de :<ul><li>20 à 400 heures en cas de délit</li><li>20 à 120 heures en cas de contravention</li></ul><br><br>La durée exacte de votre travail d’intérêt général est indiquée sur votre jugement.<br><br>Le travail d’intérêt général peut être exercé en même temps que votre activité professionnelle. Attention il n’est pas possible de dépasser les 60 heures de travail par semaine au total.<br><br>Exemple : si vous travaillez 48 heures par semaine, vous ne pourrez pas faire plus de 12 heures de TIG en plus.<br><br>Vous pouvez exécuter votre TIG le soir ou le week-end en fonction des postes disponibles. Parlez-en à votre CPIP.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Quelles sont mes obligations ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "En plus de l’exécution du travail d’intérêt général, vous devez vous soumettre à un examen médical préalable. Cet examen médical permet de s’assurer que vous êtes apte au travail envisagé.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Que se passe-t-il si je respecte la mesure ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Le TIG se termine une fois que le nombre d’heures fixé par le juge a été exécuté.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Que se passe-t-il si je ne respecte pas la mesure ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Si vous n’arrivez pas à faire les heures fixées dans le délai fixé :<br><br>Vous devez également satisfaire les mesures générales de contrôle et les obligations particulières prévues selon votre situation.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      }
+    ]
+  }
+]

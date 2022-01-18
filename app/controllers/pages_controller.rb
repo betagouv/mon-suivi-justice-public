@@ -1,4 +1,12 @@
-class PagesController < ApplicationController
+class PagesController < Spina::ApplicationController
+  before_action :set_spina_page
+
+  # Controller inherit from Spina::ApplicationController
+  # Set Spina::Current.page
+  # Create custom pages in theme
+  # rails spina:bootstrap
+  # Ajouter contenu dans les vues
+  # Spina::Navigation.find_by(name: "main").pages.pluck(:name) pour la navigation
   def landing
   end
 
@@ -45,5 +53,11 @@ class PagesController < ApplicationController
   end
 
   def donnees_personnelles
+  end
+
+  private
+
+  def set_spina_page
+    Spina::Current.page = Spina::Page.find_by(name: action_name)
   end
 end

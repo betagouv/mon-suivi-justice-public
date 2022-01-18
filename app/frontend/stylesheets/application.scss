@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'custom';
+@import 'utilities';
 
 @import 'pages/home';
 @import 'pages/comprendre_ma_peine';
@@ -12,3 +13,5 @@
 @import 'pages/suivi';
 @import 'pages/stage';
 @import 'pages/infos-pages';
+
+@import 'components/collapse'

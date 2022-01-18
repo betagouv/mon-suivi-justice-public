@@ -1,16 +1,13 @@
-<div class='fr-container fr-pb-6w fr-pt-8w'>
-  <h1 class='static-title preparer-title fr-mb-4w'><%= t('preparer.title') %></h1>
-  <div class='static-intro'><%= t('preparer.intro') %></div>
+<div class='fr-container static-content-container'>
+  <h1 class='static-title static-title-blue fr-mb-4w'><%= content(:main_title) %></h1>
+  <div class='static-intro'><%= content.html(:main_rich_description) %></div>
 
-  <h2 class='preparer-secondary-title fr-mt-8w fr-mb-4w'><%= t('preparer.secondary_title1') %></h2>
+  <h2 class='preparer-secondary-title fr-mt-8w fr-mb-4w'><%= content(:subtitle) %></h2>
 
-  <div class='preparer-links-container'>
-    <%= link_to t('preparer.link-spip92'), preparer_spip92_path, class: 'preparer-link fr-mb-4w' %>
-    <%= link_to t('preparer.link-sap-nanterre'), preparer_sap_nanterre_path, class: 'preparer-link fr-mb-4w' %>
-  </div>
-
-  <div class='preparer-links-container'>
-    <%= link_to t('preparer.link-spip28'), preparer_spip28_path, class: 'preparer-link fr-mb-4w' %>
-    <%= link_to t('preparer.link-sap-chartres'), preparer_sap_chartres_path, class: 'preparer-link fr-mb-4w' %>
-  </div>
+  <div class="fr-grid-row">
+  <% repeater(:basic_card) do |card| %>
+    <div class="fr-col-3 fr-mb-2w">
+      <%= link_to card.content(:card_title), card.content(:card_link), class: 'preparer-link' %>
+    </div>
+  <% end %>
 </div>

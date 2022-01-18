@@ -1,0 +1,46 @@
+[
+  {
+    "name": "main_title",
+    "content": "Nous vous accompagnons dans votre suivi judiciaire"
+  },
+  {
+    "name": "card1_text",
+    "content": "Vous êtes convoqué au Tribunal ou au SPIP"
+  },
+  {
+    "name": "card1_button_head",
+    "content": "Préparer"
+  },
+  {
+    "name": "card1_button_sub",
+    "content": "mon rendez-vous"
+  },
+  {
+    "name": "card2_text",
+    "content": "Vous cherchez des informations sur votre peine et ses aménagements"
+  },
+  {
+    "name": "card2_button_head",
+    "content": "Comprendre"
+  },
+  {
+    "name": "card2_button_sub",
+    "content": "ma peine"
+  },
+  {
+    "name": "card3_text",
+    "content": "Suivi par un SPIP, vous cherchez comment réussir au mieux votre probation"
+  },
+  {
+    "name": "card3_button_head",
+    "content": "Investir"
+  },
+  {
+    "name": "card3_button_sub",
+    "content": "ma réinsertion"
+  },
+  {
+    "name": "main_description",
+    "content": "Mon Suivi Justice vous accompagne dans l'exécution de votre suivi judiciaire. Il vous rappelle par SMS vos rendez-vous avec la Justice* et vous aide à mieux comprendre ce qui est attendu de vous."
+  }
+]

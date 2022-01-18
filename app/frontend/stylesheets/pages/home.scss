@@ -1,6 +1,6 @@
 .static-home-links-wrapper {
   padding-bottom: 60px;
-  padding-top: 50px;
+  padding-top: 30px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -222,7 +222,6 @@
 .presentation-text-container {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
 }
 
 .presentation-picto {
@@ -232,7 +231,7 @@
   @media (min-width: $msj-medium-breakpoint) {
     margin-top: 0;
     margin-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     margin-right: 30px;
   }
 }
@@ -251,4 +250,9 @@
   font-size: 12px;
   margin-top: 20px;
   margin-bottom: 0;
+}
+
+.landing-title {
+  color: $msj-blue;
+  text-align: center;
 }
