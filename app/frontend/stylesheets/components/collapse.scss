@@ -38,3 +38,23 @@
 
 .collapse-picto-active { display: flex; }
 .collapse-picto-inactive { display: none; }
+
+.direction-collapse-picture {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @media (min-width: $msj-medium-breakpoint) {
+    float: left;
+    margin-right: 30px;
+  }
+}
+
+.direction-collapse-picture-img {
+  width: 100%;
+  max-width: 250px;
+
+  @media (min-width: $msj-small-breakpoint) {
+    width: 250px;
+  }
+}

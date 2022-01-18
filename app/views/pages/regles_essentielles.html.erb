@@ -13,6 +13,6 @@
   <p class='fr-text fr-mb-2w'><%= content(:main_description) %></p>
 
   <% repeater(:rich_collapse) do |collapse| %>
-    <%= render 'shared/collapse', collapse: collapse, collapse_style: "red"  %>
+    <%= render 'components/collapse', collapse: collapse, collapse_style: "red"  %>
   <% end %>
 </div>

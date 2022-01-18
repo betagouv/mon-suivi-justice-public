@@ -44,6 +44,11 @@ Spina::Theme.register do |theme|
     {name: "card3_text", title: "Texte Bloc 3", part_type: "Spina::Parts::Line"},
     {name: "card3_button_head", title: "Titre gras button bloc 3", part_type: "Spina::Parts::Line"},
     {name: "card3_button_sub", title: "Sous titre button bloc 3", part_type: "Spina::Parts::Line"},
+    {name: "direction_collapse_title", title: "Titre du contenu déroulant de l'adresse", part_type: "Spina::Parts::Line"},
+    {name: "direction_collapse_first_rich_content", title: "Premier texte du contenu déroulant de l'adresse", part_type: "Spina::Parts::Text"},
+    {name: "direction_collapse_second_rich_content", title: "Second texte du contenu déroulant de l'adresse", part_type: "Spina::Parts::Text"},
+    {name: "direction_collapse_button_text", title: "Texte du bouton contenu déroulant de l'adresse", part_type: "Spina::Parts::Line"},
+    {name: "direction_collapse_button_link", title: "Lien du bouton contenu déroulant de l'adresse", part_type: "Spina::Parts::Line"},
     {name: "collapse_title", title: "Titre", part_type: "Spina::Parts::Line"},
     {name: "collapse_rich_content", title: "Contenu", part_type: "Spina::Parts::Text"},
     {name: "collapse_rich_content_alert", title: "Encart rouge", part_type: "Spina::Parts::Text" },
@@ -69,7 +74,7 @@ Spina::Theme.register do |theme|
     {name: "obligations_personnelles", title: "Obligations personnelles", parts: %w[category main_title subtitle main_description rich_collapse]},
     {name: "regles_essentielles", title: "Les règles essentielles", parts: %w[category main_title subtitle main_description rich_collapse]},
     {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", parts: %w[main_title subtitle main_rich_description basic_card]},
-    {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", parts: %w[main_title main_description rich_collapse]}
+    {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]}
   ]
 
   # Custom pages

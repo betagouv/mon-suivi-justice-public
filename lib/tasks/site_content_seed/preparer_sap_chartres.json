@@ -8,6 +8,26 @@
     "content": "Durant votre suivi judiciaire, en fonction de votre condamnation, vous pourrez être convoqué par un juge d'application des peines."
   },
   {
+    "name": "direction_collapse_first_rich_content",
+    "content": "Le service de l’application des peines du tribunal judiciaire de Chartres (bâtiment B) se situe au 6, rue du Palais de Justice 28000 Chartres."
+  },
+  {
+    "name": "direction_collapse_title",
+    "content": "Comment me rendre au tribunal ?"
+  },
+  {
+    "name": "direction_collapse_second_rich_content",
+    "content": "Le service de l'application des peines se situe au rez-de-chaussée du bâtiment B. A votre arrivée dans le service, présentez-vous aux agents de sécurité du bâtiment ou à l’agent en charge de l’accueil, qui vous orienteront.<br><br>Si vous avez un rendez-vous de suivi, votre entretien aura lieu au rez-de-chaussée. Si vous êtes convoqué pour un débat contradictoire, l’audience se tiendra au 1er étage.<br><br>En cas de difficulté, vous pouvez joindre le : 02 37 18 77 73. Accueil téléphonique du lundi au vendredi de 9h à 12h30 et de 13h30 à 17h.<br><br>Le site est accessible aux personnes à mobilité réduite pour les audiences du rez-de-chaussée. Merci d’informer le greffe si vous êtes dans cette situation.<br><h4>Bus</h4><ul><li>Lignes 1, 2, 3, 4, 5, 7, 8, 11 : Arrêt « Viollette – Médiathèque »</li><li>Réseau « relais des portes » : Arrêt « Porte Notre Dame »</li></ul><h4>Voiture / Train</h4><ul><li>Depuis Nogent le Rotrou : Autoroute A11 ou par la D923, ou par le train (ligne « Le Mans – Nogent le Rotrou – Chartres – Paris »).</li><li>Depuis Châteaudun : Nationale 10 (environ 1 heure) ou par le train.</li><li>Depuis Dreux : Nationale 154 (environ 50 minutes).</li><li>Depuis Paris : Autoroutes A10 et A11.</li><li>Il est possible de se garer au parking public de la place Châtelet ou Q-Park du centre-ville.</li></ul>"
+  },
+  {
+    "name": "direction_collapse_button_text",
+    "content": "Ouvrir dans Google Maps"
+  },
+  {
+    "name": "direction_collapse_button_link",
+    "content": "https://www.google.fr/maps/place/Tribunal+Judiciaire/@48.8963835,2.2143697,17z/data=!4m5!3m4!1s0x47e664f5bf6d2f35:0xe7be9b6070062a71!8m2!3d48.8972523!4d2.2173476?shorturl=1"
+  },
+  {
     "name": "rich_collapse",
     "content_attributes": [
       {

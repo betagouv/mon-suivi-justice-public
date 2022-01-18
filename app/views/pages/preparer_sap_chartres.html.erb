@@ -3,7 +3,9 @@
 
   <p class='static-place-intro'><%= content(:main_description) %></p>
 
+  <%= render 'components/direction_collapse', content: content %>
+
   <% repeater(:rich_collapse) do |collapse| %>
-    <%= render 'shared/collapse', collapse: collapse, collapse_style: "blue"  %>
+    <%= render 'components/collapse', collapse: collapse, collapse_style: "blue"  %>
   <% end %>
 </div>
