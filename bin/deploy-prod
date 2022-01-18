@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+echo ""
+echo "You are deploying these commits to production :"
+echo ""
+git --no-pager log --oneline --no-decorate --abbrev-commit master..develop
+echo ""
+read -p "Do you confirm ? (y/n)" -n 1
+
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  echo ""
+  echo "Merge develop in master"
+  git checkout master
+  git merge develop
+  git push origin master
+  git checkout develop
+  echo "Push to Scalingo"
+  git push scalingo-prod master
+  echo "Run database migrations"
+  scalingo -a mon-suivi-justice-prod --region osc-secnum-fr1 run rails db:migrate
+  echo ""
+  echo "Production deployed"
+fi
