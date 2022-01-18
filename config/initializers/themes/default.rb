@@ -68,7 +68,8 @@ Spina::Theme.register do |theme|
     {name: "ma_reinsertion", title: "Investir ma réinsertion", parts: %w[main_title subtitle main_rich_description button_text]},
     {name: "obligations_personnelles", title: "Obligations personnelles", parts: %w[category main_title subtitle main_description rich_collapse]},
     {name: "regles_essentielles", title: "Les règles essentielles", parts: %w[category main_title subtitle main_description rich_collapse]},
-    {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", parts: %w[main_title subtitle main_rich_description basic_card]}
+    {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", parts: %w[main_title subtitle main_rich_description basic_card]},
+    {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", parts: %w[main_title main_description rich_collapse]}
   ]
 
   # Custom pages
@@ -86,7 +87,8 @@ Spina::Theme.register do |theme|
     {name: "ma_reinsertion", title: "Investir ma réinsertion", view_template: "ma_reinsertion"},
     {name: "obligations_personnelles", title: "Obligations personnelles", view_template: "obligations_personnelles"},
     {name: "regles_essentielles", title: "Les règles essentielles", view_template: "regles_essentielles"},
-    {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", view_template: "preparer_mon_rdv"}
+    {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", view_template: "preparer_mon_rdv"},
+    {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", view_template: "preparer_sap_chartres"}
   ]
 
   # Navigations (optional)

@@ -1,9 +1,15 @@
 <div data-controller="collapse" data-collapse-expanded-value="0">
-  <div class='collapse-trigger' data-action="click->collapse#toggle" data-collapse-target="label">
-    <div><%= collapse.content(:collapse_title) %></div>
+  <div class="collapse-trigger collapse-trigger-<%= collapse_style %>" data-action="click->collapse#toggle" data-collapse-target="label">
+    <% if collapse_style == "red" %>
+      <div><%= collapse.content(:collapse_title) %></div>
+    <% end %>
 
-    <span class="fr-fi-arrow-right-s-line collapse-menu-picto collapse-picto-active" aria-hidden="true" data-collapse-target="pictoExpanded"></span>
-    <span class="fr-fi-arrow-down-s-line collapse-menu-picto collapse-picto-inactive" aria-hidden="true" data-collapse-target="pictoCollapsed"></span>
+    <span class="fr-fi-arrow-right-s-line collapse-menu-picto-<%= collapse_style %> collapse-picto-active" aria-hidden="true" data-collapse-target="pictoExpanded"></span>
+    <span class="fr-fi-arrow-down-s-line collapse-menu-picto-<%= collapse_style %> collapse-picto-inactive" aria-hidden="true" data-collapse-target="pictoCollapsed"></span>
+
+    <% if collapse_style == "blue" %>
+      <div class="collapse-title-blue"><%= collapse.content(:collapse_title) %></div>
+    <% end %>
   </div>
 
   <div class='static-content d-none' data-collapse-target="content">
@@ -23,5 +29,4 @@
       </div>
     <% end %>
   </div>
-
 </div>

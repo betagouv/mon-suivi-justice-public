@@ -1,0 +1,135 @@
+[
+  {
+    "name": "main_title",
+    "content": "Tribunal judiciaire de Chartres"
+  },
+  {
+    "name": "main_description",
+    "content": "Durant votre suivi judiciaire, en fonction de votre condamnation, vous pourrez être convoqué par un juge d'application des peines."
+  },
+  {
+    "name": "rich_collapse",
+    "content_attributes": [
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Que faire si je ne peux pas me rendre à mon rendez-vous ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Vous présenter à votre rendez-vous fait partie de vos obligations judiciaires.<br><br>Si vous ne pouvez pas vous rendre à votre rendez-vous, vous devez prévenir le greffe de l’application des peines (02 37 18 77 73 - Mail : jap.tj-chartres@justice.fr) avant la date du rendez-vous et envoyer un justificatif de votre motif d’absence. Le motif de votre absence sera apprécié par votre JAP.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Quels justificatifs apporter ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Les justificatifs à apporter dépendent de votre situation et des obligations prononcées par le tribunal.<br><br>Vérifiez votre convocation papier.<br><br>Les justificatifs peuvent concerner :<br><ul><li><strong>Votre activité professionnelle</strong> : contrat de travail, trois dernières fiches de paie, attestation d’inscription à un stage, attestation de sécurité sociale, attestation assedic...</li><br><li><strong>Les soins</strong> : tous documents concernant les soins que vous suivez.</li><br><li><strong>Le paiement de sommes dues</strong> : vos justificatifs de paiement des sommes dues aux parties civiles, vos justificatifs de paiement des pensions alimentaires, tous documents concernant vos charges (loyer, factures...), votre avis d’imposition ou de non-imposition pour l’année, tous documents justifiant de votre situation familiale.</li><br><li><strong>Votre résidence</strong> : un justificatif de domicile ou d’hébergement.</li>",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "Bonne pratique : regroupez vos documents à l’avance et faites une photocopie de chaque, à remettre lors du rdv.",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Comment va se dérouler mon entretien ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Plusieurs types de convocations sont possibles :<br><h3>Convocation “723-15” pour un aménagement de peine</h3>Vous avez été condamné à une peine d’emprisonnement ferme pour laquelle vous allez solliciter un aménagement. Lors de cet entretien, vous devrez exposer votre situation au juge et en justifier. Selon votre situation, l’aménagement pourra être proposé lors de ce premier rdv ou vous serez orienté vers le SPIP pour un examen plus complet de votre situation.<br><h3>Convocation de notification de vos obligations</h3>Le juge d'application des peines vous convoque pour vous notifier vos obligations, c'est à dire vous les expliquer et vous dire ce qui est attendu de vous ainsi que les risques encourus si vous ne les respectez pas.<br><h3>Convocation de rappel de vos obligations</h3>Le juge d'application des peines vous convoque pour vous rappeler vos obligations et vous expliquer les risques encourus si vous ne les respectez pas. Cette convocation peut notamment faire suite à un rapport d’incident de votre Conseiller pénitentiaire qui a estimé que vous ne respectiez pas vos obligations.<br><h3>Convocation pour débat contradictoire</h3>Vous êtes convoqué en audience devant le juge d’application des peines en présence d’un Procureur de la République et d’un greffier. Ce débat peut avoir pour objet l’aménagement de votre peine d’emprisonnement, la révocation de votre mesure ou sa prolongation. Vous avez le droit d’être assisté par un avocat.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "Bonne pratique : Il vous est conseillé d’arriver 5 à 10 minutes en avance pour permettre à l’accueil de vérifier votre identité et de prévenir de votre arrivée. N’oubliez pas de venir avec une pièce d’identité ou si vous n’en avez pas, tout document officiel avec photo.",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Est-ce que je peux être assisté par un avocat ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "La présence de l'avocat aux rendez-vous de suivi judiciaire n'est pas obligatoire. Il ne pourra donc pas vous être désigné un avocat commis d'office. En revanche, vous pouvez à tout moment consulter un avocat pour être informé de vos droits ou être assisté d'un avocat lors de vos entretiens devant le SPIP ou le juge d'application des peines.<br><br>Pour trouver un avocat :<ul><li>Annuaire des avocats du barreau de Chartres : <a href=\"http://www.ordredesavocats-chartres.com/Annuaire-des-avocats.html\">lien</a></li><li>Annuaire des avocats en France : <a href=\"https://www.cnb.avocat.fr/fr/annuaire-des-avocats-de-france\">lien</a></li></ul><br>Si vos ressources financières sont insuffisantes, vous pouvez bénéficier d'une aide financière de l'Etat, totale ou partielle, appelée aide juridictionnelle. Pour calculer vos droits : <a href=\"https://www.justice.fr/simulateurs/aide-juridictionnelle\">lien</a>",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      }
+    ]
+  }
+]

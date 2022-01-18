@@ -1,23 +1,39 @@
 .collapse-trigger {
-  border: 2px solid $msj-orange;
-
-  font-size: 16px;
-  font-weight: bold;
-
   cursor: pointer;
 
   max-width: 850px;
   margin: auto;
   margin-top: 30px;
   background-color: $msj-clear-background;
-  padding: 10px 20px;
 
   display: flex;
+}
+
+.collapse-trigger-blue {
+  border: 2px solid $msj-blue;
+  font-size: 20px;
+  padding: 20px 30px;
+  line-height: 30px;
+}
+
+.collapse-trigger-red {
+  border: 2px solid $msj-orange;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
   justify-content: space-between;
 }
 
-.collapse-menu-picto {
+.collapse-title-blue {
+  margin-left: 20px;
+}
+
+.collapse-menu-picto-red {
   &:before { font-size: 24px; }
+}
+
+.collapse-menu-picto-blue {
+  &:before { font-size: 34px; }
 }
 
 .collapse-picto-active { display: flex; }
