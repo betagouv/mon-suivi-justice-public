@@ -42,6 +42,8 @@
 }
 
 .static-title-orange { color: $msj-orange; }
+.static-title-blue { color: $msj-blue; }
+.static-title-green { color: $msj-green; }
 
 .static-secondary-title {
   font-size: 24px;
@@ -120,24 +122,6 @@
     width: auto;
     max-width: 750px;
     text-align: justify;
-  }
-}
-
-.static-place-intro {
-  font-size: 18px;
-  line-height: 28px;
-  margin: auto;
-  margin-top: 20px;
-
-  @media (min-width: $msj-small-breakpoint) {
-    max-width: 850px;
-    font-size: 20px;
-    margin-top: 20px;
-    line-height: 32px;
-  }
-
-  @media (min-width: $msj-medium-breakpoint) {
-    width: auto;
   }
 }
 
