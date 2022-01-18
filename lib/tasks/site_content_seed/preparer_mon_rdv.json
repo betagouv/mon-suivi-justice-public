@@ -63,7 +63,7 @@
           {
             "name": "card_link",
             "title": "Lien du Bloc (merci de ne pas rentrer le lien en entier mais seulement l'extension (ex: sursis_probatoire))",
-            "content": "preparer_spip92",
+            "content": "preparer_spip28",
             "type": "Spina::Parts::Line"
           }
         ]
