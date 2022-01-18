@@ -14,27 +14,27 @@ export default class extends Controller {
     }
   }
 
-  collapse() {
+  collapse () {
     this.pictoExpandedTarget.classList.add('collapse-picto-inactive')
     this.pictoExpandedTarget.classList.remove('collapse-picto-active')
     this.pictoCollapsedTarget.classList.add('collapse-picto-active')
     this.pictoCollapsedTarget.classList.remove('collapse-picto-inactive')
 
-    this.contentTarget.classList.add("d-none")
-    this.contentTarget.classList.remove("d-flex")
+    this.contentTarget.classList.add('d-none')
+    this.contentTarget.classList.remove('d-flex')
 
-    this.expandedValue = "0"
+    this.expandedValue = '0'
   }
 
-  expand() {
+  expand () {
     this.pictoExpandedTarget.classList.remove('collapse-picto-inactive')
     this.pictoExpandedTarget.classList.add('collapse-picto-active')
     this.pictoCollapsedTarget.classList.remove('collapse-picto-active')
     this.pictoCollapsedTarget.classList.add('collapse-picto-inactive')
 
-    this.contentTarget.classList.remove("d-none")
-    this.contentTarget.classList.add("d-flex")
+    this.contentTarget.classList.remove('d-none')
+    this.contentTarget.classList.add('d-flex')
 
-    this.expandedValue = "1"
+    this.expandedValue = '1'
   }
 }

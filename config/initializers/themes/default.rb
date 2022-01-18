@@ -51,10 +51,10 @@ Spina::Theme.register do |theme|
     {name: "direction_collapse_button_link", title: "Lien du bouton contenu déroulant de l'adresse", part_type: "Spina::Parts::Line"},
     {name: "collapse_title", title: "Titre", part_type: "Spina::Parts::Line"},
     {name: "collapse_rich_content", title: "Contenu", part_type: "Spina::Parts::Text"},
-    {name: "collapse_rich_content_alert", title: "Encart rouge", part_type: "Spina::Parts::Text" },
-    {name: "collapse_rich_content_good_practice", title: "Encart vert", part_type: "Spina::Parts::Text" },
-    {name: "rich_collapse", title: "Contenu déroulant", parts: %w(collapse_title collapse_rich_content collapse_rich_content_alert collapse_rich_content_good_practice), part_type: "Spina::Parts::Repeater" },
-    {name: "basic_card", title: "Bloc", parts: %w(card_title card_link), part_type: "Spina::Parts::Repeater" }
+    {name: "collapse_rich_content_alert", title: "Encart rouge", part_type: "Spina::Parts::Text"},
+    {name: "collapse_rich_content_good_practice", title: "Encart vert", part_type: "Spina::Parts::Text"},
+    {name: "rich_collapse", title: "Contenu déroulant", parts: %w[collapse_title collapse_rich_content collapse_rich_content_alert collapse_rich_content_good_practice], part_type: "Spina::Parts::Repeater"},
+    {name: "basic_card", title: "Bloc", parts: %w[card_title card_link], part_type: "Spina::Parts::Repeater"}
   ]
 
   # View templates
