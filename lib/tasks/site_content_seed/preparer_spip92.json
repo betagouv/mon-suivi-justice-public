@@ -1,0 +1,155 @@
+[
+  {
+    "name": "main_title",
+    "content": "SPIP 92"
+  },
+  {
+    "name": "main_description",
+    "content": "Durant votre suivi judiciaire, vous serez régulièrement convoqué par un conseiller pénitentiaire d’insertion et de probation (CPIP) afin qu’il suive l’exécution de votre peine ou de votre mesure."
+  },
+  {
+    "name": "direction_collapse_title",
+    "content": "Comment me rendre au SPIP ?"
+  },
+  {
+    "name": "direction_collapse_first_rich_content",
+    "content": "Le Service pénitentiaire d’insertion et de probation des Hauts-de-Seine (SPIP 92) se situe au 94 Boulevard du Général Leclerc à Nanterre (92000)."
+  },
+  {
+    "name": "direction_collapse_second_rich_content",
+    "content": "En cas de difficulté, vous pouvez joindre le standard au 01 71 13 02 00 du lundi au vendredi de 9h à 12h et de 14h à 17h (14h-16h30 le vendredi).<br><br>Le site est accessible aux personnes à mobilité réduite.<br><h4>RER</h4><ol><li>RER A, descendre à la station 'Nanterre-Ville'.</li><li>Prendre la sortie 1 'Boulevard de la Seine'.</li><li>Juste avant les portiques de sortie, tournez à droite pour prendre le tunnel.</li><li>Montez l’escalier et prenez les portiques de sortie.</li><li>Avancez sur le boulevard de la Seine puis prendre boulevard du Général Leclerc. Marchez tout droit jusqu’au numéro 94.</li></ol><h4>Bus</h4><ul><li>Arrêt Nanterre-ville : ligne 378</li><li>Arrêt Nanterre-ville RER : 157</li><li>Arrêt Lannes : ligne 160 (direction “Nanterre-boulevard de la Seine”).</li><li>Arrêt Jules Quentin : ligne 159</li></ul><h4>Voiture</h4><p>Le SPIP des Hauts-de-Seine ne dispose pas d’un parking accessible au public. Il existe des possibilités de stationnement autour du bâtiment.</p>"
+  },
+  {
+    "name": "direction_collapse_button_text",
+    "content": "Ouvrir dans Google Maps"
+  },
+  {
+    "name": "direction_collapse_button_link",
+    "content": "https://www.google.fr/maps/place/Service+P%C3%A9nitentiaire+d%E2%80%99Insertion+%26+de+Probation(SPIP)/@48.8999914,2.1873704,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66486dc980a65:0x54a6653d1e03aa1!8m2!3d48.8999879!4d2.1895591?shorturl=1"
+  },
+  {
+    "name": "rich_collapse",
+    "content_attributes": [
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Que faire si je ne peux pas me rendre à mon rendez-vous ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Vous présenter à votre rendez-vous fait partie de vos obligations judiciaires. Ces rendez-vous sont essentiels pour contrôler le respect de vos obligations personnelles. En ne vous présentant pas à votre rendez-vous, vous vous exposez à des sanctions.<br><br>Si vous ne pouvez pas vous rendre à votre rendez-vous, vous devez prévenir votre CPIP (standard 01 71 13 02 00 ou ligne directe de votre CPIP) avant la date du rendez-vous et d’envoyer un justificatif de votre motif d’absence. Le motif de votre absence sera apprécié par votre CPIP.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Quels justificatifs apporter ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "Les justificatifs à apporter dépendent de votre situation et des obligations prononcées par le tribunal.<br><br>Vérifiez votre convocation papier.<br><br>Les justificatifs peuvent concerner :<br><ul><li><strong>Votre activité professionnelle</strong> : contrat de travail, trois dernières fiches de paie, attestation d’inscription à un stage, attestation de sécurité sociale, attestation assedic...</li><br><li><strong>Les soins</strong> : tous documents concernant les soins que vous suivez.</li><br><li><strong>Le paiement de sommes dues</strong> : vos justificatifs de paiement des sommes dues aux parties civiles, vos justificatifs de paiement des pensions alimentaires, tous documents concernant vos charges (loyer, factures...), votre avis d’imposition ou de non-imposition pour l’année, tous documents justifiant de votre situation familiale.</li><br><li><strong>Votre résidence</strong> : un justificatif de domicile ou d’hébergement.</li>",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "Bonne pratique : regroupez vos documents à l’avance et faites une photocopie de chaque, à remettre lors du rdv.",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Comment va se dérouler mon entretien ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "<h3>Le premier entretien avec un CPIP</h3><p>Le premier entretien avec un CPIP est indispensable. Il permet de faire le point sur votre situation et de vous expliquer le déroulement de votre suivi judiciaire. Il dure entre 30 minutes et une heure. Il est important de vous présenter à l’entretien avec une pièce d’identité et l’ensemble des justificatifs demandés sur votre convocation.</p><p>Cet entretien se déroulera de la façon suivante :</p><ul><li>Le CPIP se présentera et vous expliquera le rôle du SPIP et les missions des personnels en SPIP. Il vous précisera s’il sera en charge du suivi de votre peine ou de votre mesure durant toute sa durée ou si un autre CPIP référent prendra le relai après votre premier entretien. Votre CPIP référent sera votre interlocuteur principal au cours de votre mesure judiciaire.</li><li>Le CPIP fera un point sur votre <strong>situation globale</strong>, qu’elle soit personnelle (nom, adresse, situation maritale…), professionnelle (travail, formation professionnelle, étude…), sanitaire... : c’est le moment pour vous d’exposer les difficultés sociales, professionnelles, personnelles, auxquelles vous êtes confronté.e.</li><li>Une attention particulière sera également portée à votre <strong>situation pénale</strong>. Le CPIP vous rappellera votre condamnation et vous expliquera en détail le contenu des obligations que vous devrez respecter.</li><li>N’hésitez pas à poser toutes les questions que vous souhaitez afin d’être certain de bien comprendre les attentes de la Justice (CPIP, magistrats). Une partie de l’entretien peut être consacrée à vos questions et vos attentes.</li></ul><p>Ce premier entretien doit permettre de s’assurer de votre compréhension de la mesure judiciaire. En partant de votre situation, votre CPIP référent pourra assurer un suivi personnalisé et ainsi proposer des orientations adaptées.</p><p>A l’issue de ce premier entretien, il y aura deux possibilités :</p><ul><li>Si vous avez été reçu par un CPIP de permanence : le suivi de votre mesure va ensuite être affecté à un CPIP référent en fonction de votre adresse. Le CPIP référent vous enverra une convocation, par mail ou par voie postale.</li><li>Si vous avez directement été reçu par votre CPIP référent : le CPIP peut fixer avec vous la date de votre prochaine convocation. Il peut vous remettre une convocation en mains propres ou vous l'adresser par mail ou voie postale.</li></ul><h3>Les entretiens de suivi</h3><p>A l’issue d’une période d’évaluation de quelques mois, votre CPIP référent fixera la périodicité de vos convocations au SPIP. Ces entretiens serviront à s’assurer de la bonne exécution de votre mesure.</p>",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "<strong>IMPORTANT</strong> Votre CPIP référent est en lien étroit avec les magistrats auxquels il rend compte régulièrement du déroulement de votre mesure judiciaire. Le CPIP référent est votre interlocuteur privilégié pour témoigner de l’évolution de votre situation. Il est donc essentiel de vous impliquer dans votre suivi et de justifier de vos démarches.",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      },
+      {
+        "name": "rich_collapse",
+        "title": "Contenu déroulant",
+        "parts_attributes": [
+          {
+            "name": "collapse_title",
+            "title": "Titre",
+            "content": "Est-ce que je peux être assisté par un avocat ?",
+            "type": "Spina::Parts::Line"
+          },
+          {
+            "name": "collapse_rich_content",
+            "title": "Contenu",
+            "content": "La présence de l'avocat aux rendez-vous de suivi judiciaire n'est pas obligatoire. Il ne pourra donc pas vous être désigné un avocat commis d'office. En revanche, vous pouvez à tout moment consulter un avocat pour être informé de vos droits ou être assisté d'un avocat lors de vos entretiens devant le SPIP ou le juge d'application des peines.<br><br>Pour trouver un avocat :<ul><li>Annuaire des avocats du barreau des Hauts-de-Seine : <a href=\"https://www.barreau92.com/search\">lien</a></li><li>Annuaire des avocats en France : <a href=\"https://www.cnb.avocat.fr/fr/annuaire-des-avocats-de-france\">lien</a></li></ul><br>Si vos ressources financières sont insuffisantes, vous pouvez bénéficier d'une aide financière de l'Etat, totale ou partielle, appelée aide juridictionnelle. Pour calculer vos droits : <a href=\"https://www.justice.fr/simulateurs/aide-juridictionnelle\">lien</a>",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_alert",
+            "title": "Encart Rouge",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          },
+          {
+            "name": "collapse_rich_content_good_practice",
+            "title": "Encart Vert",
+            "content": "",
+            "type": "Spina::Parts::Text"
+          }
+        ]
+      }
+    ]
+  }
+]
