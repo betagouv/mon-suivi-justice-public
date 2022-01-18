@@ -3,20 +3,20 @@
 echo ""
 echo "You are deploying these commits to production :"
 echo ""
-git --no-pager log --oneline --no-decorate --abbrev-commit master..develop
+git --no-pager log --oneline --no-decorate --abbrev-commit main..develop
 echo ""
 read -p "Do you confirm ? (y/n)" -n 1
 
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   echo ""
-  echo "Merge develop in master"
-  git checkout master
+  echo "Merge develop in main"
+  git checkout main
   git merge develop
-  git push origin master
+  git push origin main
   git checkout develop
   echo "Push to Scalingo"
-  git push scalingo-prod master
+  git push scalingo-prod main
   echo "Run database migrations"
   scalingo -a mon-suivi-justice-prod --region osc-secnum-fr1 run rails db:migrate
   echo ""
