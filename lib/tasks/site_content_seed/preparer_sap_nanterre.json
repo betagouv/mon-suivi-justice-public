@@ -1,7 +1,7 @@
 [
   {
     "name": "main_title",
-    "content": "Tribunal judiciaire de Chartres"
+    "content": "Tribunal judiciaire de Nanterre"
   },
   {
     "name": "main_description",
@@ -13,11 +13,11 @@
   },
   {
     "name": "direction_collapse_first_rich_content",
-    "content": "Le service de l’application des peines du tribunal judiciaire de Chartres (bâtiment B) se situe au 6, rue du Palais de Justice 28000 Chartres."
+    "content": "Le tribunal judiciaire de Nanterre se situe au 179-191 avenue Joliot Curie à Nanterre (92020)."
   },
   {
     "name": "direction_collapse_second_rich_content",
-    "content": "Le service de l'application des peines se situe au rez-de-chaussée du bâtiment B. A votre arrivée dans le service, présentez-vous aux agents de sécurité du bâtiment ou à l’agent en charge de l’accueil, qui vous orienteront.<br><br>Si vous avez un rendez-vous de suivi, votre entretien aura lieu au rez-de-chaussée. Si vous êtes convoqué pour un débat contradictoire, l’audience se tiendra au 1er étage.<br><br>En cas de difficulté, vous pouvez joindre le : 02 37 18 77 73. Accueil téléphonique du lundi au vendredi de 9h à 12h30 et de 13h30 à 17h.<br><br>Le site est accessible aux personnes à mobilité réduite pour les audiences du rez-de-chaussée. Merci d’informer le greffe si vous êtes dans cette situation.<br><h4>Bus</h4><ul><li>Lignes 1, 2, 3, 4, 5, 7, 8, 11 : Arrêt « Viollette – Médiathèque »</li><li>Réseau « relais des portes » : Arrêt « Porte Notre Dame »</li></ul><h4>Voiture / Train</h4><ul><li>Depuis Nogent le Rotrou : Autoroute A11 ou par la D923, ou par le train (ligne « Le Mans – Nogent le Rotrou – Chartres – Paris »).</li><li>Depuis Châteaudun : Nationale 10 (environ 1 heure) ou par le train.</li><li>Depuis Dreux : Nationale 154 (environ 50 minutes).</li><li>Depuis Paris : Autoroutes A10 et A11.</li><li>Il est possible de se garer au parking public de la place Châtelet ou Q-Park du centre-ville.</li></ul>"
+    "content": "Le service de l'application des peines se situe au deuxième étage du tribunal. A votre arrivée dans le service, présentez vous au bureau 228. Si vous êtes convoqué pour un débat contradictoire, rendez-vous en salle d'audience 112.<br><br>En cas de difficulté, vous pouvez joindre le : 01 40 97 15 00. Accueil téléphonique du lundi au vendredi de 9h à 12h30 et de 13h30 à 17h.<br><br>Le site est accessible aux personnes à mobilité réduite.<br><h4>RER</h4><p>RER A, descendre à la station 'Nanterre-Préfecture'. Prendre la sortie 2 'Préfecture' ou la sortie 3 'Boulevard de Pesaro'.</p><h4>Bus</h4><ul><li>Arrêt Préfecture des Hauts-de-Seine : lignes 159 (La Défense - Cité du vieux pont) et 304</li><li>Arrêt Nanterre Préfecture RER : lignes 160 (Pont de Sèvres - Nanterre-Préfecture RER), 259 et 276</li><li>Arrêt Esplanade Charles de Gaulle : ligne 163 (Rueil Ville-Porte de Champerret)</li></ul><h4>Voiture</h4><p>Depuis Paris/Porte Maillot : Prendre l’avenue de Neuilly et continuer sur 2,6 km. Tourner à droite sur le Boulevard circulaire pendant 1,7 km. Au rond-point, prendre à droite rue Félix Eboué pendant 1,3 km. Prendre à gauche avenue François Arago sur 100m. Au rond point, place Nelson Mandela, prendre à gauche avenue Frédéric et Irène Joliot-Curie.</p><p>Il est possible de se garer dans le parking public de la préfecture - rue des Trois Fontanot.</p>"
   },
   {
     "name": "direction_collapse_button_text",
@@ -43,7 +43,7 @@
           {
             "name": "collapse_rich_content",
             "title": "Contenu",
-            "content": "Vous présenter à votre rendez-vous fait partie de vos obligations judiciaires.<br><br>Si vous ne pouvez pas vous rendre à votre rendez-vous, vous devez prévenir le greffe de l’application des peines (02 37 18 77 73 - Mail : jap.tj-chartres@justice.fr) avant la date du rendez-vous et envoyer un justificatif de votre motif d’absence. Le motif de votre absence sera apprécié par votre JAP.",
+            "content": "Vous présenter à votre rendez-vous fait partie de vos obligations judiciaires.<br><br>Si vous ne pouvez pas vous rendre à votre rendez-vous, vous devez prévenir le secrétariat du SAP (01 40 97 15 00 Mail : jap.tj-nanterre@justice.fr) avant la date du rendez-vous et envoyer un justificatif de votre motif d’absence. Le motif de votre absence sera apprécié par votre JAP.",
             "type": "Spina::Parts::Text"
           },
           {
@@ -133,7 +133,7 @@
           {
             "name": "collapse_rich_content",
             "title": "Contenu",
-            "content": "La présence de l'avocat aux rendez-vous de suivi judiciaire n'est pas obligatoire. Il ne pourra donc pas vous être désigné un avocat commis d'office. En revanche, vous pouvez à tout moment consulter un avocat pour être informé de vos droits ou être assisté d'un avocat lors de vos entretiens devant le SPIP ou le juge d'application des peines.<br><br>Pour trouver un avocat :<ul><li>Annuaire des avocats du barreau de Chartres : <a href=\"http://www.ordredesavocats-chartres.com/Annuaire-des-avocats.html\">lien</a></li><li>Annuaire des avocats en France : <a href=\"https://www.cnb.avocat.fr/fr/annuaire-des-avocats-de-france\">lien</a></li></ul><br>Si vos ressources financières sont insuffisantes, vous pouvez bénéficier d'une aide financière de l'Etat, totale ou partielle, appelée aide juridictionnelle. Pour calculer vos droits : <a href=\"https://www.justice.fr/simulateurs/aide-juridictionnelle\">lien</a>",
+            "content": "La présence de l'avocat aux rendez-vous de suivi judiciaire n'est pas obligatoire. Il ne pourra donc pas vous être désigné un avocat commis d'office. En revanche, vous pouvez à tout moment consulter un avocat pour être informé de vos droits ou être assisté d'un avocat lors de vos entretiens devant le SPIP ou le juge d'application des peines.<br><br>Pour trouver un avocat :<ul><li>Annuaire des avocats en France : <a href=\"https://www.cnb.avocat.fr/fr/annuaire-des-avocats-de-france\">lien</a></li></ul><br>Si vos ressources financières sont insuffisantes, vous pouvez bénéficier d'une aide financière de l'Etat, totale ou partielle, appelée aide juridictionnelle. Pour calculer vos droits : <a href=\"https://www.justice.fr/simulateurs/aide-juridictionnelle\">lien</a>",
             "type": "Spina::Parts::Text"
           },
           {
