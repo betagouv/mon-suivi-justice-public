@@ -16,7 +16,7 @@ then
   git push origin main
   git checkout develop
   echo "Push to Scalingo"
-  git push scalingo-prod main
+  git push scalingo-prod main:master
   echo "Run database migrations"
   scalingo -a mon-suivi-justice-prod --region osc-secnum-fr1 run rails db:migrate
   echo ""
