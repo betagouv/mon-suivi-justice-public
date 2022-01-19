@@ -25,5 +25,6 @@ Rails.application.routes.draw do
     get :preparer_sap_chartres
     get :ma_reinsertion
     get :donnees_personnelles
+    get :qui_sommes_nous
   end
 end

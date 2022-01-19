@@ -5,7 +5,8 @@
 }
 
 .static-footer {
-  border-color: $msj-border;
+  border-top: 2px solid $msj-border;
+  box-shadow: none;
 }
 
 .static-title {
