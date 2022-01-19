@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   scope controller: :pages do
     get :landing
     get :comprendre_ma_peine
+    get :peine_emprisonnement
     get :regles_essentielles
     get :obligations_personnelles
     get :sursis_probatoire

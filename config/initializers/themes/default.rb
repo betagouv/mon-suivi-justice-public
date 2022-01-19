@@ -64,7 +64,8 @@ Spina::Theme.register do |theme|
   theme.view_templates = [
     {name: "landing", title: "Landing", parts: %w[main_title card1_text card1_button_head card1_button_sub card2_text card2_button_head card2_button_sub card3_text card3_button_head card3_button_sub main_description]},
     {name: "amenagements_de_peine", title: "Aménagements de peine", parts: %w[main_title main_rich_description rich_collapse]},
-    {name: "stage", title: "Le stage", parts: %w[main_title rich_collapse]},
+    {name: "stage", title: "Le stage", parts: %w[main_title main_rich_description]},
+    {name: "peine_emprisonnement", title: "La peine d'emprisonnement", parts: %w[main_title main_rich_description]},
     {name: "suivi_socio_judiciaire", title: "Le suivi socio-judiciaire", parts: %w[main_title rich_collapse]},
     {name: "sursis_probatoire", title: "Le sursis probatoire", parts: %w[main_title rich_collapse]},
     {name: "travail_interet_general", title: "Le travail d’intérêt général", parts: %w[main_title main_rich_description rich_collapse]},
@@ -87,6 +88,7 @@ Spina::Theme.register do |theme|
     {name: "landing", title: "Page d'accueil", view_template: "landing"},
     {name: "amenagements_de_peine", title: "Aménagements de peine", view_template: "amenagements_de_peine"},
     {name: "stage", title: "Le stage", view_template: "stage"},
+    {name: "peine_emprisonnement", title: "La peine d'emprisonnement", view_template: "peine_emprisonnement"},
     {name: "suivi_socio_judiciaire", title: "Le suivi socio-judiciaire", view_template: "suivi_socio_judiciaire"},
     {name: "sursis_probatoire", title: "Le sursis probatoire", view_template: "sursis_probatoire"},
     {name: "travail_interet_general", title: "Le travail d'intérêt général", view_template: "travail_interet_general"},

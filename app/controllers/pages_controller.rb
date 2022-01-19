@@ -16,6 +16,9 @@ class PagesController < Spina::ApplicationController
   def regles_essentielles
   end
 
+  def peine_emprisonnement
+  end
+
   def obligations_personnelles
   end
 
