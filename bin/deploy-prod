@@ -18,7 +18,7 @@ then
   echo "Push to Scalingo"
   git push scalingo-prod main:master
   echo "Run database migrations"
-  scalingo -a mon-suivi-justice-prod --region osc-secnum-fr1 run rails db:migrate
+  scalingo -a mon-suivi-justice-public-prod --region osc-secnum-fr1 run rails db:migrate
   echo ""
   echo "Production deployed"
 fi
