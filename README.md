@@ -6,10 +6,35 @@ Fiche sur beta.gouv : [Mon Suivi Justice](https://beta.gouv.fr/startups/justif.h
 
 Cette application est le site d'information accessible au public de Mon Suivi Justice
 
-- En démo sur [mon-suivi-justice.incubateur.net](https://www.mon-suivi-justice.incubateur.net)
 - En production sur [mon-suivi-justice.beta.gouv.fr](https://www.mon-suivi-justice.beta.gouv.fr)
 
-Documentation utilisateur en cours de rédaction.
+## Changer le contenu
+### Fonctionnement général
+
+- Rendez-vous sur `/admin` (rajouter `/admin` à la fin de l'URL) et connectez-vous avec mon identifiant et mot de passe admin
+- Sélectionnez la page à modifier
+- Trouvez le contenu que vous souhaitez modifier dans la page.
+- Modifiez le contenu puis cliquez sur "Enregistrer les changements" en haut à droite
+- Astuce: gardez le site public ouvert dans un autre onglet pour visualiser rapidement vous changement. Il suffit pour les voir de recharger la page.
+
+### Fonctionnement particulier de certains blocs et astuces
+
+#### Rich texte
+
+Les blocs de texte "riches" (incluant du style), vous permettent d'ajouter des titre, de mettre en gras, etc. un texte.
+
+- Si un espace que vous voyez dans l'interface admin n'apparait pas dans le site, essayez de le supprimer puis de l'ajouter à nouveau dans le bloc de texte (ce problème vient probablement de la mise en place initiale en masse du contenu).
+- Pour enlever un style, sélectionnez le texte qui l'a puis cliquez à nouveau sur le style en question (h4 pour un titre h4 par ex).
+- Normalement, le style du texte sélectionné devrait être visible dans l'éditeur (le bouton gras devrait être mis en évidence pour un texte en gras par exemple). Ce n'est pas le cas pour l'instant. C'est un problème connu de l'outil que nous utilisons. Nous espérons qu'il sera vite résolu.
+
+### Blocs qui se répètent
+
+Quand une page contient plusieurs blocs semblablent par leur style et simplement différents par leur contenu, ils sont mis en place via des "Repeaters"
+
+- Pour ajouter un nouveau bloc, cliquez sur "nouvelle entrée" en bas
+- Pour changer l'ordre des blocs, faites un "drag and drop" du bloc à l'endroit où vous voulez le déposer
+- Pour supprimer un bloc, cliquez sur le bouton "supprimer" en bas de celui-ci
+
 
 ## Contribuer
 
