@@ -30,6 +30,7 @@
     width: 31%;
     max-width: 390px;
     margin-right: 20px;
+    position: relative;
 
     &:last-child{
       margin-right: 0;
@@ -130,13 +131,13 @@
   @media (min-width: $msj-small-breakpoint) {
     margin-top: 0;
     width: 220px;
-    top: 40px;
   }
 
   @media (min-width: $msj-medium-breakpoint) {
     width: 260px;
-    position: relative;
     height: 90px;
+    position: absolute;
+    bottom: -30px;
   }
 }
 
