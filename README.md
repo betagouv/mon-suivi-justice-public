@@ -25,7 +25,6 @@ Les blocs de texte "riches" (incluant du style), vous permettent d'ajouter des t
 
 - Si un espace que vous voyez dans l'interface admin n'apparait pas dans le site, essayez de le supprimer puis de l'ajouter à nouveau dans le bloc de texte (ce problème vient probablement de la mise en place initiale en masse du contenu).
 - Pour enlever un style, sélectionnez le texte qui l'a puis cliquez à nouveau sur le style en question (h4 pour un titre h4 par ex).
-- Normalement, le style du texte sélectionné devrait être visible dans l'éditeur (le bouton gras devrait être mis en évidence pour un texte en gras par exemple). Ce n'est pas le cas pour l'instant. C'est un problème connu de l'outil que nous utilisons. Nous espérons qu'il sera vite résolu.
 
 ### Blocs qui se répètent
 
