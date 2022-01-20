@@ -1,8 +1,6 @@
 import '@hotwired/turbo-rails'
-import '@rails/actiontext'
 
 import 'controllers'
-import 'static'
 
 import '@gouvfr/dsfr/dist/dsfr/dsfr.css'
 import '@gouvfr/dsfr/dist/dsfr/dsfr.module.min.js'
