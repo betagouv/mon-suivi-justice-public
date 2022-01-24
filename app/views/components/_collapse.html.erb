@@ -12,13 +12,15 @@
     <% end %>
   </div>
 
-  <div class='static-content d-none' data-collapse-target="content">
+  <div class='collapse-content static-content d-none' data-collapse-target="content">
     <%= collapse.content.html(:collapse_rich_content) %>
 
     <% if collapse.content(:collapse_rich_content_good_practice).present? %>
       <div class="static-card static-good-practice-card">
         <i class='fa fa-thumbs-up 3x static-good-practice-thumb-up'></i>
-        <p class="static-link-card-intro"><%= collapse.content.html(:collapse_rich_content_good_practice) %></p>
+        <div class="static-link-card-intro">
+          <%= collapse.content.html(:collapse_rich_content_good_practice) %>
+        </div>
       </div>
     <% end %>
 

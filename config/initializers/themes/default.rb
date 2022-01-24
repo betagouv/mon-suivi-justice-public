@@ -76,7 +76,7 @@ Spina::Theme.register do |theme|
     {name: "regles_essentielles", title: "Les règles essentielles", parts: %w[category main_title subtitle main_description rich_collapse]},
     {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", parts: %w[main_title subtitle main_rich_description basic_card]},
     {name: "preparer_spip92", title: "Préparer SPIP 92", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
-    {name: "preparer_spip28", title: "Préparer SPIP 92", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_spip28", title: "Préparer SPIP 28", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_sap_nanterre", title: "Préparer SAP Nanterre", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "qui_sommes_nous", title: "Qui sommes-nous", parts: %w[main_title main_rich_description button_text]}
@@ -99,7 +99,7 @@ Spina::Theme.register do |theme|
     {name: "obligations_personnelles", title: "Obligations personnelles", view_template: "obligations_personnelles"},
     {name: "regles_essentielles", title: "Les règles essentielles", view_template: "regles_essentielles"},
     {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", view_template: "preparer_mon_rdv"},
-    {name: "preparer_spip28", title: "Préparer SPIP 92", view_template: "preparer_spip92"},
+    {name: "preparer_spip28", title: "Préparer SPIP 28", view_template: "preparer_spip28"},
     {name: "preparer_spip92", title: "Préparer SPIP 92", view_template: "preparer_spip92"},
     {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", view_template: "preparer_sap_chartres"},
     {name: "preparer_sap_nanterre", title: "Préparer SAP Nanterre", view_template: "preparer_sap_nanterre"},

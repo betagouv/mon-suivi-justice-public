@@ -7,7 +7,7 @@
   </div>
 
 
-  <div class='static-content d-none' data-collapse-target="content">
+  <div class='collapse-content static-content d-none' data-collapse-target="content">
     <div>
       <% if defined?(image) %>
         <div class='direction-collapse-picture' ><%= image_pack_tag "media/images/#{image}", alt: "Photo de l'entrée du lien de rendez-vous", class: 'direction-collapse-picture-img' %></div>
@@ -15,7 +15,7 @@
 
       <%= content.html(:direction_collapse_first_rich_content) %>
 
-      <%= link_to content(:direction_collapse_button_link), target: '_blank', class: 'static-google-map-link static-google-map-link-button fr-mb-2w' do %>
+      <%= link_to content(:direction_collapse_button_link), target: '_blank', class: 'static-google-map-link static-google-map-link-button fr-my-2w' do %>
         <%= content(:direction_collapse_button_text) %>
       <% end %>
 
