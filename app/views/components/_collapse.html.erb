@@ -27,7 +27,9 @@
     <% if collapse.content(:collapse_rich_content_alert).present? %>
       <div class="static-card static-important-card">
         <i class="fa fa-exclamation-triangle 3x static-important-exclamation-triangle"></i>
-        <p class="static-link-card-intro"><%= collapse.content.html(:collapse_rich_content_alert) %></p>
+        <div class="static-link-card-intro">
+          <%= collapse.content.html(:collapse_rich_content_alert) %>
+        </div>
       </div>
     <% end %>
   </div>
