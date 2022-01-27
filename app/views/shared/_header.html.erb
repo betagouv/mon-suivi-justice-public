@@ -25,7 +25,7 @@
 
                   <div class="fr-header__tools">
                     <div class="fr-header__tools-links">
-                      <%= button_to 'Espace agents', "https://mon-suivi-justice.beta.gouv.fr/users/sign_in", method: :get, class: 'static-home-back-office-button'  %>
+                      <%= button_to 'Espace agents', ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'static-home-back-office-button'  %>
                     </div>
                   </div>
               </div>
