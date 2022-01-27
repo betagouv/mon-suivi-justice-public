@@ -28,8 +28,8 @@ Rails.application.routes.draw do
     get :qui_sommes_nous
   end
 
-  match '/404' => 'errors#not_found', :via => :all
-  match '/422' => 'errors#unprocessable_entity', :via => :all
-  match '/500' => 'errors#internal_server_error', :via => :all
-  match '/503' => 'errors#service_unavailable', :via => :all
+  match "/404" => "errors#not_found", :via => :all
+  match "/422" => "errors#unprocessable_entity", :via => :all
+  match "/500" => "errors#internal_server_error", :via => :all
+  match "/503" => "errors#service_unavailable", :via => :all
 end
