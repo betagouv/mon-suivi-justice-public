@@ -13,5 +13,6 @@ class ErrorsController < ApplicationController
     render status: 422
   end
 
-  def service_unavailable; end
+  def service_unavailable
+  end
 end
