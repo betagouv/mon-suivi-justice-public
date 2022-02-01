@@ -12,7 +12,4 @@ class ErrorsController < ApplicationController
   def unprocessable_entity
     render status: 422
   end
-
-  def service_unavailable
-  end
 end
