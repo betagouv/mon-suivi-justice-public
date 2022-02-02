@@ -33,10 +33,10 @@
 
   <h2 class='fr-mt-2w fr-mb-4w'><%= content(:secondary_subtitle) %></h2>
 
-  <div class='fr-grid-row'>
+  <div class='fr-grid-row fr-grid-row--gutters'>
     <% repeater(:basic_card) do |card| %>
-      <div class="fr-col-3">
-        <%= link_to card.content(:card_link), class: 'comprendre-ma-peine-small-tile fr-mx-2w fr-mb-4w' do %>
+      <div class="fr-col-12 fr-col-md-6 fr-col-lg-3">
+        <%= link_to card.content(:card_link), class: 'comprendre-ma-peine-small-tile fr-mb-4w' do %>
           <div class='comprendre-ma-peine-small-tiles-content fr-mx-2w'>
             <div class='comprendre-ma-peine-small-tiles-chevron'><%= image_pack_tag 'media/images/chevron.svg' %></div>
             <div class='comprendre-ma-peine-small-tiles-title'><%= card.content(:card_title) %></div>

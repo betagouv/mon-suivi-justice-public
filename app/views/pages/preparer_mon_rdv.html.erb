@@ -4,9 +4,9 @@
 
   <h2 class='preparer-secondary-title fr-mt-8w fr-mb-4w'><%= content(:subtitle) %></h2>
 
-  <div class="fr-grid-row">
+  <div class="fr-grid-row fr-grid-row--gutters">
     <% repeater(:basic_card) do |card| %>
-      <div class="fr-col-3 fr-mb-2w">
+      <div class="fr-col-6 fr-col-lg-3 fr-mb-2w">
         <%= link_to card.content(:card_title), card.content(:card_link), class: 'preparer-link' %>
       </div>
     <% end %>
