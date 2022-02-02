@@ -6,7 +6,7 @@
 
   <div class="fr-grid-row fr-grid-row--gutters">
     <% repeater(:basic_card) do |card| %>
-      <div class="fr-col-6 fr-col-lg-3 fr-mb-2w">
+      <div class="fr-col-6 fr-col-lg-3 fr-mb-2w text-align-center">
         <%= link_to card.content(:card_title), card.content(:card_link), class: 'preparer-link' %>
       </div>
     <% end %>
