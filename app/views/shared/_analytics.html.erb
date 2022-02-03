@@ -5,8 +5,8 @@
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
     _paq.push(["setCookieDomain", "*.mon-suivi-justice.beta.gouv.fr"]);
-    _paq.push(["setDomains", ["*.mon-suivi-justice.beta.gouv.fr"]]);
     _paq.push(["setExcludedQueryParams", ["simulationId"]]);
+    _paq.push(["disableCookies"]);
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
