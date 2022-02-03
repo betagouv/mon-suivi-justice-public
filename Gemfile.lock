@@ -263,6 +263,14 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
+    sentry-rails (5.0.2)
+      railties (>= 5.0)
+      sentry-ruby-core (~> 5.0.2)
+    sentry-ruby (5.0.2)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      sentry-ruby-core (= 5.0.2)
+    sentry-ruby-core (5.0.2)
+      concurrent-ruby
     spina (2.8.0)
       ancestry
       attr_json
@@ -351,6 +359,8 @@ DEPENDENCIES
   redis (~> 4.5)
   rspec-rails (~> 5.0)
   selenium-webdriver (~> 4.1)
+  sentry-rails (~> 5.0, >= 5.0.2)
+  sentry-ruby (~> 5.0, >= 5.0.2)
   spina (~> 2.8)
   sprockets-rails (~> 3.4, >= 3.4.2)
   standard (~> 1.6)

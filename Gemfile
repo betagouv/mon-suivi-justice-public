@@ -43,8 +43,9 @@ gem "tzinfo-data", "~> 1.2", platforms: %i[mingw mswin x64_mingw jruby]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", "~> 1.9", require: false
 
-# Use Sass to process CSS
-# gem "sassc-rails"
+
+gem 'sentry-ruby', '~> 5.0', '>= 5.0.2'
+gem 'sentry-rails', '~> 5.0', '>= 5.0.2'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"
