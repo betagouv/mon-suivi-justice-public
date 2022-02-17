@@ -18,11 +18,9 @@ end
 
 def setup_pages_content
   Spina::Page.all.each do |page|
-    begin
-      page.update(page_params(page))
-    rescue
-      next
-    end
+    next unless File.exist? Rails.root.join(page_path(page))
+
+    page.update(page_params(page))
   end
 end
 
@@ -38,14 +36,14 @@ def page_params(page)
   {fr_content_attributes: page_parts(page)}
 end
 
+def page_path(page)
+  "lib/tasks/site_content_seed/#{page.name}.json"
+end
+
 # Merge the seed_parts (from the json seed file) with the parts from the theme
 def page_parts(page)
-  begin
-    seed_parts =
-      JSON.parse(File.read("lib/tasks/site_content_seed/#{page.name}.json"))
-  rescue
-    return
-  end
+  seed_parts = JSON.parse(File.read(page_path(page)))
+
   page_theme_parts(page).map do |part|
     correct_seed_part = seed_parts.find { |p| p["name"].to_s == part[:name].to_s }
 
