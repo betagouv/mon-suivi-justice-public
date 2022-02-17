@@ -18,7 +18,7 @@ end
 
 def setup_pages_content
   Spina::Page.all.each do |page|
-    next unless File.exists? Rails.root.join(page_path(page))
+    next unless File.exist? Rails.root.join(page_path(page))
 
     page.update(page_params(page))
   end
