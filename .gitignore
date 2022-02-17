@@ -42,3 +42,6 @@ examples.txt
 
 /config/master.key
 notes
+
+app/assets/builds/
+app/assets/config/spina/
