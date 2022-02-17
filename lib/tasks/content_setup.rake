@@ -18,7 +18,11 @@ end
 
 def setup_pages_content
   Spina::Page.all.each do |page|
-    page.update(page_params(page))
+    begin
+      page.update(page_params(page))
+    rescue
+      next
+    end
   end
 end
 
@@ -36,9 +40,12 @@ end
 
 # Merge the seed_parts (from the json seed file) with the parts from the theme
 def page_parts(page)
-  seed_parts =
-    JSON.parse(File.read("lib/tasks/site_content_seed/#{page.name}.json"))
-
+  begin
+    seed_parts =
+      JSON.parse(File.read("lib/tasks/site_content_seed/#{page.name}.json"))
+  rescue
+    return
+  end
   page_theme_parts(page).map do |part|
     correct_seed_part = seed_parts.find { |p| p["name"].to_s == part[:name].to_s }
 
