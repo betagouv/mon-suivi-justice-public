@@ -52,6 +52,9 @@ class PagesController < Spina::ApplicationController
   def preparer_sap_chartres
   end
 
+  def preparer_spip75
+  end
+
   def ma_reinsertion
   end
 
