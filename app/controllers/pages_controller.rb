@@ -55,6 +55,15 @@ class PagesController < Spina::ApplicationController
   def preparer_spip75
   end
 
+  def preparer_tj_paris
+  end
+
+  def preparer_tj_angers
+  end
+
+  def preparer_spip49
+  end
+
   def ma_reinsertion
   end
 

@@ -82,7 +82,10 @@ Spina::Theme.register do |theme|
     {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_sap_nanterre", title: "Préparer SAP Nanterre", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "qui_sommes_nous", title: "Qui sommes-nous", parts: %w[main_title main_rich_description button_text]},
-    {name: "preparer_spip75", title: "Préparer SPIP 75", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]}
+    {name: "preparer_spip75", title: "Préparer SPIP 75", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_tj_paris", title: "Préparer TJ Paris", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_tj_angers", title: "Préparer TJ Angers", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_spip49", title: "Préparer SPIP 49", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]}
   ]
 
   # Custom pages
@@ -109,7 +112,10 @@ Spina::Theme.register do |theme|
     {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", view_template: "preparer_sap_chartres"},
     {name: "preparer_sap_nanterre", title: "Préparer SAP Nanterre", view_template: "preparer_sap_nanterre"},
     {name: "qui_sommes_nous", title: "Qui sommes-nous", view_template: "qui_sommes_nous"},
-    {name: "preparer_spip75", title: "Préparer SPIP 75", view_template: "preparer_spip75"}
+    {name: "preparer_spip75", title: "Préparer SPIP 75", view_template: "preparer_spip75"},
+    {name: "preparer_tj_paris", title: "Préparer TJ Paris", view_template: "preparer_tj_paris"},
+    {name: "preparer_tj_angers", title: "Préparer TJ Angers", view_template: "preparer_tj_angers"},
+    {name: "preparer_spip49", title: "Préparer SPIP 49", view_template: "preparer_spip49"}
   ]
 
   # Navigations (optional)

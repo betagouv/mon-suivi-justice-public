@@ -24,6 +24,9 @@ Rails.application.routes.draw do
     get :preparer_spip28
     get :preparer_sap_chartres
     get :preparer_spip75
+    get :preparer_tj_paris
+    get :preparer_tg_angers
+    get :preparer_spip49
     get :ma_reinsertion
     get :donnees_personnelles
     get :qui_sommes_nous
