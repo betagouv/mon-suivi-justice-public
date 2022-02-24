@@ -61,6 +61,9 @@ class PagesController < Spina::ApplicationController
   def qui_sommes_nous
   end
 
+  def mentions_legales
+  end
+
   private
 
   def set_spina_page

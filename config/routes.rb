@@ -26,6 +26,7 @@ Rails.application.routes.draw do
     get :ma_reinsertion
     get :donnees_personnelles
     get :qui_sommes_nous
+    get :mentions_legales
   end
 
   match "/404" => "errors#not_found", :via => :all
