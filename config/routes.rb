@@ -23,6 +23,7 @@ Rails.application.routes.draw do
     get :preparer_sap_nanterre
     get :preparer_spip28
     get :preparer_sap_chartres
+    get :preparer_spip75
     get :ma_reinsertion
     get :donnees_personnelles
     get :qui_sommes_nous
