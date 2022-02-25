@@ -71,7 +71,9 @@ Spina::Theme.register do |theme|
     {name: "travail_interet_general", title: "Le travail d’intérêt général", parts: %w[main_title main_rich_description rich_collapse]},
     {name: "comprendre_ma_peine", title: "Comprendre ma peine", parts: %w[main_title main_description first_subtitle card1_title card1_text card2_title card2_text secondary_subtitle basic_card]},
     {name: "donnees_personnelles", title: "Données personnelles", parts: %w[main_title main_rich_description]},
+    {name: "mentions_legales", title: "Mentions Légales", parts: %w[main_title main_rich_description]},
     {name: "ma_reinsertion", title: "Investir ma réinsertion", parts: %w[main_title subtitle main_rich_description button_text]},
+    {name: "investir_ma_reinsertion", title: "Investir ma réinsertion", parts: %w[main_title subtitle main_rich_description basic_card]},
     {name: "obligations_personnelles", title: "Obligations personnelles", parts: %w[category main_title subtitle main_description rich_collapse]},
     {name: "regles_essentielles", title: "Les règles essentielles", parts: %w[category main_title subtitle main_description rich_collapse]},
     {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", parts: %w[main_title subtitle main_rich_description basic_card]},
@@ -80,7 +82,13 @@ Spina::Theme.register do |theme|
     {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_sap_nanterre", title: "Préparer SAP Nanterre", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "qui_sommes_nous", title: "Qui sommes-nous", parts: %w[main_title main_rich_description button_text]},
-    {name: "preparer_spip75", title: "Préparer SPIP 75", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]}
+    {name: "preparer_spip75", title: "Préparer SPIP 75", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_tj_paris", title: "Préparer TJ Paris", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_tj_angers", title: "Préparer TJ Angers", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_spip49", title: "Préparer SPIP 49", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "ma_reinsertion_hauts_de_seine", title: "Ma réinsertion Hauts-de-Seine", parts: %w[main_title main_description rich_collapse]},
+    {name: "ma_reinsertion_eure_et_loire", title: "Ma réinsertion Eure-et-Loire", parts: %w[main_title main_description rich_collapse]},
+    {name: "ma_reinsertion_paris", title: "Ma réinsertion Paris", parts: %w[main_title main_description rich_collapse]}
   ]
 
   # Custom pages
@@ -96,7 +104,9 @@ Spina::Theme.register do |theme|
     {name: "travail_interet_general", title: "Le travail d'intérêt général", view_template: "travail_interet_general"},
     {name: "comprendre_ma_peine", title: "Comprendre ma peine", view_template: "comprendre_ma_peine"},
     {name: "donnees_personnelles", title: "Données personnelles", view_template: "donnees_personnelles"},
+    {name: "mentions_legales", title: "Mentions Légales", view_template: "mentions_legales"},
     {name: "ma_reinsertion", title: "Investir ma réinsertion", view_template: "ma_reinsertion"},
+    {name: "investir_ma_reinsertion", title: "Investir ma réinsertion", view_template: "investir_ma_reinsertion"},
     {name: "obligations_personnelles", title: "Obligations personnelles", view_template: "obligations_personnelles"},
     {name: "regles_essentielles", title: "Les règles essentielles", view_template: "regles_essentielles"},
     {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", view_template: "preparer_mon_rdv"},
@@ -105,7 +115,13 @@ Spina::Theme.register do |theme|
     {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", view_template: "preparer_sap_chartres"},
     {name: "preparer_sap_nanterre", title: "Préparer SAP Nanterre", view_template: "preparer_sap_nanterre"},
     {name: "qui_sommes_nous", title: "Qui sommes-nous", view_template: "qui_sommes_nous"},
-    {name: "preparer_spip75", title: "Préparer SPIP 75", view_template: "preparer_spip75"}
+    {name: "preparer_spip75", title: "Préparer SPIP 75", view_template: "preparer_spip75"},
+    {name: "preparer_tj_paris", title: "Préparer TJ Paris", view_template: "preparer_tj_paris"},
+    {name: "preparer_tj_angers", title: "Préparer TJ Angers", view_template: "preparer_tj_angers"},
+    {name: "preparer_spip49", title: "Préparer SPIP 49", view_template: "preparer_spip49"},
+    {name: "ma_reinsertion_hauts_de_seine", title: "Ma réinsertion Hauts-de-Seine", view_template: "ma_reinsertion_hauts_de_seine"},
+    {name: "ma_reinsertion_eure_et_loire", title: "Ma réinsertion Eure-et-Loire", view_template: "ma_reinsertion_eure_et_loire"},
+    {name: "ma_reinsertion_paris", title: "Ma réinsertion Paris", view_template: "ma_reinsertion_paris"}
   ]
 
   # Navigations (optional)

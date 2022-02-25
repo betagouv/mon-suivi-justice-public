@@ -55,13 +55,37 @@ class PagesController < Spina::ApplicationController
   def preparer_spip75
   end
 
+  def preparer_tj_paris
+  end
+
+  def preparer_tj_angers
+  end
+
+  def preparer_spip49
+  end
+
   def ma_reinsertion
+  end
+
+  def investir_ma_reinsertion
+  end
+
+  def ma_reinsertion_hauts_de_seine
+  end
+
+  def ma_reinsertion_eure_et_loire
+  end
+
+  def ma_reinsertion_paris
   end
 
   def donnees_personnelles
   end
 
   def qui_sommes_nous
+  end
+
+  def mentions_legales
   end
 
   private

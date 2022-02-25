@@ -24,9 +24,17 @@ Rails.application.routes.draw do
     get :preparer_spip28
     get :preparer_sap_chartres
     get :preparer_spip75
+    get :preparer_tj_paris
+    get :preparer_tg_angers
+    get :preparer_spip49
     get :ma_reinsertion
+    get :investir_ma_reinsertion
+    get :ma_reinsertion_hauts_de_seine
+    get :ma_reinsertion_eure_et_loire
+    get :ma_reinsertion_paris
     get :donnees_personnelles
     get :qui_sommes_nous
+    get :mentions_legales
   end
 
   match "/404" => "errors#not_found", :via => :all

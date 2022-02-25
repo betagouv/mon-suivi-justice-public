@@ -24,7 +24,18 @@
   justify-content: space-between;
 }
 
+.collapse-trigger-green {
+  border: 2px solid $msj-green;
+  font-size: 20px;
+  padding: 20px 30px;
+  line-height: 30px;
+}
+
 .collapse-title-blue {
+  margin-left: 20px;
+}
+
+.collapse-title-green {
   margin-left: 20px;
 }
 
@@ -33,6 +44,10 @@
 }
 
 .collapse-menu-picto-blue {
+  &:before { font-size: 34px; }
+}
+
+.collapse-menu-picto-green {
   &:before { font-size: 34px; }
 }
 
