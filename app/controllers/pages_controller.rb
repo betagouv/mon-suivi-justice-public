@@ -67,6 +67,18 @@ class PagesController < Spina::ApplicationController
   def ma_reinsertion
   end
 
+  def investir_ma_reinsertion
+  end
+
+  def ma_reinsertion_hauts_de_seine
+  end
+
+  def ma_reinsertion_eure_et_loire
+  end
+
+  def ma_reinsertion_paris
+  end
+
   def donnees_personnelles
   end
 

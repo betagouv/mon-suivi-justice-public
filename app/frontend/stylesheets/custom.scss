@@ -281,3 +281,46 @@
   color: #730E15;
   line-height: 1.5em;
 }
+
+.basic-card-link {
+  background-color: $msj-clear-background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: none;
+}
+
+.border-blue {
+  border: 2px solid $msj-blue;
+}
+
+.border-green {
+  border: 2px solid $msj-green;
+}
+
+.static-google-map-link {
+  width: 100%;
+  display: flex;
+  box-shadow: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &::after {
+   content: none !important;
+ }
+}
+
+.static-google-map-link-button {
+  background: lighten($msj-blue, 20%);
+  margin: auto;
+  width: 250px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
