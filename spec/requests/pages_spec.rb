@@ -98,8 +98,8 @@ RSpec.describe "Pages", type: :request do
     it { is_expected.to be_successful }
   end
 
-  describe "GET /ma_reinsertion" do
-    let(:path) { ma_reinsertion_path }
+  describe "GET /investir_ma_reinsertion" do
+    let(:path) { investir_ma_reinsertion_path }
 
     it { is_expected.to be_successful }
   end

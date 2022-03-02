@@ -37,16 +37,16 @@
               <nav class="fr-nav" id="navigation-850" role="navigation" aria-label="Menu principal">
                   <ul class="fr-nav__list">
                     <li class="fr-nav__item">
-                      <a class="fr-nav__link" href=<%= preparer_mon_rdv_path %> target="_self">Préparer mon rendez-vous</a>
+                      <%= link_to "Préparer mon rendez-vous", preparer_mon_rdv_path, class: "fr-nav__link" %>
                     </li>
                     <li class="fr-nav__item">
-                      <a class="fr-nav__link" href=<%= comprendre_ma_peine_path %> target="_self">Comprendre ma peine</a>
+                      <%= link_to "Comprendre ma peine", comprendre_ma_peine_path, class: "fr-nav__link" %>
                     </li>
                     <li class="fr-nav__item">
-                      <a class="fr-nav__link" href=<%= ma_reinsertion_path %> target="_self">Investir ma réinsertion</a>
+                      <%= link_to "Investir ma réinsertion", investir_ma_reinsertion_path, class: "fr-nav__link" %>
                     </li>
                     <li class="fr-nav__item">
-                        <a class="fr-nav__link" href=<%= qui_sommes_nous_path %> target="_self">Qui sommes nous ?</a>
+                      <%= link_to "Qui sommes nous ?", qui_sommes_nous_path, class: "fr-nav__link" %>
                     </li>
                   </ul>
               </nav>
