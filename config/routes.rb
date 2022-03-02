@@ -25,9 +25,8 @@ Rails.application.routes.draw do
     get :preparer_sap_chartres
     get :preparer_spip75
     get :preparer_tj_paris
-    get :preparer_tg_angers
+    get :preparer_tj_angers
     get :preparer_spip49
-    get :ma_reinsertion
     get :investir_ma_reinsertion
     get :ma_reinsertion_hauts_de_seine
     get :ma_reinsertion_eure_et_loire
