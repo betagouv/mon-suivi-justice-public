@@ -1,7 +1,7 @@
 class PagesController < Spina::ApplicationController
   before_action :set_spina_page
   skip_before_action :authenticate_user!
-  layout "authenticated"
+  layout "public"
 
   # Controller inherit from Spina::ApplicationController
   # Set Spina::Current.page
