@@ -2,10 +2,18 @@ Rails.application.routes.draw do
   mount Spina::Engine => "/"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  root "pages#landing"
+  devise_for :users
 
-  get "/stats" => redirect("https://infogram.com/column-stacked-chart-1h7z2l8www5rg6o?live", status: 302), :as => :stats
+  # Defines the root path route ("/")
+  unauthenticated do
+    root "pages#landing"
+  end
+
+  authenticated :user do
+    root 'home#home', as: :authenticated_root
+  end
+
+  resources :appointments, only: :index
 
   scope controller: :pages do
     get :landing
@@ -36,6 +44,8 @@ Rails.application.routes.draw do
     get :qui_sommes_nous
     get :mentions_legales
   end
+
+  get "/stats" => redirect("https://infogram.com/column-stacked-chart-1h7z2l8www5rg6o?live", status: 302), :as => :stats
 
   match "/404" => "errors#not_found", :via => :all
   match "/422" => "errors#unprocessable_entity", :via => :all
