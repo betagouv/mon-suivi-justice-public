@@ -3,7 +3,7 @@ module JusticeApi
     class Convict < Base
       class << self
         def find(id)
-          puts "test2"
+          yield(connection.get("#{BASE_URL}/convicts/#{id}"))
         end
       end
     end
