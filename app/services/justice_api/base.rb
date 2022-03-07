@@ -11,6 +11,8 @@ module JusticeApi
           JSON.parse(response.body, object_class: OpenStruct)
         elsif response.status == 401
           raise "Unauthorized access"
+        elsif response.status == 404
+          return nil
         else
           raise "Error while fetching data from Justice API"
         end
