@@ -5,12 +5,12 @@
                   <div class="fr-header__brand fr-enlarge-link">
                       <div class="fr-header__brand-top">
                           <div class="fr-header__logo">
-                              <a href=<%= root_path %> title="Accueil - Ministère de la justice - Mon Suivi Justice">
+                              <%= link_to root_path, title: "Accueil - Ministère de la justice - Mon Suivi Justice" do %>
                                   <p class="fr-logo">
                                       Ministère de
                                       <br>la Justice
                                   </p>
-                              </a>
+                              <% end %>
                           </div>
                           <div class="fr-header__navbar">
                             <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-851" aria-haspopup="menu" id="button-852" title="Menu">
@@ -26,13 +26,20 @@
                   <div class="fr-header__tools">
                     <div class="fr-header__tools-links">
                       <ul class="fr-links-group">
-                            <li>
-                              <%= link_to 'Espace agents', ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-lock-line'  %>
-                            </li>
-                            <li>
-                              <%= link_to 'Mon Espace Personnel', new_convict_session_path, class: 'fr-link fr-fi-account-line'  %>
-                            </li>
-                        </ul>
+                        <% if current_convict %>
+                          <li>
+                            <%= link_to "Revenir au site public", landing_path, class: "fr-link fr-fi-information-line" %>
+                          </li>
+                          <%= button_to "Se déconnecter", destroy_convict_session_path, method: :delete, class: "fr-link fr-fi-logout-box-r-line" %>
+                        <% else %>
+                           <li>
+                            <%= link_to 'Espace agents', ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-lock-line'  %>
+                          </li>
+                          <li>
+                            <%= link_to 'Mon Espace Personnel', new_convict_session_path, class: 'fr-link fr-fi-account-line'  %>
+                          </li>
+                        <% end %>
+                      </ul>
                     </div>
                   </div>
               </div>
@@ -43,23 +50,32 @@
               <button class="fr-link--close fr-link" aria-controls="modal-851">Fermer</button>
               <nav class="fr-nav" id="navigation-850" role="navigation" aria-label="Menu principal">
                   <ul class="fr-nav__list">
-                    <li class="fr-nav__item">
-                      <%= link_to "Préparer mon rendez-vous", preparer_mon_rdv_path, class: "fr-nav__link" %>
-                    </li>
-                    <li class="fr-nav__item">
-                      <%= link_to "Comprendre ma peine", comprendre_ma_peine_path, class: "fr-nav__link" %>
-                    </li>
-                    <li class="fr-nav__item">
-                      <%= link_to "Investir ma réinsertion", investir_ma_reinsertion_path, class: "fr-nav__link" %>
-                    </li>
-                    <li class="fr-nav__item">
-                      <%= link_to "Qui sommes nous ?", qui_sommes_nous_path, class: "fr-nav__link" %>
-                    </li>
-                    <li class="fr-nav__item">
-                        <a class="fr-nav__link" href=<%= qui_sommes_nous_path %> target="_self">Qui sommes nous ?</a>
-                    </li>
-                    <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
 
+                    <% if current_convict %>
+                      <li class="fr-nav__item fr-hidden-lg">
+                        <%= link_to "Revenir au site public", landing_path, class: "fr-nav__link" %>
+                      </li>
+                      <%= button_to "Se déconnecter", destroy_convict_session_path, method: :delete, class: "fr-nav__link fr-hidden-lg" %>
+                    <% else %>
+                      <li class="fr-nav__item">
+                        <%= link_to "Préparer mon rendez-vous", preparer_mon_rdv_path, class: "fr-nav__link" %>
+                      </li>
+                      <li class="fr-nav__item">
+                        <%= link_to "Comprendre ma peine", comprendre_ma_peine_path, class: "fr-nav__link" %>
+                      </li>
+                      <li class="fr-nav__item">
+                        <%= link_to "Investir ma réinsertion", investir_ma_reinsertion_path, class: "fr-nav__link" %>
+                      </li>
+                      <li class="fr-nav__item">
+                        <%= link_to "Qui sommes nous ?", qui_sommes_nous_path, class: "fr-nav__link" %>
+                      </li>
+                      <li class="fr-nav__item fr-hidden-lg">
+                        <%= link_to 'Mon Espace Personnel', new_convict_session_path, class: 'fr-nav__link'  %>
+                      </li>
+                      <li class="fr-nav__item fr-hidden-lg">
+                        <%= link_to 'Espace agents', ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-nav__link'  %>
+                      </li>
+                    <% end %>
                   </ul>
               </nav>
           </div>

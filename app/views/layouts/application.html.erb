@@ -15,7 +15,8 @@
   </head>
 
   <body>
-    <%= render 'shared/public/header' %>
+    <%= render 'shared/header' %>
+    <%= render 'shared/flash' %>
 
     <div class='static-wrapper'>
       <%= render 'shared/staging_alert' %>
@@ -23,6 +24,7 @@
     </div>
   </body>
 
-  <%= render 'shared/public/footer' %>
-
+  <% unless current_convict || devise_controller? %>
+    <%= render 'shared/footer' %>
+  <% end %>
 </html>

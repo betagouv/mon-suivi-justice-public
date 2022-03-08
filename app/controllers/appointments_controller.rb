@@ -1,4 +1,4 @@
-class AppointmentsController < Spina::ApplicationController
+class AppointmentsController < ApplicationController
   def index
   end
 end
