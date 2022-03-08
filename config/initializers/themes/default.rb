@@ -72,7 +72,6 @@ Spina::Theme.register do |theme|
     {name: "comprendre_ma_peine", title: "Comprendre ma peine", parts: %w[main_title main_description first_subtitle card1_title card1_text card2_title card2_text secondary_subtitle basic_card]},
     {name: "donnees_personnelles", title: "Données personnelles", parts: %w[main_title main_rich_description]},
     {name: "mentions_legales", title: "Mentions Légales", parts: %w[main_title main_rich_description]},
-    {name: "ma_reinsertion", title: "Investir ma réinsertion", parts: %w[main_title subtitle main_rich_description button_text]},
     {name: "investir_ma_reinsertion", title: "Investir ma réinsertion", parts: %w[main_title subtitle main_rich_description basic_card]},
     {name: "obligations_personnelles", title: "Obligations personnelles", parts: %w[category main_title subtitle main_description rich_collapse]},
     {name: "regles_essentielles", title: "Les règles essentielles", parts: %w[category main_title subtitle main_description rich_collapse]},

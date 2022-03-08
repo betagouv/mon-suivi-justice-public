@@ -98,8 +98,8 @@ RSpec.describe "Pages", type: :request do
     it { is_expected.to be_successful }
   end
 
-  describe "GET /ma_reinsertion" do
-    let(:path) { ma_reinsertion_path }
+  describe "GET /investir_ma_reinsertion" do
+    let(:path) { investir_ma_reinsertion_path }
 
     it { is_expected.to be_successful }
   end
@@ -118,6 +118,54 @@ RSpec.describe "Pages", type: :request do
 
   describe "GET /peine_emprisonnement" do
     let(:path) { peine_emprisonnement_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /preparer_spip75" do
+    let(:path) { preparer_spip75_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /preparer_tj_paris" do
+    let(:path) { preparer_tj_paris_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /preparer_tj_angers" do
+    let(:path) { preparer_tj_angers_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /preparer_spip49" do
+    let(:path) { preparer_spip49_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /ma_reinsertion_hauts_de_seine" do
+    let(:path) { ma_reinsertion_hauts_de_seine_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /ma_reinsertion_eure_et_loire" do
+    let(:path) { ma_reinsertion_eure_et_loire_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /ma_reinsertion_paris" do
+    let(:path) { ma_reinsertion_paris_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /mentions_legales" do
+    let(:path) { mentions_legales_path }
 
     it { is_expected.to be_successful }
   end
