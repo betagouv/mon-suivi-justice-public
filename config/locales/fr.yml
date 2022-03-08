@@ -8,3 +8,27 @@ fr:
     unprocessable_entity:
       title: La modification a été rejettée.
       subtitle: Peut-être n'aviez vous pas accès à cette action.
+  shared:
+    header:
+      logo_title: Accueil - Ministère de la justice - Mon Suivi Justice
+      public_root_link: Revenir au site public
+      log_out_link: Se déconnecter
+      agents_sign_in_link: Espace agents
+      convicts_sign_in_link: Mon Espace Personnel
+      appointments_index_link: Mes rendez-vous
+      preparer_mon_rdv_link: Préparer mon rendez-vous
+      comprendre_ma_peine_link: Comprendre ma peine
+      investir_ma_reinsertion_link: Investir ma réinsertion
+      qui_sommes_nous_link: Qui sommes nous ?
+    footer:
+      legifrance_link: legifrance.gouv.fr
+      gouvernement_link: gouvernement.fr
+      service_public_link: service-public.fr
+      data_gouv_link: data.gouv.fr
+      contact_link: Contact
+      stats_link: Stats
+      accessibility_link: "Accessibilité : non conforme"
+      mentions_legales_link: Mentions Légales
+      donnees_personnelles_link: Données personnelles
+    staging_alert:
+      title: "Attention: vous êtes sur le site de Staging"
