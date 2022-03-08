@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   delegate :first_name, :last_name, :phone, :cpip,
            to: :convict_informations, allow_nil: true
-  delegate :first_name, :last_name, :phone, :email, :organization_name,
+  delegate :id, :first_name, :last_name, :phone, :email, :organization_name,
            to: :cpip, prefix: true, allow_nil: true
 
   # En dur le temps que la connexion soit mise en place

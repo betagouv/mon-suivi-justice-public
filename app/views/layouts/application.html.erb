@@ -15,9 +15,14 @@
   </head>
 
   <body>
-    <div class=''>
+    <%= render 'shared/public/header' %>
+
+    <div class='static-wrapper'>
       <%= render 'shared/staging_alert' %>
       <%= yield %>
     </div>
   </body>
+
+  <%= render 'shared/public/footer' %>
+
 </html>

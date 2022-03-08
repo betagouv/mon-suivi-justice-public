@@ -1,10 +1,7 @@
 module JusticeApi
   class Base
     class << self
-      # build the correct subclass to call
-      def connector_class
-        "JusticeApi::MonSuiviJustice::#{self.to_s.split("::").last}".constantize
-      end
+      CONNECTOR = "MonSuiviJustice"
 
       def format_response(response)
         if response.status == 200
@@ -16,10 +13,6 @@ module JusticeApi
         else
           raise "Error while fetching data from Justice API"
         end
-      end
-
-      def find(id, options = {})
-        connector_class.find(id) { |response| format_response(response) }
       end
     end
   end
