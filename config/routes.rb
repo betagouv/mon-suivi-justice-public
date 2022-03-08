@@ -2,14 +2,14 @@ Rails.application.routes.draw do
   mount Spina::Engine => "/"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  devise_for :users
+  devise_for :convicts
 
   # Defines the root path route ("/")
   unauthenticated do
     root "pages#landing"
   end
 
-  authenticated :user do
+  authenticated :convict do
     root 'appointments#index', as: :authenticated_root
   end
 

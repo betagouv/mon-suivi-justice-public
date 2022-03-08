@@ -1,6 +1,6 @@
 class PagesController < Spina::ApplicationController
   before_action :set_spina_page
-  skip_before_action :authenticate_user!
+  skip_before_action :authenticate_convict!
 
   # Controller inherit from Spina::ApplicationController
   # Set Spina::Current.page
