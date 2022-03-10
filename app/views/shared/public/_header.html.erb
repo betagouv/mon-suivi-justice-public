@@ -27,16 +27,13 @@
                   <div class="fr-header__tools-links">
                     <ul class="fr-links-group">
                       <li>
-                        <%= link_to t('.public_root_link'), landing_path, class: "fr-link fr-fi-information-line" %>
+                        <%= link_to t('.authenticated_root_link'), appointments_path, class: "fr-link fr-fi-information-line" %>
                       </li>
                       <% if current_convict %>
                         <%= button_to t('.log_out_link'), destroy_convict_session_path, method: :delete, class: "fr-link fr-fi-logout-box-r-line" %>
                       <% else %>
-                          <li>
-                          <%= link_to t('.agents_sign_in_link'), ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-lock-line'  %>
-                        </li>
                         <li>
-                          <%= link_to t('.authenticated_root_path'), authenticated_root_path, class: 'fr-link fr-fi-account-line'  %>
+                          <%= link_to t('.agents_sign_in_link'), ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-lock-line'  %>
                         </li>
                       <% end %>
                     </ul>
@@ -50,11 +47,18 @@
             <button class="fr-link--close fr-link" aria-controls="modal-851">Fermer</button>
             <nav class="fr-nav" id="navigation-850" role="navigation" aria-label="Menu principal">
                 <ul class="fr-nav__list">
-                  <% if current_convict %>
-                    <li class="fr-nav__item">
-                      <%= link_to t('.appointments_index_link'), appointments_path, class: "fr-nav__link" %>
-                    </li>
-                  <% end %>
+                  <li class="fr-nav__item">
+                    <%= link_to t('.preparer_mon_rdv_link'), preparer_mon_rdv_path, class: "fr-nav__link" %>
+                  </li>
+                  <li class="fr-nav__item">
+                    <%= link_to t('.comprendre_ma_peine_link'), comprendre_ma_peine_path, class: "fr-nav__link" %>
+                  </li>
+                  <li class="fr-nav__item">
+                    <%= link_to t('.investir_ma_reinsertion_link'), investir_ma_reinsertion_path, class: "fr-nav__link" %>
+                  </li>
+                  <li class="fr-nav__item">
+                    <%= link_to t('.qui_sommes_nous_link'), qui_sommes_nous_path, class: "fr-nav__link" %>
+                  </li>
                 </ul>
             </nav>
             <div class="fr-header__menu-links"></div>

@@ -1,0 +1,53 @@
+<footer class="fr-footer static-footer" role="contentinfo" id="footer-563">
+    <div class="fr-container">
+        <div class="fr-footer__body ">
+            <div class="fr-footer__brand fr-enlarge-link">
+                <a href="/" title="Retour à l’accueil">
+                    <p class="fr-logo">
+                        république
+                        <br>française
+                    </p>
+                </a>
+            </div>
+            <div class="fr-footer__content">
+              <p class="fr-footer__content-desc"><%= current_account.content(:footer_text) %></p>
+              <ul class="fr-footer__content-list">
+                  <li class="fr-footer__content-item">
+                      <a class="fr-footer__content-link" href="https://legifrance.gouv.fr"><%= t('.legifrance_link') %></a>
+                  </li>
+                  <li class="fr-footer__content-item">
+                      <a class="fr-footer__content-link" href="https://gouvernement.fr"><%= t('.gouvernement_link') %></a>
+                  </li>
+                  <li class="fr-footer__content-item">
+                      <a class="fr-footer__content-link" href="https://service-public.fr"><%= t('.service_public_link') %></a>
+                  </li>
+                  <li class="fr-footer__content-item">
+                      <a class="fr-footer__content-link" href="https://data.gouv.fr"><%= t('.data_gouv_link') %></a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+        <div class="fr-footer__bottom">
+            <ul class="fr-footer__bottom-list">
+                <li class="fr-footer__bottom-item">
+                    <a class="fr-footer__bottom-link" href="mailto:contact@mon-suivi-justice.beta.gouv.fr"><%= t('.contact_link') %></a>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <%= link_to t('.stats_link'), stats_path, class: "fr-footer__bottom-link" %>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <a class="fr-footer__bottom-link" href="#"><%= t('.accessibility_link') %></a>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <%= link_to t('.mentions_legales_link'), mentions_legales_path, class: "fr-footer__bottom-link" %>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <%= link_to t('.donnees_personnelles_link'), donnees_personnelles_path, class: "fr-footer__bottom-link" %>
+                </li>
+                <!-- <li class="fr-footer__bottom-item">
+                    <a class="fr-footer__bottom-link" href="#">[Gestion des cookies]</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</footer>
