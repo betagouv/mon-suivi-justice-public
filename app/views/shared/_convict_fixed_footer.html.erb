@@ -1,0 +1,10 @@
+<div class="fixed bottom-0 h-20 z-20 bg-white w-full flex items-center justify-around shadow-top-xs text-gray-300 fr-hidden-lg">
+  <%= link_to appointments_path, class: "flex flex-col items-center shadow-none hover:text-msj-blue hover:font-bold #{"font-bold text-msj-blue" if (current_page?(controller: 'appointments', action: 'index'))}" do %>
+    <span class="fr-fi-calendar-line fr-fi--lg" aria-hidden="true"></span>
+    <span>Rendez-vous</span>
+  <% end %>
+  <div class="flex flex-col items-center hover:text-msj-blue hover:font-bold">
+    <span class="fr-fi-mail-line fr-fi--lg" aria-hidden="true"></span>
+    <span>Contact CPIP</span>
+  </div>
+</div>

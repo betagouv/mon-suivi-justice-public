@@ -22,9 +22,7 @@
       <%= render 'shared/staging_alert' %>
       <%= yield %>
     </div>
+      <%= render 'shared/convict_fixed_footer' %>
   </body>
 
-  <% unless current_convict || devise_controller? %>
-    <%= render 'shared/footer' %>
-  <% end %>
 </html>
