@@ -11,7 +11,7 @@ class Convict < ApplicationRecord
 
   # En dur le temps que la connexion soit mise en place
   def convict_information
-    @convict_information ||= JusticeApi::Convict.find(450)
+    @convict_information ||= JusticeApi::Convict.find(944)
   end
 
   def appointments
@@ -25,6 +25,22 @@ class Convict < ApplicationRecord
                       agenda_name: appointment.agenda_name,
                       appointment_type: appointment.appointment_type_name)
     end
+  end
+
+  def future_appointments
+    @future_appointments ||=
+      appointments.select { |appointment| appointment.datetime > Time.zone.now }
+                  .sort_by { |appointment| appointment.datetime }
+  end
+
+  def past_appointments
+    @past_appointments ||=
+      appointments.select { |appointment| appointment.datetime < Time.zone.now }
+                  .sort_by { |appointment| appointment.datetime }.reverse
+  end
+
+  def next_appointment
+    @next_appointment ||= future_appointments.first
   end
 
   def has_cpip?

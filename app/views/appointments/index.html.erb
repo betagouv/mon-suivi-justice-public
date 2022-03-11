@@ -1,81 +1,45 @@
 <div class="fr-container fr-py-6w px-12 lg:px-32">
 
-  <div class="my-10">
-    <h1 class="text-3xl">Vos rendez-vous</h1>
+  <h1 class="text-3xl">Vos rendez-vous</h1>
 
-    <div class="bg-white shadow relative">
-      <div class="flex justify-center">
-        <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-green-600 text-white absolute -top-3.5">Dans 5 jours</span>
+  <% if current_convict.appointments.any? %>
+
+    <% if current_convict.next_appointment.present? %>
+      <div class="my-10">
+        <%= render 'appointment', appointment: current_convict.next_appointment %>
       </div>
-      <div class="p-8 lg:p-12">
-        <div class="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
-          <div class="sm:col-span-1">
-            <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1">Date</h3>
-            <p class="text-md font-bold mb-0">Jeudi 21 décembre à 10h</p>
-          </div>
-          <div class="sm:col-span-1">
-            <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1">Adresse</h3>
-            <p class="text-sm font-bold mb-0">SPIP Nanterre</p>
-            <p class="text-sm font-bold mb-0">94 boulevard du Général Leclerc</p>
-            <p class="text-sm font-bold mb-0">Nanterre</p>
-            <%= link_to "Voir sur une carte", "https://www.google.com/maps/search/?api=1&query=SPIP+Nanterre,94+boulevard+du+Général+Leclerc,Nanterre", target: "_blank", class: "font-bold text-xs text-msj-blue mt-1" %>
-        </div>
-        </div>
-        <%= link_to "Voir le détail", appointments_path, class: "fr-btn mt-8" %>
+    <% end %>
+
+    <% if current_convict.future_appointments.any? %>
+      <div class="my-10">
+        <h1 class="text-xl">Rendez-vous suivants</h1>
+
+        <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 pl-0">
+          <% current_convict.future_appointments.each do |appointment| %>
+            <%= render 'appointment_summary', appointment: appointment %>
+          <% end %>
+        </ul>
       </div>
+    <% end %>
+
+    <% if current_convict.past_appointments.any? %>
+      <div class="my-10">
+        <h1 class="text-xl">Rendez-vous passés</h1>
+
+        <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 pl-0">
+          <% current_convict.past_appointments.each do |appointment| %>
+            <%= render 'appointment_summary', appointment: appointment %>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+  <% else %>
+
+    <div class="my-10">
+      <h1 class="text-xl">Vous n'avez pas encore de rendez-vous</h1>
     </div>
-  </div>
 
-  <div class="my-10">
-    <h1 class="text-xl">Rendez-vous suivants</h1>
-
-    <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 pl-0">
-
-      <div class="col-span-1 fr-card fr-enlarge-link">
-        <div class="fr-card__body">
-          <h4 class="fr-card__title text-sm font-bold text-black">
-            <a href="#" class="fr-card__link">Mardi 27 décembre à 13h</a>
-          </h4>
-          <p class="fr-card__desc text-sm text-gray-700 mb-0">SPIP Nanterre</p>
-        </div>
-      </div>
-
-      <div class="col-span-1 fr-card fr-enlarge-link">
-        <div class="fr-card__body">
-          <h4 class="fr-card__title text-sm font-bold text-black">
-            <a href="#" class="fr-card__link">Mardi 27 décembre à 13h</a>
-          </h4>
-          <p class="fr-card__desc text-sm text-gray-700 mb-0">SPIP Nanterre</p>
-        </div>
-      </div>
-
-    </ul>
-  </div>
-
-  <div class="my-10">
-    <h1 class="text-xl">Rendez-vous passés</h1>
-
-    <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 pl-0">
-
-      <div class="col-span-1 fr-card fr-enlarge-link">
-        <div class="fr-card__body">
-          <h4 class="fr-card__title text-sm font-bold text-black">
-            <a href="#" class="fr-card__link">Mardi 27 décembre à 13h</a>
-          </h4>
-          <p class="fr-card__desc text-sm text-gray-700 mb-0">SPIP Nanterre</p>
-        </div>
-      </div>
-
-      <div class="col-span-1 fr-card fr-enlarge-link">
-        <div class="fr-card__body">
-          <h4 class="fr-card__title text-sm font-bold text-black">
-            <a href="#" class="fr-card__link">Mardi 27 décembre à 13h</a>
-          </h4>
-          <p class="fr-card__desc text-sm text-gray-700 mb-0">SPIP Nanterre</p>
-        </div>
-      </div>
-
-    </ul>
-  </div>
+  <% end %>
 
 </div>

@@ -1,4 +1,7 @@
 fr:
+  time:
+    formats:
+      clear: "%A %e %B à %kh%M"
   errors:
     internal_server:
       title: Toutes nos excuses, une erreur a eu lieu dans l'application.
@@ -41,3 +44,10 @@ fr:
       cpip_info: Contact CPIP
     staging_alert:
       title: "Attention: vous êtes sur le site de Staging"
+  appointments:
+    appointment:
+      days_from_now: Dans %{days} jours
+      date_title: Date
+      address_title: Adresse
+      map_link: Voir sur une carte
+      detail: Voir le détail
