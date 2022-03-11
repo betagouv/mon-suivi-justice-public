@@ -6,6 +6,8 @@ Instructions pour installer Mon Suivi Justice public en local.
 `bundle install`
 `yarn install`
 
+Pour lancer le serveur local avec webpack, il faut avoir installé `webpack-cli` en global.
+
 2. Créer les bases de données
 `rails db:setup`
 
