@@ -63,6 +63,9 @@ group :development, :test do
   gem "rspec-rails", "~> 5.0"
 
   gem "factory_bot_rails", "~> 6.2"
+
+  gem 'webmock', '~> 3.14'
+  gem 'vcr', '~> 6.0'
 end
 
 group :development do
