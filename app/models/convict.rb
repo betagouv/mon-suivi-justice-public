@@ -19,8 +19,9 @@ class Convict < ApplicationRecord
       place = Place.new(name: appointment.place&.name, address: appointment.place&.adress,
                         phone: appointment.place&.phone, email: appointment.place&.email,
                         contact_method: appointment.place&.contact_method)
-      Appointment.new(datetime: appointment.datetime.to_datetime, duration: appointment.duration,
-                      state: appointment.state, origin_department: appointment.origin_department,
+      Appointment.new(id: appointment.id, datetime: appointment.datetime.to_datetime,
+                      duration: appointment.duration, state: appointment.state,
+                      origin_department: appointment.origin_department,
                       place: place, organization_name: appointment.organization_name,
                       agenda_name: appointment.agenda_name,
                       appointment_type: appointment.appointment_type_name)

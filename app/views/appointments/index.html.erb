@@ -10,12 +10,12 @@
       </div>
     <% end %>
 
-    <% if current_convict.future_appointments.any? %>
+    <% if current_convict.future_appointments.drop(1).any? %>
       <div class="my-10">
         <h1 class="text-xl">Rendez-vous suivants</h1>
 
         <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 pl-0">
-          <% current_convict.future_appointments.each do |appointment| %>
+          <% current_convict.future_appointments.drop(1).each do |appointment| %>
             <%= render 'appointment_summary', appointment: appointment %>
           <% end %>
         </ul>

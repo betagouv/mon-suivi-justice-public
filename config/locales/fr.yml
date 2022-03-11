@@ -40,7 +40,7 @@ fr:
       logo_title: Accueil - Ministère de la justice - Mon Suivi Justice
       public_root_link: Revenir au site public
     footer:
-      appointments: Rendez-vous
+      appointments: Mes rendez-vous
       cpip_info: Contact CPIP
     staging_alert:
       title: "Attention: vous êtes sur le site de Staging"
@@ -51,3 +51,14 @@ fr:
       address_title: Adresse
       map_link: Voir sur une carte
       detail: Voir le détail
+    show:
+      days_from_now: Dans %{days} jours
+      days_ago: Il y a %{days} jours
+      date_title: Date
+      address_title: Adresse
+      map_link: Voir sur une carte
+      duration_title: Durée du rendez-vous
+      duration: "%{duration} minutes"
+      state_title: Statut
+      appointment_type_title: Type de rendez-vous
+      index_link: Retour à la liste

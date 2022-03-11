@@ -1,6 +1,6 @@
 <div class="bg-white shadow relative">
   <div class="flex justify-center">
-    <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-green-600 text-white absolute -top-3.5"><%= t('.days_from_now', days: appointment.days_from_now) %></span>
+    <%= days_from_now_badge(appointment) %>
   </div>
   <div class="p-8 lg:p-12">
     <div class="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
@@ -15,6 +15,6 @@
         <%= link_to t('.map_link'), appointment.place_map_link, target: "_blank", class: "font-bold text-xs text-msj-blue mt-1" %>
     </div>
     </div>
-    <%= link_to t('.detail'), appointments_path, class: "fr-btn mt-8" %>
+    <%= link_to t('.detail'), appointment_path(appointment.id), class: "fr-btn mt-8" %>
   </div>
 </div>

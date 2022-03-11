@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     root 'appointments#index', as: :authenticated_root
   end
 
-  resources :appointments, only: :index
+  resources :appointments, only: %i[show index]
 
   scope controller: :pages do
     get :landing
