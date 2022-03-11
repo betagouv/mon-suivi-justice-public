@@ -1,4 +1,5 @@
 <% if current_convict %>
+  <div class="pt-16 lg:pt-0"></div>
   <div class="fixed bottom-0 h-20 z-20 bg-white w-full flex items-center justify-around shadow-top-xs text-gray-300 fr-hidden-lg">
     <%= link_to appointments_path, class: "flex flex-col items-center shadow-none hover:text-msj-blue hover:font-bold #{"font-bold text-msj-blue" if current_page?(controller: 'appointments', action: 'index') || current_page?(appointments_path)}" do %>
       <span class="fr-fi-calendar-line fr-fi--lg" aria-hidden="true"></span>
