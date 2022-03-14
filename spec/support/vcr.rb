@@ -3,6 +3,6 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.ignore_localhost = true
   config.before_record do |i|
-    i.response.body.force_encoding('UTF-8')
+    i.response.body.force_encoding("UTF-8")
   end
 end

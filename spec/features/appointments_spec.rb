@@ -1,6 +1,6 @@
-require 'rails_helper'
+require "rails_helper"
 
-RSpec.feature 'Appointments', type: :feature do
+RSpec.feature "Appointments", type: :feature do
   let(:convict) { FactoryBot.create(:convict) }
 
   before do
@@ -11,8 +11,8 @@ RSpec.feature 'Appointments', type: :feature do
     VCR.use_cassette("mon_suivi_justice/convict") { example.run }
   end
 
-  describe 'index' do
-    it 'displays the correct content' do
+  describe "index" do
+    it "displays the correct content" do
       visit appointments_path
       expect(page).to have_content("test")
     end

@@ -9,7 +9,7 @@ module JusticeApi
         elsif response.status == 401
           raise "Unauthorized access"
         elsif response.status == 404
-          return nil
+          nil
         else
           raise "Error while fetching data from Justice API"
         end

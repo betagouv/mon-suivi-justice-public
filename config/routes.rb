@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   end
 
   authenticated :convict do
-    root 'appointments#index', as: :authenticated_root
+    root "appointments#index", as: :authenticated_root
   end
 
   resources :appointments, only: %i[show index]
