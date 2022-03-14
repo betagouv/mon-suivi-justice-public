@@ -22,16 +22,16 @@ module.exports = {
         'msj-red': 'tomato'
       },
       screens: {
-        'sm': '576px',
-        'md': '768px',
-        'lg': '992px',
-        'xl': '1248px',
+        sm: '576px',
+        md: '768px',
+        lg: '992px',
+        xl: '1248px',
         '2xl': '1536px'
       },
       boxShadow: {
-        'top-xs': '0px -1px 16px 0px rgba(0, 0, 0, 0.1)',
+        'top-xs': '0px -1px 16px 0px rgba(0, 0, 0, 0.1)'
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 }
