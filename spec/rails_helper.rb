@@ -23,7 +23,7 @@ require "support/vcr"
 #
 # Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
 
-include Warden::Test::Helpers
+include Warden::Test::Helpers # standard:disable Style/MixinUsage
 
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove these lines.
