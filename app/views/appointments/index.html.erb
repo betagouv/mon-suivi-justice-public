@@ -5,13 +5,13 @@
   <% if current_convict.appointments.any? %>
 
     <% if current_convict.next_appointment.present? %>
-      <div class="my-10">
+      <div class="my-10" id="next-appointment">
         <%= render 'appointment', appointment: current_convict.next_appointment %>
       </div>
     <% end %>
 
     <% if current_convict.future_appointments.drop(1).any? %>
-      <div class="my-10">
+      <div class="my-10" id="future-appointments">
         <h1 class="text-xl">Rendez-vous suivants</h1>
 
         <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 pl-0">
@@ -23,7 +23,7 @@
     <% end %>
 
     <% if current_convict.past_appointments.any? %>
-      <div class="my-10">
+      <div class="my-10" id="past-appointments">
         <h1 class="text-xl">Rendez-vous passés</h1>
 
         <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 pl-0">
