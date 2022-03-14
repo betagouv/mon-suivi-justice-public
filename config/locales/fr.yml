@@ -39,6 +39,7 @@ fr:
       appointments_index_link: Mes rendez-vous
       logo_title: Accueil - Ministère de la justice - Mon Suivi Justice
       public_root_link: Revenir au site public
+      cpip_show_link: Votre CPIP
     footer:
       appointments: Mes rendez-vous
       cpip_info: Contact CPIP
@@ -62,3 +63,9 @@ fr:
       state_title: Statut
       appointment_type_title: Type de rendez-vous
       index_link: Retour à la liste
+  cpips:
+    show:
+      organization_title: "Nom du service"
+      full_name_title: "Nom"
+      phone_title: "Numéro de téléphone"
+      email_title: "Email"

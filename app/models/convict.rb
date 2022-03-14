@@ -4,8 +4,7 @@ class Convict < ApplicationRecord
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :validatable
 
-  delegate :first_name, :last_name, :phone, :cpip,
-    to: :convict_informations, allow_nil: true
+  delegate :first_name, :last_name, :phone, to: :convict_informations, allow_nil: true
   delegate :id, :first_name, :last_name, :phone, :email, :organization_name,
     to: :cpip, prefix: true, allow_nil: true
 
@@ -26,6 +25,15 @@ class Convict < ApplicationRecord
         agenda_name: appointment.agenda_name,
         appointment_type: appointment.appointment_type_name)
     end
+  end
+
+  def cpip
+    @cpip ||=
+      Cpip.new(id: convict_information.cpip.id,
+               first_name: convict_information.cpip.first_name,
+               last_name: convict_information.cpip.last_name,
+               phone: convict_information.cpip.phone, email: convict_information.cpip.email,
+               organization_name: convict_information.cpip.organization_name)
   end
 
   def future_appointments

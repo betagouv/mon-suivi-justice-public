@@ -54,6 +54,11 @@
                     <li class="fr-nav__item">
                       <%= link_to t('.appointments_index_link'), appointments_path, class: "fr-nav__link" %>
                     </li>
+                    <% if current_convict.has_cpip? %>
+                      <li class="fr-nav__item">
+                        <%= link_to t('.cpip_show_link'), cpip_path, class: "fr-nav__link" %>
+                      </li>
+                    <% end %>
                   <% end %>
                 </ul>
             </nav>

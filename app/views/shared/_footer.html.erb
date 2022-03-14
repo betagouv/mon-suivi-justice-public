@@ -5,9 +5,11 @@
       <span class="fr-fi-calendar-line fr-fi--lg" aria-hidden="true"></span>
       <span><%= t('.appointments') %></span>
     <% end %>
-    <div class="flex flex-col items-center hover:text-msj-blue hover:font-bold">
-      <span class="fr-fi-mail-line fr-fi--lg" aria-hidden="true"></span>
-      <span><%= t('.cpip_info') %></span>
-    </div>
+    <% if current_convict.has_cpip? %>
+      <%= link_to cpip_path, class: "flex flex-col items-center shadow-none hover:text-msj-blue hover:font-bold #{"font-bold text-msj-blue" if current_page?(cpip_path)}" do %>
+        <span class="fr-fi-mail-line fr-fi--lg" aria-hidden="true"></span>
+        <span><%= t('.cpip_info') %></span>
+      <% end %>
+    <% end %>
   </div>
 <% end %>

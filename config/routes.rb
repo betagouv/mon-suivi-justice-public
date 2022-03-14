@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   end
 
   resources :appointments, only: %i[show index]
+  resource :cpip, only: %i[show]
 
   scope controller: :pages do
     get :landing
