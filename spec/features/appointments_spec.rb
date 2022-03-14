@@ -35,4 +35,17 @@ RSpec.feature "Appointments", type: :feature do
       end
     end
   end
+
+  describe "show" do
+    it "displays the correct content" do
+      visit appointment_path(convict.next_appointment.id)
+
+      expect(page).to have_content("Dans 55 jours")
+      expect(page).to have_content("mardi 1 mars à 10h00")
+      expect(page).to have_content("1 rue de la Poste, 05100 Briançon")
+      expect(page).to have_content("Planifié")
+      expect(page).to have_content("15 minutes")
+      expect(page).to have_content("RDV de suivi SPIP")
+    end
+  end
 end
