@@ -16,7 +16,7 @@
 
         <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 pl-0">
           <% current_convict.future_appointments.drop(1).each do |appointment| %>
-            <%= render 'appointment_summary', appointment: appointment %>
+            <%= render 'appointment_summary', appointment: appointment, display_state: false %>
           <% end %>
         </ul>
       </div>
@@ -28,7 +28,7 @@
 
         <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 pl-0">
           <% current_convict.past_appointments.each do |appointment| %>
-            <%= render 'appointment_summary', appointment: appointment %>
+            <%= render 'appointment_summary', appointment: appointment, display_state: true %>
           <% end %>
         </ul>
       </div>

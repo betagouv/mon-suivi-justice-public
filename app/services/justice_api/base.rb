@@ -11,7 +11,7 @@ module JusticeApi
         elsif response.status == 404
           nil
         else
-          raise "Error while fetching data from Justice API"
+          raise "Error while fetching data from #{CONNECTOR} API"
         end
       end
     end
