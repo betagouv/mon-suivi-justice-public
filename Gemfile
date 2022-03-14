@@ -64,7 +64,7 @@ group :development, :test do
 
   gem "factory_bot_rails", "~> 6.2"
 
-  gem 'timecop', '~> 0.9.5'
+  gem "timecop", "~> 0.9.5"
 
   gem "webmock", "~> 3.14"
   gem "vcr", "~> 6.0"
