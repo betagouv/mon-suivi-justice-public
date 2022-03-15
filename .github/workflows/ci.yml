@@ -75,3 +75,4 @@ jobs:
         run: bundle exec rspec
         env:
           DATABASE_URL: "postgres://postgres:postgres@localhost:5432"
+          MSJ_API_URL": "https://agents.mon-suivi-justice.incubateur.net/api/v1"
