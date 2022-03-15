@@ -30,10 +30,10 @@ class Convict < ApplicationRecord
   def cpip
     @cpip ||=
       Cpip.new(id: convict_information.cpip.id,
-               first_name: convict_information.cpip.first_name,
-               last_name: convict_information.cpip.last_name,
-               phone: convict_information.cpip.phone, email: convict_information.cpip.email,
-               organization_name: convict_information.cpip.organization_name)
+        first_name: convict_information.cpip.first_name,
+        last_name: convict_information.cpip.last_name,
+        phone: convict_information.cpip.phone, email: convict_information.cpip.email,
+        organization_name: convict_information.cpip.organization_name)
   end
 
   def future_appointments
