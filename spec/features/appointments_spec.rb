@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Appointments", type: :feature do
-  with_env('MSJ_API_URL', 'https://agents.mon-suivi-justice.incubateur.net/api/v1')
+  with_env("MSJ_API_URL", "https://agents.mon-suivi-justice.incubateur.net/api/v1")
 
   let(:convict) { FactoryBot.create(:convict) }
 
