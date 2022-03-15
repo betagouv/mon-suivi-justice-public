@@ -6,7 +6,7 @@ class Convict < ApplicationRecord
 
   delegate :first_name, :last_name, :phone, to: :convict_informations, allow_nil: true
   delegate :id, :first_name, :last_name, :phone, :email, :organization_name,
-    to: :cpip, prefix: true, allow_nil: true
+    to: :agent, prefix: true, allow_nil: true
 
   # En dur le temps que la connexion soit mise en place
   def convict_information
@@ -27,13 +27,13 @@ class Convict < ApplicationRecord
     end
   end
 
-  def cpip
-    @cpip ||=
-      Cpip.new(id: convict_information.cpip.id,
-        first_name: convict_information.cpip.first_name,
-        last_name: convict_information.cpip.last_name,
-        phone: convict_information.cpip.phone, email: convict_information.cpip.email,
-        organization_name: convict_information.cpip.organization_name)
+  def agent
+    @agent ||=
+      Agent.new(id: convict_information.agent.id,
+        first_name: convict_information.agent.first_name,
+        last_name: convict_information.agent.last_name,
+        phone: convict_information.agent.phone, email: convict_information.agent.email,
+        organization_name: convict_information.agent.organization_name)
   end
 
   def future_appointments
@@ -52,7 +52,7 @@ class Convict < ApplicationRecord
     @next_appointment ||= future_appointments.first
   end
 
-  def has_cpip?
-    cpip_id.present?
+  def has_agent?
+    agent_id.present?
   end
 end

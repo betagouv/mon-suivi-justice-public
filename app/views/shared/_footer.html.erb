@@ -5,10 +5,10 @@
       <span class="fr-fi-calendar-line fr-fi--lg" aria-hidden="true"></span>
       <span><%= t('.appointments') %></span>
     <% end %>
-    <% if current_convict.has_cpip? %>
-      <%= link_to cpip_path, class: "flex flex-col items-center shadow-none hover:text-msj-blue hover:font-bold #{"font-bold text-msj-blue" if current_page?(cpip_path)}" do %>
+    <% if current_convict.has_agent? %>
+      <%= link_to agent_path, class: "flex flex-col items-center shadow-none hover:text-msj-blue hover:font-bold #{"font-bold text-msj-blue" if current_page?(agent_path)}" do %>
         <span class="fr-fi-mail-line fr-fi--lg" aria-hidden="true"></span>
-        <span><%= t('.cpip_info') %></span>
+        <span><%= t('.agent_info') %></span>
       <% end %>
     <% end %>
   </div>

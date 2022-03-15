@@ -39,10 +39,10 @@ fr:
       appointments_index_link: Mes rendez-vous
       logo_title: Accueil - Ministère de la justice - Mon Suivi Justice
       public_root_link: Revenir au site public
-      cpip_show_link: Votre CPIP
+      agent_show_link: Votre CPIP
     footer:
       appointments: Mes rendez-vous
-      cpip_info: Contact CPIP
+      agent_info: Contact CPIP
     staging_alert:
       title: "Attention: vous êtes sur le site de Staging"
   appointments:
@@ -63,7 +63,7 @@ fr:
       state_title: Statut
       appointment_type_title: Type de rendez-vous
       index_link: Retour à la liste
-  cpips:
+  agents:
     show:
       organization_title: "Nom du service"
       full_name_title: "Nom"

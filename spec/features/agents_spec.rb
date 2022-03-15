@@ -1,20 +1,20 @@
 require "rails_helper"
 
-RSpec.feature "CPIP", type: :feature do
+RSpec.feature "Agent", type: :feature do
   let(:convict) { FactoryBot.create(:convict) }
 
   before do
     login_as(convict, scope: :convict)
   end
 
-  context "when the CPIP is present" do
+  context "when the Agent is present" do
     around do |example|
       VCR.use_cassette("mon_suivi_justice/convict") { example.run }
     end
 
     describe "show" do
       it "displays the correct content" do
-        visit cpip_path
+        visit agent_path
 
         expect(page).to have_content("Contact CPIP")
         expect(page).to have_content("Meilleure Cpip")
@@ -25,14 +25,14 @@ RSpec.feature "CPIP", type: :feature do
     end
   end
 
-  context "when the CPIP is absent" do
+  context "when the Agent is absent" do
     around do |example|
-      VCR.use_cassette("mon_suivi_justice/convict_no_cpip") { example.run }
+      VCR.use_cassette("mon_suivi_justice/convict_no_agent") { example.run }
     end
 
     describe "show" do
       it "displays the correct content" do
-        visit cpip_path
+        visit agent_path
 
         expect(page).not_to have_content("Contact CPIP")
       end

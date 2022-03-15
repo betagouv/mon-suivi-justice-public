@@ -4,22 +4,22 @@
       <div class="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
         <div class="sm:col-span-2">
           <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.organization_title') %></h3>
-          <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-gray-400 text-white"><%= @cpip.organization_name %></span>
+          <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-gray-400 text-white"><%= @agent.organization_name %></span>
         </div>
         <div class="sm:col-span-2">
           <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.full_name_title') %></h3>
-          <p class="text-md font-bold mb-0"><%= @cpip.full_name %></p>
+          <p class="text-md font-bold mb-0"><%= @agent.full_name %></p>
         </div>
-        <% if @cpip.phone.present? %>
+        <% if @agent.phone.present? %>
           <div class="sm:col-span-1">
             <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.phone_title') %></h3>
-            <p class="text-md font-bold mb-0"><%= @cpip.phone %></p>
+            <p class="text-md font-bold mb-0"><%= @agent.phone %></p>
           </div>
         <% end %>
-        <% if @cpip.email.present? %>
+        <% if @agent.email.present? %>
           <div class="sm:col-span-1">
             <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.email_title') %></h3>
-            <p class="text-md font-bold mb-0"><%= @cpip.email %></p>
+            <p class="text-md font-bold mb-0"><%= @agent.email %></p>
           </div>
         <% end %>
       </div>
