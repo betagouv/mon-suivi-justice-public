@@ -2,11 +2,11 @@
   <h1 class='static-title static-title-green fr-mb-4w'><%= content(:main_title) %></h1>
   <div class='static-intro'><%= content.html(:main_rich_description) %></div>
 
-  <h2 class='text-align-center fr-mt-8w fr-mb-4w'><%= content(:subtitle) %></h2>
+  <h2 class='text-center fr-mt-8w fr-mb-4w'><%= content(:subtitle) %></h2>
 
   <div class="fr-grid-row fr-grid-row--gutters">
     <% repeater(:basic_card) do |card| %>
-      <div class="fr-col-6 fr-col-lg-3 fr-mb-2w text-align-center">
+      <div class="fr-col-6 fr-col-lg-3 fr-mb-2w text-center">
         <%= link_to card.content(:card_title), card.content(:card_link), class: 'basic-card-link border-green' %>
       </div>
     <% end %>

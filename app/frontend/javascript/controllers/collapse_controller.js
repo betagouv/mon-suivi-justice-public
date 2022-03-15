@@ -20,8 +20,8 @@ export default class extends Controller {
     this.pictoCollapsedTarget.classList.add('collapse-picto-active')
     this.pictoCollapsedTarget.classList.remove('collapse-picto-inactive')
 
-    this.contentTarget.classList.add('d-none')
-    this.contentTarget.classList.remove('d-flex')
+    this.contentTarget.classList.add('hidden')
+    this.contentTarget.classList.remove('flex')
 
     this.expandedValue = '0'
   }
@@ -32,8 +32,8 @@ export default class extends Controller {
     this.pictoCollapsedTarget.classList.remove('collapse-picto-active')
     this.pictoCollapsedTarget.classList.add('collapse-picto-inactive')
 
-    this.contentTarget.classList.remove('d-none')
-    this.contentTarget.classList.add('d-flex')
+    this.contentTarget.classList.remove('hidden')
+    this.contentTarget.classList.add('flex')
 
     this.expandedValue = '1'
   }

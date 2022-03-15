@@ -16,13 +16,14 @@
 
   <body>
     <%= render 'shared/header' %>
+    <%= render 'shared/flash' %>
 
     <div class='static-wrapper'>
       <%= render 'shared/staging_alert' %>
       <%= yield %>
+      <%= render 'shared/footer' %>
     </div>
-  </body>
 
-  <%= render 'shared/footer' %>
+  </body>
 
 </html>

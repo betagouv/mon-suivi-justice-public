@@ -1,0 +1,67 @@
+<header role="banner" class="fr-header">
+    <div class="fr-header__body">
+        <div class="fr-container">
+            <div class="fr-header__body-row">
+                <div class="fr-header__brand fr-enlarge-link">
+                    <div class="fr-header__brand-top">
+                        <div class="fr-header__logo">
+                            <%= link_to root_path, title: t('.logo_title') do %>
+                                <p class="fr-logo">
+                                    Ministère de
+                                    <br>la Justice
+                                </p>
+                            <% end %>
+                        </div>
+                        <div class="fr-header__navbar">
+                          <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-851" aria-haspopup="menu" id="button-852" title="Menu">
+                            Menu
+                          </button>
+                        </div>
+                    </div>
+                    <div class="fr-header__service">
+                      <%= image_pack_tag "media/images/logo_msj.svg", alt: "Logo Mon Suivi Justice" %>
+                    </div>
+                </div>
+
+                <div class="fr-header__tools">
+                  <div class="fr-header__tools-links">
+                    <ul class="fr-links-group">
+                      <li>
+                        <%= link_to t('.authenticated_root_link'), appointments_path, class: "fr-link fr-fi-information-line" %>
+                      </li>
+                      <% if current_convict %>
+                        <%= button_to t('.log_out_link'), destroy_convict_session_path, method: :delete, class: "fr-link fr-fi-logout-box-r-line" %>
+                      <% else %>
+                        <li>
+                          <%= link_to t('.agents_sign_in_link'), ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-lock-line'  %>
+                        </li>
+                      <% end %>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fr-header__menu fr-modal" id="modal-851" aria-labelledby="button-852">
+        <div class="fr-container">
+            <button class="fr-link--close fr-link" aria-controls="modal-851">Fermer</button>
+            <nav class="fr-nav" id="navigation-850" role="navigation" aria-label="Menu principal">
+                <ul class="fr-nav__list">
+                  <li class="fr-nav__item">
+                    <%= link_to t('.preparer_mon_rdv_link'), preparer_mon_rdv_path, class: "fr-nav__link" %>
+                  </li>
+                  <li class="fr-nav__item">
+                    <%= link_to t('.comprendre_ma_peine_link'), comprendre_ma_peine_path, class: "fr-nav__link" %>
+                  </li>
+                  <li class="fr-nav__item">
+                    <%= link_to t('.investir_ma_reinsertion_link'), investir_ma_reinsertion_path, class: "fr-nav__link" %>
+                  </li>
+                  <li class="fr-nav__item">
+                    <%= link_to t('.qui_sommes_nous_link'), qui_sommes_nous_path, class: "fr-nav__link" %>
+                  </li>
+                </ul>
+            </nav>
+            <div class="fr-header__menu-links"></div>
+        </div>
+    </div>
+</header>

@@ -31,6 +31,8 @@ gem "spina", "~> 2.8"
 
 gem "highline", "~> 2.0", ">= 2.0.3"
 
+gem "devise", "~> 4.8", ">= 4.8.1"
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -46,6 +48,8 @@ gem "bootsnap", "~> 1.9", require: false
 gem "sentry-ruby", "~> 5.0", ">= 5.0.2"
 gem "sentry-rails", "~> 5.0", ">= 5.0.2"
 
+gem "faraday", "~> 2.2"
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.12"
 
@@ -59,6 +63,11 @@ group :development, :test do
   gem "rspec-rails", "~> 5.0"
 
   gem "factory_bot_rails", "~> 6.2"
+
+  gem "timecop", "~> 0.9.5"
+
+  gem "webmock", "~> 3.14"
+  gem "vcr", "~> 6.0"
 end
 
 group :development do
