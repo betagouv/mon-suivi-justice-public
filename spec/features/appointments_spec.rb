@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "Appointments", type: :feature do
   with_env("MSJ_API_URL", "https://agents.mon-suivi-justice.incubateur.net/api/v1")
 
-  let(:convict) { FactoryBot.create(:convict) }
+  let(:convict) { FactoryBot.create(:convict, msj_id: 1) }
 
   before do
     Timecop.freeze(Time.local(2022, 1, 5, 10, 0, 0))

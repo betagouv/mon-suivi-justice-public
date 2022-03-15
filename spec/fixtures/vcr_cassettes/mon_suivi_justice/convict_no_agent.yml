@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://agents.mon-suivi-justice.incubateur.net/api/v1/convicts/106
+    uri: https://agents.mon-suivi-justice.incubateur.net/api/v1/convicts/1
     body:
       encoding: US-ASCII
       string: ''

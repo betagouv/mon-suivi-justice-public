@@ -63,6 +63,7 @@ group :development, :test do
   gem "rspec-rails", "~> 5.0"
 
   gem "factory_bot_rails", "~> 6.2"
+  gem 'shoulda-matchers', '~> 5.1'
 
   gem "timecop", "~> 0.9.5"
 

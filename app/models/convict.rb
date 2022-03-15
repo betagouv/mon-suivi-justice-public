@@ -1,8 +1,9 @@
 class Convict < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable,
-    :recoverable, :rememberable, :validatable
+  devise :database_authenticatable, :recoverable, :rememberable, :validatable
+
+  validates :msj_id, presence: true
 
   delegate :first_name, :last_name, :phone, to: :convict_informations, allow_nil: true
   delegate :id, :first_name, :last_name, :phone, :email, :organization_name,
@@ -10,7 +11,7 @@ class Convict < ApplicationRecord
 
   # En dur le temps que la connexion soit mise en place
   def convict_information
-    @convict_information ||= MonSuiviJusticeApi::Convict.find(106)
+    @convict_information ||= MonSuiviJusticeApi::Convict.find(msj_id)
   end
 
   def appointments
