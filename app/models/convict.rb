@@ -10,7 +10,7 @@ class Convict < ApplicationRecord
 
   # En dur le temps que la connexion soit mise en place
   def convict_information
-    @convict_information ||= JusticeApi::Convict.find(944)
+    @convict_information ||= MonSuiviJusticeApi::Convict.find(106)
   end
 
   def appointments

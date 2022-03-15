@@ -1,6 +1,8 @@
 require "rails_helper"
 
 RSpec.feature "Agent", type: :feature do
+  with_env('MSJ_API_URL', 'https://agents.mon-suivi-justice.incubateur.net/api/v1')
+
   let(:convict) { FactoryBot.create(:convict) }
 
   before do

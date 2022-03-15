@@ -5,11 +5,20 @@
                 <div class="fr-header__brand fr-enlarge-link">
                     <div class="fr-header__brand-top">
                         <div class="fr-header__logo">
-                            <%= link_to root_path, title: t('.logo_title') do %>
-                                <p class="fr-logo">
-                                    Ministère de
-                                    <br>la Justice
-                                </p>
+                            <% if current_convict %>
+                              <%= link_to authenticated_root_path, title: t('.logo_title') do %>
+                                  <p class="fr-logo">
+                                      Ministère de
+                                      <br>la Justice
+                                  </p>
+                              <% end %>
+                            <% else %>
+                              <%= link_to root_path, title: t('.logo_title') do %>
+                                  <p class="fr-logo">
+                                      Ministère de
+                                      <br>la Justice
+                                  </p>
+                              <% end %>
                             <% end %>
                         </div>
                         <div class="fr-header__navbar">
@@ -36,7 +45,7 @@
                           <%= link_to t('.agents_sign_in_link'), ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-lock-line'  %>
                         </li>
                         <li>
-                          <%= link_to t('.authenticated_root_path'), authenticated_root_path, class: 'fr-link fr-fi-account-line'  %>
+                          <%= link_to t('.authenticated_root_link'), new_convict_session_path, class: 'fr-link fr-fi-account-line'  %>
                         </li>
                       <% end %>
                     </ul>

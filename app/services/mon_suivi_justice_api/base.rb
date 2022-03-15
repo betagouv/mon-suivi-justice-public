@@ -1,7 +1,13 @@
-module JusticeApi
+module MonSuiviJusticeApi
   class Base
     class << self
-      CONNECTOR = "MonSuiviJustice"
+      BASE_URL = ENV["MSJ_API_URL"]
+      USERNAME = Rails.application.credentials.dig(:justice_api, :mon_suivi_justice, :username)
+      PASSWORD = Rails.application.credentials.dig(:justice_api, :mon_suivi_justice, :password)
+
+      def connection
+        Faraday.new { |conn| conn.request :authorization, :basic, USERNAME, PASSWORD }
+      end
 
       def format_response(response)
         if response.status == 200
