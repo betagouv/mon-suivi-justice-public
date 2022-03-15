@@ -31,7 +31,7 @@ fr:
         stats_link: Stats
         accessibility_link: "Accessibilité : non conforme"
         mentions_legales_link: Mentions Légales
-        donnees_personnelles_link: Données personnelles
+        donnees_personnelles_link: Politique de confidentialité
     header:
       log_out_link: Se déconnecter
       authenticated_root_link: Mon Espace Personnel
