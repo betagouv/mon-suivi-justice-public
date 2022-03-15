@@ -32,7 +32,7 @@ gem "spina", "~> 2.8"
 gem "highline", "~> 2.0", ">= 2.0.3"
 
 gem "devise", "~> 4.8", ">= 4.8.1"
-gem 'devise-i18n', '~> 1.10', '>= 1.10.2'
+gem "devise-i18n", "~> 1.10", ">= 1.10.2"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -64,7 +64,7 @@ group :development, :test do
   gem "rspec-rails", "~> 5.0"
 
   gem "factory_bot_rails", "~> 6.2"
-  gem 'shoulda-matchers', '~> 5.1'
+  gem "shoulda-matchers", "~> 5.1"
 
   gem "timecop", "~> 0.9.5"
 
