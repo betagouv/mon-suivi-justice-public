@@ -6,7 +6,7 @@ class Convict < ApplicationRecord
   validates :msj_id, presence: true
 
   delegate :first_name, :last_name, :phone, to: :convict_informations, allow_nil: true
-  delegate :id, :first_name, :last_name, :phone, :email, :organization_name,
+  delegate :id, :first_name, :last_name, :phone, :email, :organization_name, :share_info_to_convict,
     to: :agent, prefix: true, allow_nil: true
 
   # En dur le temps que la connexion soit mise en place
@@ -34,7 +34,8 @@ class Convict < ApplicationRecord
         first_name: convict_information.agent.first_name,
         last_name: convict_information.agent.last_name,
         phone: convict_information.agent.phone, email: convict_information.agent.email,
-        organization_name: convict_information.agent.organization_name)
+        organization_name: convict_information.agent.organization_name,
+        share_info_to_convict: convict_information.agent.share_info_to_convict)
   end
 
   def future_appointments

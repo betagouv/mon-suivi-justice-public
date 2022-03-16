@@ -56,7 +56,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"id":944,"first_name":"Super","last_name":"Convict","phone":"+33666666666","agent":{"id":1,"first_name":"Meilleure","last_name":"CPIP","phone":"+33777777777","email":"cpip@justice.fr","organization_name":"SPIP
-        A","role":"CPIP"},"appointments":[{"id":1,"datetime":"2021-12-20T14:00:00.000+01:00","duration":45,"state":"Manqué","origin_department":"BEX","place":{"name":"SPIP
+        A","share_info_to_convict":true,"role":"CPIP"},"appointments":[{"id":1,"datetime":"2021-12-20T14:00:00.000+01:00","duration":45,"state":"Manqué","origin_department":"BEX","place":{"name":"SPIP
         A","adress":"1 rue de la Poste, 05100 Briançon","phone":"+33888888888","email":"contact@spip.fr","contact_method":"phone"},"organization_name":"SPIP
         A","agenda_name":"SPIP A","appointment_type_name":"Sortie d''audience SPIP"},{"id":2,"datetime":"2022-03-01T10:00:00.000+01:00","duration":15,"state":"Planifié","origin_department":"BEX","place":{"name":"SPIP
         A","adress":"1 rue de la Poste, 05100 Briançon","phone":"+33888888888","email":"contact@spip.fr","contact_method":"phone"},"organization_name":"SPIP
