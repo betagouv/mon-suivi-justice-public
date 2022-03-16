@@ -44,9 +44,11 @@
                           <li>
                           <%= link_to t('.agents_sign_in_link'), ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-lock-line'  %>
                         </li>
-                        <li>
-                          <%= link_to t('.authenticated_root_link'), new_convict_session_path, class: 'fr-link fr-fi-account-line'  %>
-                        </li>
+                        <% unless ENV['APP'] == 'mon-suivi-justice-public-prod' %>
+                          <li>
+                            <%= link_to t('.authenticated_root_link'), new_convict_session_path, class: 'fr-link fr-fi-account-line'  %>
+                          </li>
+                        <% end %>
                       <% end %>
                     </ul>
                   </div>
