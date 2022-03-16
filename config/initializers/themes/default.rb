@@ -86,7 +86,7 @@ Spina::Theme.register do |theme|
     {name: "preparer_tj_angers", title: "Préparer TJ Angers", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_spip49", title: "Préparer SPIP 49", parts: %w[main_title main_description direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "ma_reinsertion_hauts_de_seine", title: "Ma réinsertion Hauts-de-Seine", parts: %w[main_title main_description rich_collapse]},
-    {name: "ma_reinsertion_eure_et_loire", title: "Ma réinsertion Eure-et-Loire", parts: %w[main_title main_description rich_collapse]},
+    {name: "ma_reinsertion_maine_et_loire", title: "Ma réinsertion Eure-et-Loire", parts: %w[main_title main_description rich_collapse]},
     {name: "ma_reinsertion_paris", title: "Ma réinsertion Paris", parts: %w[main_title main_description rich_collapse]}
   ]
 
@@ -119,7 +119,7 @@ Spina::Theme.register do |theme|
     {name: "preparer_tj_angers", title: "Préparer TJ Angers", view_template: "preparer_tj_angers"},
     {name: "preparer_spip49", title: "Préparer SPIP 49", view_template: "preparer_spip49"},
     {name: "ma_reinsertion_hauts_de_seine", title: "Ma réinsertion Hauts-de-Seine", view_template: "ma_reinsertion_hauts_de_seine"},
-    {name: "ma_reinsertion_eure_et_loire", title: "Ma réinsertion Eure-et-Loire", view_template: "ma_reinsertion_eure_et_loire"},
+    {name: "ma_reinsertion_maine_et_loire", title: "Ma réinsertion Eure-et-Loire", view_template: "ma_reinsertion_maine_et_loire"},
     {name: "ma_reinsertion_paris", title: "Ma réinsertion Paris", view_template: "ma_reinsertion_paris"}
   ]
 
