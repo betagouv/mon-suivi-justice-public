@@ -169,8 +169,8 @@ fr:
       date_title: Date
       address_title: Adresse
       map_link: Voir sur une carte
-      duration_title: Durée du rendez-vous
-      duration: "%{duration} minutes"
+      duration_title: Durée approximative du rendez-vous
+      duration: "Environ %{duration} minutes"
       state_title: Statut
       appointment_type_title: Type de rendez-vous
       index_link: Retour à la liste
