@@ -75,7 +75,7 @@ class PagesController < Spina::ApplicationController
   def ma_reinsertion_hauts_de_seine
   end
 
-  def ma_reinsertion_maine_et_loire
+  def ma_reinsertion_eure_et_loire
   end
 
   def ma_reinsertion_paris

@@ -152,8 +152,8 @@ RSpec.describe "Pages", type: :request do
     it { is_expected.to be_successful }
   end
 
-  describe "GET /ma_reinsertion_maine_et_loire" do
-    let(:path) { ma_reinsertion_maine_et_loire_path }
+  describe "GET /ma_reinsertion_eure_et_loire" do
+    let(:path) { ma_reinsertion_eure_et_loire_path }
 
     it { is_expected.to be_successful }
   end

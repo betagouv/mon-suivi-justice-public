@@ -38,7 +38,7 @@ Rails.application.routes.draw do
     get :preparer_spip49
     get :investir_ma_reinsertion
     get :ma_reinsertion_hauts_de_seine
-    get :ma_reinsertion_maine_et_loire
+    get :ma_reinsertion_eure_et_loire
     get :ma_reinsertion_paris
     get :donnees_personnelles
     get :qui_sommes_nous
