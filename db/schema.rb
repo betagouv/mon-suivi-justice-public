@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_21_114531) do
+ActiveRecord::Schema.define(version: 2022_03_21_141754) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -63,7 +63,18 @@ ActiveRecord::Schema.define(version: 2022_03_21_114531) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "msj_id", null: false
     t.string "phone", null: false
+    t.string "invitation_token"
+    t.datetime "invitation_created_at", precision: 6
+    t.datetime "invitation_sent_at", precision: 6
+    t.datetime "invitation_accepted_at", precision: 6
+    t.integer "invitation_limit"
+    t.string "invited_by_type"
+    t.bigint "invited_by_id"
+    t.integer "invitations_count", default: 0
     t.index ["email"], name: "index_convicts_on_email", unique: true
+    t.index ["invitation_token"], name: "index_convicts_on_invitation_token", unique: true
+    t.index ["invited_by_id"], name: "index_convicts_on_invited_by_id"
+    t.index ["invited_by_type", "invited_by_id"], name: "index_convicts_on_invited_by"
     t.index ["msj_id"], name: "index_convicts_on_msj_id", unique: true
     t.index ["phone"], name: "index_convicts_on_phone", unique: true
     t.index ["reset_password_token"], name: "index_convicts_on_reset_password_token", unique: true
