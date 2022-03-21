@@ -3,9 +3,9 @@ class Convict < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :recoverable, :rememberable, :validatable
 
-  phony_normalize :phone, default_country_code: 'FR'
+  phony_normalize :phone, default_country_code: "FR"
   validates :phone, phony_plausible: true
-  validates :phone, presence: true, uniqueness: { case_sensitive: false }
+  validates :phone, presence: true, uniqueness: {case_sensitive: false}
 
   validates :msj_id, presence: true, uniqueness: true
 
@@ -65,7 +65,7 @@ class Convict < ApplicationRecord
     conditions = warden_conditions.dup
     if (phone = conditions.delete(:phone))
       normalized_phone = PhonyRails.normalize_number(phone, country_code: "FR")
-      where(conditions.to_h).where(["phone = :value", { value: normalized_phone }]).first
+      where(conditions.to_h).where(["phone = :value", {value: normalized_phone}]).first
     elsif conditions.has_key?(:phone)
       where(conditions.to_h).first
     end
