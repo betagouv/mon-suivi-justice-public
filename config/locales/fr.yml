@@ -31,6 +31,7 @@ fr:
         current_sign_in_at: Date de la connexion actuelle
         current_sign_in_ip: IP de la connexion actuelle
         email: Email
+        phone: Numéro de téléphone
         encrypted_password: Mot de passe chiffré
         failed_attempts: Tentatives échouées
         last_sign_in_at: Date de la dernière connexion
@@ -122,7 +123,7 @@ fr:
     sessions:
       already_signed_out: Déconnecté(e).
       new:
-        sign_in: Connexion
+        sign_in: Se connecter
       signed_in: Connecté(e).
       signed_out: Déconnecté(e).
     shared:
@@ -155,6 +156,11 @@ fr:
       unauthenticated: Vous devez vous connecter ou vous enregistrer pour continuer.
       unconfirmed: Vous devez confirmer votre compte par email.
   appointments:
+    index:
+      title: Vos rendez-vous
+      next_appointments: Rendez-vous suivants
+      past_appointments: Rendez-vous passés
+      no_appointment: Vous n'avez pas encore de rendez-vous
     appointment:
       days_from_now: Dans %{days} jours
       today: Aujourd'hui

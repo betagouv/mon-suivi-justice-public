@@ -3,13 +3,16 @@ class Convict < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :recoverable, :rememberable, :validatable
 
+  phony_normalize :phone, default_country_code: 'FR'
+  validates :phone, phony_plausible: true
+  validates :phone, presence: true, uniqueness: true
+
   validates :msj_id, presence: true
 
-  delegate :first_name, :last_name, :phone, to: :convict_informations, allow_nil: true
+  delegate :first_name, :last_name, to: :convict_informations, allow_nil: true
   delegate :id, :first_name, :last_name, :phone, :email, :organization_name, :share_info_to_convict,
     to: :agent, prefix: true, allow_nil: true
 
-  # En dur le temps que la connexion soit mise en place
   def convict_information
     @convict_information ||= MonSuiviJusticeApi::Convict.find(msj_id)
   end
@@ -56,5 +59,15 @@ class Convict < ApplicationRecord
 
   def has_agent?
     agent_id.present?
+  end
+
+  def self.find_for_database_authentication(warden_conditions)
+    conditions = warden_conditions.dup
+    if (phone = conditions.delete(:phone))
+      normalized_phone = PhonyRails.normalize_number(phone, country_code: "FR")
+      where(conditions.to_h).where(["phone = :value", { value: normalized_phone }]).first
+    elsif conditions.has_key?(:phone)
+      where(conditions.to_h).first
+    end
   end
 end

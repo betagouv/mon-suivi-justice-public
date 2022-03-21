@@ -4,8 +4,8 @@
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <%= render "convicts/shared/error_messages", resource: resource %>
 
-    <%= f.label :email, class: "fr-label" %>
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "fr-input mb-6" %>
+    <%= f.label :phone, class: "fr-label" %>
+    <%= f.phone_field :phone, autocomplete: "tel", class: "fr-input mb-6" %>
 
     <%= f.label :password, class: "fr-label" %>
     <%= f.password_field :password, autocomplete: "current-password", class: "fr-input mb-4" %>

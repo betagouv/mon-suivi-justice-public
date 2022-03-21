@@ -34,6 +34,8 @@ gem "highline", "~> 2.0", ">= 2.0.3"
 gem "devise", "~> 4.8", ">= 4.8.1"
 gem "devise-i18n", "~> 1.10", ">= 1.10.2"
 
+gem 'phony_rails', '~> 0.15.0'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 

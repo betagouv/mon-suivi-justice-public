@@ -1,6 +1,6 @@
 <div class="fr-container fr-py-6w px-12 lg:px-32">
 
-  <h1 class="text-3xl">Vos rendez-vous</h1>
+  <h1 class="text-3xl"><%= t(".title") %></h1>
 
   <% if current_convict.appointments.any? %>
 
@@ -12,7 +12,7 @@
 
     <% if current_convict.future_appointments.drop(1).any? %>
       <div class="my-10" id="future-appointments">
-        <h1 class="text-xl">Rendez-vous suivants</h1>
+        <h1 class="text-xl"><%= t(".next_appointments") %></h1>
 
         <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 pl-0">
           <% current_convict.future_appointments.drop(1).each do |appointment| %>
@@ -24,7 +24,7 @@
 
     <% if current_convict.past_appointments.any? %>
       <div class="my-10" id="past-appointments">
-        <h1 class="text-xl">Rendez-vous passés</h1>
+        <h1 class="text-xl"><%= t(".past_appointments") %></h1>
 
         <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 pl-0">
           <% current_convict.past_appointments.each do |appointment| %>
@@ -37,7 +37,7 @@
   <% else %>
 
     <div class="my-10">
-      <h1 class="text-xl">Vous n'avez pas encore de rendez-vous</h1>
+      <h1 class="text-xl"><%= t(".no_appointment") %></h1>
     </div>
 
   <% end %>
