@@ -5,9 +5,9 @@ class Convict < ApplicationRecord
 
   phony_normalize :phone, default_country_code: 'FR'
   validates :phone, phony_plausible: true
-  validates :phone, presence: true, uniqueness: true
+  validates :phone, presence: true, uniqueness: { case_sensitive: false }
 
-  validates :msj_id, presence: true
+  validates :msj_id, presence: true, uniqueness: true
 
   delegate :first_name, :last_name, to: :convict_informations, allow_nil: true
   delegate :id, :first_name, :last_name, :phone, :email, :organization_name, :share_info_to_convict,
@@ -69,5 +69,9 @@ class Convict < ApplicationRecord
     elsif conditions.has_key?(:phone)
       where(conditions.to_h).first
     end
+  end
+
+  def email_required?
+    false
   end
 end
