@@ -26,9 +26,11 @@
                 <div class="fr-header__tools">
                   <div class="fr-header__tools-links">
                     <ul class="fr-links-group">
-                      <li>
-                        <%= link_to t('.authenticated_root_link'), appointments_path, class: "fr-link fr-fi-information-line" %>
-                      </li>
+                      <% unless ENV["APP"] == "mon-suivi-justice-public-prod" %>
+                        <li>
+                          <%= link_to t('.authenticated_root_link'), appointments_path, class: "fr-link fr-fi-information-line" %>
+                        </li>
+                      <% end %>
                       <% if current_convict %>
                         <%= button_to t('.log_out_link'), destroy_convict_session_path, method: :delete, class: "fr-link fr-fi-logout-box-r-line" %>
                       <% else %>
