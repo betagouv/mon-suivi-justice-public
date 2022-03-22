@@ -46,7 +46,6 @@ RSpec.feature "Appointments", type: :feature do
       expect(page).to have_content("Mardi 1 mars à 10h00")
       expect(page).to have_content("1 rue de la Poste, 05100 Briançon")
       expect(page).to have_content("Planifié")
-      expect(page).to have_content("15 minutes")
       expect(page).to have_content("RDV de suivi SPIP")
     end
   end
