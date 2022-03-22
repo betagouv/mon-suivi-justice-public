@@ -84,7 +84,7 @@ fr:
       agent_show_link: Mes interlocuteurs
     footer:
       appointments: Mes rendez-vous
-      agent_info: Contact CPIP
+      agent_info: Mes interlocuteurs
     staging_alert:
       title: "Attention: vous êtes sur le site de Staging"
   convicts:
