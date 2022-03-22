@@ -30,6 +30,7 @@ RSpec.feature "Appointments", type: :feature do
 
       within("#future-appointments") do
         expect(page).to have_content("Lundi 25 avril à 11h00")
+        expect(page).not_to have_content("Lundi 20 juin à 14h00")
       end
 
       within("#past-appointments") do
