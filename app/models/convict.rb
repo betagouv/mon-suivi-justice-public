@@ -32,6 +32,8 @@ class Convict < ApplicationRecord
   end
 
   def agent
+    return nil unless convict_information.agent.id.present?
+
     @agent ||=
       Agent.new(id: convict_information.agent.id,
         first_name: convict_information.agent.first_name,

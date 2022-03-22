@@ -1,7 +1,7 @@
 fr:
   time:
     formats:
-      clear: "%A %e %B à %kh%M"
+      clear: "%A %e %B %Y à %kh%M"
       convicts:
         mailer:
           invitation_instructions:
@@ -81,7 +81,7 @@ fr:
       appointments_index_link: Mes rendez-vous
       logo_title: Accueil - Ministère de la justice - Mon Suivi Justice
       public_root_link: Revenir au site public
-      agent_show_link: Votre CPIP
+      agent_show_link: Mes interlocuteurs
     footer:
       appointments: Mes rendez-vous
       agent_info: Contact CPIP
@@ -194,6 +194,7 @@ fr:
   agents:
     show:
       organization_title: "Nom du service"
-      full_name_title: "Nom"
+      full_name_title: "Mon CPIP référent"
       phone_title: "Numéro de téléphone"
       email_title: "Email"
+      no_cpip: "Aucun CPIP référent n'est affecté à mon suivi pour l'instant"

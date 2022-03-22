@@ -65,11 +65,9 @@
                     <li class="fr-nav__item">
                       <%= link_to t('.appointments_index_link'), appointments_path, class: "fr-nav__link" %>
                     </li>
-                    <% if current_convict.has_agent? %>
-                      <li class="fr-nav__item">
-                        <%= link_to t('.agent_show_link'), agent_path, class: "fr-nav__link" %>
-                      </li>
-                    <% end %>
+                    <li class="fr-nav__item">
+                      <%= link_to t('.agent_show_link'), agent_path, class: "fr-nav__link" %>
+                    </li>
                   <% end %>
                 </ul>
             </nav>

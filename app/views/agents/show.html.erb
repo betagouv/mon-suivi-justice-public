@@ -1,28 +1,30 @@
 <div class="fr-container fr-py-6w px-12 lg:px-32">
-  <div class="bg-white shadow relative mb-8">
-    <div class="p-8 lg:p-12">
-      <div class="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
-        <div class="sm:col-span-2">
-          <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.organization_title') %></h3>
-          <p class="text-md font-bold mb-0"><%= @agent.organization_name %></p>
-        </div>
-        <div class="sm:col-span-2">
-          <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.full_name_title') %></h3>
-          <p class="text-md font-bold mb-0"><%= @agent.full_name %></p>
-        </div>
-        <% if @agent.phone.present? && @agent.share_info_to_convict %>
-          <div class="sm:col-span-1">
-            <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.phone_title') %></h3>
-            <p class="text-md font-bold mb-0"><%= @agent.phone %></p>
-          </div>
-        <% end %>
-        <% if @agent.email.present? && @agent.share_info_to_convict %>
-          <div class="sm:col-span-1">
-            <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.email_title') %></h3>
-            <p class="text-md font-bold mb-0"><%= @agent.email %></p>
-          </div>
-        <% end %>
+  <div class="bg-white shadow relative mb-8 p-8 lg:p-12 grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
+    <% if @agent.present? %>
+      <div class="sm:col-span-2">
+        <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.organization_title') %></h3>
+        <p class="text-md font-bold mb-0"><%= @agent.organization_name %></p>
       </div>
-    </div>
+      <div class="sm:col-span-2">
+        <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.full_name_title') %></h3>
+        <p class="text-md font-bold mb-0"><%= @agent.full_name %></p>
+      </div>
+      <% if @agent.phone.present? && @agent.share_info_to_convict %>
+        <div class="sm:col-span-1">
+          <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.phone_title') %></h3>
+          <p class="text-md font-bold mb-0"><%= @agent.phone %></p>
+        </div>
+      <% end %>
+      <% if @agent.email.present? && @agent.share_info_to_convict %>
+        <div class="sm:col-span-1">
+          <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.email_title') %></h3>
+          <p class="text-md font-bold mb-0"><%= @agent.email %></p>
+        </div>
+      <% end %>
+    <% else %>
+      <div class="sm:col-span-2">
+        <p class="text-md font-bold mb-0"><%= t('.no_cpip') %></p>
+      </div>
+    <% end %>
   </div>
 </div>
