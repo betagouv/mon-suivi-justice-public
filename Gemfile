@@ -36,7 +36,7 @@ gem "devise-i18n", "~> 1.10", ">= 1.10.2"
 
 gem "phony_rails", "~> 0.15.0"
 
-gem 'devise_invitable', '~> 2.0', '>= 2.0.6'
+gem "devise_invitable", "~> 2.0", ">= 2.0.6"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

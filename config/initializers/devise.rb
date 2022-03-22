@@ -167,7 +167,7 @@ Devise.setup do |config|
 
   # The key to be used to check existing users when sending an invitation
   # and the regexp used to test it when validate_on_invite is not set.
-  config.invite_key = { phone: /\A\+33\d{9}\z/ }
+  config.invite_key = {phone: /\A\+33\d{9}\z/}
 
   # Ensure that invited record is valid.
   # The invitation won't be sent if this check fails.
