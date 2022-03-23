@@ -10,4 +10,8 @@ class Appointment
   def days_from_now
     (datetime.to_date - Date.today).to_i
   end
+
+  def canceled?
+    state == "Annulé"
+  end
 end

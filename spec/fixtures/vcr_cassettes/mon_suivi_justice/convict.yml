@@ -62,6 +62,8 @@ http_interactions:
         A","adress":"1 rue de la Poste, 05100 Briançon","phone":"+33888888888","email":"contact@spip.fr","contact_method":"phone"},"organization_name":"SPIP
         A","agenda_name":"SPIP A","appointment_type_name":"RDV de suivi SPIP"},{"id":7587,"datetime":"2022-04-25T11:00:00.000+01:00","duration":30,"state":"Planifié","origin_department":"BEX","place":{"name":"SPIP
         A","adress":"1 rue de la Poste, 05100 Briançon","phone":"+33888888888","email":"contact@spip.fr","contact_method":"phone"},"organization_name":"SPIP
-        A","agenda_name":"SPIP A","appointment_type_name":"RDV de suivi SPIP"}]}'
+        A","agenda_name":"SPIP A","appointment_type_name":"RDV de suivi SPIP"},{"id":4,"datetime":"2022-06-20T14:00:00.000+01:00","duration":45,"state":"Annulé","origin_department":"BEX","place":{"name":"SPIP
+        A","adress":"1 rue de la Poste, 05100 Briançon","phone":"+33888888888","email":"contact@spip.fr","contact_method":"phone"},"organization_name":"SPIP
+        A","agenda_name":"SPIP A","appointment_type_name":"Sortie d''audience SPIP"}]}'
   recorded_at: Fri, 11 Mar 2022 17:25:21 GMT
 recorded_with: VCR 6.0.0

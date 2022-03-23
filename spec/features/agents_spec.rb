@@ -18,7 +18,6 @@ RSpec.feature "Agent", type: :feature do
       it "displays the correct content" do
         visit agent_path
 
-        expect(page).to have_content("Contact CPIP")
         expect(page).to have_content("Meilleure Cpip")
         expect(page).to have_content("SPIP A")
         expect(page).to have_content("+33777777777")
@@ -36,7 +35,7 @@ RSpec.feature "Agent", type: :feature do
       it "displays the correct content" do
         visit agent_path
 
-        expect(page).not_to have_content("Contact CPIP")
+        expect(page).to have_content("Aucun CPIP référent n'est affecté à mon suivi pour l'instant")
       end
     end
   end

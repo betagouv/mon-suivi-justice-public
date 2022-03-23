@@ -32,6 +32,8 @@ class Convict < ApplicationRecord
   end
 
   def agent
+    return nil unless convict_information.agent.id.present?
+
     @agent ||=
       Agent.new(id: convict_information.agent.id,
         first_name: convict_information.agent.first_name,
@@ -41,15 +43,19 @@ class Convict < ApplicationRecord
         share_info_to_convict: convict_information.agent.share_info_to_convict)
   end
 
+  def active_appointments
+    @active_appointments ||= appointments.reject(&:canceled?)
+  end
+
   def future_appointments
     @future_appointments ||=
-      appointments.select { |appointment| appointment.datetime > Time.zone.now }
+      active_appointments.select { |appointment| appointment.datetime > Time.zone.now }
         .sort_by { |appointment| appointment.datetime }
   end
 
   def past_appointments
     @past_appointments ||=
-      appointments.select { |appointment| appointment.datetime < Time.zone.now }
+      active_appointments.select { |appointment| appointment.datetime < Time.zone.now }
         .sort_by { |appointment| appointment.datetime }.reverse
   end
 
