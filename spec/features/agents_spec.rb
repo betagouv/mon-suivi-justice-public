@@ -20,8 +20,8 @@ RSpec.feature "Agent", type: :feature do
 
         expect(page).to have_content("Meilleure Cpip")
         expect(page).to have_content("SPIP A")
-        expect(page).to have_content("cpip@justice.fr")
-        expect(page).not_to have_content("+33777777777")
+        expect(page).to have_content("07 77 77 77 77")
+        expect(page).not_to have_content("cpip@justice.fr")
       end
     end
   end

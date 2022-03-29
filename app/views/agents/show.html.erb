@@ -12,13 +12,13 @@
       <% if @agent.phone.present? && @agent.share_phone_to_convict %>
         <div class="sm:col-span-1">
           <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.phone_title') %></h3>
-          <p class="text-md font-bold mb-0"><%= @agent.phone %></p>
+          <%= phone_to @agent.phone.phony_formatted, class: "text-md font-bold mb-0" %>
         </div>
       <% end %>
       <% if @agent.email.present? && @agent.share_email_to_convict %>
         <div class="sm:col-span-1">
           <h3 class="text-xs mb-0 font-medium text-msj-blue uppercase mb-1"><%= t('.email_title') %></h3>
-          <p class="text-md font-bold mb-0"><%= @agent.email %></p>
+          <%= mail_to @agent.email, class: "text-md font-bold mb-0" %>
         </div>
       <% end %>
     <% else %>
