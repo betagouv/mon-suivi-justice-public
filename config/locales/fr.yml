@@ -111,13 +111,9 @@ fr:
         instruction_2: Si vous n'avez pas émis cette demande, merci d'ignorer cet email.
         instruction_3: Votre mot de passe ne changera pas tant que vous n'aurez pas cliqué sur ce lien et renseigné un nouveau mot de passe.
         subject: Instructions pour changer le mot de passe
-      invitation_instructions:
-        subject: 'Instruction de confirmation'
-        hello: 'Bonjour %{email}'
-        someone_invited_you: "Quelqu'un vous a invité à rejoindre %{url}, vous pouvez accepter cette invitation via le lien ci-dessous."
-        accept: "Accepter l'invitation"
-        accept_until: "This invitation sera due %{due_date}."
-        ignore: "Si vous ne souhaitez pas accepter cette invitation, veuillez ignorer cet e-mail.<br />Votre compte ne sera pas créé tant que vous n'accéderez pas au lien ci-dessous et que vous ayez défini votre mot de passe."
+    sms_invitations:
+      reminder_content: "Bonjour, votre compte Mon Suivi Justice vous attend toujours. Pour y accéder et suivre vos rendez-vous justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
+      content: "Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos rendez-vous justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
     invitations:
       send_instructions: "Un e-mail d'invitation a été envoyé à %{email}."
       invitation_token_invalid: "Le jeton d'invitation fourni n'est pas valide!"

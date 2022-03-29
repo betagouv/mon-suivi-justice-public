@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   resources :appointments, only: %i[show index]
   resource :agent, only: %i[show]
 
+  resource :sms_invitations, only: %i[create], controller: "convicts/sms_invitations"
+
   scope controller: :pages do
     get :landing
     get :comprendre_ma_peine

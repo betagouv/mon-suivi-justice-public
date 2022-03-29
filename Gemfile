@@ -38,6 +38,8 @@ gem "phony_rails", "~> 0.15.0"
 
 gem "devise_invitable", "~> 2.0", ">= 2.0.6"
 
+gem "sib-api-v3-sdk", "~> 8.1"
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
