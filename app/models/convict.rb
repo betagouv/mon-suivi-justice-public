@@ -10,7 +10,8 @@ class Convict < ApplicationRecord
   validates :msj_id, presence: true, uniqueness: true
 
   delegate :first_name, :last_name, to: :convict_informations, allow_nil: true
-  delegate :id, :first_name, :last_name, :phone, :email, :organization_name, :share_info_to_convict,
+  delegate :id, :first_name, :last_name, :phone, :email, :organization_name,
+    :share_email_to_convict, :share_phone_to_convict,
     to: :agent, prefix: true, allow_nil: true
 
   def convict_information
@@ -40,7 +41,8 @@ class Convict < ApplicationRecord
         last_name: convict_information.agent.last_name,
         phone: convict_information.agent.phone, email: convict_information.agent.email,
         organization_name: convict_information.agent.organization_name,
-        share_info_to_convict: convict_information.agent.share_info_to_convict)
+        share_email_to_convict: convict_information.agent.share_email_to_convict,
+        share_phone_to_convict: convict_information.agent.share_phone_to_convict)
   end
 
   def active_appointments
