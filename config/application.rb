@@ -26,7 +26,7 @@ module MonSuiviJusticePublic
     config.exceptions_app = routes
 
     # Permet d'utiliser NGROK en local
-    config.hosts << "f997-77-144-80-156.ngrok.io"
+    # config.hosts << "f997-77-144-80-156.ngrok.io"
 
     # Configuration for the application, engines, and railties goes here.
     #
