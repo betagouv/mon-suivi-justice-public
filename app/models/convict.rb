@@ -9,7 +9,7 @@ class Convict < ApplicationRecord
 
   validates :msj_id, presence: true, uniqueness: true
 
-  delegate :first_name, :last_name, to: :convict_informations, allow_nil: true
+  delegate :first_name, :last_name, to: :convict_information, allow_nil: true
   delegate :id, :first_name, :last_name, :phone, :email, :organization_name,
     :share_email_to_convict, :share_phone_to_convict,
     to: :agent, prefix: true, allow_nil: true

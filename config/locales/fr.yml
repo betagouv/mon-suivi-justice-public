@@ -189,8 +189,9 @@ fr:
       index_link: Retour à la liste
   agents:
     show:
-      organization_title: "Nom du service"
-      full_name_title: "Mon CPIP référent"
-      phone_title: "Numéro de téléphone"
-      email_title: "Email"
-      no_cpip: "Aucun CPIP référent n'est affecté à mon suivi pour l'instant"
+      title: Les coordonnées de mes interlocuteurs
+      organization_title: Nom du service
+      full_name_title: Mon CPIP référent
+      phone_title: Numéro de téléphone
+      email_title: Email
+      no_cpip: Vous êtes bien suivi par votre SPIP mais aucun CPIP référent ne vous a été affecté pour l'instant
