@@ -35,7 +35,7 @@ RSpec.feature "Agent", type: :feature do
       it "displays the correct content" do
         visit agent_path
 
-        expect(page).to have_content("Aucun CPIP référent n'est affecté à mon suivi pour l'instant")
+        expect(page).to have_content("Vous êtes bien suivi par votre SPIP mais aucun CPIP référent ne vous a été affecté pour l'instant")
       end
     end
   end
