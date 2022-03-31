@@ -202,7 +202,7 @@ GEM
       activesupport (>= 3.0)
       phony (>= 2.18.12)
     public_suffix (4.0.6)
-    puma (5.6.2)
+    puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
