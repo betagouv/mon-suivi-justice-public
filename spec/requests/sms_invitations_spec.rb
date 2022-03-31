@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Sms Invitation", type: :request do
   let(:headers) do
-    {Authorization: ActionController::HttpAuthentication::Basic.encode_credentials(Rails.application.credentials.dig(:http_basic_auth, :username), Rails.application.credentials.dig(:http_basic_auth, :password))}
+    {Authorization: ActionController::HttpAuthentication::Basic.encode_credentials("username", "password")}
   end
   let(:path) { sms_invitations_path }
   let(:params) { {phone: "+33666666666", msj_id: "1"} }
