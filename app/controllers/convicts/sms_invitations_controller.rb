@@ -3,8 +3,8 @@ module Convicts
     skip_before_action :authenticate_convict!
     skip_before_action :verify_authenticity_token
 
-    # include ActionController::HttpAuthentication::Basic::ControllerMethods
-    # http_basic_authenticate_with name: "username", password: "password"
+    include ActionController::HttpAuthentication::Basic::ControllerMethods
+    http_basic_authenticate_with name: Rails.application.credentials.dig(:http_basic_auth, :username), password: Rails.application.credentials.dig(:http_basic_auth, :password)
 
     def create
       convict = Convict.find_by(msj_id: params[:msj_id])

@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Sms Invitation", type: :request do
   let(:headers) do
-    {Authorization: ActionController::HttpAuthentication::Basic.encode_credentials("username", "password")}
+    {Authorization: ActionController::HttpAuthentication::Basic.encode_credentials(Rails.application.credentials.dig(:http_basic_auth, :username), Rails.application.credentials.dig(:http_basic_auth, :password))}
   end
   let(:path) { sms_invitations_path }
   let(:params) { {phone: "+33666666666", msj_id: "1"} }
@@ -20,7 +20,7 @@ RSpec.describe "Sms Invitation", type: :request do
       end
 
       it "sends an SMS invitation" do
-        VCR.use_cassette("send_in_blue/invitation", serialize_with: :json) do |cassette|
+        VCR.use_cassette("send_in_blue/invitation", serialize_with: :json, record: :new_episodes) do |cassette|
           do_request
           result = JSON.parse(cassette.send(:raw_cassette_bytes), object_class: OpenStruct).http_interactions.first
           request_body = JSON.parse(result.request.body.string, object_class: OpenStruct)
@@ -38,7 +38,7 @@ RSpec.describe "Sms Invitation", type: :request do
       end
 
       it "sends an SMS invitation" do
-        VCR.use_cassette("send_in_blue/invitation_reminder", serialize_with: :json) do |cassette|
+        VCR.use_cassette("send_in_blue/invitation_reminder", serialize_with: :json, record: :new_episodes) do |cassette|
           do_request
           result = JSON.parse(cassette.send(:raw_cassette_bytes), object_class: OpenStruct).http_interactions.first
           request_body = JSON.parse(result.request.body.string, object_class: OpenStruct)
