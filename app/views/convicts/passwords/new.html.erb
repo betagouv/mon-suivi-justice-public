@@ -1,16 +1,14 @@
-<h2><%= t('.forgot_your_password') %></h2>
+<div class="fr-container fr-py-6w px-12 lg:px-72">
+  <h2><%= t('.forgot_your_password') %></h2>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= render "convicts/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+    <%= f.label :phone, class: "fr-label" %>
+    <%= f.phone_field :phone, autocomplete: "tel", class: "fr-input mb-6" %>
 
-  <div class="actions">
-    <%= f.submit t('.send_me_reset_password_instructions') %>
-  </div>
-<% end %>
+    <%= f.submit t('.send_me_reset_password_instructions'), class: "fr-btn mb-4" %>
+  <% end %>
 
-<%= render "convicts/shared/links" %>
+  <%= render "convicts/shared/links" %>
+</div>
