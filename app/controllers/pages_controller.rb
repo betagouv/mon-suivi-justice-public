@@ -57,10 +57,10 @@ class PagesController < Spina::ApplicationController
   def preparer_spip75
   end
 
-  def preparer_tj_paris
+  def preparer_sap_paris
   end
 
-  def preparer_tj_angers
+  def preparer_sap_angers
   end
 
   def preparer_spip49
