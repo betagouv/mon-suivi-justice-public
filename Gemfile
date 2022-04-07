@@ -40,6 +40,7 @@ gem "devise_invitable", "~> 2.0", ">= 2.0.6"
 
 gem "sib-api-v3-sdk", "~> 8.1"
 
+gem "sidekiq-failures", "~> 1.0", ">= 1.0.1"
 gem "sidekiq", "~> 6.4"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]

@@ -25,6 +25,7 @@ module MonSuiviJusticePublic
 
     config.exceptions_app = routes
 
+    config.active_job.queue_adapter = :sidekiq
     # Permet d'utiliser NGROK en local
     # config.hosts << "f997-77-144-80-156.ngrok.io"
 

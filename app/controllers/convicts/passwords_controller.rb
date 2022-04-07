@@ -3,11 +3,11 @@
 class Convicts::PasswordsController < Devise::PasswordsController
   def create
     @convict = Convict.find_by(phone: PhonyRails.normalize_number(params.dig(:convict, :phone), country_code: "FR"))
-    redirect_to root_path, alert: t('.no_convict') and return unless @convict
+    redirect_to root_path, alert: t(".no_convict") and return unless @convict
     raw, hashed = Devise.token_generator.generate(Convict, :reset_password_token)
     @convict.update(reset_password_token: hashed, reset_password_sent_at: Time.zone.now)
-    SmsSenderJob.perform_now(sms_params(@convict, raw))
-    redirect_to root_path, notice: t('.notice')
+    SmsSenderJob.perform_later(sms_params(@convict, raw))
+    redirect_to root_path, notice: t(".notice")
   end
 
   private

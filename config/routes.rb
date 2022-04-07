@@ -2,11 +2,16 @@ Rails.application.routes.draw do
   mount Spina::Engine => "/"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  devise_for :convicts, controllers: { passwords: 'convicts/passwords' }
+  devise_for :convicts, controllers: {passwords: "convicts/passwords"}
 
   # Defines the root path route ("/")
   unauthenticated do
     root "pages#landing"
+  end
+
+  require "sidekiq/web"
+  authenticate :convict, ->(convict) { convict.admin? } do
+    mount Sidekiq::Web => "/sidekiq"
   end
 
   authenticated :convict do
