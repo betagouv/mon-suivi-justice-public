@@ -16,9 +16,7 @@ module Convicts
           skip_invitation: true)
         type = "content"
       end
-      transac_sms = SibApiV3Sdk::SendTransacSms.new(sms_params(convict, type))
-      api_instance = SibApiV3Sdk::TransactionalSMSApi.new
-      api_instance.send_transac_sms(transac_sms)
+      SmsSenderJob.perform_later(sms_params(convict, type))
       head :ok
     end
 

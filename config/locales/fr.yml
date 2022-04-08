@@ -99,18 +99,8 @@ fr:
       unauthenticated: Vous devez vous connecter ou vous enregistrer pour continuer.
       unconfirmed: Vous devez confirmer votre compte par email.
       invited: "Vous avez une invitation en attente, acceptez-la pour terminer la création de votre compte."
-    mailer:
-      password_change:
-        greeting: Bonjour %{recipient} !
-        message: Nous vous contactons pour vous notifier que votre mot de passe a été modifié.
-        subject: Mot de passe modifié
-      reset_password_instructions:
-        action: Changer mon mot de passe
-        greeting: Bonjour %{recipient} !
-        instruction: 'Quelqu''un a demandé un lien pour changer votre mot de passe, le voici :'
-        instruction_2: Si vous n'avez pas émis cette demande, merci d'ignorer cet email.
-        instruction_3: Votre mot de passe ne changera pas tant que vous n'aurez pas cliqué sur ce lien et renseigné un nouveau mot de passe.
-        subject: Instructions pour changer le mot de passe
+    password_forgotten:
+      sms_content: "Bonjour, quelqu'un a demandé à modifier votre mot de passe sur Mon Suivi Justice. Pour effectuer ce changement, cliquez sur le lien suivant : %{link}"
     sms_invitations:
       reminder_content: "Bonjour, votre compte Mon Suivi Justice vous attend toujours. Pour y accéder et suivre vos rendez-vous justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
       content: "Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos rendez-vous justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
@@ -126,11 +116,14 @@ fr:
         legend: Envoyer l’invitation
         submit_button: Envoyer
       edit:
-        header: Confirmation
+        header: Choisissez votre mot de passe
         submit_button: Confirmer
         new_password: Mot de passe
         new_password_confirmation: Not de passe confirmation
     passwords:
+      create:
+        no_convict: "Aucun n'utilisateur n'a ce numéro de téléphone"
+        notice: "Un SMS avec un lien de réinitialisation de votre mot de passe vous a été envoyé"
       edit:
         change_my_password: Changer mon mot de passe
         change_your_password: Changer votre mot de passe

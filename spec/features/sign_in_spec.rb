@@ -4,7 +4,7 @@ RSpec.feature "Sign In", type: :feature do
   with_env("MSJ_API_URL", "https://agents.mon-suivi-justice.incubateur.net/api/v1")
 
   let!(:convict) do
-    FactoryBot.create(:convict, phone: "+33666666666", password: "password", password_confirmation: "password")
+    FactoryBot.create(:convict, phone: "+33666666666", password: "exampleE1.", password_confirmation: "exampleE1.")
   end
 
   around do |example|
@@ -15,7 +15,7 @@ RSpec.feature "Sign In", type: :feature do
     visit new_convict_session_path
 
     fill_in "convict_phone", with: "+33666666666"
-    fill_in "convict_password", with: "password"
+    fill_in "convict_password", with: "exampleE1."
     click_button "Se connecter"
     expect(page).to have_content("Connecté")
     expect(page).to have_content("Vos rendez-vous")
@@ -25,7 +25,7 @@ RSpec.feature "Sign In", type: :feature do
     visit new_convict_session_path
 
     fill_in "convict_phone", with: "0666666666"
-    fill_in "convict_password", with: "password"
+    fill_in "convict_password", with: "exampleE1."
     click_button "Se connecter"
     expect(page).to have_content("Connecté")
     expect(page).to have_content("Vos rendez-vous")
@@ -35,7 +35,7 @@ RSpec.feature "Sign In", type: :feature do
     visit new_convict_session_path
 
     fill_in "convict_phone", with: "06 66 66 66 66"
-    fill_in "convict_password", with: "password"
+    fill_in "convict_password", with: "exampleE1."
     click_button "Se connecter"
     expect(page).to have_content("Connecté")
     expect(page).to have_content("Vos rendez-vous")
@@ -45,7 +45,7 @@ RSpec.feature "Sign In", type: :feature do
     visit new_convict_session_path
 
     fill_in "convict_phone", with: "+33666666667"
-    fill_in "convict_password", with: "password"
+    fill_in "convict_password", with: "exampleE1."
     click_button "Se connecter"
     expect(page).to have_content("Numéro de téléphone ou mot de passe incorrect")
   end
