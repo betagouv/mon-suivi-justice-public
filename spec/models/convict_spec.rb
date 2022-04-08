@@ -9,7 +9,7 @@ RSpec.describe Convict, type: :model do
     it { should validate_presence_of(:phone) }
     it { should validate_uniqueness_of(:phone).case_insensitive }
 
-    it 'should validate password format' do
+    it "should validate password format" do
       convict = Convict.new(password: "example")
       expect(convict).to be_invalid
       expect(convict.errors.messages[:password]).to include("est trop court (au moins 10 caractères)")
