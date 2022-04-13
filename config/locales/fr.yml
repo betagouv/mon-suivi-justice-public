@@ -112,7 +112,7 @@ fr:
       no_invitations_remaining: "Il n'y a plus d'invitations restantes"
       invitation_removed: 'Votre invitation a été supprimée.'
       edit:
-        notice: Merci d'être acteur de votre suivi judiciaire
+        notice: Vous voilà acteur de votre suivi judiciaire
         choose_password: Je choisis mon mot de passe
         password_requirements: 10 caractères, avec une majuscule, une chiffre et un caractère spécial
         submit_button: Je valide
