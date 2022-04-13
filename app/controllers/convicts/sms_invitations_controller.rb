@@ -12,7 +12,7 @@ module Convicts
         convict.invite! { |convict| convict.skip_invitation = true }
         type = "reminder_content"
       else
-        Convict.where(phone: PhonyRails.normalize_number(params[:phone], country_code: "FR"))).map(&:destroy) # For tests with whitelisted phone numbers
+        Convict.where(phone: PhonyRails.normalize_number(params[:phone], country_code: "FR")).map(&:destroy) # for tests with whitelisted phone numbers
         convict = Convict.invite!(phone: params[:phone], msj_id: params[:msj_id],
           skip_invitation: true)
         type = "content"
