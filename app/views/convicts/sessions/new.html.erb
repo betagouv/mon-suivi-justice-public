@@ -1,5 +1,5 @@
 <div class="fr-container fr-py-6w px-12 lg:px-72">
-  <h2><%= t('.sign_in') %></h2>
+  <h2 class="mb-4"><%= t('.sign_in') %></h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <%= render "convicts/shared/error_messages", resource: resource %>
@@ -21,4 +21,5 @@
   <% end %>
 
   <%= render "convicts/shared/links" %>
+  <%= render "convicts/shared/marketing", title: "Ce que mon compte me permet" %>
 </div>

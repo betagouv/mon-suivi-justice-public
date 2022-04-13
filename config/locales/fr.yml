@@ -111,27 +111,25 @@ fr:
       updated_not_active: "Votre mot de passe a été défini avec succès."
       no_invitations_remaining: "Il n'y a plus d'invitations restantes"
       invitation_removed: 'Votre invitation a été supprimée.'
-      new:
-        header: Nouvel utilisateur
-        legend: Envoyer l’invitation
-        submit_button: Envoyer
       edit:
-        header: Choisissez votre mot de passe
-        submit_button: Confirmer
+        notice: Merci d'être acteur de votre suivi judiciaire
+        choose_password: Je choisis mon mot de passe
+        password_requirements: 10 caractères, avec une majuscule, une chiffre et un caractère spécial
+        submit_button: Je valide
         new_password: Mot de passe
-        new_password_confirmation: Not de passe confirmation
+        new_password_confirmation: Confirmation du mot de passe
+        marketing_title: Mon compte est désormais actif
     passwords:
       create:
         no_convict: "Aucun n'utilisateur n'a ce numéro de téléphone"
         notice: "Un SMS avec un lien de réinitialisation de votre mot de passe vous a été envoyé"
       edit:
         change_my_password: Changer mon mot de passe
-        change_your_password: Changer votre mot de passe
-        confirm_new_password: Confirmez votre nouveau mot de passe
-        new_password: Nouveau mot de passe
+        confirm_new_password: Confirmez mon nouveau mot de passe
+        new_password: Choisir un nouveau mot de passe
       new:
-        forgot_your_password: Mot de passe oublié ?
-        send_me_reset_password_instructions: Envoyez-moi des instructions pour réinitialiser mon mot de passe
+        forgot_your_password: J'ai oublié mon mot de passe ?
+        send_me_reset_password_instructions: Réinitialiser mon mot de passe
       no_token: Vous ne pouvez pas accéder à cette page si vous n’y accédez pas depuis un email de réinitialisation de mot de passe. Si vous venez en effet d’un tel email, vérifiez que vous avez copié l’adresse URL en entier.
       send_instructions: Vous allez recevoir sous quelques minutes un email vous indiquant comment réinitialiser votre mot de passe.
       send_paranoid_instructions: Si votre email existe dans notre base de données, vous recevrez un lien vous permettant de récupérer votre mot de passe.
@@ -140,15 +138,20 @@ fr:
     sessions:
       already_signed_out: Déconnecté(e).
       new:
-        sign_in: Se connecter
+        sign_in: Je me connecte
       signed_in: Connecté(e).
       signed_out: Déconnecté(e).
     shared:
+      marketing:
+        appointments: Je peux suivre mes rendez-vous
+        contacts: Je peux contacter mes interlocuteurs
+        data: Mes données personnelles sont protégées
+        data_content_html: "Nous accordons une attention toute particulière au respect de vos données personnelles. Pour en savoir plus, <a target='_blank' href='/donnees_personnelles'>cliquez ici</a>"
       links:
         back: Retour
         didn_t_receive_confirmation_instructions: Vous n'avez pas reçu l'email de confirmation ?
         didn_t_receive_unlock_instructions: Vous n'avez pas reçu l'email de déblocage ?
-        forgot_your_password: Mot de passe oublié ?
+        forgot_your_password: J'ai oublié mon mot de passe ?
         sign_in: Connexion
         sign_in_with_provider: Connexion avec %{provider}
         sign_up: Inscription
