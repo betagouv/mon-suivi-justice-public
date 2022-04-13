@@ -16,7 +16,7 @@ RSpec.feature "Sign In", type: :feature do
 
     fill_in "convict_phone", with: "+33666666666"
     fill_in "convict_password", with: "exampleE1."
-    click_button "Se connecter"
+    click_button "Je me connecte"
     expect(page).to have_content("Connecté")
     expect(page).to have_content("Vos rendez-vous")
   end
@@ -26,7 +26,7 @@ RSpec.feature "Sign In", type: :feature do
 
     fill_in "convict_phone", with: "0666666666"
     fill_in "convict_password", with: "exampleE1."
-    click_button "Se connecter"
+    click_button "Je me connecte"
     expect(page).to have_content("Connecté")
     expect(page).to have_content("Vos rendez-vous")
   end
@@ -36,7 +36,7 @@ RSpec.feature "Sign In", type: :feature do
 
     fill_in "convict_phone", with: "06 66 66 66 66"
     fill_in "convict_password", with: "exampleE1."
-    click_button "Se connecter"
+    click_button "Je me connecte"
     expect(page).to have_content("Connecté")
     expect(page).to have_content("Vos rendez-vous")
   end
@@ -46,7 +46,7 @@ RSpec.feature "Sign In", type: :feature do
 
     fill_in "convict_phone", with: "+33666666667"
     fill_in "convict_password", with: "exampleE1."
-    click_button "Se connecter"
+    click_button "Je me connecte"
     expect(page).to have_content("Numéro de téléphone ou mot de passe incorrect")
   end
 end

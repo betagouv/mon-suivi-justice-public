@@ -13,7 +13,7 @@ RSpec.feature "Password", type: :feature do
 
       fill_in "convict_phone", with: "+33666666666"
 
-      expect { click_button "Envoyez-moi des instructions pour réinitialiser mon mot de passe" }.to have_enqueued_job(SmsSenderJob).once
+      expect { click_button "Réinitialiser mon mot de passe" }.to have_enqueued_job(SmsSenderJob).once
       expect(page).to have_content("Un SMS avec un lien de réinitialisation de votre mot de passe vous a été envoyé")
     end
   end
