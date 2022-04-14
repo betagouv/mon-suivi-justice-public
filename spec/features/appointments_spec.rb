@@ -49,5 +49,15 @@ RSpec.feature "Appointments", type: :feature do
       expect(page).to have_content("Planifié")
       expect(page).to have_content("RDV de suivi SPIP")
     end
+
+    it "displays the correct content when address should not be displayed" do
+      visit appointment_path(convict.future_appointments.last.id)
+
+      expect(page).to have_content("Dans 110 jours")
+      expect(page).to have_content("Lundi 25 avril 2022 à 11h00")
+      expect(page).not_to have_content("1 rue de la Poste, 05100 Briançon")
+      expect(page).to have_content("Planifié")
+      expect(page).to have_content("RDV de suivi SPIP")
+    end
   end
 end

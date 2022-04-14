@@ -28,7 +28,8 @@ class Convict < ApplicationRecord
         origin_department: appointment.origin_department,
         place:, organization_name: appointment.organization_name,
         agenda_name: appointment.agenda_name,
-        appointment_type: appointment.appointment_type_name)
+        appointment_type: appointment.appointment_type_name,
+        display_address: appointment.display_address)
     end
   end
 

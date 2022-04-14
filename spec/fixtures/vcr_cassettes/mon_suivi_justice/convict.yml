@@ -56,13 +56,13 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"id":944,"first_name":"Super","last_name":"Convict","phone":"+33666666666","agent":{"id":1,"first_name":"Meilleure","last_name":"CPIP","phone":"+33777777777","email":"cpip@justice.fr","organization_name":"SPIP
-        A","share_email_to_convict":false,"share_phone_to_convict":true,"role":"CPIP"},"appointments":[{"id":1,"datetime":"2021-12-20T14:00:00.000+01:00","duration":45,"state":"Manqué","origin_department":"BEX","place":{"name":"SPIP
+        A","share_email_to_convict":false,"share_phone_to_convict":true,"role":"CPIP"},"appointments":[{"id":1,"datetime":"2021-12-20T14:00:00.000+01:00","duration":45,"state":"Manqué","origin_department":"BEX","display_address":true,"place":{"name":"SPIP
         A","adress":"1 rue de la Poste, 05100 Briançon","phone":"+33888888888","email":"contact@spip.fr","contact_method":"phone"},"organization_name":"SPIP
-        A","agenda_name":"SPIP A","appointment_type_name":"Sortie d''audience SPIP"},{"id":2,"datetime":"2022-03-01T10:00:00.000+01:00","duration":15,"state":"Planifié","origin_department":"BEX","place":{"name":"SPIP
+        A","agenda_name":"SPIP A","appointment_type_name":"Sortie d''audience SPIP"},{"id":2,"datetime":"2022-03-01T10:00:00.000+01:00","duration":15,"display_address":true,"state":"Planifié","origin_department":"BEX","place":{"name":"SPIP
         A","adress":"1 rue de la Poste, 05100 Briançon","phone":"+33888888888","email":"contact@spip.fr","contact_method":"phone"},"organization_name":"SPIP
-        A","agenda_name":"SPIP A","appointment_type_name":"RDV de suivi SPIP"},{"id":7587,"datetime":"2022-04-25T11:00:00.000+01:00","duration":30,"state":"Planifié","origin_department":"BEX","place":{"name":"SPIP
+        A","agenda_name":"SPIP A","appointment_type_name":"RDV de suivi SPIP"},{"id":7587,"datetime":"2022-04-25T11:00:00.000+01:00","duration":30,"display_address":false,"state":"Planifié","origin_department":"BEX","place":{"name":"SPIP
         A","adress":"1 rue de la Poste, 05100 Briançon","phone":"+33888888888","email":"contact@spip.fr","contact_method":"phone"},"organization_name":"SPIP
-        A","agenda_name":"SPIP A","appointment_type_name":"RDV de suivi SPIP"},{"id":4,"datetime":"2022-06-20T14:00:00.000+01:00","duration":45,"state":"Annulé","origin_department":"BEX","place":{"name":"SPIP
+        A","agenda_name":"SPIP A","appointment_type_name":"RDV de suivi SPIP"},{"id":4,"datetime":"2022-06-20T14:00:00.000+01:00","display_address":true,"duration":45,"state":"Annulé","origin_department":"BEX","place":{"name":"SPIP
         A","adress":"1 rue de la Poste, 05100 Briançon","phone":"+33888888888","email":"contact@spip.fr","contact_method":"phone"},"organization_name":"SPIP
         A","agenda_name":"SPIP A","appointment_type_name":"Sortie d''audience SPIP"}]}'
   recorded_at: Fri, 11 Mar 2022 17:25:21 GMT
