@@ -23,8 +23,8 @@
           <% if @appointment.display_address %>
             <p class="text-sm font-bold mb-0"><%= @appointment.place_address %></p>
             <p class="text-sm font-bold mb-0"><%= @appointment.place_contact %></p>
+            <%= link_to t('.map_link'), @appointment.place_map_link, target: "_blank", class: "font-bold text-xs text-msj-blue mt-1" %>
           <% end %>
-          <%= link_to t('.map_link'), @appointment.place_map_link, target: "_blank", class: "font-bold text-xs text-msj-blue mt-1" %>
         </div>
       </div>
     </div>
