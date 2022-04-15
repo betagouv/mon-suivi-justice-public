@@ -100,10 +100,10 @@ fr:
       unconfirmed: Vous devez confirmer votre compte par email.
       invited: "Vous avez une invitation en attente, acceptez-la pour terminer la création de votre compte."
     password_forgotten:
-      sms_content: "Bonjour, quelqu'un a demandé à modifier votre mot de passe sur Mon Suivi Justice. Pour effectuer ce changement, cliquez sur le lien suivant : %{link}"
+      sms_content: "Bonjour, vous avez demandé à modifier votre mot de passe sur Mon suivi Justice. Pour effectuer ce changement, cliquez sur le lien suivant : %{link}"
     sms_invitations:
       reminder_content: "Bonjour, votre compte Mon Suivi Justice vous attend toujours. Pour y accéder et suivre vos rendez-vous justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
-      content: "Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos rendez-vous justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
+      content: "Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos rendez-vous avec la Justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
     invitations:
       send_instructions: "Un e-mail d'invitation a été envoyé à %{email}."
       invitation_token_invalid: "Le jeton d'invitation fourni n'est pas valide!"
