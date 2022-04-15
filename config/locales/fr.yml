@@ -146,7 +146,7 @@ fr:
         appointments: Je peux suivre mes rendez-vous
         contacts: Je peux contacter mes interlocuteurs
         data: Mes données personnelles sont protégées
-        data_content_html: "Nous accordons une attention toute particulière au respect de vos données personnelles. Pour en savoir plus, <a target='_blank' href='/donnees_personnelles'>cliquez ici</a>"
+        data_content_html: "La présente interface est à l’initiative du Ministère de la Justice. Le respect de vos droits et de votre vie privée est une priorité. Pour plus d’informations sur l’utilisation de vos données personnelles, vous pouvez vous rendre sur <a target='_blank' href='/donnees_personnelles'>la page dédiée</a>"
       links:
         back: Retour
         didn_t_receive_confirmation_instructions: Vous n'avez pas reçu l'email de confirmation ?
