@@ -12,6 +12,6 @@
         <%= link_to l(appointment.datetime, format: :clear).capitalize, appointment_path(appointment.id), class: "fr-card__link" %>
       </h4>
     <% end %>
-    <p class="fr-card__desc text-sm text-gray-700 mb-0"><%= appointment.place_name %></p>
+    <p class="fr-card__desc text-sm text-gray-700 mb-0"><%= appointment.place_human_name %></p>
   </div>
 </li>
