@@ -10,4 +10,10 @@ class Place
   def contact
     contact_method == "phone" ? phone : email
   end
+
+  def human_name
+    return "Votre domicile" if name.include?("domicile")
+
+    name
+  end
 end
