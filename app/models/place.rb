@@ -12,7 +12,7 @@ class Place
   end
 
   def human_name
-    return "Votre domicile" if name.include?("domicile")
+    return "Votre domicile" if name&.downcase&.include?("domicile")
 
     name
   end
