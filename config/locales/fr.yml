@@ -22,8 +22,8 @@ fr:
       not_found: n’a pas été trouvé(e)
       not_locked: n’était pas verrouillé(e)
       not_saved:
-        one: 'une erreur a empêché ce (cet ou cette) %{resource} d’être enregistré(e) :'
-        other: "%{count} erreurs ont empêché ce (cet ou cette) %{resource} d’être enregistré(e) :"
+        one: 'une erreur a empêché ce %{resource} d’être enregistré(e) :'
+        other: "%{count} erreurs ont empêché ce %{resource} d’être enregistré(e) :"
   activerecord:
     attributes:
       convict:
@@ -52,7 +52,7 @@ fr:
         unlock_token: Clé de déverrouillage
         updated_at: Date de mise à jour
     models:
-      convict: PPSMJ
+      convict: Compte
   shared:
     public:
       header:
