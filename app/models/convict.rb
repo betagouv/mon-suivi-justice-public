@@ -9,6 +9,8 @@ class Convict < ApplicationRecord
 
   validates :msj_id, presence: true, uniqueness: true
 
+  after_invitation_accepted :notify_msj_for_access
+
   delegate :first_name, :last_name, to: :convict_information, allow_nil: true
   delegate :id, :first_name, :last_name, :phone, :email, :organization_name,
     :share_email_to_convict, :share_phone_to_convict,
@@ -82,5 +84,11 @@ class Convict < ApplicationRecord
 
   def email_required?
     false
+  end
+
+  private
+
+  def notify_msj_for_access
+    NotifyMsjForAccessJob.perform_now(id)
   end
 end
