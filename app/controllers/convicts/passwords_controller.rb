@@ -4,6 +4,7 @@ class Convicts::PasswordsController < Devise::PasswordsController
   def create
     @convict = Convict.find_by(phone: PhonyRails.normalize_number(params.dig(:convict, :phone), country_code: "FR"))
     redirect_to root_path, alert: t(".no_convict") and return unless @convict
+    # Generate token by hand to send via SMS and not use Devise default email
     raw, hashed = Devise.token_generator.generate(Convict, :reset_password_token)
     @convict.update(reset_password_token: hashed, reset_password_sent_at: Time.zone.now)
     SmsSenderJob.perform_later(sms_params(@convict, raw))

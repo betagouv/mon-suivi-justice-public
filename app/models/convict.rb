@@ -89,6 +89,6 @@ class Convict < ApplicationRecord
   private
 
   def notify_msj_for_access
-    NotifyMsjForAccessJob.perform_now(id)
+    NotifyMsjForAccessJob.perform_later(id)
   end
 end
