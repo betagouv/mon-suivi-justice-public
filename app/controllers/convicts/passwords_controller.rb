@@ -7,7 +7,7 @@ class Convicts::PasswordsController < Devise::PasswordsController
     # Generate token by hand to send via SMS and not use Devise default email
     raw, hashed = Devise.token_generator.generate(Convict, :reset_password_token)
     @convict.update(reset_password_token: hashed, reset_password_sent_at: Time.zone.now)
-    SmsSenderJob.perform_later(sms_params(@convict, raw))
+    SmsSenderJob.perform_now(sms_params(@convict, raw))
     redirect_to root_path, notice: t(".notice")
   end
 
@@ -17,7 +17,8 @@ class Convicts::PasswordsController < Devise::PasswordsController
     {
       sender: "RDVJustice",
       recipient: convict.phone,
-      content: I18n.t("convicts.password_forgotten.sms_content", link: helpers.edit_password_url(convict, reset_password_token: raw_token))
+      content: I18n.t("convicts.password_forgotten.sms_content", link: helpers.edit_password_url(convict, reset_password_token: raw_token)),
+      webUrl: "https://820b-2a01-e34-ec77-7c30-4df4-5063-ae00-15c1.ngrok.io/sms_webhook"
     }
   end
 end

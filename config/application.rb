@@ -27,7 +27,7 @@ module MonSuiviJusticePublic
 
     config.active_job.queue_adapter = :sidekiq
     # Permet d'utiliser NGROK en local
-    # config.hosts << "f997-77-144-80-156.ngrok.io"
+    config.hosts << "820b-2a01-e34-ec77-7c30-4df4-5063-ae00-15c1.ngrok.io"
 
     # Configuration for the application, engines, and railties goes here.
     #
