@@ -1,4 +1,4 @@
-* Ajouter une page Préparer son rdv
+# Ajouter une page Préparer son rdv
 
 1. Ajouter un test dans le fichier `spec/requests/pages_spec.rb`
 2. Ajouter l'image d'illustration dans le dossier `frontend/images` (si nécessaire la réduire en taille pour obtenir un poids de fichier raisonnable)
