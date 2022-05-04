@@ -43,6 +43,7 @@ Rails.application.routes.draw do
     get :preparer_sap_paris
     get :preparer_sap_angers
     get :preparer_sap_thionville
+    get :preparer_sap_mulhouse
     get :preparer_spip49
     get :investir_ma_reinsertion
     get :ma_reinsertion_hauts_de_seine
