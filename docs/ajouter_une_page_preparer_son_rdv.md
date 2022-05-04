@@ -8,3 +8,5 @@
 6. Modifier le fichier `config/initializer/themes/default.rb` :
   - Ajouter une ligne dans le bloc `theme.view_templates`
   - Ajouter une ligne dans le bloc `theme.custom_pages`
+7. Déployer staging et production
+8. Lancer la tache `$ rake spina:bootstrap` dans les consoles bash de la staging et de la production.
