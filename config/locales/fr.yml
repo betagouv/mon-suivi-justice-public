@@ -82,8 +82,10 @@ fr:
       logo_title: Accueil - Ministère de la justice - Mon Suivi Justice
       public_root_link: Revenir au site public
       agent_show_link: Mes interlocuteurs
+      convict_show_link: Mon compte
     footer:
       appointments: Mes rendez-vous
+      account: Mon compte
       agent_info: Mes interlocuteurs
     staging_alert:
       title: "Attention: vous êtes sur le site de Staging"
@@ -193,3 +195,8 @@ fr:
       phone_title: Numéro de téléphone
       email_title: Email
       no_cpip: Vous êtes bien suivi par votre SPIP mais aucun CPIP référent ne vous a été affecté pour l'instant
+  convicts:
+    show:
+      title: Mes informations personnelles
+      full_name_title: Nom
+      phone_title: Numéro de téléphone
