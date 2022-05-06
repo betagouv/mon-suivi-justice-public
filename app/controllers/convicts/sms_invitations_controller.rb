@@ -28,7 +28,7 @@ module Convicts
         sender: "RDVJustice",
         recipient: convict.phone,
         content: I18n.t("convicts.sms_invitations.#{type}", link: helpers.accept_convict_invitation_url(invitation_token: convict.raw_invitation_token)),
-        webUrl: "https://820b-2a01-e34-ec77-7c30-4df4-5063-ae00-15c1.ngrok.io/sms_webhook"
+        webUrl: sms_webhook_url
       }
     end
   end

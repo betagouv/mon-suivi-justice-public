@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_07_135415) do
+ActiveRecord::Schema.define(version: 2022_05_06_133439) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -308,6 +308,15 @@ ActiveRecord::Schema.define(version: 2022_04_07_135415) do
     t.datetime "last_logged_in"
     t.string "password_reset_token"
     t.datetime "password_reset_sent_at"
+  end
+
+  create_table "text_messages", force: :cascade do |t|
+    t.string "message_id", null: false
+    t.text "content", null: false
+    t.string "phone"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["message_id"], name: "index_text_messages_on_message_id", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
