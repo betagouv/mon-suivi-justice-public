@@ -1,8 +1,8 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe TextMessage, type: :model do
-  describe 'Validations' do
-    subject { TextMessage.new(message_id: '123', content: 'Youpi') }
+  describe "Validations" do
+    subject { TextMessage.new(message_id: "123", content: "Youpi") }
 
     it { should validate_presence_of(:content) }
     it { should validate_presence_of(:message_id) }

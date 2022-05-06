@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   resource :agent, only: %i[show]
 
   resource :sms_invitations, only: %i[create], controller: "convicts/sms_invitations"
-  post :sms_webhook, to: 'convicts/sms_webhooks#receive'
+  post :sms_webhook, to: "convicts/sms_webhooks#receive"
 
   scope controller: :pages do
     get :landing
