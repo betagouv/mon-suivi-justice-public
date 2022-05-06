@@ -24,6 +24,9 @@ class PagesController < Spina::ApplicationController
   def obligations_personnelles
   end
 
+  def mes_interlocuteurs
+  end
+
   def sursis_probatoire
   end
 

@@ -30,6 +30,7 @@ Rails.application.routes.draw do
     get :peine_emprisonnement
     get :regles_essentielles
     get :obligations_personnelles
+    get :mes_interlocuteurs
     get :sursis_probatoire
     get :travail_interet_general
     get :suivi_socio_judiciaire
