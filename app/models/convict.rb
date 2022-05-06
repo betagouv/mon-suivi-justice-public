@@ -48,6 +48,10 @@ class Convict < ApplicationRecord
         share_phone_to_convict: convict_information.agent.share_phone_to_convict)
   end
 
+  def full_name
+    "#{first_name} #{last_name}".titleize
+  end
+
   def active_appointments
     @active_appointments ||= appointments.reject(&:canceled?)
   end
