@@ -17,7 +17,8 @@ class Convicts::PasswordsController < Devise::PasswordsController
     {
       sender: "RDVJustice",
       recipient: convict.phone,
-      content: I18n.t("convicts.password_forgotten.sms_content", link: helpers.edit_password_url(convict, reset_password_token: raw_token))
+      content: I18n.t("convicts.password_forgotten.sms_content", link: helpers.edit_password_url(convict, reset_password_token: raw_token)),
+      webUrl: sms_webhook_url
     }
   end
 end
