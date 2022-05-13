@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Sms Invitation", type: :request do
+RSpec.describe "Convicts", type: :request do
   let(:headers) do
     {Authorization: ActionController::HttpAuthentication::Basic.encode_credentials("username", "password")}
   end
