@@ -72,6 +72,9 @@ class PagesController < Spina::ApplicationController
   def preparer_sap_mulhouse
   end
 
+  def preparer_sap_reims
+  end
+
   def preparer_spip49
   end
 
