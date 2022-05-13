@@ -6,7 +6,7 @@ RSpec.describe "Sms Invitation", type: :request do
   end
 
   describe "DELETE /destroy" do
-    let(:path) { '/convicts/1' }
+    let(:path) { "/convicts/1" }
     let(:do_request) { delete(path.to_s, headers:) }
 
     before do
