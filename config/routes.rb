@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   resources :appointments, only: %i[show index]
   resource :agent, only: %i[show]
   resource :convict, only: %i[show]
+  resources :convicts, only: %i[destroy]
 
   resource :sms_invitations, only: %i[create], controller: "convicts/sms_invitations"
 
