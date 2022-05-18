@@ -60,6 +60,9 @@ class PagesController < Spina::ApplicationController
   def preparer_spip75
   end
 
+  def preparer_spip32
+  end
+
   def preparer_sap_paris
   end
 
