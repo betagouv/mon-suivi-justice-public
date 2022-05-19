@@ -29,6 +29,17 @@
         </div>
       </div>
     <% end %>
+
+    <%= link_to mes_interlocuteurs_path, class: 'comprendre-ma-peine-large-tile fr-mb-4w' do %>
+      <div class='comprendre-ma-peine-large-tiles-icon'><%= image_pack_tag 'media/images/target.svg' %></div>
+      <div class='comprendre-ma-peine-large-tiles-content'>
+        <div class='comprendre-ma-peine-large-tiles-chevron'><%= image_pack_tag 'media/images/chevron.svg' %></div>
+        <div class='comprendre-ma-peine-large-tiles-text-container'>
+          <div class='comprendre-ma-peine-large-tiles-title'><%= content(:card3_title) %></div>
+          <div class='comprendre-ma-peine-large-tiles-text'><%= content(:card3_text) %></div>
+        </div>
+      </div>
+    <% end %>
   </div>
 
   <h2 class='fr-mt-2w fr-mb-4w'><%= content(:secondary_subtitle) %></h2>

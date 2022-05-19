@@ -27,7 +27,8 @@ module Convicts
       {
         sender: "RDVJustice",
         recipient: convict.phone,
-        content: I18n.t("convicts.sms_invitations.#{type}", link: helpers.accept_convict_invitation_url(invitation_token: convict.raw_invitation_token))
+        content: I18n.t("convicts.sms_invitations.#{type}", link: helpers.accept_convict_invitation_url(invitation_token: convict.raw_invitation_token)),
+        webUrl: sms_webhook_url
       }
     end
   end

@@ -82,12 +82,18 @@ fr:
       logo_title: Accueil - Ministère de la justice - Mon Suivi Justice
       public_root_link: Revenir au site public
       agent_show_link: Mes interlocuteurs
+      convict_show_link: Mon compte
     footer:
       appointments: Mes rendez-vous
+      account: Mon compte
       agent_info: Mes interlocuteurs
     staging_alert:
       title: "Attention: vous êtes sur le site de Staging"
   convicts:
+    show:
+      title: Mes informations personnelles
+      full_name_title: Nom
+      phone_title: Numéro de téléphone
     failure:
       already_authenticated: Vous êtes déjà connecté(e).
       inactive: Votre compte n’est pas encore activé.

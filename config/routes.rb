@@ -20,8 +20,10 @@ Rails.application.routes.draw do
 
   resources :appointments, only: %i[show index]
   resource :agent, only: %i[show]
+  resource :convict, only: %i[show]
 
   resource :sms_invitations, only: %i[create], controller: "convicts/sms_invitations"
+  post :sms_webhook, to: "convicts/sms_webhooks#receive"
 
   scope controller: :pages do
     get :landing
@@ -29,6 +31,7 @@ Rails.application.routes.draw do
     get :peine_emprisonnement
     get :regles_essentielles
     get :obligations_personnelles
+    get :mes_interlocuteurs
     get :sursis_probatoire
     get :travail_interet_general
     get :suivi_socio_judiciaire
@@ -42,7 +45,11 @@ Rails.application.routes.draw do
     get :preparer_spip75
     get :preparer_sap_paris
     get :preparer_sap_angers
+    get :preparer_sap_thionville
+    get :preparer_sap_mulhouse
+    get :preparer_sap_reims
     get :preparer_spip49
+    get :preparer_spip32
     get :investir_ma_reinsertion
     get :ma_reinsertion_hauts_de_seine
     get :ma_reinsertion_eure_et_loir

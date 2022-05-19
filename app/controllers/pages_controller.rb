@@ -24,6 +24,9 @@ class PagesController < Spina::ApplicationController
   def obligations_personnelles
   end
 
+  def mes_interlocuteurs
+  end
+
   def sursis_probatoire
   end
 
@@ -57,10 +60,22 @@ class PagesController < Spina::ApplicationController
   def preparer_spip75
   end
 
+  def preparer_spip32
+  end
+
   def preparer_sap_paris
   end
 
   def preparer_sap_angers
+  end
+
+  def preparer_sap_thionville
+  end
+
+  def preparer_sap_mulhouse
+  end
+
+  def preparer_sap_reims
   end
 
   def preparer_spip49
