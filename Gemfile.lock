@@ -396,6 +396,7 @@ GEM
     zeitwerk (2.5.3)
 
 PLATFORMS
+  x86_64-darwin-20
   x86_64-darwin-21
   x86_64-linux
 
