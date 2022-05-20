@@ -199,3 +199,12 @@ fr:
       phone_title: Numéro de téléphone
       email_title: Email
       no_cpip: Vous êtes bien suivi par votre SPIP mais aucun CPIP référent ne vous a été affecté pour l'instant
+  pages:
+    preparer_mon_rdv:
+      title: Préparer mon rendez-vous
+    comprendre_ma_peine:
+      title: Comprendre ma peine
+    investir_ma_reinsertion:
+      title: Investir ma réinsertion
+    qui_sommes_nous:
+      title: Qui sommes nous ?
