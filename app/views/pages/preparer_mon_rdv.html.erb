@@ -4,24 +4,11 @@
 
   <h2 class='text-center fr-mt-8w fr-mb-4w'><%= content(:subtitle) %></h2>
 
-<div class="flex justify-center">
-
-
-<div class="fr-select-group">
-
-<%= select_tag "credit_card", options_for_select(ZIP_CODES), {include_blank: "test", class: "fr-select
-      block
-      w-full
-  "}
-
- %>
-</div>
-
-
-
-
-
- </div>
+  <div class="flex justify-center">
+    <div class="fr-select-group">
+      <%= select_tag "credit_card", options_for_select(ZIP_CODES), {include_blank: t(".select_a_zip_code"), class: "fr-select"} %>
+    </div>
+  </div>
 
   <div class="fr-grid-row fr-grid-row--gutters">
     <% repeater(:basic_card) do |card| %>

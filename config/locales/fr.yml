@@ -199,3 +199,6 @@ fr:
       phone_title: Numéro de téléphone
       email_title: Email
       no_cpip: Vous êtes bien suivi par votre SPIP mais aucun CPIP référent ne vous a été affecté pour l'instant
+  pages:
+    preparer_mon_rdv:
+      select_a_zip_code: Choisissez un département
