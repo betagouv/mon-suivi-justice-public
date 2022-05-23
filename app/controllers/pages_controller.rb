@@ -3,6 +3,8 @@ class PagesController < Spina::ApplicationController
   skip_before_action :authenticate_convict!
   layout "public"
 
+  include Spina::Api::Paginable
+
   # Controller inherit from Spina::ApplicationController
   # Set Spina::Current.page
   # Create custom pages in theme
@@ -103,6 +105,11 @@ class PagesController < Spina::ApplicationController
   end
 
   def mentions_legales
+  end
+
+  def get_all_pages
+    pages = Spina::Page.live.includes(:translations).where(resource: @resource).order(:created_at)
+    render json: Spina::Api::PageSerializer.new(*pagination(pages)).serializable_hash.to_json
   end
 
   private
