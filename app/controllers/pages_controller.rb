@@ -108,7 +108,7 @@ class PagesController < Spina::ApplicationController
   end
 
   def get_all_pages
-    pages = Spina::Page.live.includes(:translations).where(resource: @resource).order(:created_at)
+    pages = Spina::Page.live.includes(:translations).order(:created_at)
     render json: Spina::Api::PageSerializer.new(*pagination(pages)).serializable_hash.to_json
   end
 

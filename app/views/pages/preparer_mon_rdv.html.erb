@@ -6,16 +6,16 @@
 
   <div class="flex justify-center">
     <div class="fr-select-group">
-      <%= select_tag "zip_code_selector", options_for_select(ZIP_CODES), {include_blank: t(".select_a_zip_code"), class: "fr-select"} %>
+      <%= select_tag "zip_code_selector", options_for_select(ZIP_CODES), {include_blank: t(".select_a_zip_code"), class: "fr-select fr-mb-4w"} %>
     </div>
   </div>
 
-  <div class="fr-grid-row fr-grid-row--gutters">
-    <% repeater(:basic_card) do |card| %>
-      <div class="fr-col-6 fr-col-lg-3 fr-mb-2w text-center">
-        <%= link_to card.content(:card_title), card.content(:card_link), class: 'basic-card-link border-blue' %>
-      </div>
-    <% end %>
+  <div class="fr-grid-row fr-grid-row--center fr-grid-row--gutters" id="spip_and_sap_cards_container">
+
+
+
+
+
   </div>
 </div>
 
