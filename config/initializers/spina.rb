@@ -51,7 +51,7 @@ Spina.configure do |config|
   # Set an API key to activate Spina's API.
   # It's highly recommended to use Rails credentials to store this API key.
   config.api_key = Rails.application.credentials.spina.spina_api_key
-  config.api_path = 'api'
+  config.api_path = "api"
 
   # Background jobs
   # ===============
