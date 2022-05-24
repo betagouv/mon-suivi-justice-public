@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
               link.title = seoTitle
               link.href = `/${spinaViewTemplate}`
               link.innerText = linkText
+              link.setAttribute('data-turbo', false)
               link.classList.add('basic-card-link', 'border-blue')
               card.appendChild(link)
               cardsContainer.appendChild(card)

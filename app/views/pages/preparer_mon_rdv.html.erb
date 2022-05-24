@@ -1,4 +1,4 @@
-<div class='fr-container static-content-container'>
+<div class='fr-container static-content-container' data-controller="preparer-mon-rdv">
   <h1 class='static-title static-title-blue fr-mb-4w'><%=  @toto %><%= content(:main_title) %></h1>
   <div class='static-intro'><%= content.html(:main_rich_description) %></div>
 
@@ -6,7 +6,7 @@
 
   <div class="flex justify-center">
     <div class="fr-select-group">
-      <%= select_tag "zip_code_selector", options_for_select(ZIP_CODES), {include_blank: t(".select_a_zip_code"), class: "fr-select fr-mb-4w"} %>
+      <%= select_tag "zip_code_selector", options_for_select(ZIP_CODES), {include_blank: t(".select_a_zip_code"), class: "fr-select fr-mb-4w", data: {action: "change->preparer-mon-rdv#load"}} %>
     </div>
   </div>
 
@@ -19,5 +19,5 @@
   </div>
 </div>
 
-<%= javascript_pack_tag 'preparer_mon_rdv' %>
+<%# javascript_pack_tag 'preparer_mon_rdv' %>
 

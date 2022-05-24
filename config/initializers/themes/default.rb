@@ -9,7 +9,7 @@ Spina::Theme.register do |theme|
   theme.title = "Thème par défaut"
 
   # Zip codes for the "Préparer mon RDV" page select
-  ZIP_CODES = %w[28 49 51 57 68 75 92].freeze
+  zip_codes = %w[28 49 51 57 68 75 92].freeze
 
   # Parts
   # Define all editable parts you want to use in your view templates
@@ -58,7 +58,7 @@ Spina::Theme.register do |theme|
     {name: "collapse_rich_content_good_practice", title: "Encart vert", part_type: "Spina::Parts::Text"},
     {name: "rich_collapse", title: "Contenu déroulant", parts: %w[collapse_title collapse_rich_content collapse_rich_content_alert collapse_rich_content_good_practice], part_type: "Spina::Parts::Repeater"},
     {name: "basic_card", title: "Bloc", parts: %w[card_title card_link], part_type: "Spina::Parts::Repeater"},
-    {name: "zip_code_select", title: "Département concerné", hint: "Département du SPIP ou du SAP", part_type: "Spina::Parts::Option", options: ZIP_CODES}
+    {name: "zip_code_select", title: "Département concerné", hint: "Département du SPIP ou du SAP", part_type: "Spina::Parts::Option", options: zip_codes}
   ]
 
   # View templates
