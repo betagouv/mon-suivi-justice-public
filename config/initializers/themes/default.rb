@@ -9,7 +9,7 @@ Spina::Theme.register do |theme|
   theme.title = "Thème par défaut"
 
   # Zip codes for the "Préparer mon RDV" page select
-  ZIP_CODES ||= %w[28 49 51 57 68 75 92].freeze
+  ZIP_CODES = %w[28 49 51 57 68 75 92].freeze
 
   # Parts
   # Define all editable parts you want to use in your view templates

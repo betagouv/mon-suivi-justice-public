@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  fetch('/get_all_pages')
+  window.fetch('/get_all_pages')
     .then((res) => {
       if (res.ok) {
         return res.json()
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const linkText = spinaTitlePart
               ? spinaTitlePart.main_title
-              : 'Titre absent';
+              : 'Titre absent'
 
             const spinaViewTemplate = p.attributes.view_template
 
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
       })
     })
     .catch((err) => {
-      alert(err)
+      window.alert(err)
     })
 })
 
