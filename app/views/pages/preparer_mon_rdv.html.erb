@@ -1,4 +1,4 @@
-<div class='fr-container static-content-container' data-controller="preparer-mon-rdv">
+<div class='fr-container static-content-container' data-controller="preparer-mon-rdv" data-preparer-mon-rdv-url-value="/get_all_pages">
   <h1 class='static-title static-title-blue fr-mb-4w'><%=  @toto %><%= content(:main_title) %></h1>
   <div class='static-intro'><%= content.html(:main_rich_description) %></div>
 
@@ -6,16 +6,11 @@
 
   <div class="flex justify-center">
     <div class="fr-select-group">
-      <%= select_tag "zip_code_selector", options_for_select(ZIP_CODES), {include_blank: t(".select_a_zip_code"), class: "fr-select fr-mb-4w", data: {action: "change->preparer-mon-rdv#load"}} %>
+      <%= select_tag "zip_code_selector", options_for_select(%w[28 49 51 57 68 75 92]), {include_blank: t(".select_a_zip_code"), class: "fr-select fr-mb-4w", data: {target: 'preparer-mon-rdv.zipCode', action: 'change->preparer-mon-rdv#buildCards'}} %>
     </div>
   </div>
 
-  <div class="fr-grid-row fr-grid-row--center fr-grid-row--gutters" id="spip_and_sap_cards_container">
-
-
-
-
-
+  <div class="fr-grid-row fr-grid-row--center fr-grid-row--gutters" id="spip_and_sap_cards_container" >
   </div>
 </div>
 
