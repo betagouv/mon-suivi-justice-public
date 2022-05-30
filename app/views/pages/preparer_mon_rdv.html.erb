@@ -6,13 +6,10 @@
 
   <div class="flex justify-center">
     <div class="fr-select-group">
-      <%= select_tag "zip_code_selector", options_for_select(%w[28 49 51 57 68 75 92]), {include_blank: t(".select_a_zip_code"), class: "fr-select fr-mb-4w", data: {target: 'preparer-mon-rdv.zipCode', action: 'change->preparer-mon-rdv#buildCards'}} %>
+      <%= select_tag "zip_code_selector", options_for_select(@zip_codes), {include_blank: t(".select_a_zip_code"), class: "fr-select fr-mb-4w", data: {target: 'preparer-mon-rdv.zipCode', action: 'change->preparer-mon-rdv#buildCards'}} %>
     </div>
   </div>
 
-  <div class="fr-grid-row fr-grid-row--center fr-grid-row--gutters" id="spip_and_sap_cards_container" >
+  <div class="fr-grid-row fr-grid-row--center fr-grid-row--gutters" id="spip_and_sap_cards_container" data-preparer-mon-rdv-target="cardsContainer" >
   </div>
 </div>
-
-<%# javascript_pack_tag 'preparer_mon_rdv' %>
-
