@@ -1,5 +1,7 @@
-<div class='fr-container static-content-container' data-controller="preparer-mon-rdv" data-preparer-mon-rdv-url-value="/get_all_pages">
-  <h1 class='static-title static-title-blue fr-mb-4w'><%=  @toto %><%= content(:main_title) %></h1>
+<% content_for :title, t('.title') %>
+
+<div class='fr-container static-content-container'>
+  <h1 class='static-title static-title-blue fr-mb-4w'><%= content(:main_title) %></h1>
   <div class='static-intro'><%= content.html(:main_rich_description) %></div>
 
   <h2 class='text-center fr-mt-8w fr-mb-4w'><%= content(:subtitle) %></h2>

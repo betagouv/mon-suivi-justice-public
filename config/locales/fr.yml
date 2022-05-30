@@ -202,3 +202,10 @@ fr:
   pages:
     preparer_mon_rdv:
       select_a_zip_code: Choisissez un département
+      title: Préparer mon rendez-vous
+    comprendre_ma_peine:
+      title: Comprendre ma peine
+    investir_ma_reinsertion:
+      title: Investir ma réinsertion
+    qui_sommes_nous:
+      title: Qui sommes nous ?
