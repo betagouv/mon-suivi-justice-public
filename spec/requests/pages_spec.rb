@@ -140,6 +140,12 @@ RSpec.describe "Pages", type: :request do
     it { is_expected.to be_successful }
   end
 
+  describe "GET /preparer_sap_metz" do
+    let(:path) { preparer_sap_metz_path }
+
+    it { is_expected.to be_successful }
+  end
+
   describe "GET /preparer_sap_angers" do
     let(:path) { preparer_sap_angers_path }
 
