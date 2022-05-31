@@ -44,6 +44,7 @@ Rails.application.routes.draw do
     get :preparer_sap_chartres
     get :preparer_spip75
     get :preparer_sap_paris
+    get :preparer_sap_metz
     get :preparer_sap_angers
     get :preparer_sap_thionville
     get :preparer_sap_mulhouse
