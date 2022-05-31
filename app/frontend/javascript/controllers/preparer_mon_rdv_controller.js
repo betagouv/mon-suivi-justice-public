@@ -54,21 +54,7 @@ export default class extends Controller {
       }
     })
 
-    if (cards) {
-      this.cardsContainerTarget.innerHTML =
-        cards || "Il n'y a pas de SPIP ou de SAP référencé pour ce département"
-
-      if (
-        !this.cardsContainerTarget.classList.contains('fr-grid-row--gutters')
-      ) {
-        this.cardsContainerTarget.classList.add('fr-grid-row--gutters')
-      }
-    } else {
-      this.cardsContainerTarget.classList.remove('fr-grid-row--gutters')
-
-      this.cardsContainerTarget.innerHTML =
-        "Il n'y a pas de SPIP ou de SAP référencé pour ce département"
-    }
+    this.cardsContainerTarget.innerHTML = cards || "Il n'y a pas de SPIP ou de SAP référencé pour ce département"
   }
 
   cardTemplate (linkText, spinaViewTemplate) {
