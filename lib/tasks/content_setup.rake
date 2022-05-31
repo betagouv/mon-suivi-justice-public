@@ -2,8 +2,10 @@ require "highline"
 
 desc "Setup seed content for the site"
 task content_setup: :environment do
-  answer = HighLine.new.ask("Cette action va détruire votre contenu existant. Souhaitez-vous continuer? oui ou non")
-  next unless answer == "oui" || ENV["IS_REVIEW_APP"] == "true"
+  if ENV["IS_REVIEW_APP"] != "true"
+    answer = HighLine.new.ask("Cette action va détruire votre contenu existant. Souhaitez-vous continuer? oui ou non")
+    next unless answer == "oui"
+  end
 
   clean_spina_db
   Rake::Task["spina:first_deploy"].execute
