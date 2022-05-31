@@ -5,7 +5,7 @@
         }
       },
     "scripts": {
-        "first-deploy": "bin/rails db:create db:schema:load db:migrate && bundle exec rake content_setup",
+        "first-deploy": "bin/rails db:schema:load db:migrate && bundle exec rake content_setup",
         "postdeploy": "bin/rails db:migrate"
       }
 }
