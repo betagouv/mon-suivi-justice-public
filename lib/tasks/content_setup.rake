@@ -9,8 +9,8 @@ task content_setup: :environment do
 
   clean_spina_db
   Rake::Task["spina:first_deploy"].execute
-  setup_pages_content
-  setup_footer
+  #setup_pages_content
+  #setup_footer
 end
 
 def clean_spina_db
