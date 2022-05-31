@@ -49,11 +49,9 @@ def page_parts(page)
   page_theme_parts(page).map do |part|
     correct_seed_part = seed_parts.find { |p| p["name"].to_s == part[:name].to_s }
 
-    unless correct_seed_part.nil?
-      {name: part.dig(:name), type: part.dig(:part_type),
-       title: part.dig(:title), content: correct_seed_part["content"],
-       content_attributes: correct_seed_part["content_attributes"]}
-    end
+    {name: part.dig(:name), type: part.dig(:part_type),
+     title: part.dig(:title), content: correct_seed_part["content"] || "",
+     content_attributes: correct_seed_part["content_attributes"] || ""}
   end
 end
 
