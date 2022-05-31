@@ -40,6 +40,10 @@
     "content": "Je suis condamné à :"
   },
   {
+    "name": "zip_code_select",
+    "content": ""
+  },
+  {
     "name": "basic_card",
     "content_attributes": [
       {

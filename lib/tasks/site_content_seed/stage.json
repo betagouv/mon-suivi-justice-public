@@ -4,6 +4,10 @@
     "content": "Le stage"
   },
   {
+    "name": "zip_code_select",
+    "content": ""
+  },
+  {
     "name": "rich_collapse",
     "content_attributes": [
       {
