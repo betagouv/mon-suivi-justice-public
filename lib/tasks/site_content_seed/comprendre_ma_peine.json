@@ -28,6 +28,14 @@
     "content": "Découvrir les règles qui s'appliquent spécifiquement à vous"
   },
   {
+    "name": "card3_title",
+    "content": "Mes interlocuteurs"
+  },
+  {
+    "name": "card3_text",
+    "content": "Découvrir les acteurs de votre parcours judiciaire"
+  },
+  {
     "name": "secondary_subtitle",
     "content": "Je suis condamné à :"
   },
