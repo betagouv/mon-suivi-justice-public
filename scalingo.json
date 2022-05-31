@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "first-deploy": "bundle exec  db:create db:schema:load db:migrate",
+        "first-deploy": "bundle exec db:create db:schema:load db:migrate && rake content_setup",
         "postdeploy": "bundle exec rake db:migrate"
       }
 }
