@@ -51,7 +51,7 @@ def page_parts(page)
 
     {name: part.dig(:name), type: part.dig(:part_type),
      title: part.dig(:title), content: correct_seed_part["content"] || "",
-     content_attributes: correct_seed_part["content_attributes"] || ""}
+     content_attributes: correct_seed_part["content_attributes"] || []}
   end
 end
 
