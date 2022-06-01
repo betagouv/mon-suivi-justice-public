@@ -54,7 +54,7 @@ export default class extends Controller {
       }
     })
 
-    this.cardsContainerTarget.innerHTML = cards || "Il n'y a pas de SPIP ou de SAP référencé pour ce département"
+    this.cardsContainerTarget.innerHTML = cards || 'Si vous ne trouvez pas votre tribunal judicaire ou service pénitentiaire d’insertion et de probation, c’est qu’il n’est pas encore référencé. Pour plus d’informations, veuillez consulter <a href="https://lannuaire.service-public.fr/" target="_blank">l’annuaire des services publics.</a>'
   }
 
   cardTemplate (linkText, spinaViewTemplate) {
