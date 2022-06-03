@@ -16,6 +16,10 @@
     "content": "Selon votre situation et l’infraction commise, vous pouvez être soumis à plusieurs obligations spécialement imposées par le juge."
   },
   {
+    "name": "zip_code_select",
+    "content": ""
+  },
+  {
     "name": "rich_collapse",
     "content_attributes": [
       {

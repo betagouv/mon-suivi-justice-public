@@ -60,6 +60,7 @@ Rails.application.routes.draw do
     get :donnees_personnelles
     get :qui_sommes_nous
     get :mentions_legales
+    get :get_all_pages
   end
 
   get "/stats" => redirect("https://infogram.com/column-stacked-chart-1h7z2l8www5rg6o?live", status: 302), :as => :stats

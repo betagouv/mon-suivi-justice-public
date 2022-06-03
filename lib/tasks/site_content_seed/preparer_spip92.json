@@ -28,6 +28,10 @@
     "content": "https://www.google.fr/maps/place/Service+P%C3%A9nitentiaire+d%E2%80%99Insertion+%26+de+Probation(SPIP)/@48.8999914,2.1873704,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66486dc980a65:0x54a6653d1e03aa1!8m2!3d48.8999879!4d2.1895591?shorturl=1"
   },
   {
+    "name": "zip_code_select",
+    "content": ""
+  },
+  {
     "name": "rich_collapse",
     "content_attributes": [
       {
