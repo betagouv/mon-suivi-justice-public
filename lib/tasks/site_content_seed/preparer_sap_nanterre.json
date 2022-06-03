@@ -28,6 +28,10 @@
     "content": "https://www.google.fr/maps/place/Tribunal+Judiciaire/@48.8963835,2.2143697,17z/data=!4m5!3m4!1s0x47e664f5bf6d2f35:0xe7be9b6070062a71!8m2!3d48.8972523!4d2.2173476?shorturl=1"
   },
   {
+    "name": "zip_code_select",
+    "content": ""
+  },
+  {
     "name": "rich_collapse",
     "content_attributes": [
       {

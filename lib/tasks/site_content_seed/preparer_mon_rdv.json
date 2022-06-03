@@ -12,6 +12,10 @@
     "content": "Où avez-vous rendez-vous ?"
   },
   {
+    "name": "zip_code_select",
+    "content": ""
+  },
+  {
     "name": "basic_card",
     "content_attributes": [
       {

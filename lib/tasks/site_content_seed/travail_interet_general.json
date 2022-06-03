@@ -8,6 +8,10 @@
     "content": "<div>Pour une présentation plus complète, n'hésitez pas à consulter le site officiel : <a href=\"https://www.travail-interet-general.fr/\">travail-interet-general.fr</a></div>"
   },
   {
+    "name": "zip_code_select",
+    "content": ""
+  },
+  {
     "name": "rich_collapse",
     "content_attributes": [
       {

@@ -2,5 +2,9 @@
   {
     "name": "footer_text",
     "content": "Lancé en mai 2021, Mon Suivi Justice est en cours de construction avec les agents du Tribunal judiciaire de Nanterre et du Service pénitentiaire d'insertion et de probation des Hauts-de-Seine."
+  },
+  {
+    "name": "zip_code_select",
+    "content": ""
   }
 ]
