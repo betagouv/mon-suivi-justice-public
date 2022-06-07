@@ -54,7 +54,7 @@ export default class extends Controller {
       }
     })
 
-    this.cardsContainerTarget.innerHTML = cards || 'Si vous ne trouvez pas votre tribunal judicaire ou service pénitentiaire d’insertion et de probation, c’est qu’il n’est pas encore référencé. Pour plus d’informations, veuillez consulter <a href="https://lannuaire.service-public.fr/" target="_blank">l’annuaire des services publics.</a>'
+    this.cardsContainerTarget.innerHTML = cards || '<p>Si vous ne trouvez pas votre tribunal judicaire ou service pénitentiaire d’insertion et de probation, c’est qu’il n’est pas encore référencé. Pour plus d’informations, veuillez consulter <a href="https://lannuaire.service-public.fr/" target="_blank">l’annuaire des services publics.</a></p>'
   }
 
   cardTemplate (linkText, spinaViewTemplate) {
