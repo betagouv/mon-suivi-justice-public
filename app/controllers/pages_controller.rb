@@ -90,7 +90,13 @@ class PagesController < Spina::ApplicationController
   def preparer_sap_val_de_briey
   end
 
+  def preparer_sap_chaumont
+  end
+
   def preparer_spip49
+  end
+
+  def preparer_spip69
   end
 
   def ma_reinsertion
