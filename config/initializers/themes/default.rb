@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer mon RDV" page select
-ZIP_CODES = %w[28 32 49 51 52 54 57 67 68 69 75 92].freeze
+ZIP_CODES = %w[28 32 49 51 52 54 57 67 68 69 75 77 92].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
@@ -101,7 +101,8 @@ Spina::Theme.register do |theme|
     {name: "ma_reinsertion_hauts_de_seine", title: "Ma réinsertion Hauts-de-Seine", parts: %w[main_title main_description rich_collapse]},
     {name: "ma_reinsertion_eure_et_loir", title: "Ma réinsertion Eure-et-Loir", parts: %w[main_title main_description rich_collapse]},
     {name: "ma_reinsertion_paris", title: "Ma réinsertion Paris", parts: %w[main_title main_description rich_collapse]},
-    {name: "preparer_spip69", title: "Préparer SPIP 69", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]}
+    {name: "preparer_spip69", title: "Préparer SPIP 69", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_spip77", title: "Préparer SPIP 77", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]}
   ]
 
   # Custom pages
@@ -142,6 +143,7 @@ Spina::Theme.register do |theme|
     {name: "preparer_sap_chaumont", title: "Préparer SAP Chaumont", view_template: "preparer_sap_chaumont"},
     {name: "preparer_spip49", title: "Préparer SPIP 49", view_template: "preparer_spip49"},
     {name: "preparer_spip69", title: "Préparer SPIP 69", view_template: "preparer_spip69"},
+    {name: "preparer_spip77", title: "Préparer SPIP 77", view_template: "preparer_spip77"},
     {name: "ma_reinsertion_hauts_de_seine", title: "Ma réinsertion Hauts-de-Seine", view_template: "ma_reinsertion_hauts_de_seine"},
     {name: "ma_reinsertion_eure_et_loir", title: "Ma réinsertion Eure-et-Loir", view_template: "ma_reinsertion_eure_et_loir"},
     {name: "ma_reinsertion_paris", title: "Ma réinsertion Paris", view_template: "ma_reinsertion_paris"}
