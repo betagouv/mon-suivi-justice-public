@@ -117,6 +117,9 @@ class PagesController < Spina::ApplicationController
   def ma_reinsertion_paris
   end
 
+  def ma_reinsertion_seine_et_marne
+  end
+
   def donnees_personnelles
   end
 
