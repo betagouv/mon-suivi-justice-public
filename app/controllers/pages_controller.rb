@@ -99,6 +99,9 @@ class PagesController < Spina::ApplicationController
   def preparer_spip69
   end
 
+  def preparer_spip77
+  end
+
   def ma_reinsertion
   end
 
