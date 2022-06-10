@@ -60,6 +60,7 @@ Rails.application.routes.draw do
     get :ma_reinsertion_hauts_de_seine
     get :ma_reinsertion_eure_et_loir
     get :ma_reinsertion_paris
+    get :ma_reinsertion_seine_et_marne
     get :donnees_personnelles
     get :qui_sommes_nous
     get :mentions_legales
