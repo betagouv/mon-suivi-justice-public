@@ -93,6 +93,9 @@ class PagesController < Spina::ApplicationController
   def preparer_sap_chaumont
   end
 
+  def preparer_sap_grasse
+  end
+
   def preparer_spip49
   end
 
