@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer mon RDV" page select
-ZIP_CODES = %w[06 28 32 49 51 52 54 57 67 68 69 75 77 92].freeze
+ZIP_CODES = %w[04 06 28 32 49 51 52 54 57 67 68 69 75 77 92].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
@@ -97,6 +97,7 @@ Spina::Theme.register do |theme|
     {name: "preparer_sap_saverne", title: "Préparer SAP Saverne", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_sap_val_de_briey", title: "Préparer SAP Val de Briey", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_sap_chaumont", title: "Préparer SAP Chaumont", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_sap_digne_les_bains", title: "Préparer SAP Digne-les-bains", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_sap_grasse", title: "Préparer SAP Grasse", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_spip49", title: "Préparer SPIP 49", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "ma_reinsertion_hauts_de_seine", title: "Ma réinsertion Hauts-de-Seine", parts: %w[main_title main_description rich_collapse]},
@@ -143,6 +144,7 @@ Spina::Theme.register do |theme|
     {name: "preparer_sap_saverne", title: "Préparer SAP Saverne", view_template: "preparer_sap_saverne"},
     {name: "preparer_sap_val_de_briey", title: "Préparer SAP Val de Briey", view_template: "preparer_sap_val_de_briey"},
     {name: "preparer_sap_chaumont", title: "Préparer SAP Chaumont", view_template: "preparer_sap_chaumont"},
+    {name: "preparer_sap_digne_les_bains", title: "Préparer SAP Digne-les-bains", view_template: "preparer_sap_digne_les_bains"},
     {name: "preparer_sap_grasse", title: "Préparer SAP Grasse", view_template: "preparer_sap_grasse"},
     {name: "preparer_spip49", title: "Préparer SPIP 49", view_template: "preparer_spip49"},
     {name: "preparer_spip69", title: "Préparer SPIP 69", view_template: "preparer_spip69"},
