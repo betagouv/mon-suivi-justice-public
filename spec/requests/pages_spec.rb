@@ -194,6 +194,18 @@ RSpec.describe "Pages", type: :request do
     it { is_expected.to be_successful }
   end
 
+  describe "GET /preparer_sap_agen" do
+    let(:path) { preparer_sap_agen_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /preparer_sap_niort" do
+    let(:path) { preparer_sap_niort_path }
+
+    it { is_expected.to be_successful }
+  end
+
   describe "GET /preparer_sap_digne_les_bains" do
     let(:path) { preparer_sap_digne_les_bains_path }
 
@@ -220,6 +232,12 @@ RSpec.describe "Pages", type: :request do
 
   describe "GET /preparer_spip77" do
     let(:path) { preparer_spip77_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /preparer_spip36" do
+    let(:path) { preparer_spip36_path }
 
     it { is_expected.to be_successful }
   end
