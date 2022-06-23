@@ -54,8 +54,11 @@ Rails.application.routes.draw do
     get :preparer_sap_chaumont
     get :preparer_sap_grasse
     get :preparer_sap_digne_les_bains
+    get :preparer_sap_agen
+    get :preparer_sap_niort
     get :preparer_spip49
     get :preparer_spip32
+    get :preparer_spip36
     get :preparer_spip69
     get :preparer_spip77
     get :investir_ma_reinsertion
