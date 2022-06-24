@@ -1,28 +1,25 @@
-require "rails_helper"
+require 'rails_helper'
 
 RSpec.describe SmsSenderJob, type: :job do
-  describe "#perform" do
-    let(:params) do
-      {
-        sender: "RDVJustice",
-        recipient: "+33666666666",
-        content: "Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos rendez-vous justice, cliquez sur le lien suivant et choisissez votre mot de passe: http://www.example.com/convicts/invitation/accept?invitation_token=<TOKEN>"
-      }
-    end
+  context 'with a phone number' do
+    let(:convict) { FactoryBot.create :convict, phone: '+33606060607' }
+    let(:content) { 'test SMS' }
 
-    before do
-      ActiveJob::Base.queue_adapter = :test
-    end
+    describe '#perform' do
+      let(:tested_method) { SmsSenderJob.perform_now(convict, content) }
+      let(:adapter_dbl) { instance_double LinkMobilityAdapter, send_sms: true }
 
-    it "sends the correct SMS invitation" do
-      VCR.use_cassette("send_in_blue/invitation", serialize_with: :json, record: :new_episodes) do |cassette|
-        SmsSenderJob.perform_now(params)
-        result = JSON.parse(cassette.send(:raw_cassette_bytes), object_class: OpenStruct).http_interactions.first
-        request_body = JSON.parse(result.request.body.string, object_class: OpenStruct)
-        expect(result.response.status.code).to eq(201)
-        expect(request_body.sender).to eq("RDVJustice")
-        expect(request_body.recipient).to eq("+33666666666")
-        expect(request_body.content).to eq("Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos rendez-vous justice, cliquez sur le lien suivant et choisissez votre mot de passe: http://www.example.com/convicts/invitation/accept?invitation_token=<TOKEN>")
+      before do
+        allow(LinkMobilityAdapter).to receive(:new).and_return adapter_dbl
+        tested_method
+      end
+
+      it 'instantiates LinkMobilityAdapter' do
+        expect(LinkMobilityAdapter).to have_received(:new).once
+      end
+
+      it 'send sms' do
+        expect(adapter_dbl).to have_received(:send_sms).once.with(convict, content)
       end
     end
   end
