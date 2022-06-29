@@ -102,6 +102,9 @@ class PagesController < Spina::ApplicationController
   def preparer_sap_niort
   end
 
+  def preparer_sap_bordeaux
+  end
+
   def preparer_sap_digne_les_bains
   end
 
