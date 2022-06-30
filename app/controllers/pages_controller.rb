@@ -144,6 +144,9 @@ class PagesController < Spina::ApplicationController
   def preparer_spip54_val_de_briey
   end
 
+  def preparer_spip54_nancy
+  end
+
   def ma_reinsertion
   end
 

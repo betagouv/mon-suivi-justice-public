@@ -70,6 +70,7 @@ Rails.application.routes.draw do
     get :preparer_spip69
     get :preparer_spip77
     get :preparer_spip54_val_de_briey
+    get :preparer_spip54_nancy
     get :investir_ma_reinsertion
     get :ma_reinsertion_hauts_de_seine
     get :ma_reinsertion_eure_et_loir
