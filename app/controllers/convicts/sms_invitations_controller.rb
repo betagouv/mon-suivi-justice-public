@@ -17,19 +17,14 @@ module Convicts
           skip_invitation: true)
         type = "content"
       end
-      SmsSenderJob.perform_later(sms_params(convict, type))
+      SmsSenderJob.perform_later(convict, sms_content(convict, type))
       head :ok
     end
 
     private
 
-    def sms_params(convict, type = "content")
-      {
-        sender: "RDVJustice",
-        recipient: convict.phone,
-        content: I18n.t("convicts.sms_invitations.#{type}", link: helpers.accept_convict_invitation_url(invitation_token: convict.raw_invitation_token)),
-        webUrl: sms_webhook_url
-      }
+    def sms_content(convict, type = "content")
+      I18n.t("convicts.sms_invitations.#{type}", link: helpers.accept_convict_invitation_url(invitation_token: convict.raw_invitation_token))
     end
   end
 end
