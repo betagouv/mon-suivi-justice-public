@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer mon RDV" page select
-ZIP_CODES = %w[04 06 28 32 33 36 47 49 51 52 54 57 67 68 69 75 77 79 92].freeze
+ZIP_CODES = %w[04 06 18 21 23 24 28 32 33 36 47 49 51 52 54 57 67 68 69 75 77 79 83 92].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
