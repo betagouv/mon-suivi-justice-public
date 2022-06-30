@@ -57,6 +57,13 @@ Rails.application.routes.draw do
     get :preparer_sap_agen
     get :preparer_sap_niort
     get :preparer_sap_bordeaux
+    get :preparer_sap_nice
+    get :preparer_sap_bergerac
+    get :preparer_sap_gueret
+    get :preparer_sap_draguignan
+    get :preparer_sap_libourne
+    get :preparer_sap_dijon
+    get :preparer_spip18
     get :preparer_spip49
     get :preparer_spip32
     get :preparer_spip36
