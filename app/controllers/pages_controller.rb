@@ -107,7 +107,7 @@ class PagesController < Spina::ApplicationController
 
   def preparer_sap_nice
   end
-  
+
   def preparer_sap_bergerac
   end
 
