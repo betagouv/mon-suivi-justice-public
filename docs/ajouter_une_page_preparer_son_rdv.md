@@ -8,6 +8,7 @@
 6. Modifier le fichier `config/initializer/themes/default.rb` :
   - Ajouter une ligne dans le bloc `theme.view_templates`
   - Ajouter une ligne dans le bloc `theme.custom_pages`
+  - Vérifier que le département de la nouvelle page est bien présent dans la constante `ZIP_CODES`
 7. Déployer staging et production
 8. Lancer la tache `$ rake spina:bootstrap` dans les consoles bash de la staging et de la production.
 9. Renseigner le champ  "Département concerné" pour la nouvelle page sans quoi le SPIP ou le SAP n'apparaîtra pas sur la page mes rendez-vous.
