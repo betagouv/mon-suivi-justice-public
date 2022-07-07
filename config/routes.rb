@@ -65,6 +65,7 @@ Rails.application.routes.draw do
     get :preparer_sap_dijon
     get :preparer_sap_toulon
     get :preparer_sap_tours
+    get :preparer_sap_montbeliard
     get :preparer_spip18
     get :preparer_spip49
     get :preparer_spip32
@@ -73,10 +74,14 @@ Rails.application.routes.draw do
     get :preparer_spip77
     get :preparer_spip54_val_de_briey
     get :preparer_spip54_nancy
+    get :preparer_spip17_rochelle
+    get :preparer_spip17_rochefort
+    get :preparer_spip17_saintes
     get :investir_ma_reinsertion
     get :ma_reinsertion_hauts_de_seine
     get :ma_reinsertion_eure_et_loir
     get :ma_reinsertion_paris
+    get :ma_reinsertion_indre
     get :ma_reinsertion_seine_et_marne
     get :donnees_personnelles
     get :qui_sommes_nous

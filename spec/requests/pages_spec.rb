@@ -266,6 +266,12 @@ RSpec.describe "Pages", type: :request do
     it { is_expected.to be_successful }
   end
 
+  describe "GET /preparer_sap_montbeliard" do
+    let(:path) { preparer_sap_montbeliard_path }
+
+    it { is_expected.to be_successful }
+  end
+
   describe "GET /preparer_spip18" do
     let(:path) { preparer_spip18_path }
 
@@ -314,6 +320,24 @@ RSpec.describe "Pages", type: :request do
     it { is_expected.to be_successful }
   end
 
+  describe "GET /preparer_spip17_rochelle" do
+    let(:path) { preparer_spip17_rochelle_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /preparer_spip17_rochefort" do
+    let(:path) { preparer_spip17_rochefort_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /preparer_spip17_saintes" do
+    let(:path) { preparer_spip17_saintes_path }
+
+    it { is_expected.to be_successful }
+  end
+
   describe "GET /ma_reinsertion_hauts_de_seine" do
     let(:path) { ma_reinsertion_hauts_de_seine_path }
 
@@ -328,6 +352,12 @@ RSpec.describe "Pages", type: :request do
 
   describe "GET /ma_reinsertion_paris" do
     let(:path) { ma_reinsertion_paris_path }
+
+    it { is_expected.to be_successful }
+  end
+
+  describe "GET /ma_reinsertion_indre" do
+    let(:path) { ma_reinsertion_indre_path }
 
     it { is_expected.to be_successful }
   end
