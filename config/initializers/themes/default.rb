@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer mon RDV" page select
-ZIP_CODES = %w[04 06 18 21 23 24 28 32 33 36 37 47 49 51 52 54 57 67 68 69 75 77 79 83 92].freeze
+ZIP_CODES = %w[04 06 17 18 21 23 24 25 28 32 33 36 37 47 49 51 52 54 57 67 68 69 75 77 79 83 92].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
@@ -111,16 +111,21 @@ Spina::Theme.register do |theme|
     {name: "preparer_sap_dijon", title: "Préparer SAP Dijon", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_sap_toulon", title: "Préparer SAP Toulon", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_sap_tours", title: "Préparer SAP Tours", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_sap_montbeliard", title: "Préparer SAP Montbeliard", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_spip49", title: "Préparer SPIP 49", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_spip18", title: "Préparer SPIP 18", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "ma_reinsertion_hauts_de_seine", title: "Ma réinsertion Hauts-de-Seine", parts: %w[main_title main_description rich_collapse]},
     {name: "ma_reinsertion_eure_et_loir", title: "Ma réinsertion Eure-et-Loir", parts: %w[main_title main_description rich_collapse]},
     {name: "ma_reinsertion_paris", title: "Ma réinsertion Paris", parts: %w[main_title main_description rich_collapse]},
     {name: "ma_reinsertion_seine_et_marne", title: "Ma réinsertion Seine-et-Marne", parts: %w[main_title main_description rich_collapse]},
+    {name: "ma_reinsertion_indre", title: "Ma réinsertion Indre", parts: %w[main_title main_description rich_collapse]},
     {name: "preparer_spip69", title: "Préparer SPIP 69", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_spip77", title: "Préparer SPIP 77", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_spip54_nancy", title: "Préparer SPIP 54 - Nancy", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
-    {name: "preparer_spip54_val_de_briey", title: "Préparer SPIP 54 - Val de Briey", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]}
+    {name: "preparer_spip54_val_de_briey", title: "Préparer SPIP 54 - Val de Briey", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_spip17_rochelle", title: "Préparer SPIP 17 - La Rochelle", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_spip17_rochefort", title: "Préparer SPIP 17 - Rochefort", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_spip17_saintes", title: "Préparer SPIP 17 - Saintes", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]}
   ]
 
   # Custom pages
@@ -173,15 +178,20 @@ Spina::Theme.register do |theme|
     {name: "preparer_sap_dijon", title: "Préparer SAP Dijon", view_template: "preparer_sap_dijon"},
     {name: "preparer_sap_toulon", title: "Préparer SAP Toulon", view_template: "preparer_sap_toulon"},
     {name: "preparer_sap_tours", title: "Préparer SAP Tours", view_template: "preparer_sap_tours"},
+    {name: "preparer_sap_montbeliard", title: "Préparer SAP Montbeliard", view_template: "preparer_sap_montbeliard"},
     {name: "preparer_spip18", title: "Préparer SPIP 18", view_template: "preparer_spip18"},
     {name: "preparer_spip49", title: "Préparer SPIP 49", view_template: "preparer_spip49"},
     {name: "preparer_spip69", title: "Préparer SPIP 69", view_template: "preparer_spip69"},
     {name: "preparer_spip77", title: "Préparer SPIP 77", view_template: "preparer_spip77"},
     {name: "preparer_spip54_val_de_briey", title: "Préparer SPIP 54 - Val de Briey", view_template: "preparer_spip54_val_de_briey"},
     {name: "preparer_spip54_nancy", title: "Préparer SPIP 54 - Nancy", view_template: "preparer_spip54_nancy"},
+    {name: "preparer_spip17_rochelle", title: "Préparer SPIP 17 - La Rochelle", view_template: "preparer_spip17_rochelle"},
+    {name: "preparer_spip17_rochefort", title: "Préparer SPIP 17 - Rochefort", view_template: "preparer_spip17_rochefort"},
+    {name: "preparer_spip17_saintes", title: "Préparer SPIP 17 - Saintes", view_template: "preparer_spip17_saintes"},
     {name: "ma_reinsertion_hauts_de_seine", title: "Ma réinsertion Hauts-de-Seine", view_template: "ma_reinsertion_hauts_de_seine"},
     {name: "ma_reinsertion_eure_et_loir", title: "Ma réinsertion Eure-et-Loir", view_template: "ma_reinsertion_eure_et_loir"},
     {name: "ma_reinsertion_paris", title: "Ma réinsertion Paris", view_template: "ma_reinsertion_paris"},
+    {name: "ma_reinsertion_indre", title: "Ma réinsertion Indre", view_template: "ma_reinsertion_indre"},
     {name: "ma_reinsertion_seine_et_marne", title: "Ma réinsertion Seine-et-Marne", view_template: "ma_reinsertion_seine_et_marne"}
   ]
 
