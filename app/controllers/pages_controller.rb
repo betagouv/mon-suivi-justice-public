@@ -132,6 +132,9 @@ class PagesController < Spina::ApplicationController
   def preparer_sap_digne_les_bains
   end
 
+  def preparer_sap_montbeliard
+  end
+
   def preparer_spip18
   end
 
@@ -153,6 +156,15 @@ class PagesController < Spina::ApplicationController
   def preparer_spip54_nancy
   end
 
+  def preparer_spip17_rochelle
+  end
+
+  def preparer_spip17_rochefort
+  end
+
+  def preparer_spip17_saintes
+  end
+
   def ma_reinsertion
   end
 
@@ -169,6 +181,9 @@ class PagesController < Spina::ApplicationController
   end
 
   def ma_reinsertion_seine_et_marne
+  end
+
+  def ma_reinsertion_indre
   end
 
   def donnees_personnelles
