@@ -135,6 +135,9 @@ class PagesController < Spina::ApplicationController
   def preparer_sap_montbeliard
   end
 
+  def preparer_sap_saintes
+  end
+
   def preparer_spip18
   end
 
