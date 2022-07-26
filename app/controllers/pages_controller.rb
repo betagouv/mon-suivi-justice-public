@@ -189,6 +189,9 @@ class PagesController < Spina::ApplicationController
   def ma_reinsertion_indre
   end
 
+  def ma_reinsertion_aisne
+  end
+
   def donnees_personnelles
   end
 
