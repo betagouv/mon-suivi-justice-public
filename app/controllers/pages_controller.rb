@@ -168,6 +168,12 @@ class PagesController < Spina::ApplicationController
   def preparer_spip17_saintes
   end
 
+  def preparer_spip2A_ajaccio
+  end
+
+  def preparer_spip2B_bastia
+  end
+
   def ma_reinsertion
   end
 

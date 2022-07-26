@@ -78,6 +78,8 @@ Rails.application.routes.draw do
     get :preparer_spip17_rochelle
     get :preparer_spip17_rochefort
     get :preparer_spip17_saintes
+    get :preparer_spip2A_ajaccio
+    get :preparer_spip2B_bastia
     get :investir_ma_reinsertion
     get :ma_reinsertion_hauts_de_seine
     get :ma_reinsertion_eure_et_loir
