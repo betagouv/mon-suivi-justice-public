@@ -120,6 +120,7 @@ Spina::Theme.register do |theme|
     {name: "ma_reinsertion_paris", title: "Ma réinsertion Paris", parts: %w[main_title main_description rich_collapse]},
     {name: "ma_reinsertion_seine_et_marne", title: "Ma réinsertion Seine-et-Marne", parts: %w[main_title main_description rich_collapse]},
     {name: "ma_reinsertion_indre", title: "Ma réinsertion Indre", parts: %w[main_title main_description rich_collapse]},
+    {name: "ma_reinsertion_aisne", title: "Ma réinsertion Aisne", parts: %w[main_title main_description rich_collapse]},
     {name: "preparer_spip69", title: "Préparer SPIP 69", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_spip77", title: "Préparer SPIP 77", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_spip54_nancy", title: "Préparer SPIP 54 - Nancy", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -194,6 +195,7 @@ Spina::Theme.register do |theme|
     {name: "ma_reinsertion_eure_et_loir", title: "Ma réinsertion Eure-et-Loir", view_template: "ma_reinsertion_eure_et_loir"},
     {name: "ma_reinsertion_paris", title: "Ma réinsertion Paris", view_template: "ma_reinsertion_paris"},
     {name: "ma_reinsertion_indre", title: "Ma réinsertion Indre", view_template: "ma_reinsertion_indre"},
+    {name: "ma_reinsertion_aisne", title: "Ma réinsertion Aisne", view_template: "ma_reinsertion_aisne"},
     {name: "ma_reinsertion_seine_et_marne", title: "Ma réinsertion Seine-et-Marne", view_template: "ma_reinsertion_seine_et_marne"}
   ]
 

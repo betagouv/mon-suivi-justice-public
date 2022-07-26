@@ -374,6 +374,12 @@ RSpec.describe "Pages", type: :request do
     it { is_expected.to be_successful }
   end
 
+  describe "GET /ma_reinsertion_aisne" do
+    let(:path) { ma_reinsertion_aisne_path }
+
+    it { is_expected.to be_successful }
+  end
+
   describe "GET /mentions_legales" do
     let(:path) { mentions_legales_path }
 
