@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer mon RDV" page select
-ZIP_CODES = %w[04 06 17 18 21 23 24 25 28 32 33 36 37 47 49 51 52 54 57 67 68 69 75 77 79 83 92].freeze
+ZIP_CODES = %w[04 06 17 18 2A 2B 21 23 24 25 28 32 33 36 37 47 49 51 52 54 57 67 68 69 75 77 79 83 92].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
@@ -127,7 +127,9 @@ Spina::Theme.register do |theme|
     {name: "preparer_spip54_val_de_briey", title: "Préparer SPIP 54 - Val de Briey", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_spip17_rochelle", title: "Préparer SPIP 17 - La Rochelle", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_spip17_rochefort", title: "Préparer SPIP 17 - Rochefort", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
-    {name: "preparer_spip17_saintes", title: "Préparer SPIP 17 - Saintes", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]}
+    {name: "preparer_spip17_saintes", title: "Préparer SPIP 17 - Saintes", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_spip2A_ajaccio", title: "Préparer SPIP 2A - Ajaccio", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: "preparer_spip2B_bastia", title: "Préparer SPIP 2B - Bastia", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]}
   ]
 
   # Custom pages
@@ -191,6 +193,8 @@ Spina::Theme.register do |theme|
     {name: "preparer_spip17_rochelle", title: "Préparer SPIP 17 - La Rochelle", view_template: "preparer_spip17_rochelle"},
     {name: "preparer_spip17_rochefort", title: "Préparer SPIP 17 - Rochefort", view_template: "preparer_spip17_rochefort"},
     {name: "preparer_spip17_saintes", title: "Préparer SPIP 17 - Saintes", view_template: "preparer_spip17_saintes"},
+    {name: "preparer_spip2A_ajaccio", title: "Préparer SPIP 2A - Ajaccio", view_template: "preparer_spip2A_ajaccio"},
+    {name: "preparer_spip2B_bastia", title: "Préparer SPIP 2B - Bastia", view_template: "preparer_spip2B_bastia"},
     {name: "ma_reinsertion_hauts_de_seine", title: "Ma réinsertion Hauts-de-Seine", view_template: "ma_reinsertion_hauts_de_seine"},
     {name: "ma_reinsertion_eure_et_loir", title: "Ma réinsertion Eure-et-Loir", view_template: "ma_reinsertion_eure_et_loir"},
     {name: "ma_reinsertion_paris", title: "Ma réinsertion Paris", view_template: "ma_reinsertion_paris"},
