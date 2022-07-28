@@ -87,6 +87,8 @@ Rails.application.routes.draw do
     get :ma_reinsertion_indre
     get :ma_reinsertion_seine_et_marne
     get :ma_reinsertion_aisne
+    get :ma_reinsertion_haute_corse
+    get :ma_reinsertion_corse_du_sud
     get :donnees_personnelles
     get :qui_sommes_nous
     get :mentions_legales
