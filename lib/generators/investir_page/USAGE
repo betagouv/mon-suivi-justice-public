@@ -1,0 +1,14 @@
+Description:
+    Generates pages for the "Investir ma réinsertion" section
+
+Example:
+    bin/rails generate investir_page ma_reinsertion_sarthe
+
+    This will create:
+        app/views/pages/ma_reinsertion_sarthe.html.erb
+
+    This will update:
+        app/config/routes.rb
+        app/controllers/pages_controller.rb
+        spec/requests/pages_spec.rb
+        config/initializers/themes/default.rb
