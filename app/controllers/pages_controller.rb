@@ -198,6 +198,12 @@ class PagesController < Spina::ApplicationController
   def ma_reinsertion_aisne
   end
 
+  def ma_reinsertion_haute_corse
+  end
+
+  def ma_reinsertion_corse_du_sud
+  end
+
   def donnees_personnelles
   end
 
