@@ -27,6 +27,7 @@ class CLI < Thor
 
       staging_commands = list.select { |a| a[0].include? "staging" }
       production_commands = list.select { |a| a[0].include? "prod" }
+      pages_commands = list.select { |a| a[0].include? "new_page" }
 
       shell.say "Staging"
       shell.print_table(staging_commands, indent: 2, truncate: true)
@@ -34,6 +35,10 @@ class CLI < Thor
 
       shell.say "Production"
       shell.print_table(production_commands, indent: 2, truncate: true)
+      shell.say
+
+      shell.say "Page creation"
+      shell.print_table(pages_commands, indent: 2, truncate: true)
       shell.say
     end
   end
@@ -91,6 +96,41 @@ class CLI < Thor
   desc "migrations_prod", "launch migrations on MSJ production"
   def migrations_prod
     run("scalingo -a mon-suivi-justice-public-prod --region osc-secnum-fr1 run rails db:migrate")
+  end
+
+  desc "new_page_investir", "creates new page Investir ma réinsertion"
+  def new_page_investir
+    name = ask("What is the name of the new page ? (ex: ma_reinsertion_aisne)")
+    say
+
+    run("rails generate investir_page #{name}")
+
+    say
+    say "New page created"
+    say
+
+    diff = ask("Do you want to see a git diff before deploying ? (y/n)?")
+
+    run("git --no-pager diff") if diff == 'y'
+    say
+
+    deploy = ask("Do you want to commit and deploy ? (y/n)")
+    say
+    if deploy == 'n'
+      run("rails destroy investir_page #{name}")
+      return
+    end
+
+    run("git add .")
+    run("git commit -m 'add new page #{name}'")
+    run("git push")
+
+    run("bin/deploy-prod")
+    run("scalingo -a mon-suivi-justice-public-prod --region osc-secnum-fr1 run rake spina:bootstrap")
+
+    say
+    say set_color "* * * New page deployed * * *", :green
+    say
   end
 end
 
