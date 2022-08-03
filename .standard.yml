@@ -1,4 +1,5 @@
 ignore:
+  - 'cli'
   - 'lib/**/*'
-  - 'config/initializers/themes/default.rb':
-    - Lint/OrAssignmentToConstant
+  - 'config/initializers/themes/default.rb'
+  - 'spec/requests/pages_spec.rb'
