@@ -1,0 +1,19 @@
+Description:
+    Generates pages for the "Préparer mon rendez-vous" section
+
+Example:
+    rails generate preparer_page preparer99 --image_name=super.png --department=99
+
+    This will create:
+        app/views/pages/preparer99.html.erb
+
+    This will update:
+        app/config/routes.rb
+        app/controllers/pages_controller.rb
+        spec/requests/pages_spec.rb
+        config/initializers/themes/default.rb
+
+Notes:
+
+    - Non-reversible. Running 'rails destroy ...' will not revert all the updates to the default config file.
+    - Need to previously add a picture in the 'app/fronted/images' folder, then use the picture name as an option to the generator.

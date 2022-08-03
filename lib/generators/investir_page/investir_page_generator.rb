@@ -1,7 +1,7 @@
 class InvestirPageGenerator < Rails::Generators::NamedBase
   source_root File.expand_path("templates", __dir__)
 
-  def copy_investir_file
+  def copy_template
     copy_file "investir_template.html.erb", "app/views/pages/#{name}.html.erb"
   end
 
@@ -27,7 +27,7 @@ class InvestirPageGenerator < Rails::Generators::NamedBase
   end
 
   def edit_config_file
-    title = name.gsub!('_', ' ').titleize
+    title = name.gsub('_', ' ').titleize
 
     inject_into_file 'config/initializers/themes/default.rb', after: "theme.view_templates = [\n" do
       "    {name: '#{name}', title: '#{title}', parts: %w[main_title main_description rich_collapse]},\n"
