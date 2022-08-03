@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'ma_reinsertion_seine_st_denis', title: 'Ma Reinsertion Seine St Denis', parts: %w[main_title main_description rich_collapse]},
     {name: 'preparer_spip93', title: 'Preparer Spip93', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "landing", title: "Landing", parts: %w[main_title card1_text card1_button_head card1_button_sub card2_text card2_button_head card2_button_sub card3_text card3_button_head card3_button_sub main_description]},
     {name: "amenagements_de_peine", title: "Aménagements de peine", parts: %w[main_title main_rich_description rich_collapse]},
@@ -139,6 +140,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'ma_reinsertion_seine_st_denis', title: 'Ma Reinsertion Seine St Denis', view_template: 'ma_reinsertion_seine_st_denis'},
     {name: 'preparer_spip93', title: 'Preparer Spip93', view_template: 'preparer_spip93'},
     {name: "landing", title: "Page d'accueil", view_template: "landing"},
     {name: "amenagements_de_peine", title: "Aménagements de peine", view_template: "amenagements_de_peine"},
