@@ -15,5 +15,5 @@ Example:
 
 Notes:
 
-    - Non-reversible. Running 'rails destroy ...' will not revert all the updates to the default config file.
+    - Non-reversible. Running 'rails destroy ...' will not revert the updates to the default config file.
     - Need to previously add a picture in the 'app/fronted/images' folder, then use the picture name as an option to the generator.

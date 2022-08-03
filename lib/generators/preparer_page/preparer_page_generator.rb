@@ -21,7 +21,7 @@ class PreparerPageGenerator < Rails::Generators::NamedBase
 
   def edit_controller
     inject_into_file 'app/controllers/pages_controller.rb', after: "include Spina::Api::Paginable\n" do
-      "\n  def #{name}\n  end \n"
+      "\n  def #{name}\n  end\n"
     end
   end
 
