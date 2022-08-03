@@ -1,0 +1,4 @@
+ignore:
+  - 'lib/**/*'
+  - 'config/initializers/themes/default.rb':
+    - Lint/OrAssignmentToConstant

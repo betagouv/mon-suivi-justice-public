@@ -10,7 +10,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.1
+          ruby-version: 3.1.2
           bundler-cache: true
       - name: StandardRB Linter
         run: bundle exec standardrb
@@ -65,7 +65,7 @@ jobs:
       - name: Set up Ruby environment
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.1
+          ruby-version: 3.1.2
           bundler-cache: true
       - name: Setup test database
         run: bin/rails db:create db:schema:load db:migrate RAILS_ENV=test

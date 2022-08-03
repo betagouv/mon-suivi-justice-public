@@ -3,14 +3,18 @@ class PagesController < Spina::ApplicationController
   skip_before_action :authenticate_convict!
   layout "public"
 
-  include Spina::Api::Paginable
-
   # Controller inherit from Spina::ApplicationController
   # Set Spina::Current.page
   # Create custom pages in theme
   # rails spina:bootstrap
   # Ajouter contenu dans les vues
   # Spina::Navigation.find_by(name: "main").pages.pluck(:name) pour la navigation
+
+  include Spina::Api::Paginable
+
+  def preparer_spip93
+  end
+
   def landing
   end
 
