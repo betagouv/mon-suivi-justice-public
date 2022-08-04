@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer mon RDV" page select
-ZIP_CODES ||= ["04", "06", "17", "18", "2A", "2B", "21", "23", "24", "25", "28", "32", "33", "36", "37", "47", "49", "51", "52", "54", "57", "67", "68", "69", "75", "77", "79", "83", "92", "93"].freeze
+ZIP_CODES ||= ["04", "06", "17", "18", "2A", "2B", "21", "23", "24", "25", "28", "32", "33", "36", "37", "47", "49", "51", "52", "54", "57", "67", "68", "69", "75", "77", "79", "83", "92", "93", "58"].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_spip_58', title: 'Preparer Spip 58', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'ma_reinsertion_nievre', title: 'Ma Reinsertion Nievre', parts: %w[main_title main_description rich_collapse]},
     {name: 'ma_reinsertion_seine_st_denis', title: 'Ma Reinsertion Seine St Denis', parts: %w[main_title main_description rich_collapse]},
     {name: 'preparer_spip93', title: 'Preparer Spip93', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -141,6 +142,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_spip_58', title: 'Preparer Spip 58', view_template: 'preparer_spip_58'},
     {name: 'ma_reinsertion_nievre', title: 'Ma Reinsertion Nievre', view_template: 'ma_reinsertion_nievre'},
     {name: 'ma_reinsertion_seine_st_denis', title: 'Ma Reinsertion Seine St Denis', view_template: 'ma_reinsertion_seine_st_denis'},
     {name: 'preparer_spip93', title: 'Preparer Spip93', view_template: 'preparer_spip93'},
