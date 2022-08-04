@@ -132,6 +132,50 @@ class CLI < Thor
     say set_color "* * * New page deployed * * *", :green
     say
   end
+
+  desc "new_page_preparer", "creates new page Préparer mon rdv"
+  def new_page_preparer
+    name = ask("What's the name of the new page ? (ex: preparer_sap_agen)")
+    say
+
+    department = ask("Which department is concerned ? (ex: 93)")
+    say
+
+    image_name = ask("What's the name of the image previously saved in app/frontend/images ? (ex: spip93.jpg)")
+    say
+
+    run("rails generate preparer_page #{name} --image_name=#{image_name} --department=#{department}")
+
+    say
+    say "New page created"
+    say
+
+    diff = ask("Do you want to see a git diff before deploying ? (y/n)?")
+
+    run("git --no-pager diff") if diff == 'y'
+    say
+
+    deploy = ask("Do you want to commit and deploy ? (y/n)")
+    say
+    if deploy == 'n'
+      run("rails destroy preparer_page #{name} --image_name=#{image_name} --department=#{department}")
+      say
+
+      say "This generator is not fully reversible, there are changes to config/initializers/themes/default.rb that needs to be reverted manually."
+      return
+    end
+
+    run("git add .")
+    run("git commit -m 'add new page #{name}'")
+    run("git push")
+
+    run("bin/deploy-prod")
+    run("scalingo -a mon-suivi-justice-public-prod --region osc-secnum-fr1 run rake spina:bootstrap")
+
+    say
+    say set_color "* * * New page deployed * * *", :green
+    say
+  end
 end
 
 CLI.start(ARGV)
