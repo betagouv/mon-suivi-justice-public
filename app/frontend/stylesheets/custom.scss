@@ -329,7 +329,8 @@
 }
 
 .video-wrapper {
-  height: 500px;
   margin: auto;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
