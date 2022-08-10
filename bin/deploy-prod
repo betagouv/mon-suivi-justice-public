@@ -12,7 +12,7 @@ then
   echo ""
   echo "Merge develop in main"
   git checkout main
-  git merge develop
+  git merge develop --no-edit
   git push origin main
   git checkout develop
   echo "Push to Scalingo"
