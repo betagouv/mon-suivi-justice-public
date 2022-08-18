@@ -47,7 +47,7 @@ class PreparerPageGenerator < Rails::Generators::NamedBase
     return if current_zipcodes.include?(options.department)
 
     current_zipcodes << options.department
-    new_config_line = "ZIP_CODES ||= #{current_zipcodes}.freeze\n"
+    new_config_line = "ZIP_CODES ||= #{current_zipcodes.sort!}.freeze\n"
     gsub_file "config/initializers/themes/default.rb", line, new_config_line
   end
 end
