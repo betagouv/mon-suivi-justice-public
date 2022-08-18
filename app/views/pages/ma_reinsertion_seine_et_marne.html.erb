@@ -1,7 +1,7 @@
 <div class='fr-container static-content-container'>
   <h1 class='static-title static-title-green fr-mb-4w'><%= content(:main_title)%></h1>
 
-  <% unless content.html(:main_rich_description).empty? || content.html(:main_rich_description).nil? %>
+  <% unless content.html(:main_rich_description).html.nil? %>
     <div class='static-card static-link-card'><%= content.html(:main_rich_description) %></div>
   <% end %>
 
