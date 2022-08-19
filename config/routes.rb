@@ -98,6 +98,7 @@ Rails.application.routes.draw do
     get :donnees_personnelles
     get :qui_sommes_nous
     get :mentions_legales
+    get :declaration_accessibilite
     get :get_all_pages
   end
 
