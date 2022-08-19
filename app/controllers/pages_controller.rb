@@ -232,6 +232,9 @@ class PagesController < Spina::ApplicationController
   def mentions_legales
   end
 
+  def declaration_accessibilite
+  end
+
   def get_all_pages
     pages = Spina::Page.live.includes(:translations).order(:created_at)
     render json: Spina::Api::PageSerializer.new(pages).serializable_hash.to_json

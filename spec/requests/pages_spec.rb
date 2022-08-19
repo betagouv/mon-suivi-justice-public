@@ -445,4 +445,10 @@ RSpec.describe "Pages", type: :request do
 
     it { is_expected.to be_successful }
   end
+
+  describe "GET /declaration_accessibilite" do
+    let(:path) { declaration_accessibilite_path }
+
+    it { is_expected.to be_successful }
+  end
 end
