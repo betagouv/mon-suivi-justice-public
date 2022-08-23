@@ -1,5 +1,5 @@
 <div data-controller="collapse" data-collapse-expanded-value="0">
-  <div class="collapse-trigger collapse-trigger-<%= collapse_style %>" data-action="click->collapse#toggle" data-collapse-target="label">
+  <div class="collapse-trigger collapse-trigger-<%= collapse_style %>" data-action="click->collapse#toggle keypress->collapse#toggle" data-collapse-target="label" tabindex="0">
     <% if collapse_style == "red" %>
       <div><%= collapse.content(:collapse_title) %></div>
     <% end %>
