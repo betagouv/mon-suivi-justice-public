@@ -7,7 +7,7 @@ export default class extends Controller {
   }
 
   toggle () {
-    if (event.keyCode == 9) { return; }
+    if ([16,9].includes(event.keyCode)) { return; }
     if (this.expandedValue === true) {
       this.collapse()
     } else {
