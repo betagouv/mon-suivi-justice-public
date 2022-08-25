@@ -41,6 +41,7 @@ Rails.application.routes.draw do
     get :sursis_probatoire
     get :travail_interet_general
     get :suivi_socio_judiciaire
+    get :jour_amende
     get :stage
     get :amenagements_de_peine
     get :preparer_mon_rdv

@@ -1,0 +1,7 @@
+<div class='fr-container static-content-container'>
+  <h1 class='static-simple-title static-title-orange fr-mb-3w'><%= content(:main_title) %></h1>
+
+  <% repeater(:rich_collapse) do |collapse| %>
+    <%= render 'components/collapse', collapse: collapse, collapse_style: "red"  %>
+  <% end %>
+</div>
