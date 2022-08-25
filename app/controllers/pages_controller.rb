@@ -51,6 +51,9 @@ class PagesController < Spina::ApplicationController
   def sursis_probatoire
   end
 
+  def jour_amende
+  end
+
   def travail_interet_general
   end
 
