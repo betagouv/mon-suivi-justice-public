@@ -6,8 +6,8 @@ export default class extends Controller {
     expanded: Boolean
   }
 
-  toggle () {
-    if ([16,9].includes(event.keyCode)) { return; }
+  toggle (event) {
+    if ([16, 9].includes(event.keyCode)) { return }
     if (this.expandedValue === true) {
       this.collapse()
     } else {
