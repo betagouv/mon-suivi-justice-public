@@ -12,6 +12,18 @@ class PagesController < Spina::ApplicationController
 
   include Spina::Api::Paginable
 
+  def preparer_sap_annecy
+  end
+
+  def preparer_spip_lorient
+  end
+
+  def preparer_spip_vannes
+  end
+
+  def preparer_sap_bourgoin_jallieu
+  end
+
   def ma_reinsertion_morbihan
   end
 
