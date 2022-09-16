@@ -12,6 +12,9 @@ class PagesController < Spina::ApplicationController
 
   include Spina::Api::Paginable
 
+  def preparer_sap_le_mans
+  end
+
   def preparer_sap_montlucon
   end
 
