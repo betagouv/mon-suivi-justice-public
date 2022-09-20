@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer mon RDV" page select
-ZIP_CODES ||= ["02", "03", "04", "06", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "47", "49", "51", "52", "54", "56", "57", "58", "61", "67", "68", "69", "72", "74", "75", "77", "79", "83", "92", "93"].freeze
+ZIP_CODES ||= ["02", "03", "04", "06", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "61", "67", "68", "69", "72", "74", "75", "77", "79", "83", "92", "93", "95"].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
@@ -66,6 +66,10 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_sap_villefranche_sur_saone', title: 'Preparer Sap Villefranche Sur Saone', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_pontoise', title: 'Preparer Sap Pontoise', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_nantes', title: 'Preparer Sap Nantes', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_argentan', title: 'Preparer Sap Argentan', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_le_mans', title: 'Preparer Sap Le Mans', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_montlucon', title: 'Preparer Sap Montlucon', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_alencon', title: 'Preparer Sap Alencon', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -157,6 +161,10 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_sap_villefranche_sur_saone', title: 'Preparer Sap Villefranche Sur Saone', view_template: 'preparer_sap_villefranche_sur_saone'},
+    {name: 'preparer_sap_pontoise', title: 'Preparer Sap Pontoise', view_template: 'preparer_sap_pontoise'},
+    {name: 'preparer_sap_nantes', title: 'Preparer Sap Nantes', view_template: 'preparer_sap_nantes'},
+    {name: 'preparer_sap_argentan', title: 'Preparer Sap Argentan', view_template: 'preparer_sap_argentan'},
     {name: 'preparer_sap_le_mans', title: 'Preparer Sap Le Mans', view_template: 'preparer_sap_le_mans'},
     {name: 'preparer_sap_montlucon', title: 'Preparer Sap Montlucon', view_template: 'preparer_sap_montlucon'},
     {name: 'preparer_sap_alencon', title: 'Preparer Sap Alencon', view_template: 'preparer_sap_alencon'},

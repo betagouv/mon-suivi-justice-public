@@ -12,6 +12,18 @@ class PagesController < Spina::ApplicationController
 
   include Spina::Api::Paginable
 
+  def preparer_sap_villefranche_sur_saone
+  end
+
+  def preparer_sap_pontoise
+  end
+
+  def preparer_sap_nantes
+  end
+
+  def preparer_sap_argentan
+  end
+
   def preparer_sap_le_mans
   end
 
