@@ -1,7 +1,7 @@
 
 Deux méthodes pour créer une page (investir ma réinsertion et préparer mon rdv )
 
-Pour une page Préparer mon rdv, une image doit être uploadée dans `app/frontend/images`, vérifier que le fichier que le fichier n'est pas trop lourd.
+Pour une page Préparer mon rdv, une image doit être uploadée dans `app/frontend/images`, vérifier que le fichier n'est pas trop lourd.
 
 - Utiliser le CLI pour déployer une nouvelle page
 
@@ -14,8 +14,8 @@ Va jusqu'au déploiement pour une page à la fois.
 - Utiliser directement les générateurs
 
 ```
-rails generate preparer_page preparer_sap_alencon --image_name=sap_alencon.jpg --department=61
-rails generate investir_page ma_reinsertion_sarthe
+$ rails generate preparer_page preparer_sap_alencon --image_name=sap_alencon.jpg --department=61
+$ rails generate investir_page ma_reinsertion_sarthe
 ```
 
 Génére tous les fichiers et fait les modifs. Permet de grouper plusieurs pages en un seul déploiement.
