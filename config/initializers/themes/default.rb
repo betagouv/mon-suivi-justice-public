@@ -103,7 +103,7 @@ Spina::Theme.register do |theme|
     {name: "obligations_personnelles", title: "Obligations personnelles", parts: %w[category main_title subtitle main_description rich_collapse]},
     {name: "regles_essentielles", title: "Les règles essentielles", parts: %w[category main_title subtitle main_description rich_collapse]},
     {name: "mes_interlocuteurs", title: "Mes interlocuteurs", parts: %w[category main_title subtitle main_description rich_collapse]},
-    {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", parts: %w[main_title subtitle main_rich_description basic_card]},
+    {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", parts: %w[main_title subtitle secondary_subtitle main_rich_description basic_card]},
     {name: "preparer_spip92", title: "Préparer SPIP 92", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_spip28", title: "Préparer SPIP 28", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},

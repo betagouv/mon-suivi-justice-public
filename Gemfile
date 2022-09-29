@@ -77,7 +77,7 @@ group :development, :test do
 
   gem "timecop", "~> 0.9.5"
 
-  gem "webmock", "~> 3.14"
+  gem "webmock", "~> 3.17"
   gem "vcr", "~> 6.0"
 end
 
