@@ -66,6 +66,8 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_tj_meaux', title: 'Preparer Tj Meaux', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_melun', title: 'Preparer Sap Melun', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_caen', title: 'Preparer Sap Caen', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_villefranche_sur_saone', title: 'Preparer Sap Villefranche Sur Saone', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_pontoise', title: 'Preparer Sap Pontoise', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -162,6 +164,8 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_tj_meaux', title: 'Preparer Tj Meaux', view_template: 'preparer_tj_meaux'},
+    {name: 'preparer_sap_melun', title: 'Preparer Sap Melun', view_template: 'preparer_sap_melun'},
     {name: 'preparer_sap_caen', title: 'Preparer Sap Caen', view_template: 'preparer_sap_caen'},
     {name: 'preparer_sap_villefranche_sur_saone', title: 'Preparer Sap Villefranche Sur Saone', view_template: 'preparer_sap_villefranche_sur_saone'},
     {name: 'preparer_sap_pontoise', title: 'Preparer Sap Pontoise', view_template: 'preparer_sap_pontoise'},
