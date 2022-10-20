@@ -27,7 +27,7 @@ Rails.application.routes.draw do
 
   scope controller: :pages do
     get :preparer_sap_avesnes_sur_helpe
-    get :preparer_tj_meaux
+    get :preparer_sap_meaux
     get :preparer_sap_melun
     get :preparer_sap_caen
     get :preparer_sap_villefranche_sur_saone
