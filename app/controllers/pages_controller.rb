@@ -15,7 +15,7 @@ class PagesController < Spina::ApplicationController
   def preparer_sap_avesnes_sur_helpe
   end
 
-  def preparer_tj_meaux
+  def preparer_sap_meaux
   end
 
   def preparer_sap_melun
