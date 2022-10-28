@@ -123,7 +123,7 @@ Rails.application.routes.draw do
     get :get_all_pages
   end
 
-  get "/stats" => redirect("https://infogram.com/column-stacked-chart-1h7z2l8www5rg6o?live", status: 302), :as => :stats
+  get "/stats" => redirect("https://monsuivijustice.notion.site/Statistiques-publi-es-bbbce17e1452428aa24172fc26cb5697", status: 302), :as => :stats
 
   match "/404" => "errors#not_found", :via => :all
   match "/422" => "errors#unprocessable_entity", :via => :all
