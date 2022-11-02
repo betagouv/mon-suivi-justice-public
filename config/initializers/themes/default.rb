@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer mon RDV" page select
-ZIP_CODES ||= ["02", "03", "04", "06", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "72", "74", "75", "77", "79", "83", "92", "93", "95"].freeze
+ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "72", "74", "75", "77", "79", "83", "92", "93", "95"].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_sap_marseille', title: 'Preparer Sap Marseille', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_boulogne_sur_mer', title: 'Preparer Sap Boulogne Sur Mer', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_avesnes_sur_helpe', title: 'Preparer Sap Avesnes Sur Helpe', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_meaux', title: 'Preparer Sap Meaux', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -166,6 +167,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_sap_marseille', title: 'Preparer Sap Marseille', view_template: 'preparer_sap_marseille'},
     {name: 'preparer_sap_boulogne_sur_mer', title: 'Preparer Sap Boulogne Sur Mer', view_template: 'preparer_sap_boulogne_sur_mer'},
     {name: 'preparer_sap_avesnes_sur_helpe', title: 'Preparer Sap Avesnes Sur Helpe', view_template: 'preparer_sap_avesnes_sur_helpe'},
     {name: 'preparer_sap_meaux', title: 'Preparer Sap Meaux', view_template: 'preparer_sap_meaux'},
