@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_spip61_alencon', title: 'Preparer Spip61 Alencon', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'ma_reinsertion_yvelines', title: 'Ma Reinsertion Yvelines', parts: %w[main_title main_description rich_collapse]},
     {name: 'preparer_spip78', title: 'Preparer Spip78', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_versailles', title: 'Preparer Sap Versailles', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -172,6 +173,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_spip61_alencon', title: 'Preparer Spip61 Alencon', view_template: 'preparer_spip61_alencon'},
     {name: 'ma_reinsertion_yvelines', title: 'Ma Reinsertion Yvelines', view_template: 'ma_reinsertion_yvelines'},
     {name: 'preparer_spip78', title: 'Preparer Spip78', view_template: 'preparer_spip78'},
     {name: 'preparer_sap_versailles', title: 'Preparer Sap Versailles', view_template: 'preparer_sap_versailles'},
