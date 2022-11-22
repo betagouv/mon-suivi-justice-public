@@ -12,6 +12,9 @@ class PagesController < Spina::ApplicationController
 
   include Spina::Api::Paginable
 
+  def preparer_spip91
+  end
+
   def preparer_spip61_alencon
   end
 
