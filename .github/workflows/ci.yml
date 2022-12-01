@@ -5,7 +5,8 @@ on:
 # Fix workflows triggered by dependabot https://github.com/dependabot/dependabot-core/issues/3253
 permissions:
   pull-requests: write
-
+  issues: write
+  repository-projects: write
 
 jobs:
   lint-rb:
