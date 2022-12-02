@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe "Pages", type: :request do
   subject { response }
 
-  before do
+  before(:all) do
     FactoryBot.create(:account)
     get path
   end
