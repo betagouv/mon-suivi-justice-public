@@ -67,7 +67,6 @@ Spina::Theme.register do |theme|
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
     {name: 'preparer_sap_chalons_en_champagne', title: 'Preparer sap_chalons_en_champagne', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
-    {name: 'preparer_spip71', title: 'Preparer Spip71', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip972', title: 'Preparer Spip972', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip91', title: 'Preparer Spip91', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip61_alencon', title: 'Preparer Spip61 Alencon', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -178,7 +177,6 @@ Spina::Theme.register do |theme|
   # By naming them you can reference them in your code.
   theme.custom_pages = [
     {name: 'preparer_sap_chalons_en_champagne', title: 'Preparer sap_chalons_en_champagne', view_template: 'preparer_sap_chalons_en_champagne'},
-    {name: 'preparer_spip71', title: 'Preparer Spip71', view_template: 'preparer_spip71'},
     {name: 'preparer_spip972', title: 'Preparer Spip972', view_template: 'preparer_spip972'},
     {name: 'preparer_spip91', title: 'Preparer Spip91', view_template: 'preparer_spip91'},
     {name: 'preparer_spip61_alencon', title: 'Preparer Spip61 Alencon', view_template: 'preparer_spip61_alencon'},
