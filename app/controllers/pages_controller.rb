@@ -14,9 +14,6 @@ class PagesController < Spina::ApplicationController
   def preparer_sap_chalons_en_champagne
   end
 
-  def preparer_spip71
-  end
-
   def preparer_spip972
   end
 
