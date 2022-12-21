@@ -15,14 +15,6 @@ RSpec.describe "Pages", type: :request do
       is_expected.to be_successful
     end
   end
-  describe 'GET /preparer_spip71' do
-    let(:path) { preparer_spip71_path }
-    
-    it do 
-      get path
-      is_expected.to be_successful
-    end
-  end
 
   describe 'GET /preparer_spip972' do
     let(:path) { preparer_spip972_path }
