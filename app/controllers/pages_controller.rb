@@ -14,6 +14,27 @@ class PagesController < Spina::ApplicationController
   def preparer_spip_71_macon
   end
 
+  def preparer_spip_66
+  end
+
+  def preparer_spip71_chalon_sur_saone
+  end
+
+  def preparer_sap_blois
+  end
+
+  def preparer_sap_sables_d_olonne
+  end
+
+  def preparer_sap_poitiers
+  end
+
+  def preparer_spip21
+  end
+
+  def preparer_sap_dax
+  end
+
   def preparer_sap_chalons_en_champagne
   end
 

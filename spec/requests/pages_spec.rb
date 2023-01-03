@@ -9,12 +9,76 @@ RSpec.describe "Pages", type: :request do
 
   describe 'GET /preparer_spip_71_macon' do
     let(:path) { preparer_spip_71_macon_path }
+                
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
+
+  describe 'GET /preparer_spip_66' do
+    let(:path) { preparer_spip_66_path }
+            
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
+  
+  describe 'GET /preparer_spip71_chalon_sur_saone' do
+    let(:path) { preparer_spip71_chalon_sur_saone_path }
+        
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
+  
+  describe 'GET /preparer_sap_blois' do
+    let(:path) { preparer_sap_blois_path }
     
     it do
       get path
       is_expected.to be_successful
     end
   end
+
+  describe 'GET /preparer_sap_sables_d_olonne' do
+    let(:path) { preparer_sap_sables_d_olonne_path }
+    
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
+
+  describe 'GET /preparer_sap_poitiers' do
+    let(:path) { preparer_sap_poitiers_path }
+
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
+
+  describe 'GET /preparer_sap_dax' do
+    let(:path) { preparer_sap_dax_path }
+    
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
+
+  describe 'GET /preparer_spip21' do
+    let(:path) { preparer_spip21_path }
+    
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
+
   describe 'GET /preparer_sap_chalons_en_champagne' do
     let(:path) { preparer_sap_chalons_en_champagne_path }
     
