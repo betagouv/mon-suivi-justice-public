@@ -13,7 +13,7 @@ class PagesController < Spina::ApplicationController
   include Spina::Api::Paginable
   def preparer_spip_66
   end
-  
+
   def preparer_spip71_chalon_sur_saone
   end
 
