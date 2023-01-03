@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer mon RDV" page select
-ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "71", "72", "74", "75", "77", "78", "79", "83", "91", "92", "93", "95", "972"].freeze
+ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "71", "72", "74", "75", "77", "78", "79", "83", "91", "92", "93", "95", "972", "85", "86", "40", "41", "66"].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
@@ -66,6 +66,14 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_spip_71_macon', title: 'Preparer spip_71_macon', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_spip_66', title: 'Preparer spip_66', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_spip71_chalon_sur_saone', title: 'Preparer spip71_chalon_sur_saone', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_blois', title: 'Preparer sap_blois', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_sables_d_olonne', title: 'Preparer sap_sables_d_olonne', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_poitiers', title: 'Preparer sap_poitiers', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_spip21', title: 'Preparer spip21', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_dax', title: 'Preparer sap_dax', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_chalons_en_champagne', title: 'Preparer sap_chalons_en_champagne', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip972', title: 'Preparer Spip972', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip91', title: 'Preparer Spip91', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -176,6 +184,14 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_spip_71_macon', title: 'Preparer spip_71_macon', view_template: 'preparer_spip_71_macon'},
+    {name: 'preparer_spip_66', title: 'Preparer spip_66', view_template: 'preparer_spip_66'},
+    {name: 'preparer_spip71_chalon_sur_saone', title: 'Preparer spip71_chalon_sur_saone', view_template: 'preparer_spip71_chalon_sur_saone'},
+    {name: 'preparer_sap_blois', title: 'Preparer sap_blois', view_template: 'preparer_sap_blois'},
+    {name: 'preparer_sap_sables_d_olonne', title: 'Preparer sap_sables_d_olonne', view_template: 'preparer_sap_sables_d_olonne'},
+    {name: 'preparer_sap_poitiers', title: 'Preparer sap_poitiers', view_template: 'preparer_sap_poitiers'},
+    {name: 'preparer_spip21', title: 'Preparer spip21', view_template: 'preparer_spip21'},
+    {name: 'preparer_sap_dax', title: 'Preparer sap_dax', view_template: 'preparer_sap_dax'},
     {name: 'preparer_sap_chalons_en_champagne', title: 'Preparer sap_chalons_en_champagne', view_template: 'preparer_sap_chalons_en_champagne'},
     {name: 'preparer_spip972', title: 'Preparer Spip972', view_template: 'preparer_spip972'},
     {name: 'preparer_spip91', title: 'Preparer Spip91', view_template: 'preparer_spip91'},
