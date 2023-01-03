@@ -27,6 +27,9 @@ Rails.application.routes.draw do
 
   scope controller: :pages do
     get :preparer_sap_sables_d_olonne
+    get :preparer_sap_poitiers
+    get :preparer_spip21
+    get :preparer_sap_dax
     get :preparer_sap_chalons_en_champagne
     get :preparer_spip972
     get :preparer_spip91
