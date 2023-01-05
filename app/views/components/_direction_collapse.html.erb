@@ -24,6 +24,15 @@
         </div>
       <% end %>
 
+      <% if content(:collapse_rich_content_alert).present? %>
+        <div class="static-card static-important-card">
+          <i class="fa fa-exclamation-triangle 3x static-important-exclamation-triangle"></i>
+          <div class="static-link-card-intro">
+            <%= content.html(:collapse_rich_content_alert) %>
+          </div>
+        </div>
+    <% end %>
+
       <%= link_to content(:direction_collapse_button_link), target: '_blank', class: 'static-google-map-link static-google-map-link-button fr-my-2w' do %>
         <%= content(:direction_collapse_button_text) %>
       <% end %>
