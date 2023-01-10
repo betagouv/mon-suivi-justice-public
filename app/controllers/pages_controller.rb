@@ -180,7 +180,7 @@ class PagesController < Spina::ApplicationController
   end
 
   def preparer_mon_rdv
-    @zip_codes = ZIP_CODES
+    @zip_codes = ZIP_CODES.sort
   end
 
   def preparer_spip92
