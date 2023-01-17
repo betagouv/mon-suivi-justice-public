@@ -1016,7 +1016,7 @@ RSpec.describe "Pages", type: :request do
   end
 
   describe "GET /ma_reinsertion_mayenne" do
-    let(:path) { ma_reinsertion_mayenne }
+    let(:path) { ma_reinsertion_mayenne_path }
 
     it do 
       get path
