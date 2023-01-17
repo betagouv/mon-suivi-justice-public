@@ -15,6 +15,12 @@
 
       <%= content.html(:direction_collapse_first_rich_content) %>
 
+      <%= link_to content(:direction_collapse_button_link), target: '_blank', class: 'static-google-map-link static-google-map-link-button fr-my-2w' do %>
+        <%= content(:direction_collapse_button_text) %>
+      <% end %>
+
+      <%= content.html(:direction_collapse_second_rich_content) %>
+
       <% if content(:collapse_rich_content_good_practice).present? %>
         <div class="static-card static-good-practice-card">
           <i class='fa fa-thumbs-up 3x static-good-practice-thumb-up'></i>
@@ -31,13 +37,7 @@
             <%= content.html(:collapse_rich_content_alert) %>
           </div>
         </div>
-    <% end %>
-
-      <%= link_to content(:direction_collapse_button_link), target: '_blank', class: 'static-google-map-link static-google-map-link-button fr-my-2w' do %>
-        <%= content(:direction_collapse_button_text) %>
       <% end %>
-
-      <%= content.html(:direction_collapse_second_rich_content) %>
     </div>
   </div>
 </div>
