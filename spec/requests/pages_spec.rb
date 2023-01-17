@@ -15,6 +15,7 @@ RSpec.describe "Pages", type: :request do
       is_expected.to be_successful
     end
   end
+  
   describe 'GET /preparer_spip_71_macon' do
     let(:path) { preparer_spip_71_macon_path }
                 
