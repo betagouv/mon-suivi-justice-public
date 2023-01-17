@@ -14,6 +14,7 @@ class PagesController < Spina::ApplicationController
 
   def ma_reinsertion_mayenne
   end
+
   def preparer_SPIP_53
   end
 
