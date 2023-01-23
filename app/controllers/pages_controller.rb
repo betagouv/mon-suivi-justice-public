@@ -14,7 +14,6 @@ class PagesController < Spina::ApplicationController
   def preparer_spip37
   end
 
-
   def ma_reinsertion_pyrenees_orientales
   end
 
