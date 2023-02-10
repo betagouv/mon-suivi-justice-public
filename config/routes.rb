@@ -28,6 +28,8 @@ Rails.application.routes.draw do
   scope controller: :pages do
     get :preparer_spip48_lozere
     get :preparer_TJ_bayonne
+    get :preparer_TJ_coutances
+    get :preparer_spip74_annecy
     get :preparer_tj_lyon
     get :preparer_spip62
     get :preparer_spip37
