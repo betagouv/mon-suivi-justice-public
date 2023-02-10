@@ -23,6 +23,9 @@ class PagesController < Spina::ApplicationController
   def preparer_spip74_annecy
   end
 
+  def preparer_spip_charleville_mezieres
+  end
+
   def preparer_tj_lyon
   end
 
