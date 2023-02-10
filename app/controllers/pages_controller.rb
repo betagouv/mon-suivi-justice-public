@@ -20,6 +20,9 @@ class PagesController < Spina::ApplicationController
   def preparer_TJ_coutances
   end
 
+  def preparer_spip74_annecy
+  end
+
   def preparer_tj_lyon
   end
 
