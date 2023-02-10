@@ -7,20 +7,23 @@ RSpec.describe "Pages", type: :request do
     FactoryBot.create(:account)
   end
 
-<<<<<<< HEAD
   describe 'GET /preparer_spip48_lozere' do
     let(:path) { preparer_spip48_lozere_path }
-=======
+
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
+
   describe 'GET /preparer_spip74_annecy' do
     let(:path) { preparer_spip74_annecy_path }
->>>>>>> 2027983 (Updating pages spec file for spip74_annecy)
     
     it do
       get path
       is_expected.to be_successful
     end
   end
-<<<<<<< HEAD
 
   describe 'GET /preparer_TJ_bayonne' do
     let(:path) { preparer_TJ_bayonne_path }
@@ -40,8 +43,6 @@ RSpec.describe "Pages", type: :request do
     end
   end
 
-=======
->>>>>>> 2027983 (Updating pages spec file for spip74_annecy)
   describe 'GET /preparer_tj_lyon' do
     let(:path) { preparer_tj_lyon_path }
     
