@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer mon RDV" page select
-ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "71", "72", "74", "75", "77", "78", "79", "83", "91", "92", "93", "95", "972", "85", "86", "40", "41", "66", "53", "64", "48", "50"].freeze
+ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "71", "72", "74", "75", "77", "78", "79", "83", "91", "92", "93", "95", "972", "85", "86", "40", "41", "66", "53", "64", "48", "50", "08"].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
@@ -70,6 +70,7 @@ Spina::Theme.register do |theme|
     {name: 'preparer_TJ_bayonne', title: 'Preparer TJ_bayonne', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_TJ_coutances', title: 'Preparer TJ_coutances', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip74_annecy', title: 'Preparer spip74_annecy', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_spip_charleville_mezieres', title: 'Preparer spip_charleville_mezieres', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_tj_lyon', title: 'Preparer tj_lyon', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip62', title: 'Preparer spip62', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip37', title: 'Preparer spip37', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -198,6 +199,7 @@ Spina::Theme.register do |theme|
     {name: 'preparer_TJ_bayonne', title: 'Preparer TJ_bayonne', view_template: 'preparer_TJ_bayonne'},
     {name: 'preparer_TJ_coutances', title: 'Preparer TJ_coutances', view_template: 'preparer_TJ_coutances'},
     {name: 'preparer_spip74_annecy', title: 'Preparer spip74_annecy', view_template: 'preparer_spip74_annecy'},
+    {name: 'preparer_spip_charleville_mezieres', title: 'Preparer spip_charleville_mezieres', view_template: 'preparer_spip_charleville_mezieres'},
     {name: 'preparer_tj_lyon', title: 'Preparer tj_lyon', view_template: 'preparer_tj_lyon'},
     {name: 'preparer_spip62', title: 'Preparer spip62', view_template: 'preparer_spip62'},
     {name: 'preparer_spip37', title: 'Preparer spip37', view_template: 'preparer_spip37'},
