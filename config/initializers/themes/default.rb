@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_spip_51', title: 'Preparer spip_51', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip48_lozere', title: 'Preparer spip48_lozere', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_TJ_bayonne', title: 'Preparer TJ_bayonne', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_TJ_coutances', title: 'Preparer TJ_coutances', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -195,6 +196,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_spip_51', title: 'Preparer spip_51', view_template: 'preparer_spip_51'},
     {name: 'preparer_spip48_lozere', title: 'Preparer spip48_lozere', view_template: 'preparer_spip48_lozere'},
     {name: 'preparer_TJ_bayonne', title: 'Preparer TJ_bayonne', view_template: 'preparer_TJ_bayonne'},
     {name: 'preparer_TJ_coutances', title: 'Preparer TJ_coutances', view_template: 'preparer_TJ_coutances'},
