@@ -12,6 +12,9 @@ class PagesController < Spina::ApplicationController
 
   include Spina::Api::Paginable
 
+  def ma_reinsertion_val_d_oise
+  end
+
   def ma_reinsertion_loir_et_cher
   end
 
