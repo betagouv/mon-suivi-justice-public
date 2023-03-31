@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'ma_reinsertion_val_d_oise', title: 'Ma Reinsertion Val D Oise', parts: %w[main_title main_description rich_collapse]},
     {name: 'ma_reinsertion_loir_et_cher', title: 'Ma Reinsertion Loir Et Cher', parts: %w[main_title main_description rich_collapse]},
     {name: 'preparer_sap_privas', title: 'Preparer sap_privas', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip41_loir_et_cher', title: 'Preparer spip41_loir_et_cher', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -207,6 +208,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'ma_reinsertion_val_d_oise', title: 'Ma Reinsertion Val D Oise', view_template: 'ma_reinsertion_val_d_oise'},
     {name: 'ma_reinsertion_loir_et_cher', title: 'Ma Reinsertion Loir Et Cher', view_template: 'ma_reinsertion_loir_et_cher'},
     {name: 'preparer_sap_privas', title: 'Preparer sap_privas', view_template: 'preparer_sap_privas'},
     {name: 'preparer_spip41_loir_et_cher', title: 'Preparer spip41_loir_et_cher', view_template: 'preparer_spip41_loir_et_cher'},
