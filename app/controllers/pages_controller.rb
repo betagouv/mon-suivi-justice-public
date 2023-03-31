@@ -14,6 +14,7 @@ class PagesController < Spina::ApplicationController
 
   def ma_reinsertion_loir_et_cher
   end
+
   def preparer_sap_privas
   end
 
