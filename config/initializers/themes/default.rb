@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_spip67_saverne', title: 'Preparer spip67_saverne', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_castres', title: 'Preparer sap_castres', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip09_foix', title: 'Preparer spip09_foix', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip47', title: 'Preparer spip47', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -212,6 +213,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_spip67_saverne', title: 'Preparer spip67_saverne', view_template: 'preparer_spip67_saverne'},
     {name: 'preparer_sap_castres', title: 'Preparer sap_castres', view_template: 'preparer_sap_castres'},
     {name: 'preparer_spip09_foix', title: 'Preparer spip09_foix', view_template: 'preparer_spip09_foix'},
     {name: 'preparer_spip47', title: 'Preparer spip47', view_template: 'preparer_spip47'},
