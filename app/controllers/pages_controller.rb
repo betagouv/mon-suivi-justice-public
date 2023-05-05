@@ -11,6 +11,9 @@ class PagesController < Spina::ApplicationController
   # Spina::Navigation.find_by(name: "main").pages.pluck(:name) pour la navigation
 
   include Spina::Api::Paginable
+  def preparer_spip88_saint_die_des_vosges
+  end
+
   def preparer_spip88_epinal
   end
 
