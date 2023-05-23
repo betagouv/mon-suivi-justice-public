@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_spip07_privas', title: 'Preparer spip07_privas', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_albi', title: 'Preparer sap_albi', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_brive_la_gaillarde', title: 'Preparer sap_brive_la_gaillarde', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_la_rochelle', title: 'Preparer sap_la_rochelle', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -226,6 +227,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_spip07_privas', title: 'Preparer spip07_privas', view_template: 'preparer_spip07_privas'},
     {name: 'preparer_sap_albi', title: 'Preparer sap_albi', view_template: 'preparer_sap_albi'},
     {name: 'preparer_sap_brive_la_gaillarde', title: 'Preparer sap_brive_la_gaillarde', view_template: 'preparer_sap_brive_la_gaillarde'},
     {name: 'preparer_sap_la_rochelle', title: 'Preparer sap_la_rochelle', view_template: 'preparer_sap_la_rochelle'},
