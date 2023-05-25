@@ -12,6 +12,9 @@ class PagesController < Spina::ApplicationController
 
   include Spina::Api::Paginable
 
+  def ma_reinsertion_hautes_alpes
+  end
+
   def ma_reinsertion_haute_saone
   end
   def preparer_spip07_privas
