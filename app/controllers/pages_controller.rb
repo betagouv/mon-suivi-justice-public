@@ -12,6 +12,9 @@ class PagesController < Spina::ApplicationController
 
   include Spina::Api::Paginable
 
+  def ma_reinsertion_territoire_de_belfort
+  end
+
   def ma_reinsertion_hautes_alpes
   end
 
