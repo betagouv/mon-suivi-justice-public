@@ -37,6 +37,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+
+      - name: Install gems
+        run: | 
+          gem install brakeman -v 4.5.1
       - name: Brakeman Static Code Analysis
         uses: devmasx/brakeman-linter-action@v1.0.0
         env:
