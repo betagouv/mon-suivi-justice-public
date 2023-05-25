@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer mon RDV" page select
-ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "71", "72", "74", "75", "77", "78", "79", "83", "91", "92", "93", "95", "972", "85", "86", "40", "41", "66", "53", "64", "48", "50", "08", "45", "31", "05", "07", "09", "81", "63", "88", "82", "90", "70", "19"].freeze
+ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "71", "72", "74", "75", "77", "78", "79", "83", "91", "92", "93", "95", "972", "85", "86", "40", "41", "66", "53", "64", "48", "50", "08", "45", "31", "05", "07", "09", "81", "63", "88", "82", "90", "70", "19", "76"].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
@@ -69,6 +69,7 @@ Spina::Theme.register do |theme|
     {name: 'ma_reinsertion_territoire_de_belfort', title: 'Ma Reinsertion Territoire De Belfort', parts: %w[main_title main_description rich_collapse]},
     {name: 'ma_reinsertion_hautes_alpes', title: 'Ma Reinsertion Hautes Alpes', parts: %w[main_title main_description rich_collapse]},
     {name: 'ma_reinsertion_haute_saone', title: 'Ma Reinsertion Haute Saone', parts: %w[main_title main_description rich_collapse]},
+    {name: 'preparer_spip76_le_havre', title: 'Preparer spip76_le_havre', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip07_privas', title: 'Preparer spip07_privas', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_albi', title: 'Preparer sap_albi', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_brive_la_gaillarde', title: 'Preparer sap_brive_la_gaillarde', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -233,6 +234,7 @@ Spina::Theme.register do |theme|
     {name: 'ma_reinsertion_territoire_de_belfort', title: 'Ma Reinsertion Territoire De Belfort', view_template: 'ma_reinsertion_territoire_de_belfort'},
     {name: 'ma_reinsertion_hautes_alpes', title: 'Ma Reinsertion Hautes Alpes', view_template: 'ma_reinsertion_hautes_alpes'},
     {name: 'ma_reinsertion_haute_saone', title: 'Ma Reinsertion Haute Saone', view_template: 'ma_reinsertion_haute_saone'},
+    {name: 'preparer_spip76_le_havre', title: 'Preparer spip76_le_havre', view_template: 'preparer_spip76_le_havre'},
     {name: 'preparer_spip07_privas', title: 'Preparer spip07_privas', view_template: 'preparer_spip07_privas'},
     {name: 'preparer_sap_albi', title: 'Preparer sap_albi', view_template: 'preparer_sap_albi'},
     {name: 'preparer_sap_brive_la_gaillarde', title: 'Preparer sap_brive_la_gaillarde', view_template: 'preparer_sap_brive_la_gaillarde'},
