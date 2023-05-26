@@ -29,6 +29,7 @@ Rails.application.routes.draw do
     get :ma_reinsertion_territoire_de_belfort
     get :ma_reinsertion_hautes_alpes
     get :ma_reinsertion_haute_saone
+    get :preparer_spip76_le_havre
     get :preparer_spip07_privas
     get :preparer_sap_albi
     get :preparer_sap_brive_la_gaillarde
