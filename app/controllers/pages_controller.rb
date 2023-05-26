@@ -20,7 +20,7 @@ class PagesController < Spina::ApplicationController
 
   def ma_reinsertion_haute_saone
   end
-  
+
   def preparer_spip76_le_havre
   end
 
