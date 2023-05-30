@@ -14,7 +14,6 @@ class PagesController < Spina::ApplicationController
   def preparer_sap_limoges
   end
 
-
   def ma_reinsertion_territoire_de_belfort
   end
 
