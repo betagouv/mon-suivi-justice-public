@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   post :sms_webhook, to: "convicts/sms_webhooks#receive"
 
   scope controller: :pages do
+    get :preparer_spip69_villefranche_sur_saone
     get :preparer_sap_arras
     get :preparer_spip76_dieppe
     get :preparer_sap_limoges
