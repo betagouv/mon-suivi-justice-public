@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_sap_macon', title: 'Preparer sap_macon', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip52_chaumont', title: 'Preparer spip52_chaumont', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip10_troyes', title: 'Preparer spip10_troyes', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_chateauroux', title: 'Preparer sap_chateauroux', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -239,6 +240,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_sap_macon', title: 'Preparer sap_macon', view_template: 'preparer_sap_macon'},
     {name: 'preparer_spip52_chaumont', title: 'Preparer spip52_chaumont', view_template: 'preparer_spip52_chaumont'},
     {name: 'preparer_spip10_troyes', title: 'Preparer spip10_troyes', view_template: 'preparer_spip10_troyes'},
     {name: 'preparer_sap_chateauroux', title: 'Preparer sap_chateauroux', view_template: 'preparer_sap_chateauroux'},
