@@ -14,7 +14,7 @@ class PagesController < Spina::ApplicationController
 
   def ma_reinsertion_haute_marne
   end
-  
+
   def preparer_sap_vienne
   end
 
