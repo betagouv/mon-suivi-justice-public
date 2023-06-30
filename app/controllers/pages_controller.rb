@@ -12,6 +12,9 @@ class PagesController < Spina::ApplicationController
 
   include Spina::Api::Paginable
 
+  def ma_reinsertion_aube
+  end
+
   def ma_reinsertion_haute_marne
   end
 
