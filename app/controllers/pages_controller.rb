@@ -14,6 +14,8 @@ class PagesController < Spina::ApplicationController
   def preparer_spip22_guingamp
   end
 
+  def preparer_spip22_saint_brieuc
+  end
 
   def ma_reinsertion_aube
   end
