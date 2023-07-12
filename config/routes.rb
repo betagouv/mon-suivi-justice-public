@@ -27,6 +27,7 @@ Rails.application.routes.draw do
 
   scope controller: :pages do
     get :preparer_spip22_guingamp
+    get :preparer_spip22_saint_brieuc
     get :ma_reinsertion_aube
     get :ma_reinsertion_haute_marne
     get :preparer_sap_vienne
