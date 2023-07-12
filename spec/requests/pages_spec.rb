@@ -9,6 +9,14 @@ RSpec.describe 'Pages', type: :request do
 
   describe 'GET /preparer_spip22_guingamp' do
     let(:path) { preparer_spip22_guingamp_path }
+
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
+  describe 'GET /preparer_spip22_saint_brieuc' do
+    let(:path) { preparer_spip22_saint_brieuc_path }
     
     it do
       get path
