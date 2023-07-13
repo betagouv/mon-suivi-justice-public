@@ -67,6 +67,7 @@ Spina::Theme.register do |theme|
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
     {name: 'preparer_spip22_guingamp', title: 'Preparer spip22_guingamp', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_spip22_saint_brieuc', title: 'Preparer spip22_saint_brieuc', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'ma_reinsertion_aube', title: 'Ma Reinsertion Aube', parts: %w[main_title main_description rich_collapse]},
     {name: 'ma_reinsertion_haute_marne', title: 'Ma Reinsertion Haute Marne', parts: %w[main_title main_description rich_collapse]},
     {name: 'preparer_sap_vienne', title: 'Preparer sap_vienne', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -245,6 +246,7 @@ Spina::Theme.register do |theme|
   # By naming them you can reference them in your code.
   theme.custom_pages = [
     {name: 'preparer_spip22_guingamp', title: 'Preparer spip22_guingamp', view_template: 'preparer_spip22_guingamp'},
+    {name: 'preparer_spip22_saint_brieuc', title: 'Preparer spip22_saint_brieuc', view_template: 'preparer_spip22_saint_brieuc'},
     {name: 'ma_reinsertion_aube', title: 'Ma Reinsertion Aube', view_template: 'ma_reinsertion_aube'},
     {name: 'ma_reinsertion_haute_marne', title: 'Ma Reinsertion Haute Marne', view_template: 'ma_reinsertion_haute_marne'},
     {name: 'preparer_sap_vienne', title: 'Preparer sap_vienne', view_template: 'preparer_sap_vienne'},
