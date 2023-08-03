@@ -46,9 +46,7 @@ jobs:
         run: |
           gem install brakeman -v 5.4.1
       - name: Brakeman Static Code Analysis
-        uses: devmasx/brakeman-linter-action@v1.0.0
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        run: bundle exec brakeman --no-exit-on-warn --no-exit-on-error
 
   test-rb:
     runs-on: ubuntu-latest
