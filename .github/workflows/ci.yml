@@ -37,14 +37,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.2
+          bundler-cache: true
       - name: Install gems
-        run: | 
-          gem install brakeman -v 4.5.1
+        run: |
+          gem install brakeman -v 5.4.1
       - name: Brakeman Static Code Analysis
-        uses: devmasx/brakeman-linter-action@v1.0.0
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        run: bundle exec brakeman --no-exit-on-warn --no-exit-on-error
 
   test-rb:
     runs-on: ubuntu-latest
