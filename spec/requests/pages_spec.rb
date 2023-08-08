@@ -9,7 +9,14 @@ RSpec.describe 'Pages', type: :request do
 
   describe 'GET /preparer_spip84_carpentras' do
     let(:path) { preparer_spip84_carpentras_path }
-    
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
+  describe 'GET /preparer_sap_montargis' do
+    let(:path) { preparer_sap_montargis_path }
+
     it do
       get path
       is_expected.to be_successful
@@ -25,7 +32,7 @@ RSpec.describe 'Pages', type: :request do
   end
   describe 'GET /preparer_spip22_saint_brieuc' do
     let(:path) { preparer_spip22_saint_brieuc_path }
-    
+
     it do
       get path
       is_expected.to be_successful
@@ -33,7 +40,7 @@ RSpec.describe 'Pages', type: :request do
   end
   describe 'GET /preparer_sap_vienne' do
     let(:path) { preparer_sap_vienne_path }
-    
+
     it do
       get path
       is_expected.to be_successful
@@ -41,7 +48,7 @@ RSpec.describe 'Pages', type: :request do
   end
   describe 'GET /preparer_sap_macon' do
     let(:path) { preparer_sap_macon_path }
-    
+
     it do
       get path
       is_expected.to be_successful
@@ -49,7 +56,7 @@ RSpec.describe 'Pages', type: :request do
   end
   describe 'GET /preparer_spip52_chaumont' do
     let(:path) { preparer_spip52_chaumont_path }
-    
+
     it do
       get path
       is_expected.to be_successful
@@ -57,7 +64,7 @@ RSpec.describe 'Pages', type: :request do
   end
   describe 'GET /preparer_spip10_troyes' do
     let(:path) { preparer_spip10_troyes_path }
-    
+
     it do
       get path
       is_expected.to be_successful
@@ -65,7 +72,7 @@ RSpec.describe 'Pages', type: :request do
   end
   describe 'GET /preparer_sap_chateauroux' do
     let(:path) { preparer_sap_chateauroux_path }
-    
+
     it do
       get path
       is_expected.to be_successful
@@ -73,7 +80,7 @@ RSpec.describe 'Pages', type: :request do
   end
   describe 'GET /preparer_spip89_sens' do
     let(:path) { preparer_spip89_sens_path }
-    
+
     it do
       get path
       is_expected.to be_successful
@@ -81,7 +88,7 @@ RSpec.describe 'Pages', type: :request do
   end
   describe 'GET /preparer_spip69_villefranche_sur_saone' do
     let(:path) { preparer_spip69_villefranche_sur_saone_path }
-    
+
     it do
       get path
       is_expected.to be_successful
@@ -89,7 +96,7 @@ RSpec.describe 'Pages', type: :request do
   end
   describe 'GET /preparer_sap_arras' do
     let(:path) { preparer_sap_arras_path }
-    
+
     it do
       get path
       is_expected.to be_successful
@@ -97,7 +104,7 @@ RSpec.describe 'Pages', type: :request do
   end
   describe 'GET /preparer_spip76_dieppe' do
     let(:path) { preparer_spip76_dieppe_path }
-    
+
     it do
       get path
       is_expected.to be_successful
@@ -105,7 +112,7 @@ RSpec.describe 'Pages', type: :request do
   end
   describe 'GET /preparer_sap_limoges' do
     let(:path) { preparer_sap_limoges_path }
-    
+
     it do
       get path
       is_expected.to be_successful
@@ -113,7 +120,7 @@ RSpec.describe 'Pages', type: :request do
   end
   describe 'GET /preparer_spip76_le_havre' do
     let(:path) { preparer_spip76_le_havre_path }
-    
+
     it do
       get path
       is_expected.to be_successful
