@@ -1545,4 +1545,13 @@ RSpec.describe 'Pages', type: :request do
       is_expected.to be_successful
     end
   end
+
+  describe 'GET /ma_reinsertion_alpes_maritimes' do
+    let(:path) { ma_reinsertion_alpes_maritimes_path }
+
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
 end
