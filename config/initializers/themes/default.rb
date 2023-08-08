@@ -68,6 +68,7 @@ Spina::Theme.register do |theme|
   theme.view_templates = [
     {name: 'ma_reinsertion_vaucluse', title: 'Ma Reinsertion Vaucluse', parts: %w[main_title main_description rich_collapse]},
     {name: 'ma_reinsertion_alpes_maritimes', title: 'Ma Reinsertion Alpes Maritimes', parts: %w[main_title main_description rich_collapse]},
+    {name: 'preparer_spip06_nice', title: 'Preparer spip06_nice', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip84_carpentras', title: 'Preparer spip84_carpentras', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_montargis', title: 'Preparer sap_montargis', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip22_guingamp', title: 'Preparer spip22_guingamp', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -251,6 +252,7 @@ Spina::Theme.register do |theme|
   theme.custom_pages = [
     {name: 'ma_reinsertion_vaucluse', title: 'Ma Reinsertion Vaucluse', view_template: 'ma_reinsertion_vaucluse'},
     {name: 'ma_reinsertion_alpes_maritimes', title: 'Ma Reinsertion Alpes Maritimes', view_template: 'ma_reinsertion_alpes_maritimes'},
+    {name: 'preparer_spip06_nice', title: 'Preparer spip06_nice', view_template: 'preparer_spip06_nice'},
     {name: 'preparer_spip84_carpentras', title: 'Preparer spip84_carpentras', view_template: 'preparer_spip84_carpentras'},
     {name: 'preparer_sap_montargis', title: 'Preparer sap_montargis', view_template: 'preparer_sap_montargis'},
     {name: 'preparer_spip22_guingamp', title: 'Preparer spip22_guingamp', view_template: 'preparer_spip22_guingamp'},
