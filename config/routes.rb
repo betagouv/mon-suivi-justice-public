@@ -1,31 +1,32 @@
 Rails.application.routes.draw do
-  mount Spina::Engine => '/'
+  mount Spina::Engine => "/"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  devise_for :convicts, controllers: { passwords: 'convicts/passwords' }
+  devise_for :convicts, controllers: {passwords: "convicts/passwords"}
 
   # Defines the root path route ("/")
   unauthenticated do
-    root 'pages#landing'
+    root "pages#landing"
   end
 
-  require 'sidekiq/web'
+  require "sidekiq/web"
   authenticate :convict, ->(convict) { convict.admin? } do
-    mount Sidekiq::Web => '/sidekiq'
+    mount Sidekiq::Web => "/sidekiq"
   end
 
   authenticated :convict do
-    root 'appointments#index', as: :authenticated_root
+    root "appointments#index", as: :authenticated_root
   end
 
   resources :appointments, only: %i[show index]
   resource :agent, only: %i[show]
   resource :convict, only: %i[show]
 
-  resource :sms_invitations, only: %i[create], controller: 'convicts/sms_invitations'
-  post :sms_webhook, to: 'convicts/sms_webhooks#receive'
+  resource :sms_invitations, only: %i[create], controller: "convicts/sms_invitations"
+  post :sms_webhook, to: "convicts/sms_webhooks#receive"
 
   scope controller: :pages do
+    get :preparer_spip86
     get :preparer_spip06_mougins
     get :ma_reinsertion_vaucluse
     get :ma_reinsertion_alpes_maritimes
@@ -208,10 +209,10 @@ Rails.application.routes.draw do
     get :get_all_pages
   end
 
-  get '/stats' => redirect('https://monsuivijustice.notion.site/Statistiques-publi-es-bbbce17e1452428aa24172fc26cb5697', status: 302),
-      :as => :stats
+  get "/stats" => redirect("https://monsuivijustice.notion.site/Statistiques-publi-es-bbbce17e1452428aa24172fc26cb5697", status: 302),
+    :as => :stats
 
-  match '/404' => 'errors#not_found', :via => :all
-  match '/422' => 'errors#unprocessable_entity', :via => :all
-  match '/500' => 'errors#internal_server_error', :via => :all
+  match "/404" => "errors#not_found", :via => :all
+  match "/422" => "errors#unprocessable_entity", :via => :all
+  match "/500" => "errors#internal_server_error", :via => :all
 end
