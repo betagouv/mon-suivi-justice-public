@@ -387,6 +387,10 @@ class PagesController < Spina::ApplicationController
     @zip_codes = ZIP_CODES.sort
   end
 
+  def preparer_ma_convocation
+    @zip_codes = ZIP_CODES.sort
+  end
+
   def preparer_spip92
   end
 

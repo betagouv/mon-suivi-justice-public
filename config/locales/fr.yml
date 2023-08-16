@@ -60,7 +60,7 @@ fr:
         log_out_link: Se déconnecter
         agents_sign_in_link: Espace agents
         authenticated_root_link: Mon Espace Personnel
-        preparer_mon_rdv_link: Préparer mon rendez-vous
+        preparer_ma_convocation_link: Préparer ma convocation
         comprendre_ma_peine_link: Comprendre ma peine
         investir_ma_reinsertion_link: Investir ma réinsertion
         qui_sommes_nous_link: Qui sommes nous ?
@@ -78,13 +78,13 @@ fr:
       log_out_link: Se déconnecter
       authenticated_root_link: Mon Espace Personnel
       agents_sign_in_link: Espace agents
-      appointments_index_link: Mes rendez-vous
+      appointments_index_link: Mes convocations
       logo_title: Accueil - Ministère de la justice - Mon Suivi Justice
       public_root_link: Revenir au site public
       agent_show_link: Mes interlocuteurs
       convict_show_link: Mon compte
     footer:
-      appointments: Mes rendez-vous
+      appointments: Mes convocations
       account: Mon compte
       agent_info: Mes interlocuteurs
     staging_alert:
@@ -108,8 +108,8 @@ fr:
     password_forgotten:
       sms_content: "Bonjour, vous avez demandé à modifier votre mot de passe sur Mon suivi Justice. Pour effectuer ce changement, cliquez sur le lien suivant : %{link}"
     sms_invitations:
-      reminder_content: "Bonjour, votre compte Mon Suivi Justice vous attend toujours. Pour y accéder et suivre vos rendez-vous justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
-      content: "Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos rendez-vous avec la Justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
+      reminder_content: "Bonjour, votre compte Mon Suivi Justice vous attend toujours. Pour y accéder et suivre vos convocations justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
+      content: "Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos convocations avec la Justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
     invitations:
       send_instructions: "Un e-mail d'invitation a été envoyé à %{email}."
       invitation_token_invalid: "Le jeton d'invitation fourni n'est pas valide!"
@@ -150,7 +150,7 @@ fr:
       signed_out: Déconnecté(e).
     shared:
       marketing:
-        appointments: Je peux suivre mes rendez-vous
+        appointments: Je peux suivre mes convocations
         contacts: Je peux contacter mes interlocuteurs
         data: Mes données personnelles sont protégées
         data_content_html: "La présente interface est à l’initiative du Ministère de la Justice. Le respect de vos droits et de votre vie privée est une priorité. Pour plus d’informations sur l’utilisation de vos données personnelles, vous pouvez vous rendre sur <a target='_blank' href='/donnees_personnelles'>la page dédiée</a>"
@@ -167,10 +167,10 @@ fr:
         other: "(%{count} caractères au moins)"
   appointments:
     index:
-      title: Vos rendez-vous
-      next_appointments: Rendez-vous suivants
-      past_appointments: Rendez-vous passés
-      no_appointment: Vous n'avez pas encore de rendez-vous
+      title: Vos convocations
+      next_appointments: Convocations suivantes
+      past_appointments: Convocations passées
+      no_appointment: Vous n'avez pas encore de convocations
     appointment:
       days_from_now: Dans %{days} jours
       today: Aujourd'hui
@@ -186,10 +186,10 @@ fr:
       address_title: Adresse
       map_link: Voir sur une carte
       reminder: N'oubliez pas de vous munir des justificatifs mentionnés dans votre convocation.
-      duration_title: Durée approximative du rendez-vous
+      duration_title: Durée approximative de la convocation
       duration: "Environ %{duration} minutes"
       state_title: Statut
-      appointment_type_title: Type de rendez-vous
+      appointment_type_title: Type de convocation
       index_link: Retour à la liste
   agents:
     show:
@@ -203,6 +203,9 @@ fr:
     preparer_mon_rdv:
       select_a_zip_code: Choisissez un département
       title: Préparer mon rendez-vous
+    preparer_ma_convocation:
+      select_a_zip_code: Choisissez un département
+      title: Préparer ma convocation
     comprendre_ma_peine:
       title: Comprendre ma peine
     investir_ma_reinsertion:
