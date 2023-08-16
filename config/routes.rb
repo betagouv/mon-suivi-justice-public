@@ -151,6 +151,7 @@ Rails.application.routes.draw do
     get :stage
     get :amenagements_de_peine
     get :preparer_mon_rdv
+    get :preparer_ma_convocation
     get :preparer_spip92
     get :preparer_sap_nanterre
     get :preparer_spip28

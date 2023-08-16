@@ -202,6 +202,9 @@ fr:
   pages:
     preparer_mon_rdv:
       select_a_zip_code: Choisissez un département
+      title: Préparer mon rendez-vous
+    preparer_ma_convocation:
+      select_a_zip_code: Choisissez un département
       title: Préparer ma convocation
     comprendre_ma_peine:
       title: Comprendre ma peine
