@@ -3,7 +3,7 @@
 # This file is used for all theme configuration.
 # It's where you define everything that's editable in Spina CMS.
 
-# Zip codes for the "Préparer mon RDV" page select
+# Zip codes for the "Préparer ma convocation" page select
 ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "71", "72", "74", "75", "77", "78", "79", "83", "91", "92", "93", "95", "972", "85", "86", "40", "41", "66", "53", "64", "48", "50", "08", "45", "31", "05", "07", "09", "81", "63", "88", "82", "90", "70", "19", "76", "87", "89", "10", "22", "84"].freeze
 
 Spina::Theme.register do |theme|
