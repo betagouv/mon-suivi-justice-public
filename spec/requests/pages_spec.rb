@@ -957,8 +957,8 @@ RSpec.describe 'Pages', type: :request do
     end
   end
 
-  describe 'GET /preparer_mon_rdv' do
-    let(:path) { preparer_mon_rdv_path }
+  describe 'GET /preparer_ma_convocation' do
+    let(:path) { preparer_ma_convocation_path }
 
     it do
       get path

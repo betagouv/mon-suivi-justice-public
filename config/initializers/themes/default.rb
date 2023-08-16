@@ -3,7 +3,7 @@
 # This file is used for all theme configuration.
 # It's where you define everything that's editable in Spina CMS.
 
-# Zip codes for the "Préparer mon RDV" page select
+# Zip codes for the "Préparer ma convocation" page select
 ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "71", "72", "74", "75", "77", "78", "79", "83", "91", "92", "93", "95", "972", "85", "86", "40", "41", "66", "53", "64", "48", "50", "08", "45", "31", "05", "07", "09", "81", "63", "88", "82", "90", "70", "19", "76", "87", "89", "10", "22", "84"].freeze
 
 Spina::Theme.register do |theme|
@@ -195,6 +195,7 @@ Spina::Theme.register do |theme|
     {name: "regles_essentielles", title: "Les règles essentielles", parts: %w[category main_title subtitle main_description rich_collapse]},
     {name: "mes_interlocuteurs", title: "Mes interlocuteurs", parts: %w[category main_title subtitle main_description rich_collapse]},
     {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", parts: %w[main_title subtitle secondary_subtitle main_rich_description basic_card]},
+    {name: "preparer_ma_convocation", title: "Préparer ma convocation", parts: %w[main_title subtitle secondary_subtitle main_rich_description basic_card]},
     {name: "preparer_spip92", title: "Préparer SPIP 92", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_spip28", title: "Préparer SPIP 28", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -381,7 +382,7 @@ Spina::Theme.register do |theme|
     {name: "obligations_personnelles", title: "Obligations personnelles", view_template: "obligations_personnelles"},
     {name: "regles_essentielles", title: "Les règles essentielles", view_template: "regles_essentielles"},
     {name: "mes_interlocuteurs", title: "Mes interlocuteurs", view_template: "mes_interlocuteurs"},
-    {name: "preparer_mon_rdv", title: "Préparer mon rendez-vous", view_template: "preparer_mon_rdv"},
+    {name: "preparer_ma_convocation", title: "Préparer ma convocation", view_template: "preparer_ma_convocation"},
     {name: "preparer_spip28", title: "Préparer SPIP 28", view_template: "preparer_spip28"},
     {name: "preparer_spip92", title: "Préparer SPIP 92", view_template: "preparer_spip92"},
     {name: "preparer_sap_chartres", title: "Préparer SAP Chartres", view_template: "preparer_sap_chartres"},

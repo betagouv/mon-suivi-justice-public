@@ -6,7 +6,7 @@ RSpec.describe SmsSenderJob, type: :job do
       {
         sender: "RDVJustice",
         recipient: "+33666666666",
-        content: "Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos rendez-vous justice, cliquez sur le lien suivant et choisissez votre mot de passe: http://www.example.com/convicts/invitation/accept?invitation_token=<TOKEN>"
+        content: "Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos convocations justice, cliquez sur le lien suivant et choisissez votre mot de passe: http://www.example.com/convicts/invitation/accept?invitation_token=<TOKEN>"
       }
     end
 
@@ -22,7 +22,7 @@ RSpec.describe SmsSenderJob, type: :job do
         expect(result.response.status.code).to eq(201)
         expect(request_body.sender).to eq("RDVJustice")
         expect(request_body.recipient).to eq("+33666666666")
-        expect(request_body.content).to eq("Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos rendez-vous justice, cliquez sur le lien suivant et choisissez votre mot de passe: http://www.example.com/convicts/invitation/accept?invitation_token=<TOKEN>")
+        expect(request_body.content).to eq("Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos convocations justice, cliquez sur le lien suivant et choisissez votre mot de passe: http://www.example.com/convicts/invitation/accept?invitation_token=<TOKEN>")
       end
     end
   end

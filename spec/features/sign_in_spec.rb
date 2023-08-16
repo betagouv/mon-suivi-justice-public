@@ -18,7 +18,7 @@ RSpec.feature "Sign In", type: :feature do
     fill_in "convict_password", with: "exampleE1."
     click_button "Je me connecte"
     expect(page).to have_content("Connecté")
-    expect(page).to have_content("Vos rendez-vous")
+    expect(page).to have_content("Vos convocations")
   end
 
   it "Signs in with phone without country code" do
@@ -28,7 +28,7 @@ RSpec.feature "Sign In", type: :feature do
     fill_in "convict_password", with: "exampleE1."
     click_button "Je me connecte"
     expect(page).to have_content("Connecté")
-    expect(page).to have_content("Vos rendez-vous")
+    expect(page).to have_content("Vos convocations")
   end
 
   it "Signs in with phone with spaces" do
@@ -38,7 +38,7 @@ RSpec.feature "Sign In", type: :feature do
     fill_in "convict_password", with: "exampleE1."
     click_button "Je me connecte"
     expect(page).to have_content("Connecté")
-    expect(page).to have_content("Vos rendez-vous")
+    expect(page).to have_content("Vos convocations")
   end
 
   it "Does not sign in with wrong phone" do

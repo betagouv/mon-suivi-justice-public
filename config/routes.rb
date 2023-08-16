@@ -150,7 +150,7 @@ Rails.application.routes.draw do
     get :jour_amende
     get :stage
     get :amenagements_de_peine
-    get :preparer_mon_rdv
+    get :preparer_ma_convocation
     get :preparer_spip92
     get :preparer_sap_nanterre
     get :preparer_spip28
@@ -215,4 +215,7 @@ Rails.application.routes.draw do
   match "/404" => "errors#not_found", :via => :all
   match "/422" => "errors#unprocessable_entity", :via => :all
   match "/500" => "errors#internal_server_error", :via => :all
+
+  # 301 redirects for SEO
+  get "/preparer_mon_rdv", to: redirect("/preparer_ma_convocation", status: 301)
 end
