@@ -188,7 +188,7 @@ GEM
       digest
       net-protocol
       timeout
-    nio4r (2.5.8)
+    nio4r (2.5.9)
     nokogiri (1.15.3-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.15.3-x86_64-darwin)
@@ -205,7 +205,7 @@ GEM
       activesupport (>= 3.0)
       phony (>= 2.18.12)
     public_suffix (4.0.7)
-    puma (5.6.4)
+    puma (5.6.7)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.8)
