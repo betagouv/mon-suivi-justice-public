@@ -41,7 +41,7 @@ gem "phony_rails", "~> 0.15.0"
 gem "sib-api-v3-sdk", "~> 8.1"
 
 gem "sidekiq-failures", "~> 1.0", ">= 1.0.1"
-gem "sidekiq", "~> 6.4"
+gem "sidekiq", "~> 7.1"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
