@@ -27,7 +27,7 @@ gem "redis", "~> 4.5"
 
 gem "rails-i18n", "~> 7.0"
 
-gem "spina", "~> 2.8"
+gem "spina", "~> 2.15"
 
 gem "highline", "~> 2.0", ">= 2.0.3"
 
