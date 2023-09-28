@@ -43,7 +43,7 @@ Spina.configure do |config|
   # ===============
   # In order to send emails, you need to set a default from address.
   # You can set an optional reply_to address as well.
-  # config.mailer_defaults.from = "no-reply@example.com"
+  config.mailer_defaults.from = 'support@mon-suivi-justice.beta.gouv.fr'
   # config.mailer_defaults.reply_to = "support@example.com"
 
   # API
