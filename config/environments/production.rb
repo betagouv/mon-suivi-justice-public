@@ -87,11 +87,11 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {host: ENV["HOST_URL"]}
 
   config.action_mailer.smtp_settings = {
-    address: 'smtp-relay.brevo.com',
+    address: "smtp-relay.brevo.com",
     port: 587,
     user_name: Rails.application.credentials.dig(:brevo, :account),
     password: Rails.application.credentials.dig(:brevo, :password),
-    authentication: 'login',
+    authentication: "login",
     enable_starttls_auto: true
   }
 end
