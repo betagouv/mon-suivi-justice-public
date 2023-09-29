@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
-gem "rails", "7.0.1"
+gem "rails", "7.0.8"
 
 gem "webpacker", "~> 5.4"
 
@@ -27,7 +27,7 @@ gem "redis", "~> 4.5"
 
 gem "rails-i18n", "~> 7.0"
 
-gem "spina", "~> 2.8"
+gem "spina", "~> 2.16"
 
 gem "highline", "~> 2.0", ">= 2.0.3"
 
