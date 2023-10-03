@@ -8,7 +8,7 @@ class Place
   end
 
   def contact
-    contact_method == "phone" ? phone : email
+    (contact_method == "phone") ? phone : email
   end
 
   def human_name
