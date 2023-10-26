@@ -14,6 +14,7 @@ class PagesController < Spina::ApplicationController
 
   def ma_reinsertion_tarn
   end
+
   def preparer_spip81_castres
   end
 
