@@ -1650,4 +1650,13 @@ RSpec.describe 'Pages', type: :request do
       is_expected.to be_successful
     end
   end
+
+  describe 'GET /ma_reinsertion_tarn' do
+    let(:path) { ma_reinsertion_tarn_path }
+
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
 end
