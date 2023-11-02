@@ -27,7 +27,7 @@ Rails.application.routes.draw do
 
   scope controller: :pages do
     get :preparer_spip19
-    get :ma_reinsertion_tarn
+    get :ma_reinsertion_vienne
     get :preparer_spip81_castres
     get :preparer_sap_avignon
     get :preparer_spip89_auxerre
