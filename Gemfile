@@ -31,7 +31,7 @@ gem "spina", "~> 2.16"
 
 gem "highline", "~> 2.0", ">= 2.0.3"
 
-gem "devise", "~> 4.8", ">= 4.8.1"
+gem "devise", "~> 4.9"
 gem "devise-i18n", "~> 1.10", ">= 1.10.2"
 gem "devise_invitable", "~> 2.0", ">= 2.0.6"
 gem "devise-security", "~> 0.17.0"
