@@ -38,7 +38,7 @@ gem "devise-security", "~> 0.17.0"
 
 gem "phony_rails", "~> 0.15.0"
 
-gem "sib-api-v3-sdk", "~> 8.1"
+gem "sib-api-v3-sdk", "~> 9.1"
 
 gem "sidekiq-failures", "~> 1.0", ">= 1.0.1"
 gem "sidekiq", "~> 7.1"
