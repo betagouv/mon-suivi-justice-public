@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_spip19_brive', title: 'Preparer spip19_brive', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip19_tulle', title: 'Preparer spip19_tulle', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_brest', title: 'Preparer sap_brest', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'ma_reinsertion_vienne', title: 'Ma Reinsertion Vienne', parts: %w[main_title main_description rich_collapse]},
@@ -264,6 +265,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_spip19_brive', title: 'Preparer spip19_brive', view_template: 'preparer_spip19_brive'},
     {name: 'preparer_spip19_tulle', title: 'Preparer spip19_tulle', view_template: 'preparer_spip19_tulle'},
     {name: 'preparer_sap_brest', title: 'Preparer sap_brest', view_template: 'preparer_sap_brest'},
     {name: 'ma_reinsertion_vienne', title: 'Ma Reinsertion Vienne', view_template: 'ma_reinsertion_vienne'},
