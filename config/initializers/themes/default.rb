@@ -68,7 +68,6 @@ Spina::Theme.register do |theme|
   theme.view_templates = [
     {name: 'preparer_spip19_tulle', title: 'Preparer spip19_tulle', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_brest', title: 'Preparer sap_brest', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
-    {name: 'preparer_spip19', title: 'Preparer spip19', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'ma_reinsertion_vienne', title: 'Ma Reinsertion Vienne', parts: %w[main_title main_description rich_collapse]},
     {name: 'preparer_spip81_castres', title: 'Preparer spip81_castres', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_avignon', title: 'Preparer sap_avignon', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -267,7 +266,6 @@ Spina::Theme.register do |theme|
   theme.custom_pages = [
     {name: 'preparer_spip19_tulle', title: 'Preparer spip19_tulle', view_template: 'preparer_spip19_tulle'},
     {name: 'preparer_sap_brest', title: 'Preparer sap_brest', view_template: 'preparer_sap_brest'},
-    {name: 'preparer_spip19', title: 'Preparer spip19', view_template: 'preparer_spip19'},
     {name: 'ma_reinsertion_vienne', title: 'Ma Reinsertion Vienne', view_template: 'ma_reinsertion_vienne'},
     {name: 'preparer_spip81_castres', title: 'Preparer spip81_castres', view_template: 'preparer_spip81_castres'},
     {name: 'preparer_sap_avignon', title: 'Preparer sap_avignon', view_template: 'preparer_sap_avignon'},
