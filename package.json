@@ -24,7 +24,7 @@
     "lint:fix": "standard --fix"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.16.5",
+    "@babel/eslint-parser": "^7.23.3",
     "standard": "^16.0.4",
     "webpack-dev-server": "^3"
   },
