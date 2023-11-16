@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_sap_sarreguemines', title: 'Preparer sap_sarreguemines', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_bastia', title: 'Preparer sap_bastia', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_saint_quentin', title: 'Preparer sap_saint_quentin', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_chalon_sur_saone', title: 'Preparer sap_chalon_sur_saone', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -269,6 +270,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_sap_sarreguemines', title: 'Preparer sap_sarreguemines', view_template: 'preparer_sap_sarreguemines'},
     {name: 'preparer_sap_bastia', title: 'Preparer sap_bastia', view_template: 'preparer_sap_bastia'},
     {name: 'preparer_sap_saint_quentin', title: 'Preparer sap_saint_quentin', view_template: 'preparer_sap_saint_quentin'},
     {name: 'preparer_sap_chalon_sur_saone', title: 'Preparer sap_chalon_sur_saone', view_template: 'preparer_sap_chalon_sur_saone'},
