@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_spip13_tarascon', title: 'Preparer spip13_tarascon', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_lisieux', title: 'Preparer sap_lisieux', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_toulouse', title: 'Preparer sap_toulouse', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip04', title: 'Preparer spip04', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -281,6 +282,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_spip13_tarascon', title: 'Preparer spip13_tarascon', view_template: 'preparer_spip13_tarascon'},
     {name: 'preparer_sap_lisieux', title: 'Preparer sap_lisieux', view_template: 'preparer_sap_lisieux'},
     {name: 'preparer_sap_toulouse', title: 'Preparer sap_toulouse', view_template: 'preparer_sap_toulouse'},
     {name: 'preparer_spip04', title: 'Preparer spip04', view_template: 'preparer_spip04'},
