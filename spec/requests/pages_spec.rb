@@ -7,6 +7,14 @@ RSpec.describe 'Pages', type: :request do
     FactoryBot.create(:account)
   end
 
+  describe 'GET /preparer_sap_aix_en_provence' do
+    let(:path) { preparer_sap_aix_en_provence_path }
+    
+    it do
+      get path
+      is_expected.to be_successful
+    end
+  end
   describe 'GET /preparer_sap_troyes' do
     let(:path) { preparer_sap_troyes_path }
     
