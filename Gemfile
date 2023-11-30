@@ -97,4 +97,5 @@ group :test do
   gem "capybara", "~> 3.36"
   gem "selenium-webdriver", "~> 4.1"
   gem "webdrivers", "~> 5.0"
+  gem 'axe-core-rspec'
 end
