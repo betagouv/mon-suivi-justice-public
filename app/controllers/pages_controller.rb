@@ -14,7 +14,6 @@ class PagesController < Spina::ApplicationController
   def preparer_spip77_fontainebleau
   end
 
-
   def ma_reinsertion_lot_et_garonne
   end
 
