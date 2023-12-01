@@ -66,6 +66,8 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'ma_reinsertion_lot_et_garonne', title: 'Ma Reinsertion Lot Et Garonne', parts: %w[main_title main_description rich_collapse]},
+    {name: 'ma_reinsertion_bouches_du_rhone', title: 'Ma Reinsertion Bouches Du Rhone', parts: %w[main_title main_description rich_collapse]},
     {name: 'ma_reinsertion_savoie', title: 'Ma Reinsertion Savoie', parts: %w[main_title main_description rich_collapse]},
     {name: 'preparer_sap_vesoul', title: 'Preparer sap_vesoul', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip73_albertville', title: 'Preparer spip73_albertville', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -288,6 +290,8 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'ma_reinsertion_lot_et_garonne', title: 'Ma Reinsertion Lot Et Garonne', view_template: 'ma_reinsertion_lot_et_garonne'},
+    {name: 'ma_reinsertion_bouches_du_rhone', title: 'Ma Reinsertion Bouches Du Rhone', view_template: 'ma_reinsertion_bouches_du_rhone'},
     {name: 'ma_reinsertion_savoie', title: 'Ma Reinsertion Savoie', view_template: 'ma_reinsertion_savoie'},
     {name: 'preparer_sap_vesoul', title: 'Preparer sap_vesoul', view_template: 'preparer_sap_vesoul'},
     {name: 'preparer_spip73_albertville', title: 'Preparer spip73_albertville', view_template: 'preparer_spip73_albertville'},

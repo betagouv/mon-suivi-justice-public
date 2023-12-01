@@ -12,6 +12,12 @@ class PagesController < Spina::ApplicationController
 
   include Spina::Api::Paginable
 
+  def ma_reinsertion_lot_et_garonne
+  end
+
+  def ma_reinsertion_bouches_du_rhone
+  end
+
   def ma_reinsertion_savoie
   end
 

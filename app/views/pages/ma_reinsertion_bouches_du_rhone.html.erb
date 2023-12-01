@@ -1,0 +1,11 @@
+<div class='fr-container static-content-container'>
+  <h1 class='static-title static-title-green fr-mb-4w'><%= content(:main_title)%></h1>
+
+  <% unless content.html(:main_rich_description).html.nil? || content.html(:main_rich_description).html.empty? %>
+    <div class='static-card static-link-card'><%= content.html(:main_rich_description) %></div>
+  <% end %>
+
+  <% repeater(:rich_collapse) do |collapse| %>
+    <%= render 'components/collapse', collapse: collapse, collapse_style: "green"  %>
+  <% end %>
+</div>
