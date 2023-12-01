@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer ma convocation" page select
-ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "71", "72", "74", "75", "77", "78", "79", "83", "91", "92", "93", "95", "972", "85", "86", "40", "41", "66", "53", "64", "48", "50", "08", "45", "31", "05", "07", "09", "81", "63", "88", "82", "90", "70", "19", "76", "87", "89", "10", "22", "84", "29", "42", "30", "27", "97", "73"].freeze
+ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "71", "72", "74", "75", "77", "78", "79", "83", "91", "92", "93", "95", "972", "85", "86", "40", "41", "66", "53", "64", "48", "50", "08", "45", "31", "05", "07", "09", "81", "63", "88", "82", "90", "70", "19", "76", "87", "89", "10", "22", "84", "29", "42", "30", "27", "97", "73", "34"].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
@@ -66,6 +66,8 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_sap_montpellier', title: 'Preparer sap_montpellier', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_spip77_fontainebleau', title: 'Preparer spip77_fontainebleau', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'ma_reinsertion_lot_et_garonne', title: 'Ma Reinsertion Lot Et Garonne', parts: %w[main_title main_description rich_collapse]},
     {name: 'ma_reinsertion_bouches_du_rhone', title: 'Ma Reinsertion Bouches Du Rhone', parts: %w[main_title main_description rich_collapse]},
     {name: 'ma_reinsertion_savoie', title: 'Ma Reinsertion Savoie', parts: %w[main_title main_description rich_collapse]},
@@ -290,6 +292,8 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_sap_montpellier', title: 'Preparer sap_montpellier', view_template: 'preparer_sap_montpellier'},
+    {name: 'preparer_spip77_fontainebleau', title: 'Preparer spip77_fontainebleau', view_template: 'preparer_spip77_fontainebleau'},
     {name: 'ma_reinsertion_lot_et_garonne', title: 'Ma Reinsertion Lot Et Garonne', view_template: 'ma_reinsertion_lot_et_garonne'},
     {name: 'ma_reinsertion_bouches_du_rhone', title: 'Ma Reinsertion Bouches Du Rhone', view_template: 'ma_reinsertion_bouches_du_rhone'},
     {name: 'ma_reinsertion_savoie', title: 'Ma Reinsertion Savoie', view_template: 'ma_reinsertion_savoie'},
