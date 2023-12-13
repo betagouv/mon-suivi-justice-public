@@ -67,6 +67,7 @@ Spina::Theme.register do |theme|
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
     {name: 'preparer_spip57_metz', title: 'Preparer spip57_metz', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_beziers', title: 'Preparer sap_beziers', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_montpellier', title: 'Preparer sap_montpellier', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip77_fontainebleau', title: 'Preparer spip77_fontainebleau', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'ma_reinsertion_lot_et_garonne', title: 'Ma Reinsertion Lot Et Garonne', parts: %w[main_title main_description rich_collapse]},
@@ -294,6 +295,7 @@ Spina::Theme.register do |theme|
   # By naming them you can reference them in your code.
   theme.custom_pages = [
     {name: 'preparer_spip57_metz', title: 'Preparer spip57_metz', view_template: 'preparer_spip57_metz'},
+    {name: 'preparer_sap_beziers', title: 'Preparer sap_beziers', view_template: 'preparer_sap_beziers'},
     {name: 'preparer_sap_montpellier', title: 'Preparer sap_montpellier', view_template: 'preparer_sap_montpellier'},
     {name: 'preparer_spip77_fontainebleau', title: 'Preparer spip77_fontainebleau', view_template: 'preparer_spip77_fontainebleau'},
     {name: 'ma_reinsertion_lot_et_garonne', title: 'Ma Reinsertion Lot Et Garonne', view_template: 'ma_reinsertion_lot_et_garonne'},
