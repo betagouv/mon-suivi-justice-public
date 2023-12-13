@@ -12,8 +12,8 @@ class PagesController < Spina::ApplicationController
 
   include Spina::Api::Paginable
   def preparer_spip57_metz
-  end  
-    
+  end
+
   def preparer_sap_beziers
   end
 
