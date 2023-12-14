@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_spipTEST6', title: 'Preparer spipTEST6', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip40_dax', title: 'Preparer spip40_dax', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip40_mont_de_marsan', title: 'Preparer spip40_mont_de_marsan', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip57_metz', title: 'Preparer spip57_metz', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -296,6 +297,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_spipTEST6', title: 'Preparer spipTEST6', view_template: 'preparer_spipTEST6'},
     {name: 'preparer_spip40_dax', title: 'Preparer spip40_dax', view_template: 'preparer_spip40_dax'},
     {name: 'preparer_spip40_mont_de_marsan', title: 'Preparer spip40_mont_de_marsan', view_template: 'preparer_spip40_mont_de_marsan'},
     {name: 'preparer_spip57_metz', title: 'Preparer spip57_metz', view_template: 'preparer_spip57_metz'},
