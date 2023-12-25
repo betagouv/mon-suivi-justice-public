@@ -124,7 +124,7 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
-    faraday (2.7.11)
+    faraday (2.8.1)
       base64
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
@@ -438,7 +438,7 @@ DEPENDENCIES
   devise-security (~> 0.18.0)
   devise_invitable (~> 2.0.9)
   factory_bot_rails (~> 6.2.0)
-  faraday (~> 2.7.11)
+  faraday (~> 2.8.1)
   highline (~> 2.1.0)
   image_processing (~> 1.12.2)
   pg (~> 1.5.4)
