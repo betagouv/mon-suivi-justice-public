@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_spip27_evreux', title: 'Preparer spip27_evreux', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip15_63_clermont_ferrand', title: 'Preparer spip15_63_clermont_ferrand', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip55_verdun', title: 'Preparer spip55_verdun', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip80_amiens', title: 'Preparer spip80_amiens', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -306,6 +307,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_spip27_evreux', title: 'Preparer spip27_evreux', view_template: 'preparer_spip27_evreux'},
     {name: 'preparer_spip15_63_clermont_ferrand', title: 'Preparer spip15_63_clermont_ferrand', view_template: 'preparer_spip15_63_clermont_ferrand'},
     {name: 'preparer_spip55_verdun', title: 'Preparer spip55_verdun', view_template: 'preparer_spip55_verdun'},
     {name: 'preparer_spip80_amiens', title: 'Preparer spip80_amiens', view_template: 'preparer_spip80_amiens'},
