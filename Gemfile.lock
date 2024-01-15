@@ -124,11 +124,10 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
-    faraday (2.7.11)
-      base64
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
-    faraday-net_http (3.0.2)
+    faraday (2.9.0)
+      faraday-net_http (>= 2.0, < 3.2)
+    faraday-net_http (3.1.0)
+      net-http
     ffi (1.16.2)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -181,6 +180,8 @@ GEM
       i18n (>= 0.6.10, < 2)
       request_store (~> 1.0)
     msgpack (1.7.2)
+    net-http (0.4.1)
+      uri
     net-imap (0.4.4)
       date
       net-protocol
@@ -303,7 +304,6 @@ GEM
     ruby-progressbar (1.13.0)
     ruby-vips (2.1.4)
       ffi (~> 1.12)
-    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.13.1)
       rexml (~> 3.2, >= 3.2.5)
@@ -388,6 +388,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.4.2)
+    uri (0.13.0)
     vcr (6.2.0)
     view_component (3.6.0)
       activesupport (>= 5.2.0, < 8.0)
@@ -438,7 +439,7 @@ DEPENDENCIES
   devise-security (~> 0.18.0)
   devise_invitable (~> 2.0.9)
   factory_bot_rails (~> 6.2.0)
-  faraday (~> 2.7.11)
+  faraday (~> 2.9.0)
   highline (~> 2.1.0)
   image_processing (~> 1.12.2)
   pg (~> 1.5.4)
