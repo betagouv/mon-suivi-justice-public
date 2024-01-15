@@ -11,7 +11,7 @@ gem "webpacker", "~> 5.4.4"
 gem "pg", "~> 1.5.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.6.7"
+gem "puma", "~> 6.4.2"
 
 # Needed by Spina
 gem "sprockets-rails", "~> 3.4.2", ">= 3.4.2"
