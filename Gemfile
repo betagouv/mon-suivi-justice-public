@@ -58,7 +58,7 @@ gem "bootsnap", "~> 1.16.0", require: false
 gem "sentry-ruby", "~> 5.11.0"
 gem "sentry-rails", "~> 5.11.0"
 
-gem "faraday", "~> 2.7.11"
+gem "faraday", "~> 2.9.0"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.12.2"
