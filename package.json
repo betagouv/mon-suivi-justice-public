@@ -16,7 +16,7 @@
     "font-awesome": "^4.7.0",
     "postcss": "7",
     "sass": "^1.46.0",
-    "sass-loader": "^10.2.0",
+    "sass-loader": "^14.0.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "scripts": {
