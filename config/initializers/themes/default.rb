@@ -67,6 +67,8 @@ Spina::Theme.register do |theme|
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
     {name: 'preparer_spip68_mulhouse', title: 'Preparer spip68_mulhouse', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'ma_reinsertion_puy_de_dome', title: 'Ma Reinsertion Puy De Dome', parts: %w[main_title main_description rich_collapse]},
+    {name: 'ma_reinsertion_cantal', title: 'Ma Reinsertion Cantal', parts: %w[main_title main_description rich_collapse]},
     {name: 'preparer_spip15_63_aurillac', title: 'Preparer spip15_63_aurillac', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_77_fontainebleau', title: 'Preparer sap_77_fontainebleau', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip27_evreux', title: 'Preparer spip27_evreux', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -311,6 +313,8 @@ Spina::Theme.register do |theme|
   # By naming them you can reference them in your code.
   theme.custom_pages = [
     {name: 'preparer_spip68_mulhouse', title: 'Preparer spip68_mulhouse', view_template: 'preparer_spip68_mulhouse'},
+    {name: 'ma_reinsertion_puy_de_dome', title: 'Ma Reinsertion Puy De Dome', view_template: 'ma_reinsertion_puy_de_dome'},
+    {name: 'ma_reinsertion_cantal', title: 'Ma Reinsertion Cantal', view_template: 'ma_reinsertion_cantal'},
     {name: 'preparer_spip15_63_aurillac', title: 'Preparer spip15_63_aurillac', view_template: 'preparer_spip15_63_aurillac'},
     {name: 'preparer_sap_77_fontainebleau', title: 'Preparer sap_77_fontainebleau', view_template: 'preparer_sap_77_fontainebleau'},
     {name: 'preparer_spip27_evreux', title: 'Preparer spip27_evreux', view_template: 'preparer_spip27_evreux'},
