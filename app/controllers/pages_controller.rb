@@ -14,7 +14,6 @@ class PagesController < Spina::ApplicationController
   def preparer_spip57_thionville
   end
 
-
   def preparer_spip68_mulhouse
   end
 
