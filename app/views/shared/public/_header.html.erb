@@ -27,11 +27,7 @@
                   <div class="fr-header__tools-links">
                     <ul class="fr-links-group">
                       <li>
-                        <% if ENV["APP"] == "mon-suivi-justice-public-prod" %>
-                          <%= link_to t('.authenticated_root_link'), appointments_path, class: "fr-link fr-fi-information-line" %>
-                        <% else %>
                           <%= link_to t('.authenticated_root_link'), ENV["PPSMJ_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-account-line'  %>
-                        <% end %>
                       </li>
                       <% if current_convict %>
                         <%= button_to t('.log_out_link'), destroy_convict_session_path, method: :delete, class: "fr-link fr-fi-logout-box-r-line" %>
