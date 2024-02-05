@@ -79,7 +79,8 @@ GEM
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
-    brakeman (5.4.1)
+    brakeman (6.1.2)
+      racc
     breadcrumbs_on_rails (4.1.0)
       railties (>= 5.0)
     browser (5.3.1)
@@ -430,7 +431,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (~> 1.16.0)
-  brakeman (= 5.4.1)
+  brakeman (= 6.1.2)
   capybara (~> 3.39.2)
   debug (~> 1.8.0)
   devise (~> 4.9.3)
