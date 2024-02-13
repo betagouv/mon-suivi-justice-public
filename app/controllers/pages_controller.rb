@@ -14,7 +14,7 @@ class PagesController < Spina::ApplicationController
 
   def ma_reinsertion_moselle
   end
-  
+
   def preparer_spip38_bourgoin_jailleu
   end
 
