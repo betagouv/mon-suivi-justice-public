@@ -27,6 +27,7 @@ Rails.application.routes.draw do
 
   scope controller: :pages do
     get :ma_reinsertion_moselle
+    get :preparer_spip38_bourgoin_jailleu
     get :preparer_spip76_rouen
     get :preparer_spip57_thionville
     get :preparer_spip68_mulhouse
