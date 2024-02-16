@@ -14,7 +14,6 @@ class PagesController < Spina::ApplicationController
   def preparer_sap_tarbes
   end
 
-
   def ma_reinsertion_moselle
   end
 
