@@ -38,16 +38,12 @@
                       <li>
                         <%= link_to t('.public_root_link'), landing_path, class: "fr-link fr-fi-information-line" %>
                       </li>
-                      <% if current_convict %>
-                        <%= button_to t('.log_out_link'), destroy_convict_session_path, method: :delete, class: "fr-link fr-fi-logout-box-r-line" %>
-                      <% else %>
-                        <li>
-                          <%= link_to t('.agents_sign_in_link'), ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-lock-line'  %>
-                        </li>
-                        <li>
-                          <%= link_to t('.authenticated_root_link'), new_convict_session_path, class: 'fr-link fr-fi-account-line'  %>
-                        </li>
-                      <% end %>
+                      <li>
+                        <%= link_to t('.agents_sign_in_link'), ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-lock-line'  %>
+                      </li>
+                      <li>
+                        <%= link_to t('.authenticated_root_link'), ENV["PPSMJ_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-account-line'  %>
+                      </li>
                     </ul>
                   </div>
                 </div>
