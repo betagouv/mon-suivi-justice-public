@@ -273,7 +273,7 @@ Rails.application.routes.draw do
     get :get_all_pages
   end
 
-  get "/stats" => redirect("https://monsuivijustice.notion.site/Statistiques-publi-es-bbbce17e1452428aa24172fc26cb5697", status: 302),
+  get "/stats" => redirect("https://msj-metabase.osc-secnum-fr1.scalingo.io/public/dashboard/7b94c699-cb73-414b-ba0d-1522e8f2c589", status: 302),
     :as => :stats
 
   match "/404" => "errors#not_found", :via => :all
