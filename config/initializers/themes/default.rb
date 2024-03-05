@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_spip33_bordeaux', title: 'Preparer spip33_bordeaux', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip14_caen', title: 'Preparer spip14_caen', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip11_carcassonne', title: 'Preparer spip11_carcassonne', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip11_narbonne', title: 'Preparer spip11_narbonne', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -320,6 +321,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_spip33_bordeaux', title: 'Preparer spip33_bordeaux', view_template: 'preparer_spip33_bordeaux'},
     {name: 'preparer_spip14_caen', title: 'Preparer spip14_caen', view_template: 'preparer_spip14_caen'},
     {name: 'preparer_spip11_carcassonne', title: 'Preparer spip11_carcassonne', view_template: 'preparer_spip11_carcassonne'},
     {name: 'preparer_spip11_narbonne', title: 'Preparer spip11_narbonne', view_template: 'preparer_spip11_narbonne'},
