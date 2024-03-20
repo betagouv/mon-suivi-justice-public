@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_sap_quimper', title: 'Preparer sap_quimper', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_sens', title: 'Preparer sap_sens', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip24_bergerac', title: 'Preparer spip24_bergerac', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_carpentras', title: 'Preparer sap_carpentras', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -326,6 +327,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_sap_quimper', title: 'Preparer sap_quimper', view_template: 'preparer_sap_quimper'},
     {name: 'preparer_sap_sens', title: 'Preparer sap_sens', view_template: 'preparer_sap_sens'},
     {name: 'preparer_spip24_bergerac', title: 'Preparer spip24_bergerac', view_template: 'preparer_spip24_bergerac'},
     {name: 'preparer_sap_carpentras', title: 'Preparer sap_carpentras', view_template: 'preparer_sap_carpentras'},
