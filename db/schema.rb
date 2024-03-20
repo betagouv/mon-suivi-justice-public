@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_29_102035) do
+ActiveRecord::Schema[7.0].define(version: 2024_03_20_160149) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -50,34 +50,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_29_102035) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
-  end
-
-  create_table "convicts", force: :cascade do |t|
-    t.string "email"
-    t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "msj_id", null: false
-    t.string "phone", null: false
-    t.string "invitation_token"
-    t.datetime "invitation_created_at"
-    t.datetime "invitation_sent_at"
-    t.datetime "invitation_accepted_at"
-    t.integer "invitation_limit"
-    t.string "invited_by_type"
-    t.bigint "invited_by_id"
-    t.integer "invitations_count", default: 0
-    t.boolean "admin", default: false, null: false
-    t.index ["email"], name: "index_convicts_on_email", unique: true
-    t.index ["invitation_token"], name: "index_convicts_on_invitation_token", unique: true
-    t.index ["invited_by_id"], name: "index_convicts_on_invited_by_id"
-    t.index ["invited_by_type", "invited_by_id"], name: "index_convicts_on_invited_by"
-    t.index ["msj_id"], name: "index_convicts_on_msj_id", unique: true
-    t.index ["phone"], name: "index_convicts_on_phone", unique: true
-    t.index ["reset_password_token"], name: "index_convicts_on_reset_password_token", unique: true
   end
 
   create_table "spina_accounts", id: :serial, force: :cascade do |t|
@@ -312,15 +284,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_29_102035) do
     t.datetime "last_logged_in"
     t.string "password_reset_token"
     t.datetime "password_reset_sent_at"
-  end
-
-  create_table "text_messages", force: :cascade do |t|
-    t.string "message_id", null: false
-    t.text "content", null: false
-    t.string "phone"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["message_id"], name: "index_text_messages_on_message_id", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

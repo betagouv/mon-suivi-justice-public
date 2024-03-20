@@ -1,5 +1,4 @@
 class ErrorsController < ApplicationController
-  skip_before_action :authenticate_convict!
   layout "simple"
 
   def not_found

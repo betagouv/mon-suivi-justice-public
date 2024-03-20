@@ -29,17 +29,6 @@ gem "rails-i18n", "~> 7.0.8"
 
 gem "spina", "~> 2.16.0"
 
-gem "highline", "~> 2.1.0"
-
-gem "devise", "~> 4.9.3"
-gem "devise-i18n", "~> 1.11.0"
-gem "devise_invitable", "~> 2.0.9"
-gem "devise-security", "~> 0.18.0"
-
-gem "phony_rails", "~> 0.15.0"
-
-gem "sib-api-v3-sdk", "~> 8.1.0"
-
 gem "sidekiq-failures", "~> 1.0.4"
 gem "sidekiq", "~> 7.1.4"
 
@@ -58,8 +47,6 @@ gem "bootsnap", "~> 1.16.0", require: false
 gem "sentry-ruby", "~> 5.11.0"
 gem "sentry-rails", "~> 5.11.0"
 
-gem "faraday", "~> 2.7.11"
-
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.12.2"
 
@@ -71,14 +58,6 @@ group :development, :test do
   gem "standard", "~> 1.31.1"
 
   gem "rspec-rails", "~> 5.1.2"
-
-  gem "factory_bot_rails", "~> 6.2.0"
-  gem "shoulda-matchers", "~> 5.3.0"
-
-  gem "timecop", "~> 0.9.8"
-
-  gem "webmock", "~> 3.19.1"
-  gem "vcr", "~> 6.2.0"
 end
 
 group :development do
