@@ -1,29 +1,8 @@
 Rails.application.routes.draw do
   mount Spina::Engine => "/"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  devise_for :convicts, controllers: {passwords: "convicts/passwords"}
 
   # Defines the root path route ("/")
-  unauthenticated do
-    root "pages#landing"
-  end
-
-  require "sidekiq/web"
-  authenticate :convict, ->(convict) { convict.admin? } do
-    mount Sidekiq::Web => "/sidekiq"
-  end
-
-  authenticated :convict do
-    root "appointments#index", as: :authenticated_root
-  end
-
-  resources :appointments, only: %i[show index]
-  resource :agent, only: %i[show]
-  resource :convict, only: %i[show]
-
-  resource :sms_invitations, only: %i[create], controller: "convicts/sms_invitations"
-  post :sms_webhook, to: "convicts/sms_webhooks#receive"
+  root "pages#landing"
 
   scope controller: :pages do
     get :preparer_sap_narbonne

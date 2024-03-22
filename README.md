@@ -34,16 +34,6 @@ Quand une page contient plusieurs blocs semblablent par leur style et simplement
 - Pour changer l'ordre des blocs, faites un "drag and drop" du bloc à l'endroit où vous voulez le déposer
 - Pour supprimer un bloc, cliquez sur le bouton "supprimer" en bas de celui-ci
 
-## Tester l'interface probationnaires
-
-Lien vers l'application en environnement de staging: [https://mon-suivi-justice.incubateur.net](https://mon-suivi-justice.incubateur.net)
-### Se connecter sur le compte d'un ou une CPIP et celui de son probationnaire en simultané
-
-1. Se connecter sur l'interface agents de l'[application de staging](https://mon-suivi-justice.incubateur.net) en tant que CPIP
-2. Trouver la probationnaire Alexia CHASLOT (id 106) qui est liée au compte de test sur la staging de l'interface probationnaires et se devinir comme CPIP de cette probationnaire
-3. Ouvrir l'interface agents dans une nouvelle fenètre de navigation privée
-4. Se connecter avec le numéro `0666666666` et le mot de passe `password` sur l'interface probationnaires
-
 ## Contribuer
 
 Toutes les contributions sont les bienvenues. La première façon de participer, c'est de signaler un problème [ici](https://github.com/betagouv/mon-suivi-justice/issues)
