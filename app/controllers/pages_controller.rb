@@ -1,7 +1,5 @@
 class PagesController < Spina::ApplicationController
   before_action :set_spina_page
-  skip_before_action :authenticate_convict!
-  layout "public"
 
   # Controller inherit from Spina::ApplicationController
   # Set Spina::Current.page
@@ -11,6 +9,18 @@ class PagesController < Spina::ApplicationController
   # Spina::Navigation.find_by(name: "main").pages.pluck(:name) pour la navigation
 
   include Spina::Api::Paginable
+  def preparer_sap_bourg_en_bresse
+  end
+
+  def preparer_sap_saint_gaudens
+  end
+
+  def preparer_sap_saint_etienne
+  end
+
+  def preparer_spip87
+  end
+
   def preparer_sap_narbonne
   end
 
