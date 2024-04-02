@@ -7,8 +7,8 @@ RSpec.describe 'Pages', type: :request do
     FactoryBot.create(:account)
   end
 
-  describe 'GET /preparer_sap-evry' do
-    let(:path) { preparer_sap-evry_path }
+  describe 'GET /preparer_sap_evry' do
+    let(:path) { preparer_sap_evry_path }
     
     it do
       get path
