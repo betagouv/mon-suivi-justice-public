@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root "pages#landing"
 
   scope controller: :pages do
+    get :preparer_spip14_lisieux
     get :preparer_sap_pau
     get :preparer_spip29_morlaix
     get :preparer_sap_bonneville
