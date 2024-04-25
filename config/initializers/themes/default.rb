@@ -4,7 +4,7 @@
 # It's where you define everything that's editable in Spina CMS.
 
 # Zip codes for the "Préparer ma convocation" page select
-ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "71", "72", "74", "75", "77", "78", "79", "83", "91", "92", "93", "95", "972", "85", "86", "40", "41", "66", "53", "64", "48", "50", "08", "45", "31", "05", "07", "09", "81", "63", "88", "82", "90", "70", "19", "76", "87", "89", "10", "22", "84", "29", "42", "30", "27", "97", "73", "34", "55", "973", "80", "15", "65", "11"].freeze
+ZIP_CODES ||= ["02", "03", "04", "06", "13", "14", "17", "18", "21", "23", "24", "25", "28", "2A", "2B", "32", "33", "36", "37", "38", "44", "47", "49", "51", "52", "54", "56", "57", "58", "59", "61", "62", "67", "68", "69", "71", "72", "74", "75", "77", "78", "79", "83", "91", "92", "93", "95", "972", "85", "86", "40", "41", "66", "53", "64", "48", "50", "08", "45", "31", "05", "07", "09", "81", "63", "88", "82", "90", "70", "19", "76", "87", "89", "10", "22", "84", "29", "42", "30", "27", "97", "73", "34", "55", "973", "80", "15", "65", "11", "01"].freeze
 
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
@@ -66,6 +66,17 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_spip50_douai', title: 'Preparer spip50_douai', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_spip65_tarbes', title: 'Preparer spip65_tarbes', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_spip14_lisieux', title: 'Preparer spip14_lisieux', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_pau', title: 'Preparer sap_pau', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_spip29_morlaix', title: 'Preparer spip29_morlaix', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_bonneville', title: 'Preparer sap_bonneville', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_evry', title: 'Preparer sap_evry', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_bourg_en_bresse', title: 'Preparer sap_bourg_en_bresse', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_saint_gaudens', title: 'Preparer sap_saint_gaudens', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_sap_saint_etienne', title: 'Preparer sap_saint_etienne', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
+    {name: 'preparer_spip87', title: 'Preparer spip87', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_narbonne', title: 'Preparer sap_narbonne', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_auch', title: 'Preparer sap_auch', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_cambrai', title: 'Preparer sap_cambrai', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -330,6 +341,17 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_spip50_douai', title: 'Preparer spip50_douai', view_template: 'preparer_spip50_douai'},
+    {name: 'preparer_spip65_tarbes', title: 'Preparer spip65_tarbes', view_template: 'preparer_spip65_tarbes'},
+    {name: 'preparer_spip14_lisieux', title: 'Preparer spip14_lisieux', view_template: 'preparer_spip14_lisieux'},
+    {name: 'preparer_sap_pau', title: 'Preparer sap_pau', view_template: 'preparer_sap_pau'},
+    {name: 'preparer_spip29_morlaix', title: 'Preparer spip29_morlaix', view_template: 'preparer_spip29_morlaix'},
+    {name: 'preparer_sap_bonneville', title: 'Preparer sap_bonneville', view_template: 'preparer_sap_bonneville'},
+    {name: 'preparer_sap_evry', title: 'Preparer sap_evry', view_template: 'preparer_sap_evry'},
+    {name: 'preparer_sap_bourg_en_bresse', title: 'Preparer sap_bourg_en_bresse', view_template: 'preparer_sap_bourg_en_bresse'},
+    {name: 'preparer_sap_saint_gaudens', title: 'Preparer sap_saint_gaudens', view_template: 'preparer_sap_saint_gaudens'},
+    {name: 'preparer_sap_saint_etienne', title: 'Preparer sap_saint_etienne', view_template: 'preparer_sap_saint_etienne'},
+    {name: 'preparer_spip87', title: 'Preparer spip87', view_template: 'preparer_spip87'},
     {name: 'preparer_sap_narbonne', title: 'Preparer sap_narbonne', view_template: 'preparer_sap_narbonne'},
     {name: 'preparer_sap_auch', title: 'Preparer sap_auch', view_template: 'preparer_sap_auch'},
     {name: 'preparer_sap_cambrai', title: 'Preparer sap_cambrai', view_template: 'preparer_sap_cambrai'},

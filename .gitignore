@@ -45,3 +45,5 @@ notes
 
 app/assets/builds/
 app/assets/config/spina/
+
+.vscode

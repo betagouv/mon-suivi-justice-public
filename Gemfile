@@ -56,7 +56,7 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", "~> 1.8.0", platforms: %i[mri mingw x64_mingw]
 
-  gem "brakeman", "5.4.1"
+  gem "brakeman", "6.1.2"
   gem "standard", "~> 1.35.1"
 
   gem "rspec-rails", "~> 5.1.2"
