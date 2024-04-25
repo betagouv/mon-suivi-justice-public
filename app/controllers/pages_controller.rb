@@ -1,7 +1,5 @@
 class PagesController < Spina::ApplicationController
   before_action :set_spina_page
-  skip_before_action :authenticate_convict!
-  layout "public"
 
   # Controller inherit from Spina::ApplicationController
   # Set Spina::Current.page
@@ -11,6 +9,108 @@ class PagesController < Spina::ApplicationController
   # Spina::Navigation.find_by(name: "main").pages.pluck(:name) pour la navigation
 
   include Spina::Api::Paginable
+  def preparer_spip50_douai
+  end
+
+  def preparer_spip65_tarbes
+  end
+
+  def preparer_spip14_lisieux
+  end
+
+  def preparer_sap_pau
+  end
+
+  def preparer_spip29_morlaix
+  end
+
+  def preparer_sap_bonneville
+  end
+
+  def preparer_sap_evry
+  end
+
+  def preparer_sap_bourg_en_bresse
+  end
+
+  def preparer_sap_saint_gaudens
+  end
+
+  def preparer_sap_saint_etienne
+  end
+
+  def preparer_spip87
+  end
+
+  def preparer_sap_narbonne
+  end
+
+  def preparer_sap_auch
+  end
+
+  def preparer_sap_cambrai
+  end
+
+  def preparer_sap_quimper
+  end
+
+  def preparer_sap_sens
+  end
+
+  def preparer_spip24_bergerac
+  end
+
+  def preparer_sap_carpentras
+  end
+
+  def preparer_spip82
+  end
+
+  def preparer_spip33_libourne
+  end
+
+  def preparer_spip33_bordeaux
+  end
+
+  def preparer_spip14_caen
+  end
+
+  def preparer_spip11_carcassonne
+  end
+
+  def preparer_spip11_narbonne
+  end
+
+  def preparer_sap_tarbes
+  end
+
+  def ma_reinsertion_moselle
+  end
+
+  def preparer_spip38_bourgoin_jailleu
+  end
+
+  def preparer_spip76_rouen
+  end
+
+  def preparer_spip57_thionville
+  end
+
+  def preparer_spip68_mulhouse
+  end
+
+  def ma_reinsertion_puy_de_dome
+  end
+
+  def ma_reinsertion_cantal
+  end
+
+  def preparer_spip15_63_aurillac
+  end
+
+  def preparer_sap_77_fontainebleau
+  end
+
   def preparer_spip27_evreux
   end
 

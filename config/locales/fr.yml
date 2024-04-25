@@ -2,10 +2,6 @@ fr:
   time:
     formats:
       clear: "%A %e %B %Y à %kh%M"
-      convicts:
-        mailer:
-          invitation_instructions:
-            accept_until_format: "%B %d, %Y %I:%M %p"
   errors:
     internal_server:
       title: Toutes nos excuses, une erreur a eu lieu dans l'application.
@@ -24,181 +20,28 @@ fr:
       not_saved:
         one: 'une erreur a empêché ce %{resource} d’être enregistré(e) :'
         other: "%{count} erreurs ont empêché ce %{resource} d’être enregistré(e) :"
-  activerecord:
-    attributes:
-      convict:
-        confirmation_sent_at: Date d'envoi de la confirmation
-        confirmation_token: Clé de confirmation du mot de passe
-        confirmed_at: Confirmé à
-        created_at: Enregistré à
-        current_password: Mot de passe actuel
-        current_sign_in_at: Date de la connexion actuelle
-        current_sign_in_ip: IP de la connexion actuelle
-        email: Email
-        phone: Numéro de téléphone
-        encrypted_password: Mot de passe chiffré
-        failed_attempts: Tentatives échouées
-        last_sign_in_at: Date de la dernière connexion
-        last_sign_in_ip: IP de la dernière connexion
-        locked_at: Verrouillé à
-        password: Mot de passe
-        password_confirmation: Confirmation du mot de passe
-        remember_created_at: Mémorisé à
-        remember_me: Se souvenir de moi ?
-        reset_password_sent_at: Clé de réinitialisation créée à
-        reset_password_token: Clé de réinitialisation du mot de passe
-        sign_in_count: Nombre des connexions
-        unconfirmed_email: Email non confirmé
-        unlock_token: Clé de déverrouillage
-        updated_at: Date de mise à jour
-    models:
-      convict: Compte
   shared:
-    public:
-      header:
-        logo_title: Accueil - Ministère de la justice - Mon Suivi Justice
-        log_out_link: Se déconnecter
-        agents_sign_in_link: Espace agents
-        authenticated_root_link: Mon Espace Personnel
-        preparer_ma_convocation_link: Préparer ma convocation
-        comprendre_ma_peine_link: Comprendre ma peine
-        investir_ma_reinsertion_link: Investir ma réinsertion
-        qui_sommes_nous_link: Qui sommes nous ?
-      footer:
-        legifrance_link: legifrance.gouv.fr
-        gouvernement_link: gouvernement.fr
-        service_public_link: service-public.fr
-        data_gouv_link: data.gouv.fr
-        contact_link: Contact
-        stats_link: Stats
-        accessibility_link: "Accessibilité : non conforme"
-        mentions_legales_link: Mentions Légales
-        donnees_personnelles_link: Politique de confidentialité
     header:
-      log_out_link: Se déconnecter
-      authenticated_root_link: Mon Espace Personnel
-      agents_sign_in_link: Espace agents
-      appointments_index_link: Mes convocations
       logo_title: Accueil - Ministère de la justice - Mon Suivi Justice
-      public_root_link: Revenir au site public
-      agent_show_link: Mes interlocuteurs
-      convict_show_link: Mon compte
+      log_out_link: Se déconnecter
+      agents_sign_in_link: Espace agents
+      authenticated_root_link: Mon Espace Personnel
+      preparer_ma_convocation_link: Préparer ma convocation
+      comprendre_ma_peine_link: Comprendre ma peine
+      investir_ma_reinsertion_link: Investir ma réinsertion
+      qui_sommes_nous_link: Qui sommes nous ?
     footer:
-      appointments: Mes convocations
-      account: Mon compte
-      agent_info: Mes interlocuteurs
+      legifrance_link: legifrance.gouv.fr
+      gouvernement_link: gouvernement.fr
+      service_public_link: service-public.fr
+      data_gouv_link: data.gouv.fr
+      contact_link: Contact
+      stats_link: Stats
+      accessibility_link: "Accessibilité : non conforme"
+      mentions_legales_link: Mentions Légales
+      donnees_personnelles_link: Politique de confidentialité
     staging_alert:
       title: "Attention: vous êtes sur le site de Staging"
-  convicts:
-    show:
-      title: Mes informations personnelles
-      full_name_title: Nom
-      phone_title: Numéro de téléphone
-    failure:
-      already_authenticated: Vous êtes déjà connecté(e).
-      inactive: Votre compte n’est pas encore activé.
-      invalid: "%{authentication_keys} ou mot de passe incorrect."
-      last_attempt: Il vous reste une chance avant que votre compte soit bloqué.
-      locked: Votre compte est verrouillé.
-      not_found_in_database: "%{authentication_keys} ou mot de passe incorrect."
-      timeout: Votre session est expirée, veuillez vous reconnecter pour continuer.
-      unauthenticated: Vous devez vous connecter ou vous enregistrer pour continuer.
-      unconfirmed: Vous devez confirmer votre compte par email.
-      invited: "Vous avez une invitation en attente, acceptez-la pour terminer la création de votre compte."
-    password_forgotten:
-      sms_content: "Bonjour, vous avez demandé à modifier votre mot de passe sur Mon suivi Justice. Pour effectuer ce changement, cliquez sur le lien suivant : %{link}"
-    sms_invitations:
-      reminder_content: "Bonjour, votre compte Mon Suivi Justice vous attend toujours. Pour y accéder et suivre vos convocations justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
-      content: "Bonjour, votre compte Mon Suivi Justice a été créé. Pour y accéder et suivre vos convocations avec la Justice, cliquez sur le lien suivant et choisissez votre mot de passe: %{link}"
-    invitations:
-      send_instructions: "Un e-mail d'invitation a été envoyé à %{email}."
-      invitation_token_invalid: "Le jeton d'invitation fourni n'est pas valide!"
-      updated: 'Votre mot de passe a été défini avec succès. Vous êtes maintenant connecté.'
-      updated_not_active: "Votre mot de passe a été défini avec succès."
-      no_invitations_remaining: "Il n'y a plus d'invitations restantes"
-      invitation_removed: 'Votre invitation a été supprimée.'
-      edit:
-        notice: Vous voilà acteur de votre suivi judiciaire
-        choose_password: Je choisis mon mot de passe
-        password_requirements: 10 caractères, avec une majuscule, une chiffre et un caractère spécial
-        submit_button: Je valide
-        new_password: Mot de passe
-        new_password_confirmation: Confirmation du mot de passe
-        marketing_title: Mon compte est désormais actif
-    passwords:
-      create:
-        no_convict: "Aucun n'utilisateur n'a ce numéro de téléphone"
-        notice: "Un SMS avec un lien de réinitialisation de votre mot de passe vous a été envoyé"
-      edit:
-        change_my_password: Changer mon mot de passe
-        confirm_new_password: Confirmez mon nouveau mot de passe
-        new_password: Choisir un nouveau mot de passe
-      new:
-        forgot_your_password: J'ai oublié mon mot de passe ?
-        send_me_reset_password_instructions: Réinitialiser mon mot de passe
-      no_token: Vous ne pouvez pas accéder à cette page si vous n’y accédez pas depuis un email de réinitialisation de mot de passe. Si vous venez en effet d’un tel email, vérifiez que vous avez copié l’adresse URL en entier.
-      send_instructions: Vous allez recevoir sous quelques minutes un email vous indiquant comment réinitialiser votre mot de passe.
-      send_paranoid_instructions: Si votre email existe dans notre base de données, vous recevrez un lien vous permettant de récupérer votre mot de passe.
-      updated: Votre mot de passe a bien été modifié. Vous êtes maintenant connecté(e).
-      updated_not_active: Votre mot de passe a bien été modifié.
-    sessions:
-      already_signed_out: Déconnecté(e).
-      new:
-        sign_in: Je me connecte
-        marketing_title: Ce que mon compte me permet
-      signed_in: Connecté(e).
-      signed_out: Déconnecté(e).
-    shared:
-      marketing:
-        appointments: Je peux suivre mes convocations
-        contacts: Je peux contacter mes interlocuteurs
-        data: Mes données personnelles sont protégées
-        data_content_html: "La présente interface est à l’initiative du Ministère de la Justice. Le respect de vos droits et de votre vie privée est une priorité. Pour plus d’informations sur l’utilisation de vos données personnelles, vous pouvez vous rendre sur <a target='_blank' href='/donnees_personnelles'>la page dédiée</a>"
-      links:
-        back: Retour
-        didn_t_receive_confirmation_instructions: Vous n'avez pas reçu l'email de confirmation ?
-        didn_t_receive_unlock_instructions: Vous n'avez pas reçu l'email de déblocage ?
-        forgot_your_password: J'ai oublié mon mot de passe ?
-        sign_in: Connexion
-        sign_in_with_provider: Connexion avec %{provider}
-        sign_up: Inscription
-      minimum_password_length:
-        one: "(%{count} caractère au moins)"
-        other: "(%{count} caractères au moins)"
-  appointments:
-    index:
-      title: Vos convocations
-      next_appointments: Convocations suivantes
-      past_appointments: Convocations passées
-      no_appointment: Vous n'avez pas encore de convocations
-    appointment:
-      days_from_now: Dans %{days} jours
-      today: Aujourd'hui
-      date_title: Date
-      address_title: Adresse
-      map_link: Voir sur une carte
-      detail: Voir le détail
-    show:
-      days_from_now: Dans %{days} jours
-      days_ago: Il y a %{days} jours
-      today: Aujourd'hui
-      date_title: Date
-      address_title: Adresse
-      map_link: Voir sur une carte
-      reminder: N'oubliez pas de vous munir des justificatifs mentionnés dans votre convocation.
-      duration_title: Durée approximative de la convocation
-      duration: "Environ %{duration} minutes"
-      state_title: Statut
-      appointment_type_title: Type de convocation
-      index_link: Retour à la liste
-  agents:
-    show:
-      title: Les coordonnées de mes interlocuteurs
-      organization_title: Nom du service
-      full_name_title: Mon CPIP référent
-      phone_title: Numéro de téléphone
-      email_title: Email
-      no_cpip: Vous êtes bien suivi par votre SPIP mais aucun CPIP référent ne vous a été affecté pour l'instant
   pages:
     preparer_mon_rdv:
       select_a_zip_code: Choisissez un département

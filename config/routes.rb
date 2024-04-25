@@ -1,31 +1,44 @@
 Rails.application.routes.draw do
   mount Spina::Engine => "/"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  devise_for :convicts, controllers: {passwords: "convicts/passwords"}
 
   # Defines the root path route ("/")
-  unauthenticated do
-    root "pages#landing"
-  end
-
-  require "sidekiq/web"
-  authenticate :convict, ->(convict) { convict.admin? } do
-    mount Sidekiq::Web => "/sidekiq"
-  end
-
-  authenticated :convict do
-    root "appointments#index", as: :authenticated_root
-  end
-
-  resources :appointments, only: %i[show index]
-  resource :agent, only: %i[show]
-  resource :convict, only: %i[show]
-
-  resource :sms_invitations, only: %i[create], controller: "convicts/sms_invitations"
-  post :sms_webhook, to: "convicts/sms_webhooks#receive"
+  root "pages#landing"
 
   scope controller: :pages do
+    get :preparer_spip50_douai
+    get :preparer_spip65_tarbes
+    get :preparer_spip14_lisieux
+    get :preparer_sap_pau
+    get :preparer_spip29_morlaix
+    get :preparer_sap_bonneville
+    get :preparer_sap_evry
+    get :preparer_sap_bourg_en_bresse
+    get :preparer_sap_saint_gaudens
+    get :preparer_sap_saint_etienne
+    get :preparer_spip87
+    get :preparer_sap_narbonne
+    get :preparer_sap_auch
+    get :preparer_sap_cambrai
+    get :preparer_sap_quimper
+    get :preparer_sap_sens
+    get :preparer_spip24_bergerac
+    get :preparer_sap_carpentras
+    get :preparer_spip82
+    get :preparer_spip33_libourne
+    get :preparer_spip33_bordeaux
+    get :preparer_spip14_caen
+    get :preparer_spip11_carcassonne
+    get :preparer_spip11_narbonne
+    get :preparer_sap_tarbes
+    get :ma_reinsertion_moselle
+    get :preparer_spip38_bourgoin_jailleu
+    get :preparer_spip76_rouen
+    get :preparer_spip57_thionville
+    get :preparer_spip68_mulhouse
+    get :ma_reinsertion_puy_de_dome
+    get :ma_reinsertion_cantal
+    get :preparer_spip15_63_aurillac
+    get :preparer_sap_77_fontainebleau
     get :preparer_spip27_evreux
     get :preparer_spip15_63_clermont_ferrand
     get :preparer_spip55_verdun
@@ -263,7 +276,7 @@ Rails.application.routes.draw do
     get :get_all_pages
   end
 
-  get "/stats" => redirect("https://monsuivijustice.notion.site/Statistiques-publi-es-bbbce17e1452428aa24172fc26cb5697", status: 302),
+  get "/stats" => redirect("https://msj-metabase.osc-secnum-fr1.scalingo.io/public/dashboard/7b94c699-cb73-414b-ba0d-1522e8f2c589", status: 302),
     :as => :stats
 
   match "/404" => "errors#not_found", :via => :all
