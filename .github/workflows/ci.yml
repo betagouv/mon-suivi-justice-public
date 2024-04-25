@@ -26,7 +26,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
-          node-version: 16.13.1
+          node-version: 20.12.2
           cache: yarn
       - name: Install npm packages
         run: yarn
@@ -68,7 +68,7 @@ jobs:
       - name: Set up Node environment
         uses: actions/setup-node@v2
         with:
-          node-version: 16.13.1
+          node-version: 20.12.2
           cache: yarn
       - name: Install Node dependencies
         run: yarn
