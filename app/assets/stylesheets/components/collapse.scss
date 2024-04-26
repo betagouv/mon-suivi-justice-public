@@ -40,15 +40,15 @@
 }
 
 .collapse-menu-picto-red {
-  &:before { font-size: 24px; }
+  &:before { --icon-size: 24px; }
 }
 
 .collapse-menu-picto-blue {
-  &:before { font-size: 34px; }
+  &:before { --icon-size: 34px; }
 }
 
 .collapse-menu-picto-green {
-  &:before { font-size: 34px; }
+  &:before { --icon-size: 34px; }
 }
 
 .collapse-picto-active { display: flex; }

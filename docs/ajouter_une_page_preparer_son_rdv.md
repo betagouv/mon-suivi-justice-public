@@ -1,7 +1,7 @@
 
 Deux méthodes pour créer une page (investir ma réinsertion et préparer mon rdv )
 
-Pour une page Préparer mon rdv, une image doit être uploadée dans `app/frontend/images`, vérifier que le fichier n'est pas trop lourd.
+Pour une page Préparer mon rdv, une image doit être uploadée dans `app/assets/images`, vérifier que le fichier n'est pas trop lourd.
 
 - Utiliser le CLI pour déployer une nouvelle page
 
@@ -27,7 +27,7 @@ Attention : si on déploie directement il faut lancer la commande `rake spina:bo
 ## Ajouter une page Préparer son rdv
 
 1. Ajouter un test dans le fichier `spec/requests/pages_spec.rb`
-2. Ajouter l'image d'illustration dans le dossier `frontend/images` (si nécessaire la réduire en taille pour obtenir un poids de fichier raisonnable)
+2. Ajouter l'image d'illustration dans le dossier `assets/images` (si nécessaire la réduire en taille pour obtenir un poids de fichier raisonnable)
 3. Ajouter une route dans le fichier `config/routes.rb`
 4. Ajouter une méthode dans le controller `pages_controller.rb`
 5. Ajouter un template dans le dossier `views/pages`, copier un autre template et modifier le nom de fichier de l'image.

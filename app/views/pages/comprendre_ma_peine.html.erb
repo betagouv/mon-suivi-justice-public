@@ -11,9 +11,9 @@
 
   <div class='comprendre-ma-peine-large-tiles-container'>
     <%= link_to regles_essentielles_path, class: 'comprendre-ma-peine-large-tile fr-mb-4w' do %>
-      <div class='comprendre-ma-peine-large-tiles-icon'><%= image_pack_tag 'media/images/docs.svg' %></div>
+      <div class='comprendre-ma-peine-large-tiles-icon'><%= image_tag 'docs.svg' %></div>
       <div class='comprendre-ma-peine-large-tiles-content'>
-        <div class='comprendre-ma-peine-large-tiles-chevron'><%= image_pack_tag 'media/images/chevron.svg' %></div>
+        <div class='comprendre-ma-peine-large-tiles-chevron'><%= image_tag 'chevron.svg' %></div>
         <div class='comprendre-ma-peine-large-tiles-text-container'>
           <div class='comprendre-ma-peine-large-tiles-title'><%= content(:card1_title) %></div>
           <div class='comprendre-ma-peine-large-tiles-text'><%= content(:card1_text) %></div>
@@ -22,9 +22,9 @@
     <% end %>
 
     <%= link_to obligations_personnelles_path, class: 'comprendre-ma-peine-large-tile fr-mb-4w' do %>
-      <div class='comprendre-ma-peine-large-tiles-icon'><%= image_pack_tag 'media/images/target.svg' %></div>
+      <div class='comprendre-ma-peine-large-tiles-icon'><%= image_tag 'target.svg' %></div>
       <div class='comprendre-ma-peine-large-tiles-content'>
-        <div class='comprendre-ma-peine-large-tiles-chevron'><%= image_pack_tag 'media/images/chevron.svg' %></div>
+        <div class='comprendre-ma-peine-large-tiles-chevron'><%= image_tag 'chevron.svg' %></div>
         <div class='comprendre-ma-peine-large-tiles-text-container'>
           <div class='comprendre-ma-peine-large-tiles-title'><%= content(:card2_title) %></div>
           <div class='comprendre-ma-peine-large-tiles-text'><%= content(:card2_text) %></div>
@@ -33,9 +33,9 @@
     <% end %>
 
     <%= link_to mes_interlocuteurs_path, class: 'comprendre-ma-peine-large-tile fr-mb-4w' do %>
-      <div class='comprendre-ma-peine-large-tiles-icon'><%= image_pack_tag 'media/images/justice_hand_orange.svg' %></div>
+      <div class='comprendre-ma-peine-large-tiles-icon'><%= image_tag 'justice_hand_orange.svg' %></div>
       <div class='comprendre-ma-peine-large-tiles-content'>
-        <div class='comprendre-ma-peine-large-tiles-chevron'><%= image_pack_tag 'media/images/chevron.svg' %></div>
+        <div class='comprendre-ma-peine-large-tiles-chevron'><%= image_tag 'chevron.svg' %></div>
         <div class='comprendre-ma-peine-large-tiles-text-container'>
           <div class='comprendre-ma-peine-large-tiles-title'><%= content(:card3_title) %></div>
           <div class='comprendre-ma-peine-large-tiles-text'><%= content(:card3_text) %></div>
@@ -51,7 +51,7 @@
       <div class="fr-col-12 fr-col-md-6 fr-col-lg-3">
         <%= link_to card.content(:card_link), class: 'comprendre-ma-peine-small-tile fr-mb-4w' do %>
           <div class='comprendre-ma-peine-small-tiles-content fr-mx-2w'>
-            <div class='comprendre-ma-peine-small-tiles-chevron'><%= image_pack_tag 'media/images/chevron.svg' %></div>
+            <div class='comprendre-ma-peine-small-tiles-chevron'><%= image_tag 'chevron.svg' %></div>
             <div class='comprendre-ma-peine-small-tiles-title'><%= card.content(:card_title) %></div>
           </div>
         <% end %>
