@@ -1,15 +1,14 @@
 module.exports = {
-  parser: "postcss-scss",
+  parser: 'postcss-scss',
   plugins: {
-    autoprefixer: {},
     'postcss-simple-vars': {},
-    "postcss-mixins": {},
-    'postcss-import': { path: ["node_modules"] },
-    "postcss-nesting": {},
+    'postcss-mixins': {},
+    'postcss-import': { path: ['node_modules'] },
+    'postcss-nesting': {},
     autoprefixer: {},
-    "postcss-replace": {
+    'postcss-replace': {
       pattern: /(?:\.\.\/){0,2}icons\/\w+\//,
       data: { replaceAll: '' }
-    },
-  },
+    }
+  }
 }

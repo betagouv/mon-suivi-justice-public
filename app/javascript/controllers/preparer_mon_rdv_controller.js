@@ -29,7 +29,7 @@ export default class extends Controller {
     }
   }
 
-  buildCards() {
+  buildCards () {
     let cards = ''
 
     const selectedPages = this.pages.data.filter((p) => {
