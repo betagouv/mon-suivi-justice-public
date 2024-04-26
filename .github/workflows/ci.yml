@@ -81,6 +81,8 @@ jobs:
         run: bin/rails db:create db:schema:load db:migrate RAILS_ENV=test
         env:
           DATABASE_URL: "postgres://postgres:postgres@localhost:5432"
+      - name: Build ESbuild
+        run: yarn build
       - name: Run tests
         run: bundle exec rspec
         env:
