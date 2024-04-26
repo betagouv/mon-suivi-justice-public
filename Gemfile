@@ -12,7 +12,7 @@ gem "cssbundling-rails", "~> 1.4"
 gem "pg", "~> 1.5.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.6.7"
+gem "puma", "~> 6.4.2"
 
 # Needed by Spina
 gem "sprockets-rails", "~> 3.4.2", ">= 3.4.2"
@@ -58,11 +58,11 @@ group :development, :test do
   gem "debug", "~> 1.8.0", platforms: %i[mri mingw x64_mingw]
 
   gem "brakeman", "6.1.2"
-  gem "standard", "~> 1.31.1"
+  gem "standard", "~> 1.35.1"
 
   gem "rspec-rails", "~> 5.1.2"
 
-  gem "factory_bot_rails", "~> 6.2.0"
+  gem "factory_bot_rails", "~> 6.4", ">= 6.4.3"
 end
 
 group :development do
