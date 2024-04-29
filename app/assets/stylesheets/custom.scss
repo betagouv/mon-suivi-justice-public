@@ -299,6 +299,9 @@
   font-weight: bold;
   box-shadow: none;
   background-image: none;
+  &:hover {
+    background: $msj-clear-background !important;
+  }
 }
 
 .border-blue {
