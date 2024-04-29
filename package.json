@@ -2,31 +2,47 @@
   "name": "mon-suivi-justice-public",
   "private": "true",
   "engines": {
-    "node": "16.13.x",
+    "node": "20.12.x",
     "yarn": "1.22.x"
   },
   "dependencies": {
-    "@gouvfr/dsfr": "^1.2.1",
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "@gouvfr/dsfr": "^1.11.2",
     "@hotwired/stimulus": "^3.2.2",
-    "@hotwired/stimulus-webpack-helpers": "^1.0.1",
     "@hotwired/turbo-rails": "^7.1.0",
     "@popperjs/core": "^2.11.8",
-    "@rails/webpacker": "5.4.4",
-    "autoprefixer": "9",
-    "font-awesome": "^4.7.0",
-    "postcss": "7",
-    "sass": "^1.46.0",
-    "sass-loader": "^10.2.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "autoprefixer": "^10.4.19",
+    "esbuild": "^0.20.2",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-mixins": "^10.0.1",
+    "postcss-nesting": "^12.1.2",
+    "postcss-scss": "^4.0.9",
+    "postcss-simple-vars": "^7.0.1",
+    "tailwindcss": "^3.4.3"
   },
   "scripts": {
     "lint": "standard",
-    "lint:fix": "standard --fix"
+    "lint:fix": "standard --fix",
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --loader:.svg=copy --asset-names=[name] --format=esm --outdir=app/assets/builds --public-path=/assets",
+    "build:css": "postcss ./app/assets/stylesheets/application.scss -o ./app/assets/builds/application.css"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.4",
     "@babel/eslint-parser": "^7.16.5",
-    "standard": "^16.0.4",
-    "webpack-dev-server": "^3"
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/plugin-proposal-private-methods": "^7.18.6",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-destructuring": "^7.24.1",
+    "@babel/plugin-transform-regenerator": "^7.24.1",
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@babel/preset-env": "^7.24.4",
+    "babel-plugin-macros": "^3.1.0",
+    "postcss-replace": "^2.0.1",
+    "standard": "^16.0.4"
   },
   "standard": {
     "parser": "@babel/eslint-parser"

@@ -1,0 +1,5 @@
+import '@gouvfr/dsfr/dist/icons/system/arrow-down-s-line.svg'
+import '@gouvfr/dsfr/dist/icons/system/arrow-right-s-line.svg'
+import '@gouvfr/dsfr/dist/icons/system/external-link-line.svg'
+import '@gouvfr/dsfr/dist/icons/system/lock-line.svg'
+import '@gouvfr/dsfr/dist/icons/user/account-circle-line.svg'

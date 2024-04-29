@@ -4,8 +4,8 @@
       <div><%= collapse.content(:collapse_title) %></div>
     <% end %>
 
-    <span class="fr-fi-arrow-right-s-line collapse-menu-picto-<%= collapse_style %> collapse-picto-active" aria-hidden="true" data-collapse-target="pictoCollapsed"></span>
-    <span class="fr-fi-arrow-down-s-line collapse-menu-picto-<%= collapse_style %> collapse-picto-inactive" aria-hidden="true" data-collapse-target="pictoExpanded"></span>
+    <span class="fr-icon-arrow-right-s-line collapse-menu-picto-<%= collapse_style %> collapse-picto-active" aria-hidden="true" data-collapse-target="pictoCollapsed"></span>
+    <span class="fr-icon-arrow-down-s-line collapse-menu-picto-<%= collapse_style %> collapse-picto-inactive" aria-hidden="true" data-collapse-target="pictoExpanded"></span>
 
     <% if collapse_style == "blue" %>
       <div class="collapse-title-blue"><%= collapse.content(:collapse_title) %></div>
@@ -14,7 +14,7 @@
     <% end %>
   </div>
 
-  <div class='collapse-content static-content hidden' data-collapse-target="content">
+  <div class='collapse-content static-content fr-hidden' data-collapse-target="content">
     <%= collapse.content.html(:collapse_rich_content) %>
 
     <% if collapse.content(:collapse_rich_content_good_practice).present? %>

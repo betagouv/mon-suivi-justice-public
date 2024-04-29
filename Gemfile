@@ -5,7 +5,8 @@ ruby "3.1.2"
 
 gem "rails", "7.0.8"
 
-gem "webpacker", "~> 5.4.4"
+gem "jsbundling-rails", "~> 1.3"
+gem "cssbundling-rails", "~> 1.4"
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.5.4"

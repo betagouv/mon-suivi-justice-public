@@ -42,6 +42,7 @@
   border: 2px solid $msj-border;
   border-radius: 10px;
   box-shadow: none;
+  background-image: none;
 
   @media (min-width: $msj-medium-breakpoint) {
     width: 32%;
@@ -84,6 +85,7 @@
   border: 2px solid $msj-border;
   border-radius: 10px;
   box-shadow: none;
+  background-image: none;
 
   @media (min-width: $msj-small-breakpoint) {
     padding: 0 10px;

@@ -26,7 +26,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
-          node-version: 16.13.1
+          node-version: 20.12.2
           cache: yarn
       - name: Install npm packages
         run: yarn
@@ -68,7 +68,7 @@ jobs:
       - name: Set up Node environment
         uses: actions/setup-node@v2
         with:
-          node-version: 16.13.1
+          node-version: 20.12.2
           cache: yarn
       - name: Install Node dependencies
         run: yarn
@@ -81,6 +81,10 @@ jobs:
         run: bin/rails db:create db:schema:load db:migrate RAILS_ENV=test
         env:
           DATABASE_URL: "postgres://postgres:postgres@localhost:5432"
+      - name: Build ESbuild
+        run: yarn build
+      - name: Build PostCSS
+        run: yarn build:css
       - name: Run tests
         run: bundle exec rspec
         env:
