@@ -3,21 +3,22 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
-gem "rails", "7.0.8"
+gem "rails", "~> 7.1", ">= 7.1.3.2"
 
-gem "webpacker", "~> 5.4.4"
+gem "jsbundling-rails", "~> 1.3"
+gem "cssbundling-rails", "~> 1.4"
 
 # Use postgresql as the database for Active Record
-gem "pg", "~> 1.5.4"
+gem "pg", "~> 1.5.6"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.6.7"
+gem "puma", "~> 6.4.2"
 
 # Needed by Spina
 gem "sprockets-rails", "~> 3.4.2", ">= 3.4.2"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails", "~> 1.4.0"
+gem "turbo-rails", "~> 1.5.0"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails", "~> 1.2.2"
@@ -27,7 +28,7 @@ gem "redis", "~> 4.8.1"
 
 gem "rails-i18n", "~> 7.0.8"
 
-gem "spina", "~> 2.16.0"
+gem "spina", "~> 2.18.0"
 
 gem "sidekiq-failures", "~> 1.0.4"
 gem "sidekiq", "~> 7.1.4"
@@ -46,8 +47,8 @@ gem "tzinfo-data", "~> 1.2", platforms: %i[mingw mswin x64_mingw jruby]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", "~> 1.16.0", require: false
 
-gem "sentry-ruby", "~> 5.11.0"
-gem "sentry-rails", "~> 5.11.0"
+gem "sentry-ruby", "~> 5.17.3"
+gem "sentry-rails", "~> 5.17.3"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.12.2"
@@ -56,12 +57,12 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", "~> 1.8.0", platforms: %i[mri mingw x64_mingw]
 
-  gem "brakeman", "5.4.1"
-  gem "standard", "~> 1.31.1"
+  gem "brakeman", "6.1.2"
+  gem "standard", "~> 1.35.1"
 
   gem "rspec-rails", "~> 5.1.2"
 
-  gem "factory_bot_rails", "~> 6.2.0"
+  gem "factory_bot_rails", "~> 6.4", ">= 6.4.3"
 end
 
 group :development do

@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="fr-header__service">
-                      <%= image_pack_tag "media/images/logo_msj.svg", alt: "Logo Mon Suivi Justice" %>
+                      <%= image_tag "logo_msj.svg", alt: "Logo Mon Suivi Justice" %>
                     </div>
                 </div>
 
@@ -27,10 +27,10 @@
                   <div class="fr-header__tools-links">
                     <ul class="fr-links-group">
                       <li>
-                        <%= link_to t('.authenticated_root_link'), ENV["PPSMJ_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-account-line'  %>
+                        <%= link_to t('.authenticated_root_link'), ENV["PPSMJ_SIGN_IN_URL"], method: :get, class: 'fr-link fr-icon-account-line'  %>
                       </li>
                       <li>
-                        <%= link_to t('.agents_sign_in_link'), ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-link fr-fi-lock-line'  %>
+                        <%= link_to t('.agents_sign_in_link'), ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-link fr-icon-lock-line'  %>
                       </li>
                     </ul>
                   </div>

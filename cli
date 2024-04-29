@@ -141,7 +141,7 @@ class CLI < Thor
     department = ask("Which department is concerned ? (ex: 93)")
     say
 
-    image_name = ask("What's the name of the image previously saved in app/frontend/images ? (ex: spip93.jpg)")
+    image_name = ask("What's the name of the image previously saved in app/assets/images ? (ex: spip93.jpg)")
     say
 
     run("rails generate preparer_page #{name} --image_name=#{image_name} --department=#{department}")

@@ -1,0 +1,18 @@
+@import "@gouvfr/dsfr/dist/utility/icons/icons";
+@import "@gouvfr/dsfr/dist/dsfr/dsfr";
+
+@import 'variables.scss';
+@import 'custom.scss';
+@import 'fonts.scss';
+
+@import 'pages/home.scss';
+@import 'pages/comprendre_ma_peine.scss';
+@import 'pages/infos-pages.scss';
+
+@import 'components/collapse.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+

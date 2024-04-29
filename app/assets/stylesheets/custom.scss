@@ -1,5 +1,13 @@
 // add custom styles here, don't change the dsfr.css file
 
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .static-wrapper {
   background-color: $msj-background;
   min-height: 80vh;
@@ -152,7 +160,7 @@
 }
 
 .static-box-link {
-  background: lighten($msj-blue, 20%);
+  background: $msj-light-blue;
   font-weight: bold;
   height: 60px;
   padding: 0 30px;
@@ -191,7 +199,7 @@
   align-items: center;
   padding: 20px;
   border-color: $msj-red;
-  background-color: lighten($msj-red, 30%);
+  background-color: $msj-light-red;
 
   @media (min-width: $msj-small-breakpoint) {
     padding: 20px 30px;
@@ -212,7 +220,7 @@
   align-items: center;
   padding: 20px;
   border-color: $msj-green;
-  background-color: lighten(palegreen, 15%);
+  background-color: $msj-light-green;
 
   @media (min-width: $msj-small-breakpoint) {
     padding: 20px 30px;
@@ -290,6 +298,10 @@
   border-radius: 10px;
   font-weight: bold;
   box-shadow: none;
+  background-image: none;
+  &:hover {
+    background: $msj-clear-background !important;
+  }
 }
 
 .border-blue {
@@ -306,6 +318,7 @@
   box-shadow: none;
   margin-top: 30px;
   margin-bottom: 30px;
+  background-image: none;
 
   &::after {
    content: none !important;
@@ -313,7 +326,7 @@
 }
 
 .static-google-map-link-button {
-  background: lighten($msj-blue, 20%);
+  background: $msj-light-blue;
   margin: auto;
   width: 250px;
   height: 60px;
@@ -322,6 +335,10 @@
   align-items: center;
   border-radius: 10px;
   font-weight: bold;
+}
+
+.static-google-map-link-button:hover {
+  background: $msj-light-blue !important;
 }
 
 .icon-xl::before {
@@ -333,4 +350,8 @@
   margin-top: 20px;
   display: flex;
   justify-content: center;
+}
+
+.fr-header .fr-links-group .fr-link {
+  border-radius: 1rem;
 }

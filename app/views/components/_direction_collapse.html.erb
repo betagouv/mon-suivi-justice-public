@@ -1,16 +1,16 @@
 <div data-controller="collapse" data-collapse-expanded-value="0">
   <div class='collapse-trigger collapse-trigger-blue' data-action="click->collapse#toggle keydown->collapse#toggle" data-collapse-target="label" tabindex="0">
-    <span class="fr-fi-arrow-right-s-line collapse-menu-picto-blue collapse-picto-active" aria-hidden="true" data-collapse-target="pictoCollapsed"></span>
-    <span class="fr-fi-arrow-down-s-line collapse-menu-picto-blue collapse-picto-inactive" aria-hidden="true" data-collapse-target="pictoExpanded"></span>
+    <span class="fr-icon-arrow-right-s-line collapse-menu-picto-blue collapse-picto-active" aria-hidden="true" data-collapse-target="pictoCollapsed"></span>
+    <span class="fr-icon-arrow-down-s-line collapse-menu-picto-blue collapse-picto-inactive" aria-hidden="true" data-collapse-target="pictoExpanded"></span>
 
     <div class='collapse-title-blue'><%= content(:direction_collapse_title) %></div>
   </div>
 
 
-  <div class='collapse-content static-content hidden' data-collapse-target="content">
+  <div class='collapse-content static-content fr-hidden' data-collapse-target="content">
     <div>
       <% if defined?(image) %>
-        <div class='direction-collapse-picture' ><%= image_pack_tag "media/images/#{image}", alt: "Photo de l'entrée du lieu de convocation", class: 'direction-collapse-picture-img' %></div>
+        <div class='direction-collapse-picture' ><%= image_tag image, alt: "Photo de l'entrée du lieu de convocation", class: 'direction-collapse-picture-img' %></div>
       <% end %>
 
       <%= content.html(:direction_collapse_first_rich_content) %>
