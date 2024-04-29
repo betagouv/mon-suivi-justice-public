@@ -18,7 +18,7 @@ gem "puma", "~> 6.4.2"
 gem "sprockets-rails", "~> 3.4.2", ">= 3.4.2"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails", "~> 1.4.0"
+gem "turbo-rails", "~> 1.5.0"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails", "~> 1.2.2"
@@ -28,7 +28,7 @@ gem "redis", "~> 4.8.1"
 
 gem "rails-i18n", "~> 7.0.8"
 
-gem "spina", "~> 2.16.0"
+gem "spina", "~> 2.18.0"
 
 gem "sidekiq-failures", "~> 1.0.4"
 gem "sidekiq", "~> 7.1.4"

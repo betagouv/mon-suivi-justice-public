@@ -44,6 +44,10 @@
   box-shadow: none;
   background-image: none;
 
+  &:hover {
+    background-color: $msj-clear-background !important;
+  }
+
   @media (min-width: $msj-medium-breakpoint) {
     width: 32%;
   }
@@ -86,6 +90,10 @@
   border-radius: 10px;
   box-shadow: none;
   background-image: none;
+
+  &:hover {
+    background-color: $msj-clear-background !important;
+  }
 
   @media (min-width: $msj-small-breakpoint) {
     padding: 0 10px;
