@@ -45,6 +45,9 @@
   flex-direction: column;
   align-items: center;
   background-image: none;
+  &:active {
+    background-color: transparent !important;
+  }
 }
 
 .static-home-link-wrapper {
