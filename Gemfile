@@ -24,7 +24,7 @@ gem "turbo-rails", "~> 1.5.0"
 gem "stimulus-rails", "~> 1.2.2"
 
 # Use Redis adapter to run Action Cable in production
-gem "redis", "~> 4.8.1"
+gem "redis", "~> 5.2.0"
 
 gem "rails-i18n", "~> 7.0.8"
 
