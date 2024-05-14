@@ -24,16 +24,16 @@ gem "turbo-rails", "~> 1.5.0"
 gem "stimulus-rails", "~> 1.2.2"
 
 # Use Redis adapter to run Action Cable in production
-gem "redis", "~> 4.8.1"
+gem "redis", "~> 5.2.0"
 
 gem "rails-i18n", "~> 7.0.8"
 
 gem "spina", "~> 2.18.0"
 
 gem "sidekiq-failures", "~> 1.0.4"
-gem "sidekiq", "~> 7.1.4"
+gem "sidekiq", "~> 7.2.4"
 
-gem "highline", "~> 2.1.0"
+gem "highline", "~> 3.0.1"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -78,7 +78,7 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara", "~> 3.39.2"
-  gem "selenium-webdriver", "~> 4.13.1"
+  gem "capybara", "~> 3.40.0"
+  gem "selenium-webdriver", "~> 4.20.1"
   gem "webdrivers", "~> 5.2.0"
 end
