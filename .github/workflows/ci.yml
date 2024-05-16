@@ -14,7 +14,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.2
+          ruby-version: 3.3.1
           bundler-cache: true
       - name: StandardRB Linter
         run: bundle exec standardrb
@@ -26,7 +26,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
-          node-version: 20.12.2
+          node-version: 20.13.1
           cache: yarn
       - name: Install npm packages
         run: yarn
@@ -40,7 +40,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.2
+          ruby-version: 3.3.1
           bundler-cache: true
       - name: Install gems
         run: |
@@ -68,14 +68,14 @@ jobs:
       - name: Set up Node environment
         uses: actions/setup-node@v2
         with:
-          node-version: 20.12.2
+          node-version: 20.13.1
           cache: yarn
       - name: Install Node dependencies
         run: yarn
       - name: Set up Ruby environment
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.2
+          ruby-version: 3.3.1
           bundler-cache: true
       - name: Setup test database
         run: bin/rails db:create db:schema:load db:migrate RAILS_ENV=test

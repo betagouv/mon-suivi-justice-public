@@ -323,7 +323,11 @@
 
   &::after {
    content: none !important;
- }
+  }
+
+  &:active {
+    background-color: transparent !important;
+  }
 }
 
 .static-google-map-link-button {
@@ -338,10 +342,6 @@
   font-weight: bold;
 }
 
-.static-google-map-link-button:hover {
-  background: $msj-light-blue !important;
-}
-
 .icon-xl::before {
   font-size: 60px !important;
 }
@@ -351,8 +351,4 @@
   margin-top: 20px;
   display: flex;
   justify-content: center;
-}
-
-.fr-header .fr-links-group .fr-link {
-  border-radius: 1rem;
 }

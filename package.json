@@ -2,7 +2,7 @@
   "name": "mon-suivi-justice-public",
   "private": "true",
   "engines": {
-    "node": "20.12.x",
+    "node": "20.13.x",
     "yarn": "1.22.x"
   },
   "dependencies": {

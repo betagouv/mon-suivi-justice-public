@@ -11,6 +11,8 @@
     <%= favicon_link_tag asset_path('favicon.ico') %>
     <%= render 'shared/analytics' %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+    <%= javascript_include_tag 'gouvfr-module', type: 'module', 'data-turbo-track': 'reload', defer: true %>
+    <%= javascript_include_tag 'gouvfr-nomodule', type: 'text/javascript', nomodule: true, 'data-turbo-track': 'reload', defer: true %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
 
