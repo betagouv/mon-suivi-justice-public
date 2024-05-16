@@ -10,7 +10,7 @@ jobs:
   lint-rb:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -22,9 +22,9 @@ jobs:
   lint-js:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - name: Set up Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: 20.13.1
           cache: yarn
@@ -36,7 +36,7 @@ jobs:
   static-code-analysis:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -44,7 +44,7 @@ jobs:
           bundler-cache: true
       - name: Install gems
         run: |
-          gem install brakeman -v 5.4.1
+          gem install brakeman -v 6.1.2
       - name: Brakeman Static Code Analysis
         run: bundle exec brakeman --no-exit-on-warn --no-exit-on-error
 
@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgres:13
+        image: postgres
         env:
           POSTGRES_PASSWORD: postgres
         ports:
@@ -64,9 +64,9 @@ jobs:
           --health-retries 5
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - name: Set up Node environment
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: 20.13.1
           cache: yarn
