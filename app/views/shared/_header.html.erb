@@ -25,12 +25,12 @@
 
                 <div class="fr-header__tools">
                   <div class="fr-header__tools-links">
-                    <ul class="fr-links-group">
+                    <ul class="fr-btns-group">
                       <li>
-                        <%= link_to t('.authenticated_root_link'), ENV["PPSMJ_SIGN_IN_URL"], method: :get, class: 'fr-link fr-icon-account-line'  %>
+                        <%= link_to t('.authenticated_root_link'), ENV["PPSMJ_SIGN_IN_URL"], method: :get, class: 'fr-btn fr-icon-account-line'  %>
                       </li>
                       <li>
-                        <%= link_to t('.agents_sign_in_link'), ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-link fr-icon-lock-line'  %>
+                        <%= link_to t('.agents_sign_in_link'), ENV["AGENTS_SIGN_IN_URL"], method: :get, class: 'fr-btn fr-icon-lock-line'  %>
                       </li>
                     </ul>
                   </div>
@@ -40,7 +40,8 @@
     </div>
     <div class="fr-header__menu fr-modal" id="modal-851" aria-labelledby="button-852">
         <div class="fr-container">
-            <button class="fr-link--close fr-link" aria-controls="modal-851">Fermer</button>
+            <button class="fr-link--close fr-btn" aria-controls="modal-851">Fermer</button>
+            <div class="fr-header__menu-links"></div>
             <nav class="fr-nav" id="navigation-850" role="navigation" aria-label="Menu principal">
                 <ul class="fr-nav__list">
                   <li class="fr-nav__item">
@@ -57,7 +58,6 @@
                   </li>
                 </ul>
             </nav>
-            <div class="fr-header__menu-links"></div>
         </div>
     </div>
 </header>
