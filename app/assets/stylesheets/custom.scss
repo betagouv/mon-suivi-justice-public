@@ -323,7 +323,11 @@
 
   &::after {
    content: none !important;
- }
+  }
+
+  &:active {
+    background-color: transparent !important;
+  }
 }
 
 .static-google-map-link-button {
@@ -336,10 +340,6 @@
   align-items: center;
   border-radius: 10px;
   font-weight: bold;
-}
-
-.static-google-map-link-button:hover {
-  background: $msj-light-blue !important;
 }
 
 .icon-xl::before {
