@@ -35,5 +35,7 @@ module MonSuiviJusticePublic
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     config.time_zone = "Paris"
+
+    config.middleware.delete(Rack::Runtime)
   end
 end
