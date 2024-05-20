@@ -21,7 +21,7 @@ gem "sprockets-rails", "~> 3.4.2", ">= 3.4.2"
 gem "turbo-rails", "~> 1.5.0"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails", "~> 1.2.2"
+gem "stimulus-rails", "~> 1.3.3"
 
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 5.2.0"
