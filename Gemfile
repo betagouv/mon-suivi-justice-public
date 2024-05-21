@@ -21,7 +21,7 @@ gem "sprockets-rails", "~> 3.4.2", ">= 3.4.2"
 gem "turbo-rails", "~> 1.5.0"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails", "~> 1.2.2"
+gem "stimulus-rails", "~> 1.3.3"
 
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 5.2.0"
@@ -45,7 +45,7 @@ gem "highline", "~> 3.0.1"
 gem "tzinfo-data", "~> 1.2", platforms: %i[mingw mswin x64_mingw jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", "~> 1.16.0", require: false
+gem "bootsnap", "~> 1.18.3", require: false
 
 gem "sentry-ruby", "~> 5.17.3"
 gem "sentry-rails", "~> 5.17.3"
@@ -55,12 +55,12 @@ gem "image_processing", "~> 1.12.2"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", "~> 1.8.0", platforms: %i[mri mingw x64_mingw]
+  gem "debug", "~> 1.9.2", platforms: %i[mri mingw x64_mingw]
 
   gem "brakeman", "6.1.2"
   gem "standard", "~> 1.35.1"
 
-  gem "rspec-rails", "~> 5.1.2"
+  gem "rspec-rails", "~> 6.1.2"
 
   gem "factory_bot_rails", "~> 6.4", ">= 6.4.3"
 end
@@ -79,6 +79,6 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara", "~> 3.40.0"
-  gem "selenium-webdriver", "~> 4.20.1"
+  gem "selenium-webdriver", "~> 4.21.1"
   gem "webdrivers", "~> 5.2.0"
 end
