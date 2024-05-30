@@ -12,7 +12,6 @@ class PagesController < Spina::ApplicationController
   def preparer_sap_belfort
   end
 
-
   def ma_reinsertion_aude
   end
 
