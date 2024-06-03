@@ -170,26 +170,14 @@
 
 .static-home-link-preparer {
   background-color: $msj-blue;
-
-  &:hover {
-    background: darken($msj-blue, 8%);
-  }
 }
 
 .static-home-link-comprendre {
   background-color: $msj-orange;
-
-  &:hover {
-    background: darken($msj-orange, 8%);
-  }
 }
 
 .static-home-link-investir {
   background-color: $msj-green;
-
-  &:hover {
-    background: darken($msj-green, 8%);
-  }
 }
 
 .presentation-wrapper {

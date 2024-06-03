@@ -99,20 +99,6 @@
   }
 }
 
-.static-home-back-office-button {
-  height: 50px;
-  width: 190px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: $msj-dark-background;
-  color: $msj-dark-grey-text;
-  transition: .3s background-color;
-
-  &:hover {
-    background: darken($msj-dark-background, 8%);
-  }
-}
-
 .static-hidden-checkbox {
   position: absolute;
   left: -100vw;
@@ -340,6 +326,14 @@
   align-items: center;
   border-radius: 10px;
   font-weight: bold;
+
+  &:hover {
+    background: $msj-light-blue !important;
+  }
+
+  &:active {
+    background: $msj-light-blue !important;
+  }
 }
 
 .icon-xl::before {
