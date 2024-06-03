@@ -858,7 +858,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.24.6"
 
-"@babel/plugin-transform-regenerator@^7.24.1", "@babel/plugin-transform-regenerator@^7.24.6":
+"@babel/plugin-transform-regenerator@^7.24.6":
   version "7.24.6"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-regenerator/-/plugin-transform-regenerator-7.24.6.tgz#ed10cf0c13619365e15459f88d1b915ac57ffc24"
   integrity sha512-SMDxO95I8WXRtXhTAc8t/NFQUT7VYbIWwJCJgEli9ml4MhqUMh4S6hxgH6SmAC3eAQNWCDJFxcFeEt9w2sDdXg==
