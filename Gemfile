@@ -58,7 +58,7 @@ group :development, :test do
   gem "debug", "~> 1.9.2", platforms: %i[mri mingw x64_mingw]
 
   gem "brakeman", "6.1.2"
-  gem "standard", "~> 1.37.0"
+  gem "standard", "~> 1.38.0"
 
   gem "rspec-rails", "~> 6.1.2"
 
