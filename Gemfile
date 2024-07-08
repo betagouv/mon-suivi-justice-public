@@ -47,7 +47,7 @@ gem "tzinfo-data", "~> 1.2", platforms: %i[mingw mswin x64_mingw jruby]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", "~> 1.18.3", require: false
 
-gem "sentry-ruby", "~> 5.18.0"
+gem "sentry-ruby", "~> 5.18.1"
 gem "sentry-rails", "~> 5.18.0"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
