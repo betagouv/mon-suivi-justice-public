@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'ma_reinsertion_seine_maritine', title: 'Ma Reinsertion Seine Maritine', parts: %w[main_title main_description rich_collapse]},
     {name: 'preparer_spip27_bernay', title: 'Preparer spip27_bernay', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_saint_brieuc', title: 'Preparer sap_saint_brieuc', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_sap_le_havre', title: 'Preparer sap_le_havre', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
@@ -350,6 +351,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'ma_reinsertion_seine_maritine', title: 'Ma Reinsertion Seine Maritine', view_template: 'ma_reinsertion_seine_maritine'},
     {name: 'preparer_spip27_bernay', title: 'Preparer spip27_bernay', view_template: 'preparer_spip27_bernay'},
     {name: 'preparer_sap_saint_brieuc', title: 'Preparer sap_saint_brieuc', view_template: 'preparer_sap_saint_brieuc'},
     {name: 'preparer_sap_le_havre', title: 'Preparer sap_le_havre', view_template: 'preparer_sap_le_havre'},
