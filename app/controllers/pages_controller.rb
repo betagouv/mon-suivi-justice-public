@@ -12,6 +12,7 @@ class PagesController < Spina::ApplicationController
 
   def ma_reinsertion_seine_maritine
   end
+
   def preparer_spip27_bernay
   end
 
