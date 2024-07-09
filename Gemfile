@@ -31,7 +31,7 @@ gem "rails-i18n", "~> 7.0.8"
 gem "spina", "~> 2.18.0"
 
 gem "sidekiq-failures", "~> 1.0.4"
-gem "sidekiq", "~> 7.2.4"
+gem "sidekiq", "~> 7.3.0"
 
 gem "highline", "~> 3.0.1"
 
