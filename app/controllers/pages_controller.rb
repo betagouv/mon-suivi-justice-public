@@ -12,7 +12,6 @@ class PagesController < Spina::ApplicationController
   def preparer_spip60_beauvais
   end
 
-
   def ma_reinsertion_seine_maritine
   end
 
