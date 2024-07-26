@@ -9,6 +9,9 @@ class PagesController < Spina::ApplicationController
   # Spina::Navigation.find_by(name: "main").pages.pluck(:name) pour la navigation
 
   include Spina::Api::Paginable
+
+  def ma_reinsertion_normandie
+  end
   def preparer_spip60_beauvais
   end
 
