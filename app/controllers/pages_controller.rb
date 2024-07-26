@@ -12,6 +12,7 @@ class PagesController < Spina::ApplicationController
 
   def ma_reinsertion_normandie
   end
+
   def preparer_spip60_beauvais
   end
 
