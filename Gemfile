@@ -48,7 +48,7 @@ gem "tzinfo-data", "~> 1.2", platforms: %i[mingw mswin x64_mingw jruby]
 gem "bootsnap", "~> 1.18.3", require: false
 
 gem "sentry-ruby", "~> 5.18.0"
-gem "sentry-rails", "~> 5.18.1"
+gem "sentry-rails", "~> 5.18.2"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.12.2"
