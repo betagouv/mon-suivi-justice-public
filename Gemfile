@@ -15,7 +15,7 @@ gem "pg", "~> 1.5.7"
 gem "puma", "~> 6.4.2"
 
 # Needed by Spina
-gem "sprockets-rails", "~> 3.5.1"
+gem "sprockets-rails", "~> 3.5.2"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails", "~> 1.5.0"
