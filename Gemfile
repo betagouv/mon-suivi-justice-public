@@ -45,7 +45,7 @@ gem "highline", "~> 3.1.0"
 gem "tzinfo-data", "~> 1.2", platforms: %i[mingw mswin x64_mingw jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", "~> 1.18.3", require: false
+gem "bootsnap", "~> 1.18.4", require: false
 
 gem "sentry-ruby", "~> 5.18.0"
 gem "sentry-rails", "~> 5.18.2"
