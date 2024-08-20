@@ -66,6 +66,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
+    {name: 'preparer_sap_valenciennes', title: 'Preparer sap_valenciennes', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip68_colmar', title: 'Preparer spip68_colmar', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'preparer_spip13_aix_en_provence', title: 'Preparer spip13_aix_en_provence', parts: %w[main_title main_description zip_code_select direction_collapse_title direction_collapse_first_rich_content direction_collapse_second_rich_content collapse_rich_content_good_practice collapse_rich_content_alert direction_collapse_button_text direction_collapse_button_link rich_collapse]},
     {name: 'ma_reinsertion_maine_et_loire', title: 'Ma Reinsertion Maine Et Loire', parts: %w[main_title main_description rich_collapse]},
@@ -357,6 +358,7 @@ Spina::Theme.register do |theme|
   # Some pages should not be created by the user, but generated automatically.
   # By naming them you can reference them in your code.
   theme.custom_pages = [
+    {name: 'preparer_sap_valenciennes', title: 'Preparer sap_valenciennes', view_template: 'preparer_sap_valenciennes'},
     {name: 'preparer_spip68_colmar', title: 'Preparer spip68_colmar', view_template: 'preparer_spip68_colmar'},
     {name: 'preparer_spip13_aix_en_provence', title: 'Preparer spip13_aix_en_provence', view_template: 'preparer_spip13_aix_en_provence'},
     {name: 'ma_reinsertion_maine_et_loire', title: 'Ma Reinsertion Maine Et Loire', view_template: 'ma_reinsertion_maine_et_loire'},
