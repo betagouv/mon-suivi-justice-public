@@ -18,7 +18,6 @@ class PagesController < Spina::ApplicationController
   def preparer_spip13_aix_en_provence
   end
 
-
   def ma_reinsertion_maine_et_loire
   end
 
