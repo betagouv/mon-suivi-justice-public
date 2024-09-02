@@ -33,7 +33,7 @@ gem "spina", "~> 2.18.0"
 gem "sidekiq-failures", "~> 1.0.4"
 gem "sidekiq", "~> 7.3.1"
 
-gem "highline", "~> 3.1.0"
+gem "highline", "~> 3.1.1"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
