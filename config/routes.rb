@@ -82,7 +82,6 @@ Rails.application.routes.draw do
     get :preparer_sap_dieppe
     get :preparer_sap_chambery
     get :preparer_spip13_arles_tarascon
-    get :preparer_spip13_tarascon
     get :preparer_sap_lisieux
     get :preparer_sap_toulouse
     get :preparer_spip04
