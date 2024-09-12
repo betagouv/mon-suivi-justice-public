@@ -240,9 +240,6 @@ class PagesController < Spina::ApplicationController
   def preparer_spip13_arles_tarascon
   end
 
-  def preparer_spip13_tarascon
-  end
-
   def preparer_sap_lisieux
   end
 
