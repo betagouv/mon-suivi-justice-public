@@ -1,8 +1,8 @@
 import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
-  static values = { url: String };
-  static targets = ['zipCode', 'cardsContainer'];
+  static values = { url: String }
+  static targets = ['zipCode', 'cardsContainer']
 
   initialize () {
     this.loadPages()
