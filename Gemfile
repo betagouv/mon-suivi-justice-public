@@ -12,7 +12,7 @@ gem "cssbundling-rails", "~> 1.4"
 gem "pg", "~> 1.5.8"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 6.4.2"
+gem "puma", "~> 6.4.3"
 
 # Needed by Spina
 gem "sprockets-rails", "~> 3.5.2"
