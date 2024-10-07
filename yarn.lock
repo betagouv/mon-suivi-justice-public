@@ -284,10 +284,10 @@
   dependencies:
     "@babel/types" "^7.24.7"
 
-"@babel/helper-plugin-utils@^7.0.0", "@babel/helper-plugin-utils@^7.10.4", "@babel/helper-plugin-utils@^7.12.13", "@babel/helper-plugin-utils@^7.14.5", "@babel/helper-plugin-utils@^7.18.6", "@babel/helper-plugin-utils@^7.20.2", "@babel/helper-plugin-utils@^7.22.5", "@babel/helper-plugin-utils@^7.24.7", "@babel/helper-plugin-utils@^7.24.8", "@babel/helper-plugin-utils@^7.8.0", "@babel/helper-plugin-utils@^7.8.3":
-  version "7.24.8"
-  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.24.8.tgz#94ee67e8ec0e5d44ea7baeb51e571bd26af07878"
-  integrity sha512-FFWx5142D8h2Mgr/iPVGH5G7w6jDn4jUSpZTyDnQO0Yn7Ks2Kuz6Pci8H6MPCoUJegd/UZQ3tAvfLCxQSnWWwg==
+"@babel/helper-plugin-utils@^7.0.0", "@babel/helper-plugin-utils@^7.10.4", "@babel/helper-plugin-utils@^7.12.13", "@babel/helper-plugin-utils@^7.14.5", "@babel/helper-plugin-utils@^7.18.6", "@babel/helper-plugin-utils@^7.20.2", "@babel/helper-plugin-utils@^7.22.5", "@babel/helper-plugin-utils@^7.24.7", "@babel/helper-plugin-utils@^7.24.8", "@babel/helper-plugin-utils@^7.25.7", "@babel/helper-plugin-utils@^7.8.0", "@babel/helper-plugin-utils@^7.8.3":
+  version "7.25.7"
+  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.25.7.tgz#8ec5b21812d992e1ef88a9b068260537b6f0e36c"
+  integrity sha512-eaPZai0PiqCi09pPs3pAFfl/zYgGaE6IdXtYvmf0qlcDTd3WCtO7JWCcRd64e0EQrcYgiHibEZnOGsSY4QSgaw==
 
 "@babel/helper-remap-async-to-generator@^7.24.7":
   version "7.24.7"
@@ -722,12 +722,12 @@
     "@babel/helper-plugin-utils" "^7.24.7"
     "@babel/template" "^7.24.7"
 
-"@babel/plugin-transform-destructuring@^7.24.6", "@babel/plugin-transform-destructuring@^7.24.8":
-  version "7.24.8"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.24.8.tgz#c828e814dbe42a2718a838c2a2e16a408e055550"
-  integrity sha512-36e87mfY8TnRxc7yc6M9g9gOB7rKgSahqkIKwLpz4Ppk2+zC2Cy1is0uwtuSG6AE4zlTOUa+7JGz9jCJGLqQFQ==
+"@babel/plugin-transform-destructuring@^7.24.8", "@babel/plugin-transform-destructuring@^7.25.7":
+  version "7.25.7"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.25.7.tgz#f6f26a9feefb5aa41fd45b6f5838901b5333d560"
+  integrity sha512-xKcfLTlJYUczdaM1+epcdh1UGewJqr9zATgrNHcLBcV2QmfvPPEixo/sK/syql9cEmbr7ulu5HMFG5vbbt/sEA==
   dependencies:
-    "@babel/helper-plugin-utils" "^7.24.8"
+    "@babel/helper-plugin-utils" "^7.25.7"
 
 "@babel/plugin-transform-dotall-regex@^7.24.7":
   version "7.24.7"
