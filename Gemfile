@@ -9,7 +9,7 @@ gem "jsbundling-rails", "~> 1.3"
 gem "cssbundling-rails", "~> 1.4"
 
 # Use postgresql as the database for Active Record
-gem "pg", "~> 1.5.8"
+gem "pg", "~> 1.5.9"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 6.4.3"
@@ -31,7 +31,7 @@ gem "rails-i18n", "~> 7.0.8"
 gem "spina", "~> 2.18.0"
 
 gem "sidekiq-failures", "~> 1.0.4"
-gem "sidekiq", "~> 7.3.2"
+gem "sidekiq", "~> 7.3.4"
 
 gem "highline", "~> 3.1.1"
 
@@ -62,7 +62,7 @@ group :development, :test do
 
   gem "rspec-rails", "~> 7.0.1"
 
-  gem "factory_bot_rails", "~> 6.4", ">= 6.4.3"
+  gem "factory_bot_rails", "~> 6.4"
 end
 
 group :development do
