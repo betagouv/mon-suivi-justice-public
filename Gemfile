@@ -26,7 +26,7 @@ gem "stimulus-rails", "~> 1.3.4"
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 5.3.0"
 
-gem "rails-i18n", "~> 7.0.8"
+gem "rails-i18n", "~> 7.0.10"
 
 gem "spina", "~> 2.18.0"
 
@@ -79,6 +79,6 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara", "~> 3.40.0"
-  gem "selenium-webdriver", "~> 4.25.0"
+  gem "selenium-webdriver", "~> 4.26.0"
   gem "webdrivers", "~> 5.2.0"
 end
