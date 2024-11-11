@@ -60,7 +60,7 @@ group :development, :test do
   gem "brakeman", "6.2.2"
   gem "standard", "~> 1.41.1"
 
-  gem "rspec-rails", "~> 7.0.1"
+  gem "rspec-rails", "~> 7.1.0"
 
   gem "factory_bot_rails", "~> 6.4"
 end
